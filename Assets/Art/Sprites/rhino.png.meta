@@ -1,0 +1,2120 @@
+fileFormatVersion: 2
+guid: 21dc08e2731bb2f41ae1ee3f7ba6039a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2822962250050549408
+    second: rhino_0
+  - first:
+      213: -8694790392530438311
+    second: rhino_1
+  - first:
+      213: 4917534653262947598
+    second: rhino_2
+  - first:
+      213: 1768833716785253907
+    second: rhino_3
+  - first:
+      213: 6071089179375666660
+    second: rhino_4
+  - first:
+      213: 4631268669330495319
+    second: rhino_5
+  - first:
+      213: -6763265006204713534
+    second: rhino_6
+  - first:
+      213: 3326365425789790170
+    second: rhino_7
+  - first:
+      213: 2466533566003542370
+    second: rhino_8
+  - first:
+      213: -4719930276872787431
+    second: rhino_9
+  - first:
+      213: 3753289965574334068
+    second: rhino_10
+  - first:
+      213: -5596747470401087395
+    second: rhino_11
+  - first:
+      213: -3123570848809771554
+    second: rhino_12
+  - first:
+      213: 6356130959370855056
+    second: rhino_13
+  - first:
+      213: -8321399732964106669
+    second: rhino_14
+  - first:
+      213: 5674700500838484056
+    second: rhino_15
+  - first:
+      213: 4657882701054649774
+    second: rhino_16
+  - first:
+      213: 6235788829623678625
+    second: rhino_17
+  - first:
+      213: 6009709650700322565
+    second: rhino_18
+  - first:
+      213: 8267803636855255085
+    second: rhino_19
+  - first:
+      213: 3346888133764755697
+    second: rhino_20
+  - first:
+      213: -8764161354023467755
+    second: rhino_21
+  - first:
+      213: 6399268518910255511
+    second: rhino_22
+  - first:
+      213: -556564941655519800
+    second: rhino_23
+  - first:
+      213: -2069535400525338657
+    second: rhino_24
+  - first:
+      213: -8600932171214752475
+    second: rhino_25
+  - first:
+      213: 2204720611646985086
+    second: rhino_26
+  - first:
+      213: -1708736303345323181
+    second: rhino_27
+  - first:
+      213: -3434717130235815968
+    second: rhino_28
+  - first:
+      213: -7665948454843069128
+    second: rhino_29
+  - first:
+      213: 4216656028620880300
+    second: rhino_30
+  - first:
+      213: 25071801284314846
+    second: rhino_31
+  - first:
+      213: 8628746974710381401
+    second: rhino_32
+  - first:
+      213: -6942739459740040753
+    second: rhino_33
+  - first:
+      213: 3215159489320151349
+    second: rhino_34
+  - first:
+      213: -7381774771110060109
+    second: rhino_35
+  - first:
+      213: -1089170135218660287
+    second: rhino_36
+  - first:
+      213: 6040224004245386114
+    second: rhino_37
+  - first:
+      213: 108067713767361894
+    second: rhino_38
+  - first:
+      213: -407897917010029974
+    second: rhino_39
+  - first:
+      213: -4123754089934645558
+    second: rhino_40
+  - first:
+      213: 9187902968576576601
+    second: rhino_41
+  - first:
+      213: 2244892669049922797
+    second: rhino_42
+  - first:
+      213: 4779336310407345992
+    second: rhino_43
+  - first:
+      213: 7646965331450134005
+    second: rhino_44
+  - first:
+      213: -3615446375881301638
+    second: rhino_45
+  - first:
+      213: -3138414333726328225
+    second: rhino_46
+  - first:
+      213: -710434529669024900
+    second: rhino_47
+  - first:
+      213: -2951570813048070762
+    second: rhino_48
+  - first:
+      213: 2456100359522970716
+    second: rhino_49
+  - first:
+      213: -4396774122263803318
+    second: rhino_50
+  - first:
+      213: 1627507291984668157
+    second: rhino_51
+  - first:
+      213: 4112539888595201067
+    second: rhino_52
+  - first:
+      213: 5429088567275711864
+    second: rhino_53
+  - first:
+      213: 3631605513872493454
+    second: rhino_54
+  - first:
+      213: 4452573183558369359
+    second: rhino_55
+  - first:
+      213: -8998378861258386931
+    second: rhino_56
+  - first:
+      213: 7450821071496914079
+    second: rhino_57
+  - first:
+      213: -8124903686892703612
+    second: rhino_58
+  - first:
+      213: 3675157104308413260
+    second: rhino_59
+  - first:
+      213: -3576701038620367912
+    second: rhino_60
+  - first:
+      213: 5354923741665320242
+    second: rhino_61
+  - first:
+      213: 1671766691564350286
+    second: rhino_62
+  - first:
+      213: 6307164476732669365
+    second: rhino_63
+  - first:
+      213: -545143294948932870
+    second: rhino_64
+  - first:
+      213: -1151882182061249059
+    second: rhino_65
+  - first:
+      213: -6828027363899902057
+    second: rhino_66
+  - first:
+      213: -6403750003541130817
+    second: rhino_67
+  - first:
+      213: -7286317683612051803
+    second: rhino_68
+  - first:
+      213: 463083686026004239
+    second: rhino_69
+  - first:
+      213: 5874507533744837408
+    second: rhino_70
+  - first:
+      213: 3914911647516269772
+    second: rhino_71
+  - first:
+      213: 6049664931399436185
+    second: rhino_72
+  - first:
+      213: -1825697055852785864
+    second: rhino_73
+  - first:
+      213: -4203501846650714269
+    second: rhino_74
+  - first:
+      213: -8383805064791862004
+    second: rhino_75
+  - first:
+      213: -228672100580736859
+    second: rhino_76
+  - first:
+      213: -1794211979008768425
+    second: rhino_77
+  - first:
+      213: -1175018538441192229
+    second: rhino_78
+  - first:
+      213: 3474435636041303742
+    second: rhino_79
+  - first:
+      213: -7362930513921697363
+    second: rhino_80
+  - first:
+      213: 499613742701371710
+    second: rhino_81
+  - first:
+      213: 6293187635033879423
+    second: rhino_82
+  - first:
+      213: 8864091420551885894
+    second: rhino_83
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rhino_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1043
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6b990b53d2d2720800000000000000
+      internalID: 2822962250050549408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1043
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9577eb87436e55780800000000000000
+      internalID: -8694790392530438311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1043
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05696286b79e3440800000000000000
+      internalID: 4917534653262947598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1043
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e08bbc4e82c8810800000000000000
+      internalID: 1768833716785253907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 986
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e587605177d04450800000000000000
+      internalID: 6071089179375666660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_5
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 986
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75717d63152954040800000000000000
+      internalID: 4631268669330495319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_6
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 986
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c586576f4e0422a0800000000000000
+      internalID: -6763265006204713534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_7
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 986
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7675d1bbf992e20800000000000000
+      internalID: 3326365425789790170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 929
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269f734c533ea3220800000000000000
+      internalID: 2466533566003542370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 929
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ae262ab607f7eb0800000000000000
+      internalID: -4719930276872787431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 929
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476a811865d561430800000000000000
+      internalID: 3753289965574334068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_11
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 929
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d585d2914db5452b0800000000000000
+      internalID: -5596747470401087395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 860
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd9de5ccd8d6a4d0800000000000000
+      internalID: -3123570848809771554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_13
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 860
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092a92b6e63853850800000000000000
+      internalID: 6356130959370855056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_14
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 860
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ed4a21803748c80800000000000000
+      internalID: -8321399732964106669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_15
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 860
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85885372a0690ce40800000000000000
+      internalID: 5674700500838484056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 803
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5acc953af14a040800000000000000
+      internalID: 4657882701054649774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 803
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a67114e6e8f98650800000000000000
+      internalID: 6235788829623678625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_18
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 803
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507ca352617c66350800000000000000
+      internalID: 6009709650700322565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_19
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 803
+        width: 71
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20b07f5a932db270800000000000000
+      internalID: 8267803636855255085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 738
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0b40c6609827e20800000000000000
+      internalID: 3346888133764755697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_21
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 738
+        width: 70
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515893bdea17f5680800000000000000
+      internalID: -8764161354023467755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_22
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 740
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7916cfb20d4cec850800000000000000
+      internalID: 6399268518910255511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_23
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 738
+        width: 70
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdcf26622fa648f0800000000000000
+      internalID: -556564941655519800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 680
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd76791a4888743e0800000000000000
+      internalID: -2069535400525338657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 680
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525f38d82c953a880800000000000000
+      internalID: -8600932171214752475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_26
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 680
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73533617bdb89e10800000000000000
+      internalID: 2204720611646985086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_27
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 680
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353b948a2695948e0800000000000000
+      internalID: -1708736303345323181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_28
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 623
+        width: 70
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7585cc7fe6550d0800000000000000
+      internalID: -3434717130235815968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 623
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dcf9a0f741d9590800000000000000
+      internalID: -7665948454843069128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_30
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 671
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9f4f53152948a30800000000000000
+      internalID: 4216656028620880300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_31
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 623
+        width: 70
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed64e61aba2195000800000000000000
+      internalID: 25071801284314846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_32
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 623
+        width: 70
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bb65c08a77fb770800000000000000
+      internalID: 8628746974710381401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_33
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 667
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc18b1ede3f66af90800000000000000
+      internalID: -6942739459740040753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_34
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 671
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5396729558a8e9c20800000000000000
+      internalID: 3215159489320151349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_35
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 558
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf5b0cb4faae8990800000000000000
+      internalID: -7381774771110060109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_36
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 558
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cd35e588d72e0f0800000000000000
+      internalID: -1089170135218660287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_37
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 614
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28375d8babf23d350800000000000000
+      internalID: 6040224004245386114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 610
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66dcaca530fef7100800000000000000
+      internalID: 108067713767361894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_39
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 558
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62deff610bd65af0800000000000000
+      internalID: -407897917010029974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_40
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 558
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac69168f08b75c6c0800000000000000
+      internalID: -4123754089934645558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_41
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 610
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c83c0021df18f70800000000000000
+      internalID: 9187902968576576601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_42
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 614
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de469911df5772f10800000000000000
+      internalID: 2244892669049922797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_43
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 499
+        width: 70
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847b4f36d0d935240800000000000000
+      internalID: 4779336310407345992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_44
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 544
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdffce147a7f1a60800000000000000
+      internalID: 7646965331450134005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_45
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 499
+        width: 70
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a712f153daa53ddc0800000000000000
+      internalID: -3615446375881301638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_46
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 547
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a7f30aacc1274d0800000000000000
+      internalID: -3138414333726328225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_47
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 543
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73f7ee2f870426f0800000000000000
+      internalID: -710434529669024900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_48
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 499
+        width: 70
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ddbdecbf9e907d0800000000000000
+      internalID: -2951570813048070762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_49
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 544
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c63169342d51220800000000000000
+      internalID: 2456100359522970716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_50
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 499
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a06dc1b358bf2c0800000000000000
+      internalID: -4396774122263803318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_51
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 547
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5aa185241169610800000000000000
+      internalID: 1627507291984668157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_52
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 442
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c67505d3da21930800000000000000
+      internalID: 4112539888595201067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_53
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 440
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d6a92994ff75b40800000000000000
+      internalID: 5429088567275711864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_54
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 442
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b48ba49fd066230800000000000000
+      internalID: 3631605513872493454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_55
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 384
+        width: 71
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f404d6e38b7bacd30800000000000000
+      internalID: 4452573183558369359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_56
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 384
+        width: 78
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d025f44e9165f1380800000000000000
+      internalID: -8998378861258386931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_57
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 384
+        width: 78
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94a193d942a66760800000000000000
+      internalID: 7450821071496914079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_58
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 312
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480bf74f42b8e3f80800000000000000
+      internalID: -8124903686892703612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_59
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 312
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c436e002ae7c00330800000000000000
+      internalID: 3675157104308413260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_60
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 312
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d323450b510d5ec0800000000000000
+      internalID: -3576701038620367912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_61
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 254
+        width: 71
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d544d75c2805a40800000000000000
+      internalID: 5354923741665320242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_62
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 254
+        width: 78
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4be506d2fe433710800000000000000
+      internalID: 1671766691564350286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_63
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 254
+        width: 78
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdfc9fbcac878750800000000000000
+      internalID: 6307164476732669365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_64
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 194
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af202e0cf034f68f0800000000000000
+      internalID: -545143294948932870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_65
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 194
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd23232241b300f0800000000000000
+      internalID: -1151882182061249059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_66
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 194
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797791af949fd31a0800000000000000
+      internalID: -6828027363899902057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_67
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 194
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb14680ec4f4127a0800000000000000
+      internalID: -6403750003541130817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_68
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 194
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a618abdbacc1ea90800000000000000
+      internalID: -7286317683612051803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_69
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 134
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07cbdea8243d6600800000000000000
+      internalID: 463083686026004239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_70
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 134
+        width: 71
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023973b3a71768150800000000000000
+      internalID: 5874507533744837408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_71
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 134
+        width: 71
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc1f3db66f845630800000000000000
+      internalID: 3914911647516269772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_72
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 133
+        width: 71
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997833ed33ab4f350800000000000000
+      internalID: 6049664931399436185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_73
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 133
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f0b6e5332d9a6e0800000000000000
+      internalID: -1825697055852785864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_74
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 62
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3678fa177592aa5c0800000000000000
+      internalID: -4203501846650714269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_75
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 62
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05d5fe76bdb6ab80800000000000000
+      internalID: -8383805064791862004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_76
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 62
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0c7d2afe793dcf0800000000000000
+      internalID: -228672100580736859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_77
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 62
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7568e6316bda917e0800000000000000
+      internalID: -1794211979008768425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_78
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 62
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcc6b36dde71bfe0800000000000000
+      internalID: -1175018538441192229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_79
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb643397dcca73030800000000000000
+      internalID: 3474435636041303742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_80
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 2
+        width: 71
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da910d345bd91d990800000000000000
+      internalID: -7362930513921697363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_81
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 2
+        width: 71
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e316e9a4d0cfee600800000000000000
+      internalID: 499613742701371710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_82
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2
+        width: 71
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f733313bfc4e55750800000000000000
+      internalID: 6293187635033879423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhino_83
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 2
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644359ade24930b70800000000000000
+      internalID: 8864091420551885894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
