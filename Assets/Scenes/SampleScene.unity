@@ -563,8 +563,8 @@ GameObject:
   - component: {fileID: 1444409233}
   - component: {fileID: 1444409232}
   - component: {fileID: 1444409231}
-  - component: {fileID: 1444409230}
   - component: {fileID: 1444409229}
+  - component: {fileID: 1444409230}
   m_Layer: 0
   m_Name: ZombieF
   m_TagString: Untagged
@@ -600,10 +600,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1444409228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 918dcd3ec24b2484ebc0c70d1e8c8e94, type: 3}
+  m_Script: {fileID: 11500000, guid: d569bc1f21aa4fd45bf2348a66396f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  player: {fileID: 425848070}
 --- !u!61 &1444409231
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -611,7 +612,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444409228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
