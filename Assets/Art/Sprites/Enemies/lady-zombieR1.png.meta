@@ -1,0 +1,1556 @@
+fileFormatVersion: 2
+guid: 517dac3d7de7f4a4abb404117c90c9b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6106737912214317844
+    second: lady-zombieR1_0
+  - first:
+      213: -4695796450401911376
+    second: lady-zombieR1_1
+  - first:
+      213: 6262472137920342060
+    second: lady-zombieR1_2
+  - first:
+      213: -2608247894243010225
+    second: lady-zombieR1_3
+  - first:
+      213: -4982548543896024176
+    second: lady-zombieR1_4
+  - first:
+      213: 4643173090850043330
+    second: lady-zombieR1_5
+  - first:
+      213: 4694743737433751637
+    second: lady-zombieR1_6
+  - first:
+      213: 41637085176770486
+    second: lady-zombieR1_7
+  - first:
+      213: -7916847690414939986
+    second: lady-zombieR1_8
+  - first:
+      213: -2418860649066073558
+    second: lady-zombieR1_9
+  - first:
+      213: 5385894108297392344
+    second: lady-zombieR1_10
+  - first:
+      213: 6689268966173047112
+    second: lady-zombieR1_11
+  - first:
+      213: 4274366981816737500
+    second: lady-zombieR1_12
+  - first:
+      213: 8161135960773015037
+    second: lady-zombieR1_13
+  - first:
+      213: 8094842936449934368
+    second: lady-zombieR1_14
+  - first:
+      213: -1051202127705572814
+    second: lady-zombieR1_15
+  - first:
+      213: -2980030524016115468
+    second: lady-zombieR1_16
+  - first:
+      213: 2381458157078684218
+    second: lady-zombieR1_17
+  - first:
+      213: -6386888272872874001
+    second: lady-zombieR1_18
+  - first:
+      213: 6642337314412008417
+    second: lady-zombieR1_19
+  - first:
+      213: 735561881176003816
+    second: lady-zombieR1_20
+  - first:
+      213: -2446639750811082584
+    second: lady-zombieR1_21
+  - first:
+      213: -8411610258554624583
+    second: lady-zombieR1_22
+  - first:
+      213: 7686565153341571074
+    second: lady-zombieR1_23
+  - first:
+      213: 1438951517119410084
+    second: lady-zombieR1_24
+  - first:
+      213: -2646770001977212471
+    second: lady-zombieR1_25
+  - first:
+      213: -6366871010823557481
+    second: lady-zombieR1_26
+  - first:
+      213: 6884169108449845786
+    second: lady-zombieR1_27
+  - first:
+      213: 4217409154349668878
+    second: lady-zombieR1_28
+  - first:
+      213: -6744414855920589700
+    second: lady-zombieR1_29
+  - first:
+      213: -5931158465385946086
+    second: lady-zombieR1_30
+  - first:
+      213: 8673545950686723366
+    second: lady-zombieR1_31
+  - first:
+      213: 104293569022596644
+    second: lady-zombieR1_32
+  - first:
+      213: 3061912729222458364
+    second: lady-zombieR1_33
+  - first:
+      213: -2381252436158940721
+    second: lady-zombieR1_34
+  - first:
+      213: 3127947838357553723
+    second: lady-zombieR1_35
+  - first:
+      213: -3118439176897243260
+    second: lady-zombieR1_36
+  - first:
+      213: 2517365022122970585
+    second: lady-zombieR1_37
+  - first:
+      213: 1849097058645230410
+    second: lady-zombieR1_38
+  - first:
+      213: 2556717931680008205
+    second: lady-zombieR1_39
+  - first:
+      213: -4418594275638702547
+    second: lady-zombieR1_40
+  - first:
+      213: 718905473129242440
+    second: lady-zombieR1_41
+  - first:
+      213: -3573734996280377583
+    second: lady-zombieR1_42
+  - first:
+      213: -2679350441458973717
+    second: lady-zombieR1_43
+  - first:
+      213: -7041155528231269823
+    second: lady-zombieR1_44
+  - first:
+      213: -3832752541686801183
+    second: lady-zombieR1_45
+  - first:
+      213: -475346836306196725
+    second: lady-zombieR1_46
+  - first:
+      213: -8542970921211377999
+    second: lady-zombieR1_47
+  - first:
+      213: 1214117363896726623
+    second: lady-zombieR1_48
+  - first:
+      213: 1417830513947601077
+    second: lady-zombieR1_49
+  - first:
+      213: 545881629815980130
+    second: lady-zombieR1_50
+  - first:
+      213: -5229261605904278733
+    second: lady-zombieR1_51
+  - first:
+      213: -4706653994059038126
+    second: lady-zombieR1_52
+  - first:
+      213: 3265539110285934039
+    second: lady-zombieR1_53
+  - first:
+      213: 5117365519722239737
+    second: lady-zombieR1_54
+  - first:
+      213: -967996114911686309
+    second: lady-zombieR1_55
+  - first:
+      213: -5987188955205112373
+    second: lady-zombieR1_56
+  - first:
+      213: 3513540039323559418
+    second: lady-zombieR1_57
+  - first:
+      213: -1535563194579018792
+    second: lady-zombieR1_58
+  - first:
+      213: -2348307166127768315
+    second: lady-zombieR1_59
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lady-zombieR1_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 216
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41be1f9b6cd7fb450800000000000000
+      internalID: 6106737912214317844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 216
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdf04cf10e25deb0800000000000000
+      internalID: -4695796450401911376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 216
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28e58cba35c8e650800000000000000
+      internalID: 6262472137920342060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 216
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f491c79fb54adcbd0800000000000000
+      internalID: -2608247894243010225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_4
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 216
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b00fc7f7e6adab0800000000000000
+      internalID: -4982548543896024176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_5
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 216
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5f4c6535ddf6040800000000000000
+      internalID: 4643173090850043330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_6
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 216
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5508a3d2e84172140800000000000000
+      internalID: 4694743737433751637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_7
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 216
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfa17755bce39000800000000000000
+      internalID: 41637085176770486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_8
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 216
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea022f788f4b12290800000000000000
+      internalID: -7916847690414939986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_9
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 216
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22fe3b2e0b7e6ed0800000000000000
+      internalID: -2418860649066073558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 176
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d07fe2e72a8eba40800000000000000
+      internalID: 5385894108297392344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_11
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 176
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849f9c7feae05dc50800000000000000
+      internalID: 6689268966173047112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 176
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde58d69f1a915b30800000000000000
+      internalID: 4274366981816737500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_13
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 176
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5ba81baed224170800000000000000
+      internalID: 8161135960773015037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_14
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 176
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024adab23c8a65070800000000000000
+      internalID: 8094842936449934368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_15
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 176
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a79fefb316961f0800000000000000
+      internalID: -1051202127705572814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_16
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 176
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0c23cf60ec4a6d0800000000000000
+      internalID: -2980030524016115468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_17
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 176
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32a12c8393ac0120800000000000000
+      internalID: 2381458157078684218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_18
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 176
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefdd4b74f63d57a0800000000000000
+      internalID: -6386888272872874001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_19
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 176
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e399d748925e2c50800000000000000
+      internalID: 6642337314412008417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 136
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e450dd32ad353a00800000000000000
+      internalID: 735561881176003816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_21
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 136
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a02e870c1acb0ed0800000000000000
+      internalID: -2446639750811082584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 136
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5e1d55905f34b80800000000000000
+      internalID: -8411610258554624583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_23
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 136
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20002d3284a2caa60800000000000000
+      internalID: 7686565153341571074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_24
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 136
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af69eae7ce28f310800000000000000
+      internalID: 1438951517119410084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_25
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 136
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c10df5d4b8c44bd0800000000000000
+      internalID: -2646770001977212471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_26
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 136
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e212d7c8454a7a0800000000000000
+      internalID: -6366871010823557481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_27
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 136
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12eeda845b798f50800000000000000
+      internalID: 6884169108449845786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_28
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 136
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a1e75f74f378a30800000000000000
+      internalID: 4217409154349668878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_29
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 136
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c746cf60c660762a0800000000000000
+      internalID: -6744414855920589700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_30
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 96
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14ae14ecca40bda0800000000000000
+      internalID: -5931158465385946086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_31
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 96
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62db5b57610ae5870800000000000000
+      internalID: 8673545950686723366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_32
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 96
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42613fdc276827100800000000000000
+      internalID: 104293569022596644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_33
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 96
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb2d8e87691e7a20800000000000000
+      internalID: 3061912729222458364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_34
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 96
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc97636968714fed0800000000000000
+      internalID: -2381252436158940721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_35
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 96
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32c0458cf3b86b20800000000000000
+      internalID: 3127947838357553723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_36
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 96
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487d06f371419b4d0800000000000000
+      internalID: -3118439176897243260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_37
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 96
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd02a9662a7fe220800000000000000
+      internalID: 2517365022122970585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_38
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 96
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43c4c75aff49a910800000000000000
+      internalID: 1849097058645230410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_39
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 96
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0888aca9694b7320800000000000000
+      internalID: 2556717931680008205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_40
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 56
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e0bf1caeffda2c0800000000000000
+      internalID: -4418594275638702547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_41
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 56
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fd3f808b01af900800000000000000
+      internalID: 718905473129242440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_42
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 56
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f735194fa876ec0800000000000000
+      internalID: -3573734996280377583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_43
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 56
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be34d0428f801dad0800000000000000
+      internalID: -2679350441458973717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_44
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 56
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a4f7b4a5ac84e90800000000000000
+      internalID: -7041155528231269823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_45
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 56
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec58c0ced35fcac0800000000000000
+      internalID: -3832752541686801183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_46
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 56
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b070dd4229a3769f0800000000000000
+      internalID: -475346836306196725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_47
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 56
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b644b2b535417980800000000000000
+      internalID: -8542970921211377999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_48
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 56
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54b2be4f4969d010800000000000000
+      internalID: 1214117363896726623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_49
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 56
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b86e8727552da310800000000000000
+      internalID: 1417830513947601077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_50
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 16
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260c79a337c539700800000000000000
+      internalID: 545881629815980130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_51
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 16
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b9c76764eed67b0800000000000000
+      internalID: -5229261605904278733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_52
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 16
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252007b112b9eaeb0800000000000000
+      internalID: -4706653994059038126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_53
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 16
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddfcbce486815d20800000000000000
+      internalID: 3265539110285934039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_54
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 16
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f650e4c3d8840740800000000000000
+      internalID: 5117365519722239737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_55
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 16
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b511bb289acf092f0800000000000000
+      internalID: -967996114911686309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_56
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 16
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd6bd1ed5b39eca0800000000000000
+      internalID: -5987188955205112373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_57
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 16
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af52efbdc0a92c030800000000000000
+      internalID: 3513540039323559418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_58
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 16
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db14f8096590bae0800000000000000
+      internalID: -1535563194579018792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lady-zombieR1_59
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 16
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d33730313296fd0800000000000000
+      internalID: -2348307166127768315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
