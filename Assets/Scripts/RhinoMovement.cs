@@ -2,19 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum RhinoState
+{
+    walk,
+    attack
+}
 public class RhinoMovement : MonoBehaviour
 {
+    public RhinoState currentState;
     public float speed;
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator animator;
+    private int i = 0;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        currentState = RhinoState.walk;
         animator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
+        animator.SetFloat("moveX", 0);
+        animator.SetFloat("moveY", -1);
     }
 
     // Update is called once per frame
@@ -23,7 +33,25 @@ public class RhinoMovement : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        UpdateAnimationAndMove();
+        if (Input.GetButtonDown("attack") && currentState != RhinoState.attack)
+        {
+            Debug.Log("attack" + i++);
+            StartCoroutine(AttackCo());
+        }
+        else if (currentState == RhinoState.walk)
+        {
+            UpdateAnimationAndMove();
+        }
+    }
+
+    private IEnumerator AttackCo()
+    {
+        animator.SetBool("attacking", true);
+        currentState = RhinoState.attack;
+        yield return null;
+        animator.SetBool("attacking", false);
+        yield return new WaitForSeconds(.62f);
+        currentState = RhinoState.walk;
     }
 
     void UpdateAnimationAndMove()
