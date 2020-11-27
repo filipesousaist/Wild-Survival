@@ -10,6 +10,9 @@ public class EnemyMovement : MonoBehaviour
     private Vector3 change;
     private Animator animator;
 
+    private static readonly float MIN_DIST = 1;
+    private static readonly float MAX_DIST = 12;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +26,8 @@ public class EnemyMovement : MonoBehaviour
         change = Vector3.zero;
         change.x = player.transform.position.x - transform.position.x;
         change.y = player.transform.position.y - transform.position.y;
-        if (change.magnitude < 0.1)
+        float distance = change.magnitude;
+        if (distance <= MIN_DIST || distance >= MAX_DIST)
             change = Vector3.zero;
         UpdateAnimationAndMove();
     }
