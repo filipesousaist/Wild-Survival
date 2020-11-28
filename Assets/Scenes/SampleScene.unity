@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 158738085}
   - component: {fileID: 158738086}
   m_Layer: 0
-  m_Name: ' down hit box'
+  m_Name: down hit box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 425848076}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 499042341}
   m_Layer: 0
   m_Name: Rhino
-  m_TagString: Untagged
+  m_TagString: rhino
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -697,9 +697,10 @@ GameObject:
   - component: {fileID: 1444409231}
   - component: {fileID: 1444409229}
   - component: {fileID: 1444409230}
+  - component: {fileID: 1444409235}
   m_Layer: 0
   m_Name: ZombieF
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -736,7 +737,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  player: {fileID: 425848070}
+  chaseRadius: 10
+  attackRadius: 1.5
+  attackDuration: 0.68
+  maxAttackWaitTime: 2
 --- !u!61 &1444409231
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -750,7 +754,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.017436743, y: -1.2961354}
+  m_Offset: {x: -0.04149604, y: -0.8357965}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -761,7 +765,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5466433, y: 0.6122229}
+  m_Size: {x: 1.2447715, y: 1.3252676}
   m_EdgeRadius: 0
 --- !u!50 &1444409232
 Rigidbody2D:
@@ -843,12 +847,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444409228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.23, y: 0.48, z: 0}
+  m_LocalPosition: {x: 4.14, y: 1.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1444409235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444409228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ccae2552caa4243b280480aa6bbe35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  baseAttack: 2
 --- !u!1 &1755303564
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,7 +944,7 @@ GameObject:
   - component: {fileID: 2147021478}
   - component: {fileID: 2147021479}
   m_Layer: 0
-  m_Name: ' right hit box'
+  m_Name: right hit box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
