@@ -2,32 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class Zombie : Enemy
 {
-    public float speed;
     public GameObject player;
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator animator;
 
-    private static readonly float MIN_DIST = 1;
+    private static readonly float MIN_DIST = 3;
     private static readonly float MAX_DIST = 12;
 
     // Start is called before the first frame update
     void Start()
     {
+        currentState = EnemyState.idle;
         animator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         change = Vector3.zero;
         change.x = player.transform.position.x - transform.position.x;
         change.y = player.transform.position.y - transform.position.y;
         float distance = change.magnitude;
-        if (distance <= MIN_DIST || distance >= MAX_DIST)
+        if (distance <= MIN_DIST || distance >= MAX_DIST ||
+            (currentState != EnemyState.walk && currentState != EnemyState.idle))
             change = Vector3.zero;
         UpdateAnimationAndMove();
     }
@@ -50,7 +51,16 @@ public class EnemyMovement : MonoBehaviour
     void MoveCharacter()
     {
         myRigidBody.MovePosition(
-            transform.position + change.normalized * speed * Time.deltaTime
+            transform.position + change.normalized * moveSpeed * Time.deltaTime
         );
+        ChangeState(EnemyState.walk);
+    }
+
+    private void ChangeState(EnemyState newState)
+    {
+        if (currentState != newState)
+        {
+            currentState = newState;
+        }
     }
 }
