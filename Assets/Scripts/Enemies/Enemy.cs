@@ -17,11 +17,6 @@ public class Enemy : MonoBehaviour
     public float health;
     public string enemyName;
     public int baseAttack;
-    public float moveSpeed;
-    public float chaseRadius;
-    public float attackRadius;
-    public float attackDuration;
-    public float maxAttackWaitTime;
 
     private void Awake()
     {

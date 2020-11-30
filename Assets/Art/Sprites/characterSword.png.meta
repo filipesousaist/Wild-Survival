@@ -1790,6 +1790,612 @@ TextureImporter:
   - first:
       213: 1585074595981015150
     second: characterSword_595
+  - first:
+      213: -1363087575427189996
+    second: characterSword_0
+  - first:
+      213: 1385915250810834233
+    second: characterSword_1
+  - first:
+      213: 6856035498893939600
+    second: characterSword_2
+  - first:
+      213: 1138467377372025052
+    second: characterSword_3
+  - first:
+      213: -4209591819829438538
+    second: characterSword_4
+  - first:
+      213: -8187767956266302974
+    second: characterSword_5
+  - first:
+      213: 5049543517511997003
+    second: characterSword_6
+  - first:
+      213: -3455412570276256300
+    second: characterSword_7
+  - first:
+      213: -8221873467562653813
+    second: characterSword_8
+  - first:
+      213: -6662554594868035186
+    second: characterSword_9
+  - first:
+      213: -1805524873360237254
+    second: characterSword_10
+  - first:
+      213: 3099522131477610673
+    second: characterSword_11
+  - first:
+      213: -8484763366860098630
+    second: characterSword_12
+  - first:
+      213: 8904333341610086384
+    second: characterSword_13
+  - first:
+      213: -5041941998245992286
+    second: characterSword_14
+  - first:
+      213: -1012502044807756498
+    second: characterSword_15
+  - first:
+      213: -5317746689399613263
+    second: characterSword_16
+  - first:
+      213: -1260390646164694107
+    second: characterSword_17
+  - first:
+      213: -453894297313627274
+    second: characterSword_18
+  - first:
+      213: 8629010888992104872
+    second: characterSword_19
+  - first:
+      213: 2461770782732035870
+    second: characterSword_20
+  - first:
+      213: 3354887562790704479
+    second: characterSword_21
+  - first:
+      213: -7021852391089902297
+    second: characterSword_22
+  - first:
+      213: -71463123761421810
+    second: characterSword_23
+  - first:
+      213: -8264476678933990597
+    second: characterSword_24
+  - first:
+      213: -328294693527181816
+    second: characterSword_25
+  - first:
+      213: -4003714224030150510
+    second: characterSword_26
+  - first:
+      213: 1775607473524513988
+    second: characterSword_27
+  - first:
+      213: -9124837046537079508
+    second: characterSword_28
+  - first:
+      213: -7325645415851218618
+    second: characterSword_29
+  - first:
+      213: 8841199501832256682
+    second: characterSword_30
+  - first:
+      213: -4440068104393474162
+    second: characterSword_31
+  - first:
+      213: -6343485844363849500
+    second: characterSword_32
+  - first:
+      213: -3211106532531974174
+    second: characterSword_33
+  - first:
+      213: -2266708191100726755
+    second: characterSword_34
+  - first:
+      213: -3866194194646060418
+    second: characterSword_35
+  - first:
+      213: 2162260599940766051
+    second: characterSword_36
+  - first:
+      213: -33206864238920483
+    second: characterSword_37
+  - first:
+      213: -6623486497102688151
+    second: characterSword_38
+  - first:
+      213: 272042554457757960
+    second: characterSword_39
+  - first:
+      213: 231755635927222077
+    second: characterSword_40
+  - first:
+      213: -6840298186097342431
+    second: characterSword_41
+  - first:
+      213: 628492051583580541
+    second: characterSword_42
+  - first:
+      213: -8537115648801520783
+    second: characterSword_43
+  - first:
+      213: -543697938790336598
+    second: characterSword_44
+  - first:
+      213: 2442300879527266305
+    second: characterSword_45
+  - first:
+      213: -3162280785595500
+    second: characterSword_46
+  - first:
+      213: -1337403503121357394
+    second: characterSword_47
+  - first:
+      213: -3869475026060448574
+    second: characterSword_48
+  - first:
+      213: -1817745541502717301
+    second: characterSword_49
+  - first:
+      213: -448818632256997034
+    second: characterSword_50
+  - first:
+      213: 509533961930024071
+    second: characterSword_51
+  - first:
+      213: -7970450720007220814
+    second: characterSword_52
+  - first:
+      213: 8330923798817305125
+    second: characterSword_53
+  - first:
+      213: -3461279002804601694
+    second: characterSword_54
+  - first:
+      213: -1092013016028773616
+    second: characterSword_55
+  - first:
+      213: 5843495466234869495
+    second: characterSword_56
+  - first:
+      213: 6543201916948920690
+    second: characterSword_57
+  - first:
+      213: 592110702398550019
+    second: characterSword_58
+  - first:
+      213: 2922652299172192864
+    second: characterSword_59
+  - first:
+      213: 6004392491928561034
+    second: characterSword_60
+  - first:
+      213: 4477121048151542158
+    second: characterSword_61
+  - first:
+      213: 5375297842544916040
+    second: characterSword_62
+  - first:
+      213: 8254148153549109778
+    second: characterSword_63
+  - first:
+      213: -2166420303391397670
+    second: characterSword_64
+  - first:
+      213: -1180753398959600391
+    second: characterSword_65
+  - first:
+      213: -4242122231495659923
+    second: characterSword_66
+  - first:
+      213: 841279604160643617
+    second: characterSword_67
+  - first:
+      213: 1074993872207262595
+    second: characterSword_68
+  - first:
+      213: -1294497204686504715
+    second: characterSword_69
+  - first:
+      213: 8697959944884390203
+    second: characterSword_70
+  - first:
+      213: 7447659438027699082
+    second: characterSword_71
+  - first:
+      213: -7589175978204816101
+    second: characterSword_72
+  - first:
+      213: 8527034276945567603
+    second: characterSword_73
+  - first:
+      213: -5822839046356014537
+    second: characterSword_74
+  - first:
+      213: 4802495622979459834
+    second: characterSword_75
+  - first:
+      213: 7660045167936967318
+    second: characterSword_76
+  - first:
+      213: 7210987686811358346
+    second: characterSword_77
+  - first:
+      213: 6281819899310048123
+    second: characterSword_78
+  - first:
+      213: 377433166285586910
+    second: characterSword_79
+  - first:
+      213: 4055886905283840606
+    second: characterSword_80
+  - first:
+      213: -5886407757470240629
+    second: characterSword_81
+  - first:
+      213: -5770183801611427141
+    second: characterSword_82
+  - first:
+      213: -3087957058521969961
+    second: characterSword_83
+  - first:
+      213: 2742498909605222386
+    second: characterSword_84
+  - first:
+      213: 4468824898737181609
+    second: characterSword_85
+  - first:
+      213: -4374318474867476814
+    second: characterSword_86
+  - first:
+      213: 8083143508440450786
+    second: characterSword_87
+  - first:
+      213: 4056764441395910641
+    second: characterSword_88
+  - first:
+      213: -6948095062407505920
+    second: characterSword_89
+  - first:
+      213: -9104427376407946205
+    second: characterSword_90
+  - first:
+      213: 6469828162961058773
+    second: characterSword_91
+  - first:
+      213: 7234560508272127095
+    second: characterSword_92
+  - first:
+      213: 7770885266593578947
+    second: characterSword_93
+  - first:
+      213: 1505898821889592190
+    second: characterSword_94
+  - first:
+      213: -7998877096269747534
+    second: characterSword_95
+  - first:
+      213: 6546613236633377617
+    second: characterSword_96
+  - first:
+      213: -3570401611667841752
+    second: characterSword_97
+  - first:
+      213: 7300468325545156653
+    second: characterSword_98
+  - first:
+      213: 424999945773798550
+    second: characterSword_99
+  - first:
+      213: 1679001644481430867
+    second: characterSword_100
+  - first:
+      213: -3057782002384962074
+    second: characterSword_101
+  - first:
+      213: -1478964697206938588
+    second: characterSword_102
+  - first:
+      213: -2987362804966755190
+    second: characterSword_103
+  - first:
+      213: 3251011590793888136
+    second: characterSword_104
+  - first:
+      213: 1996845598296942231
+    second: characterSword_105
+  - first:
+      213: -7339884463292271610
+    second: characterSword_106
+  - first:
+      213: 6774371893361752171
+    second: characterSword_107
+  - first:
+      213: 3697160695087093239
+    second: characterSword_108
+  - first:
+      213: -7374852754942558399
+    second: characterSword_109
+  - first:
+      213: -5134919000553775631
+    second: characterSword_110
+  - first:
+      213: 8090521867300443360
+    second: characterSword_111
+  - first:
+      213: 302785690612296377
+    second: characterSword_112
+  - first:
+      213: -3993619305473726965
+    second: characterSword_113
+  - first:
+      213: -8851871093438679246
+    second: characterSword_114
+  - first:
+      213: 4670382494342358779
+    second: characterSword_115
+  - first:
+      213: 6532836591631199694
+    second: characterSword_116
+  - first:
+      213: 1806730705775458283
+    second: characterSword_117
+  - first:
+      213: 757592909678018178
+    second: characterSword_118
+  - first:
+      213: -5584093826176078919
+    second: characterSword_119
+  - first:
+      213: 1021041388973717400
+    second: characterSword_120
+  - first:
+      213: -3659524622630497948
+    second: characterSword_121
+  - first:
+      213: -6525808030441368395
+    second: characterSword_122
+  - first:
+      213: -7210243549627836258
+    second: characterSword_123
+  - first:
+      213: -5212349448730775408
+    second: characterSword_124
+  - first:
+      213: -2025059493598845823
+    second: characterSword_125
+  - first:
+      213: 2728634630716164206
+    second: characterSword_126
+  - first:
+      213: 6643592546274458495
+    second: characterSword_127
+  - first:
+      213: 7026900694280984481
+    second: characterSword_128
+  - first:
+      213: -4492740527079629660
+    second: characterSword_129
+  - first:
+      213: 388597272238191045
+    second: characterSword_130
+  - first:
+      213: -4772833502988809042
+    second: characterSword_131
+  - first:
+      213: -1307898141708173537
+    second: characterSword_132
+  - first:
+      213: 6980620093334529697
+    second: characterSword_133
+  - first:
+      213: -8678181057704334396
+    second: characterSword_134
+  - first:
+      213: 6461441510287159191
+    second: characterSword_135
+  - first:
+      213: -5025138040239973104
+    second: characterSword_136
+  - first:
+      213: 569788618404521503
+    second: characterSword_137
+  - first:
+      213: 2755961441967142316
+    second: characterSword_138
+  - first:
+      213: 7842171372730507654
+    second: characterSword_139
+  - first:
+      213: 1765047664058614113
+    second: characterSword_140
+  - first:
+      213: 5359692897597553980
+    second: characterSword_141
+  - first:
+      213: -7140675014437182159
+    second: characterSword_142
+  - first:
+      213: 6945198640655782952
+    second: characterSword_143
+  - first:
+      213: 6477254073825960852
+    second: characterSword_144
+  - first:
+      213: -8751143463534627367
+    second: characterSword_145
+  - first:
+      213: 3479559703626379043
+    second: characterSword_146
+  - first:
+      213: -3983914588973230316
+    second: characterSword_147
+  - first:
+      213: 1343086627404104409
+    second: characterSword_148
+  - first:
+      213: -2364553104019790985
+    second: characterSword_149
+  - first:
+      213: 4029012016255763104
+    second: characterSword_150
+  - first:
+      213: -688465747058399056
+    second: characterSword_151
+  - first:
+      213: -5256672139947658020
+    second: characterSword_152
+  - first:
+      213: -7392109549463822216
+    second: characterSword_153
+  - first:
+      213: -5129396465465900073
+    second: characterSword_154
+  - first:
+      213: -2915425124206663042
+    second: characterSword_155
+  - first:
+      213: -6751933651710844647
+    second: characterSword_156
+  - first:
+      213: 3455834688964974824
+    second: characterSword_157
+  - first:
+      213: 90237829096352271
+    second: characterSword_158
+  - first:
+      213: 3744337749009714477
+    second: characterSword_159
+  - first:
+      213: -6475631772952944677
+    second: characterSword_160
+  - first:
+      213: -3727864533422481239
+    second: characterSword_161
+  - first:
+      213: -7433210813791828220
+    second: characterSword_162
+  - first:
+      213: 1178529114877949125
+    second: characterSword_163
+  - first:
+      213: 6453067678189973959
+    second: characterSword_164
+  - first:
+      213: -2211038752396148860
+    second: characterSword_165
+  - first:
+      213: -711245843824628317
+    second: characterSword_166
+  - first:
+      213: -6403907620043524443
+    second: characterSword_167
+  - first:
+      213: 6274065580002926793
+    second: characterSword_168
+  - first:
+      213: -1517678483738072304
+    second: characterSword_169
+  - first:
+      213: -2370640796369185318
+    second: characterSword_170
+  - first:
+      213: -689250849158081434
+    second: characterSword_171
+  - first:
+      213: 6727409347567969605
+    second: characterSword_172
+  - first:
+      213: 8424041504240891518
+    second: characterSword_173
+  - first:
+      213: -1983330532422779269
+    second: characterSword_174
+  - first:
+      213: -4363470774823731966
+    second: characterSword_175
+  - first:
+      213: 8566466327972646875
+    second: characterSword_176
+  - first:
+      213: -653222240838360798
+    second: characterSword_177
+  - first:
+      213: -3311850786295959226
+    second: characterSword_178
+  - first:
+      213: -1002038485556827501
+    second: characterSword_179
+  - first:
+      213: 4335229458644407694
+    second: characterSword_180
+  - first:
+      213: -3458644063342965026
+    second: characterSword_181
+  - first:
+      213: 317467058209397174
+    second: characterSword_182
+  - first:
+      213: -5127763748053721753
+    second: characterSword_183
+  - first:
+      213: -3673664884453448054
+    second: characterSword_184
+  - first:
+      213: -6139128782257163802
+    second: characterSword_185
+  - first:
+      213: 5528645544399890313
+    second: characterSword_186
+  - first:
+      213: 6802130015314423992
+    second: characterSword_187
+  - first:
+      213: -238282832026218527
+    second: characterSword_188
+  - first:
+      213: -6400412084576717030
+    second: characterSword_189
+  - first:
+      213: -8098095592980053164
+    second: characterSword_190
+  - first:
+      213: 1089848071565078782
+    second: characterSword_191
+  - first:
+      213: -3280861890369904380
+    second: characterSword_192
+  - first:
+      213: 1959572295370535390
+    second: characterSword_193
+  - first:
+      213: 5185447526717668109
+    second: characterSword_194
+  - first:
+      213: -2992976631094101847
+    second: characterSword_195
+  - first:
+      213: 5089962329176406843
+    second: characterSword_196
+  - first:
+      213: -5785055667159301946
+    second: characterSword_197
+  - first:
+      213: -8383483116398949968
+    second: characterSword_198
+  - first:
+      213: 713588499558093303
+    second: characterSword_199
+  - first:
+      213: 2418929405448060717
+    second: characterSword_200
+  - first:
+      213: -7839900752810188027
+    second: characterSword_201
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1878,10 +2484,10 @@ TextureImporter:
       name: characterSword_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 2049
-        width: 32
-        height: 50
+        x: 0
+        y: 2042
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1889,8 +2495,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7ab75a00b5bf0560800000000000000
-      internalID: 7282238890173774461
+      spriteID: 413f9e47217551de0800000000000000
+      internalID: -1363087575427189996
       vertices: []
       indices: 
       edges: []
@@ -1899,10 +2505,10 @@ TextureImporter:
       name: characterSword_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 2049
-        width: 30
-        height: 50
+        x: 64
+        y: 2042
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1910,8 +2516,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5cc63716df3604f0800000000000000
-      internalID: -862932089849852833
+      spriteID: 93d4065e392cb3310800000000000000
+      internalID: 1385915250810834233
       vertices: []
       indices: 
       edges: []
@@ -1920,10 +2526,10 @@ TextureImporter:
       name: characterSword_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 2049
-        width: 30
-        height: 50
+        x: 128
+        y: 2042
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1931,8 +2537,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1628249cd83a52670800000000000000
-      internalID: 8513390499976086113
+      spriteID: 0939a0f16f7852f50800000000000000
+      internalID: 6856035498893939600
       vertices: []
       indices: 
       edges: []
@@ -1941,10 +2547,10 @@ TextureImporter:
       name: characterSword_3
       rect:
         serializedVersion: 2
-        x: 205
-        y: 2049
-        width: 38
-        height: 50
+        x: 192
+        y: 2042
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1952,8 +2558,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0445cb82ebb2089a0800000000000000
-      internalID: -6232933788553554880
+      spriteID: cd051a04c06accf00800000000000000
+      internalID: 1138467377372025052
       vertices: []
       indices: 
       edges: []
@@ -1962,10 +2568,10 @@ TextureImporter:
       name: characterSword_4
       rect:
         serializedVersion: 2
-        x: 262
-        y: 2049
-        width: 52
-        height: 50
+        x: 256
+        y: 2042
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1973,8 +2579,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa3bfd72d04d0b990800000000000000
-      internalID: -7372159437036866641
+      spriteID: 6b71da11b868495c0800000000000000
+      internalID: -4209591819829438538
       vertices: []
       indices: 
       edges: []
@@ -1983,10 +2589,10 @@ TextureImporter:
       name: characterSword_5
       rect:
         serializedVersion: 2
-        x: 327
-        y: 2049
-        width: 50
-        height: 50
+        x: 320
+        y: 2042
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1994,8 +2600,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e707485fb006d2930800000000000000
-      internalID: 4120054838593876094
+      spriteID: 202cb67ac643f5e80800000000000000
+      internalID: -8187767956266302974
       vertices: []
       indices: 
       edges: []
@@ -2004,10 +2610,10 @@ TextureImporter:
       name: characterSword_6
       rect:
         serializedVersion: 2
-        x: 397
-        y: 2049
-        width: 38
-        height: 50
+        x: 384
+        y: 2042
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2015,8 +2621,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2f0bb1474da54660800000000000000
-      internalID: 7369486886818746154
+      spriteID: b46dd275315931640800000000000000
+      internalID: 5049543517511997003
       vertices: []
       indices: 
       edges: []
@@ -2025,10 +2631,10 @@ TextureImporter:
       name: characterSword_7
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1985
-        width: 24
-        height: 51
+        x: 0
+        y: 1978
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2036,8 +2642,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f913a6e1dcc54970800000000000000
-      internalID: 8738615853871995380
+      spriteID: 4d5a34c2398eb00d0800000000000000
+      internalID: -3455412570276256300
       vertices: []
       indices: 
       edges: []
@@ -2046,10 +2652,10 @@ TextureImporter:
       name: characterSword_8
       rect:
         serializedVersion: 2
-        x: 84
-        y: 1985
-        width: 25
-        height: 51
+        x: 64
+        y: 1978
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2057,8 +2663,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b51c961dea639e460800000000000000
-      internalID: 7271403197831954779
+      spriteID: b8708b184a906ed80800000000000000
+      internalID: -8221873467562653813
       vertices: []
       indices: 
       edges: []
@@ -2067,10 +2673,10 @@ TextureImporter:
       name: characterSword_9
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1985
-        width: 24
-        height: 51
+        x: 128
+        y: 1978
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2078,8 +2684,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d295bfa0f22f2b080800000000000000
-      internalID: -9173003207138649811
+      spriteID: e818e3c45e9d983a0800000000000000
+      internalID: -6662554594868035186
       vertices: []
       indices: 
       edges: []
@@ -2088,10 +2694,10 @@ TextureImporter:
       name: characterSword_10
       rect:
         serializedVersion: 2
-        x: 211
-        y: 1985
-        width: 28
-        height: 51
+        x: 192
+        y: 1978
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2099,8 +2705,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56725e2d9bde7b220800000000000000
-      internalID: 2501729500390565733
+      spriteID: a3d1b3a91bc71f6e0800000000000000
+      internalID: -1805524873360237254
       vertices: []
       indices: 
       edges: []
@@ -2109,10 +2715,10 @@ TextureImporter:
       name: characterSword_11
       rect:
         serializedVersion: 2
-        x: 273
-        y: 1985
-        width: 35
-        height: 51
+        x: 256
+        y: 1978
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2120,8 +2726,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b1d691bfb0a5c590800000000000000
-      internalID: -7654535246467640907
+      spriteID: 1b04f24e4f6b30b20800000000000000
+      internalID: 3099522131477610673
       vertices: []
       indices: 
       edges: []
@@ -2130,10 +2736,10 @@ TextureImporter:
       name: characterSword_12
       rect:
         serializedVersion: 2
-        x: 337
-        y: 1985
-        width: 35
-        height: 51
+        x: 320
+        y: 1978
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2141,8 +2747,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10612d085155d28f0800000000000000
-      internalID: -563700827507517951
+      spriteID: ab37e0b0ca0104a80800000000000000
+      internalID: -8484763366860098630
       vertices: []
       indices: 
       edges: []
@@ -2151,10 +2757,10 @@ TextureImporter:
       name: characterSword_13
       rect:
         serializedVersion: 2
-        x: 403
-        y: 1985
-        width: 30
-        height: 51
+        x: 384
+        y: 1978
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2162,8 +2768,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfbf54b9c98484bf0800000000000000
-      internalID: -339941934409319429
+      spriteID: 0ff065c3ffb829b70800000000000000
+      internalID: 8904333341610086384
       vertices: []
       indices: 
       edges: []
@@ -2172,10 +2778,10 @@ TextureImporter:
       name: characterSword_14
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1921
-        width: 32
-        height: 52
+        x: 0
+        y: 1914
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2183,8 +2789,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3761ca270b5c866b0800000000000000
-      internalID: -5302771199599962509
+      spriteID: 2a8ac68477c670ab0800000000000000
+      internalID: -5041941998245992286
       vertices: []
       indices: 
       edges: []
@@ -2193,10 +2799,10 @@ TextureImporter:
       name: characterSword_15
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1921
-        width: 32
-        height: 52
+        x: 64
+        y: 1914
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2204,8 +2810,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2606bbb637de28950800000000000000
-      internalID: 6449978696332435554
+      spriteID: e2580e431ced2f1f0800000000000000
+      internalID: -1012502044807756498
       vertices: []
       indices: 
       edges: []
@@ -2214,10 +2820,10 @@ TextureImporter:
       name: characterSword_16
       rect:
         serializedVersion: 2
-        x: 145
-        y: 1921
-        width: 30
-        height: 52
+        x: 128
+        y: 1914
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2225,8 +2831,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a24f7033003679230800000000000000
-      internalID: 3645491275887014954
+      spriteID: 1b893d48f819336b0800000000000000
+      internalID: -5317746689399613263
       vertices: []
       indices: 
       edges: []
@@ -2235,10 +2841,10 @@ TextureImporter:
       name: characterSword_17
       rect:
         serializedVersion: 2
-        x: 205
-        y: 1921
-        width: 38
-        height: 52
+        x: 192
+        y: 1914
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2246,8 +2852,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a05487aeb3b1048f0800000000000000
-      internalID: -558416409643170550
+      spriteID: 5abd0299261328ee0800000000000000
+      internalID: -1260390646164694107
       vertices: []
       indices: 
       edges: []
@@ -2256,10 +2862,10 @@ TextureImporter:
       name: characterSword_18
       rect:
         serializedVersion: 2
-        x: 262
-        y: 1921
-        width: 52
-        height: 52
+        x: 256
+        y: 1914
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2267,8 +2873,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce7b31828a269b6a0800000000000000
-      internalID: -6433002118355634196
+      spriteID: 673bb0b9a8173b9f0800000000000000
+      internalID: -453894297313627274
       vertices: []
       indices: 
       edges: []
@@ -2277,10 +2883,10 @@ TextureImporter:
       name: characterSword_19
       rect:
         serializedVersion: 2
-        x: 327
-        y: 1921
-        width: 50
-        height: 52
+        x: 320
+        y: 1914
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2288,8 +2894,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d32ad94e246d44250800000000000000
-      internalID: 5928098592318136893
+      spriteID: 8a12a516fa760c770800000000000000
+      internalID: 8629010888992104872
       vertices: []
       indices: 
       edges: []
@@ -2298,10 +2904,10 @@ TextureImporter:
       name: characterSword_20
       rect:
         serializedVersion: 2
-        x: 398
-        y: 1921
-        width: 36
-        height: 52
+        x: 384
+        y: 1914
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2309,8 +2915,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3740080a5cf2acb50800000000000000
-      internalID: 6614151528594801779
+      spriteID: e17ad2fdb77f92220800000000000000
+      internalID: 2461770782732035870
       vertices: []
       indices: 
       edges: []
@@ -2319,10 +2925,10 @@ TextureImporter:
       name: characterSword_21
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1857
-        width: 24
-        height: 51
+        x: 0
+        y: 1850
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2330,8 +2936,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 922f8698bed095950800000000000000
-      internalID: 6438192447576666665
+      spriteID: f551481a674fe8e20800000000000000
+      internalID: 3354887562790704479
       vertices: []
       indices: 
       edges: []
@@ -2340,10 +2946,10 @@ TextureImporter:
       name: characterSword_22
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1857
-        width: 25
-        height: 51
+        x: 64
+        y: 1850
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2351,8 +2957,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c369bb8edcd9bf440800000000000000
-      internalID: 4970740121431938620
+      spriteID: 72debd3247e5d8e90800000000000000
+      internalID: -7021852391089902297
       vertices: []
       indices: 
       edges: []
@@ -2361,10 +2967,10 @@ TextureImporter:
       name: characterSword_23
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1857
-        width: 24
-        height: 51
+        x: 128
+        y: 1850
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2372,8 +2978,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae1b58584795f9fe0800000000000000
-      internalID: -1180126220356570646
+      spriteID: e0229a5eaac120ff0800000000000000
+      internalID: -71463123761421810
       vertices: []
       indices: 
       edges: []
@@ -2382,10 +2988,10 @@ TextureImporter:
       name: characterSword_24
       rect:
         serializedVersion: 2
-        x: 209
-        y: 1857
-        width: 28
-        height: 51
+        x: 192
+        y: 1850
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2393,8 +2999,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 602a71e099d93c310800000000000000
-      internalID: 1424155187871195654
+      spriteID: b33b3a16f3eae4d80800000000000000
+      internalID: -8264476678933990597
       vertices: []
       indices: 
       edges: []
@@ -2403,10 +3009,10 @@ TextureImporter:
       name: characterSword_25
       rect:
         serializedVersion: 2
-        x: 268
-        y: 1857
-        width: 35
-        height: 51
+        x: 256
+        y: 1850
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2414,8 +3020,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84b10a7b86e802720800000000000000
-      internalID: 2819409947142396744
+      spriteID: 806aaa237b9a17bf0800000000000000
+      internalID: -328294693527181816
       vertices: []
       indices: 
       edges: []
@@ -2424,10 +3030,10 @@ TextureImporter:
       name: characterSword_26
       rect:
         serializedVersion: 2
-        x: 332
-        y: 1857
-        width: 35
-        height: 51
+        x: 320
+        y: 1850
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2435,8 +3041,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f0388b7486d6e390800000000000000
-      internalID: -7789302640994144011
+      spriteID: 29011863023ff68c0800000000000000
+      internalID: -4003714224030150510
       vertices: []
       indices: 
       edges: []
@@ -2445,10 +3051,10 @@ TextureImporter:
       name: characterSword_27
       rect:
         serializedVersion: 2
-        x: 399
-        y: 1857
-        width: 31
-        height: 51
+        x: 384
+        y: 1850
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2456,8 +3062,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4827e017cf55ad520800000000000000
-      internalID: 2727587067043148420
+      spriteID: 4cc15ffe69934a810800000000000000
+      internalID: 1775607473524513988
       vertices: []
       indices: 
       edges: []
@@ -2466,10 +3072,10 @@ TextureImporter:
       name: characterSword_28
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1793
-        width: 32
-        height: 50
+        x: 0
+        y: 1786
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2477,8 +3083,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4a623181cc42e860800000000000000
-      internalID: 7557687518661077580
+      spriteID: c2535d73d011e5180800000000000000
+      internalID: -9124837046537079508
       vertices: []
       indices: 
       edges: []
@@ -2487,10 +3093,10 @@ TextureImporter:
       name: characterSword_29
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1791
-        width: 28
-        height: 51
+        x: 64
+        y: 1786
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2498,8 +3104,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3c7914de3f7d18c0800000000000000
-      internalID: -4026922583976215489
+      spriteID: 64928b5ae44165a90800000000000000
+      internalID: -7325645415851218618
       vertices: []
       indices: 
       edges: []
@@ -2508,10 +3114,10 @@ TextureImporter:
       name: characterSword_30
       rect:
         serializedVersion: 2
-        x: 149
-        y: 1791
-        width: 25
-        height: 52
+        x: 128
+        y: 1786
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2519,8 +3125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cba0aaffad7845b30800000000000000
-      internalID: 4275191320943397564
+      spriteID: aac721faa1042ba70800000000000000
+      internalID: 8841199501832256682
       vertices: []
       indices: 
       edges: []
@@ -2529,10 +3135,10 @@ TextureImporter:
       name: characterSword_31
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1791
-        width: 25
-        height: 52
+        x: 192
+        y: 1786
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2540,8 +3146,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fdb63a13dfe49f30800000000000000
-      internalID: 4581550410899570160
+      spriteID: e8fb5136595b162c0800000000000000
+      internalID: -4440068104393474162
       vertices: []
       indices: 
       edges: []
@@ -2550,10 +3156,10 @@ TextureImporter:
       name: characterSword_32
       rect:
         serializedVersion: 2
-        x: 278
-        y: 1791
-        width: 25
-        height: 51
+        x: 256
+        y: 1786
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2561,8 +3167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8909950aa43eca810800000000000000
-      internalID: 1778045862561812632
+      spriteID: 4e059f8db3967f7a0800000000000000
+      internalID: -6343485844363849500
       vertices: []
       indices: 
       edges: []
@@ -2571,10 +3177,10 @@ TextureImporter:
       name: characterSword_33
       rect:
         serializedVersion: 2
-        x: 342
-        y: 1791
-        width: 25
-        height: 51
+        x: 320
+        y: 1786
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2582,8 +3188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12be68a98620226c0800000000000000
-      internalID: -4169767656699270367
+      spriteID: 2efce703f9bdf63d0800000000000000
+      internalID: -3211106532531974174
       vertices: []
       indices: 
       edges: []
@@ -2592,10 +3198,10 @@ TextureImporter:
       name: characterSword_34
       rect:
         serializedVersion: 2
-        x: 406
-        y: 1791
-        width: 25
-        height: 51
+        x: 384
+        y: 1786
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2603,8 +3209,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0364093583c804440800000000000000
-      internalID: 4918084966636602928
+      spriteID: d1219f3e8e80b80e0800000000000000
+      internalID: -2266708191100726755
       vertices: []
       indices: 
       edges: []
@@ -2613,10 +3219,10 @@ TextureImporter:
       name: characterSword_35
       rect:
         serializedVersion: 2
-        x: 469
-        y: 1791
-        width: 26
-        height: 52
+        x: 448
+        y: 1786
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2624,8 +3230,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95e816972d04d28c0800000000000000
-      internalID: -4022487619448238503
+      spriteID: e72b17b2dd4885ac0800000000000000
+      internalID: -3866194194646060418
       vertices: []
       indices: 
       edges: []
@@ -2634,10 +3240,10 @@ TextureImporter:
       name: characterSword_36
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1729
-        width: 24
-        height: 51
+        x: 0
+        y: 1722
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2645,8 +3251,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6bc12fce13278aa0800000000000000
-      internalID: -6158915350174774422
+      spriteID: 369da4b3f84e10e10800000000000000
+      internalID: 2162260599940766051
       vertices: []
       indices: 
       edges: []
@@ -2655,10 +3261,10 @@ TextureImporter:
       name: characterSword_37
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1729
-        width: 27
-        height: 51
+        x: 64
+        y: 1722
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2666,8 +3272,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8745c3238a36aabf0800000000000000
-      internalID: -312327650100358024
+      spriteID: ddc3fec68860a8ff0800000000000000
+      internalID: -33206864238920483
       vertices: []
       indices: 
       edges: []
@@ -2676,10 +3282,10 @@ TextureImporter:
       name: characterSword_38
       rect:
         serializedVersion: 2
-        x: 146
-        y: 1729
-        width: 29
-        height: 51
+        x: 128
+        y: 1722
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2687,8 +3293,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62f890f36254014c0800000000000000
-      internalID: -4318876012079640794
+      spriteID: 9601995af16a414a0800000000000000
+      internalID: -6623486497102688151
       vertices: []
       indices: 
       edges: []
@@ -2697,10 +3303,10 @@ TextureImporter:
       name: characterSword_39
       rect:
         serializedVersion: 2
-        x: 212
-        y: 1729
-        width: 28
-        height: 51
+        x: 192
+        y: 1722
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2708,8 +3314,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ef2f6777aa3b9df0800000000000000
-      internalID: -172479669785907231
+      spriteID: 8099e3e034d76c300800000000000000
+      internalID: 272042554457757960
       vertices: []
       indices: 
       edges: []
@@ -2718,10 +3324,10 @@ TextureImporter:
       name: characterSword_40
       rect:
         serializedVersion: 2
-        x: 270
-        y: 1729
-        width: 29
-        height: 51
+        x: 256
+        y: 1722
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2729,8 +3335,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e79ef5d4e049692a0800000000000000
-      internalID: -6731029803910043266
+      spriteID: d370322e58c573300800000000000000
+      internalID: 231755635927222077
       vertices: []
       indices: 
       edges: []
@@ -2739,10 +3345,10 @@ TextureImporter:
       name: characterSword_41
       rect:
         serializedVersion: 2
-        x: 331
-        y: 1729
-        width: 33
-        height: 51
+        x: 320
+        y: 1722
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2750,8 +3356,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ddb894d9dcf1c300800000000000000
-      internalID: 270775465123823056
+      spriteID: 1284beb8a016211a0800000000000000
+      internalID: -6840298186097342431
       vertices: []
       indices: 
       edges: []
@@ -2760,10 +3366,10 @@ TextureImporter:
       name: characterSword_42
       rect:
         serializedVersion: 2
-        x: 398
-        y: 1729
-        width: 30
-        height: 51
+        x: 384
+        y: 1722
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2771,8 +3377,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 331f1e0290b447010800000000000000
-      internalID: 1185655104483750195
+      spriteID: d79bbc6e03ad8b800800000000000000
+      internalID: 628492051583580541
       vertices: []
       indices: 
       edges: []
@@ -2781,10 +3387,10 @@ TextureImporter:
       name: characterSword_43
       rect:
         serializedVersion: 2
-        x: 468
-        y: 1729
-        width: 28
-        height: 51
+        x: 448
+        y: 1722
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2792,8 +3398,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58b0ea6f15998c490800000000000000
-      internalID: -7725756583444083835
+      spriteID: 173c1ca8c82168980800000000000000
+      internalID: -8537115648801520783
       vertices: []
       indices: 
       edges: []
@@ -2802,10 +3408,10 @@ TextureImporter:
       name: characterSword_44
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1665
-        width: 32
-        height: 53
+        x: 0
+        y: 1658
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2813,8 +3419,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f959f63bdc77bf80800000000000000
-      internalID: -8090860924585813518
+      spriteID: aa73a45fa956478f0800000000000000
+      internalID: -543697938790336598
       vertices: []
       indices: 
       edges: []
@@ -2823,10 +3429,10 @@ TextureImporter:
       name: characterSword_45
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1666
-        width: 26
-        height: 52
+        x: 64
+        y: 1658
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2834,8 +3440,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e82f8006b0a9d40b0800000000000000
-      internalID: -5742764576180997490
+      spriteID: 108c8d6c5bbc4e120800000000000000
+      internalID: 2442300879527266305
       vertices: []
       indices: 
       edges: []
@@ -2844,10 +3450,10 @@ TextureImporter:
       name: characterSword_46
       rect:
         serializedVersion: 2
-        x: 146
-        y: 1666
-        width: 26
-        height: 52
+        x: 128
+        y: 1658
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2855,8 +3461,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 087529771d1fc8f80800000000000000
-      internalID: -8102835747589826688
+      spriteID: 49338112ce3c4fff0800000000000000
+      internalID: -3162280785595500
       vertices: []
       indices: 
       edges: []
@@ -2865,10 +3471,10 @@ TextureImporter:
       name: characterSword_47
       rect:
         serializedVersion: 2
-        x: 209
-        y: 1666
-        width: 27
-        height: 52
+        x: 192
+        y: 1658
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2876,8 +3482,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1ecf18b7b0c02080800000000000000
-      internalID: -9214152942299394534
+      spriteID: ea5a61b8996907de0800000000000000
+      internalID: -1337403503121357394
       vertices: []
       indices: 
       edges: []
@@ -2886,10 +3492,10 @@ TextureImporter:
       name: characterSword_48
       rect:
         serializedVersion: 2
-        x: 274
-        y: 1666
-        width: 26
-        height: 50
+        x: 256
+        y: 1658
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2897,8 +3503,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2b14fd0353b9a660800000000000000
-      internalID: 7397641032230509354
+      spriteID: 2cceb6417fcdc4ac0800000000000000
+      internalID: -3869475026060448574
       vertices: []
       indices: 
       edges: []
@@ -2907,10 +3513,10 @@ TextureImporter:
       name: characterSword_49
       rect:
         serializedVersion: 2
-        x: 338
-        y: 1666
-        width: 27
-        height: 50
+        x: 320
+        y: 1658
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2918,8 +3524,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43b1efd11ed166330800000000000000
-      internalID: 3703680596266851124
+      spriteID: b823ea29f0216c6e0800000000000000
+      internalID: -1817745541502717301
       vertices: []
       indices: 
       edges: []
@@ -2928,10 +3534,10 @@ TextureImporter:
       name: characterSword_50
       rect:
         serializedVersion: 2
-        x: 402
-        y: 1666
-        width: 27
-        height: 50
+        x: 384
+        y: 1658
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2939,8 +3545,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51b58083427249400800000000000000
-      internalID: 329931709217266453
+      spriteID: 659beb7f4d975c9f0800000000000000
+      internalID: -448818632256997034
       vertices: []
       indices: 
       edges: []
@@ -2949,10 +3555,10 @@ TextureImporter:
       name: characterSword_51
       rect:
         serializedVersion: 2
-        x: 465
-        y: 1666
-        width: 28
-        height: 51
+        x: 448
+        y: 1658
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2960,8 +3566,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2decd3df4f4afcf70800000000000000
-      internalID: 9209761135123615442
+      spriteID: 78426d1507a321700800000000000000
+      internalID: 509533961930024071
       vertices: []
       indices: 
       edges: []
@@ -2970,10 +3576,10 @@ TextureImporter:
       name: characterSword_52
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1601
-        width: 24
-        height: 52
+        x: 0
+        y: 1594
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2981,8 +3587,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fb661eae350d3d20800000000000000
-      internalID: 3259767472052923378
+      spriteID: 2b19636ac45436190800000000000000
+      internalID: -7970450720007220814
       vertices: []
       indices: 
       edges: []
@@ -2991,10 +3597,10 @@ TextureImporter:
       name: characterSword_53
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1601
-        width: 27
-        height: 52
+        x: 64
+        y: 1594
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3002,8 +3608,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1f861bcb5d6b5380800000000000000
-      internalID: -8981464790843617505
+      spriteID: 5227a5f4e036d9370800000000000000
+      internalID: 8330923798817305125
       vertices: []
       indices: 
       edges: []
@@ -3012,10 +3618,10 @@ TextureImporter:
       name: characterSword_54
       rect:
         serializedVersion: 2
-        x: 145
-        y: 1601
-        width: 29
-        height: 52
+        x: 128
+        y: 1594
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3023,8 +3629,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60b5b46851e71eed0800000000000000
-      internalID: -2386487696617153786
+      spriteID: 2ac3059e51117ffc0800000000000000
+      internalID: -3461279002804601694
       vertices: []
       indices: 
       edges: []
@@ -3033,10 +3639,10 @@ TextureImporter:
       name: characterSword_55
       rect:
         serializedVersion: 2
-        x: 208
-        y: 1601
-        width: 28
-        height: 52
+        x: 192
+        y: 1594
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3044,8 +3650,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: deff1221be2ac2cc0800000000000000
-      internalID: -3734430860491751443
+      spriteID: 013808992f368d0f0800000000000000
+      internalID: -1092013016028773616
       vertices: []
       indices: 
       edges: []
@@ -3054,10 +3660,10 @@ TextureImporter:
       name: characterSword_56
       rect:
         serializedVersion: 2
-        x: 277
-        y: 1601
-        width: 29
-        height: 52
+        x: 256
+        y: 1594
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3065,8 +3671,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82488e625c79ad000800000000000000
-      internalID: 61528417940046888
+      spriteID: 7f6f8879a24481150800000000000000
+      internalID: 5843495466234869495
       vertices: []
       indices: 
       edges: []
@@ -3075,10 +3681,10 @@ TextureImporter:
       name: characterSword_57
       rect:
         serializedVersion: 2
-        x: 341
-        y: 1601
-        width: 32
-        height: 52
+        x: 320
+        y: 1594
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3086,8 +3692,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b1804041bcc2f860800000000000000
-      internalID: 7562331785967731122
+      spriteID: 2793561e97f1eca50800000000000000
+      internalID: 6543201916948920690
       vertices: []
       indices: 
       edges: []
@@ -3096,10 +3702,10 @@ TextureImporter:
       name: characterSword_58
       rect:
         serializedVersion: 2
-        x: 405
-        y: 1601
-        width: 29
-        height: 52
+        x: 384
+        y: 1594
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3107,8 +3713,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcc0fde92d61f4170800000000000000
-      internalID: 8164769743310359759
+      spriteID: 3003c24fb89973800800000000000000
+      internalID: 592110702398550019
       vertices: []
       indices: 
       edges: []
@@ -3117,10 +3723,10 @@ TextureImporter:
       name: characterSword_59
       rect:
         serializedVersion: 2
-        x: 464
-        y: 1601
-        width: 29
-        height: 52
+        x: 448
+        y: 1594
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3128,8 +3734,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7a22714e72236660800000000000000
-      internalID: 7377778540222229117
+      spriteID: 062232ef7c85f8820800000000000000
+      internalID: 2922652299172192864
       vertices: []
       indices: 
       edges: []
@@ -3138,10 +3744,10 @@ TextureImporter:
       name: characterSword_60
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1538
-        width: 32
-        height: 51
+        x: 0
+        y: 1530
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3149,8 +3755,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c67d451530b6b64d0800000000000000
-      internalID: -3140298653167200404
+      spriteID: a85ac65a823e35350800000000000000
+      internalID: 6004392491928561034
       vertices: []
       indices: 
       edges: []
@@ -3159,10 +3765,10 @@ TextureImporter:
       name: characterSword_61
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1538
-        width: 32
-        height: 50
+        x: 64
+        y: 1530
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3170,8 +3776,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f357b004468a921a0800000000000000
-      internalID: -6833745811033328321
+      spriteID: e894f7b5fdde12e30800000000000000
+      internalID: 4477121048151542158
       vertices: []
       indices: 
       edges: []
@@ -3180,10 +3786,10 @@ TextureImporter:
       name: characterSword_62
       rect:
         serializedVersion: 2
-        x: 144
-        y: 1537
-        width: 32
-        height: 51
+        x: 128
+        y: 1530
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3191,8 +3797,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7303aa5e4a539d0a0800000000000000
-      internalID: -6856389975350824905
+      spriteID: 84630d288e4e89a40800000000000000
+      internalID: 5375297842544916040
       vertices: []
       indices: 
       edges: []
@@ -3201,10 +3807,10 @@ TextureImporter:
       name: characterSword_63
       rect:
         serializedVersion: 2
-        x: 208
-        y: 1536
-        width: 31
-        height: 51
+        x: 192
+        y: 1530
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3212,8 +3818,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9868536b69ca4a660800000000000000
-      internalID: 7396226251351230089
+      spriteID: 21abdb76300ac8270800000000000000
+      internalID: 8254148153549109778
       vertices: []
       indices: 
       edges: []
@@ -3222,10 +3828,10 @@ TextureImporter:
       name: characterSword_64
       rect:
         serializedVersion: 2
-        x: 272
-        y: 1537
-        width: 32
-        height: 51
+        x: 256
+        y: 1530
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3233,8 +3839,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 321522424935c9ed0800000000000000
-      internalID: -2405956205196193501
+      spriteID: ad8692656345fe1e0800000000000000
+      internalID: -2166420303391397670
       vertices: []
       indices: 
       edges: []
@@ -3243,10 +3849,10 @@ TextureImporter:
       name: characterSword_65
       rect:
         serializedVersion: 2
-        x: 336
-        y: 1538
-        width: 32
-        height: 50
+        x: 320
+        y: 1530
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3254,8 +3860,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df4e5ba1dbe2cb540800000000000000
-      internalID: 5024942673970455805
+      spriteID: 9fc8daf1a0f1d9fe0800000000000000
+      internalID: -1180753398959600391
       vertices: []
       indices: 
       edges: []
@@ -3264,10 +3870,10 @@ TextureImporter:
       name: characterSword_66
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1537
-        width: 32
-        height: 51
+        x: 384
+        y: 1530
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3275,8 +3881,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43afbf777517464c0800000000000000
-      internalID: -4295183524115514828
+      spriteID: d6ee9e16e44f025c0800000000000000
+      internalID: -4242122231495659923
       vertices: []
       indices: 
       edges: []
@@ -3285,10 +3891,10 @@ TextureImporter:
       name: characterSword_67
       rect:
         serializedVersion: 2
-        x: 465
-        y: 1536
-        width: 31
-        height: 51
+        x: 448
+        y: 1530
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3296,8 +3902,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2d541fa2d3c13a70800000000000000
-      internalID: 8805034056133926189
+      spriteID: 122c6cab753dcab00800000000000000
+      internalID: 841279604160643617
       vertices: []
       indices: 
       edges: []
@@ -3306,10 +3912,10 @@ TextureImporter:
       name: characterSword_68
       rect:
         serializedVersion: 2
-        x: 528
-        y: 1537
-        width: 33
-        height: 51
+        x: 512
+        y: 1530
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3317,8 +3923,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd400a3866bf8cb60800000000000000
-      internalID: 7766733975113958620
+      spriteID: 383b2a03b352bee00800000000000000
+      internalID: 1074993872207262595
       vertices: []
       indices: 
       edges: []
@@ -3327,10 +3933,10 @@ TextureImporter:
       name: characterSword_69
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1473
-        width: 24
-        height: 51
+        x: 0
+        y: 1466
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3338,8 +3944,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7ce84d1e2f54e870800000000000000
-      internalID: 8711192230905834622
+      spriteID: 5fcbcef96a5090ee0800000000000000
+      internalID: -1294497204686504715
       vertices: []
       indices: 
       edges: []
@@ -3348,10 +3954,10 @@ TextureImporter:
       name: characterSword_70
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1473
-        width: 27
-        height: 50
+        x: 64
+        y: 1466
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3359,8 +3965,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 164534cb98f02c780800000000000000
-      internalID: -8664345648863947679
+      spriteID: b3909617c7c55b870800000000000000
+      internalID: 8697959944884390203
       vertices: []
       indices: 
       edges: []
@@ -3369,10 +3975,10 @@ TextureImporter:
       name: characterSword_71
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1474
-        width: 24
-        height: 50
+        x: 128
+        y: 1466
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3380,8 +3986,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 374d29442df06c420800000000000000
-      internalID: 2649822826522137715
+      spriteID: a83f9bbacc66b5760800000000000000
+      internalID: 7447659438027699082
       vertices: []
       indices: 
       edges: []
@@ -3390,10 +3996,10 @@ TextureImporter:
       name: characterSword_72
       rect:
         serializedVersion: 2
-        x: 212
-        y: 1474
-        width: 26
-        height: 50
+        x: 192
+        y: 1466
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3401,8 +4007,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47aa5d7bc3de679e0800000000000000
-      internalID: -1623849770582431116
+      spriteID: b1d9c2138a4dda690800000000000000
+      internalID: -7589175978204816101
       vertices: []
       indices: 
       edges: []
@@ -3411,10 +4017,10 @@ TextureImporter:
       name: characterSword_73
       rect:
         serializedVersion: 2
-        x: 276
-        y: 1473
-        width: 27
-        height: 51
+        x: 256
+        y: 1466
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3422,8 +4028,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43f2d0ab78b919e60800000000000000
-      internalID: 7967320223039434548
+      spriteID: 37f9be82f7c165670800000000000000
+      internalID: 8527034276945567603
       vertices: []
       indices: 
       edges: []
@@ -3432,10 +4038,10 @@ TextureImporter:
       name: characterSword_74
       rect:
         serializedVersion: 2
-        x: 339
-        y: 1473
-        width: 30
-        height: 50
+        x: 320
+        y: 1466
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3443,8 +4049,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97976fdd7e61307c0800000000000000
-      internalID: -4106413250114586247
+      spriteID: 73aeca1fcbe113fa0800000000000000
+      internalID: -5822839046356014537
       vertices: []
       indices: 
       edges: []
@@ -3453,10 +4059,10 @@ TextureImporter:
       name: characterSword_75
       rect:
         serializedVersion: 2
-        x: 404
-        y: 1473
-        width: 27
-        height: 51
+        x: 384
+        y: 1466
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3464,8 +4070,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6b1515f27f6bafe0800000000000000
-      internalID: -1176724338098496660
+      spriteID: afa1f0b0354e5a240800000000000000
+      internalID: 4802495622979459834
       vertices: []
       indices: 
       edges: []
@@ -3474,10 +4080,10 @@ TextureImporter:
       name: characterSword_76
       rect:
         serializedVersion: 2
-        x: 468
-        y: 1473
-        width: 27
-        height: 51
+        x: 448
+        y: 1466
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3485,8 +4091,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7e11dfb6c3486090800000000000000
-      internalID: -8041102613769281923
+      spriteID: 692945ede72fd4a60800000000000000
+      internalID: 7660045167936967318
       vertices: []
       indices: 
       edges: []
@@ -3495,10 +4101,10 @@ TextureImporter:
       name: characterSword_77
       rect:
         serializedVersion: 2
-        x: 532
-        y: 1473
-        width: 26
-        height: 51
+        x: 512
+        y: 1466
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3506,8 +4112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d633606b03528a040800000000000000
-      internalID: 4659014705657295725
+      spriteID: a845b108813921460800000000000000
+      internalID: 7210987686811358346
       vertices: []
       indices: 
       edges: []
@@ -3516,10 +4122,10 @@ TextureImporter:
       name: characterSword_78
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1409
-        width: 32
-        height: 52
+        x: 0
+        y: 1402
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3527,8 +4133,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf61676ae4a54d0b0800000000000000
-      internalID: -5704835534124869892
+      spriteID: b730b597ae18d2750800000000000000
+      internalID: 6281819899310048123
       vertices: []
       indices: 
       edges: []
@@ -3537,10 +4143,10 @@ TextureImporter:
       name: characterSword_79
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1409
-        width: 32
-        height: 52
+        x: 64
+        y: 1402
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3548,8 +4154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0af465d039a50b880800000000000000
-      internalID: -8597272101019824224
+      spriteID: ed147ea0779ec3500800000000000000
+      internalID: 377433166285586910
       vertices: []
       indices: 
       edges: []
@@ -3558,10 +4164,10 @@ TextureImporter:
       name: characterSword_80
       rect:
         serializedVersion: 2
-        x: 144
-        y: 1408
-        width: 32
-        height: 53
+        x: 128
+        y: 1402
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3569,8 +4175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aae920a4fce6688a0800000000000000
-      internalID: -6303228791879459158
+      spriteID: e5a0a9eb6a7694830800000000000000
+      internalID: 4055886905283840606
       vertices: []
       indices: 
       edges: []
@@ -3579,10 +4185,10 @@ TextureImporter:
       name: characterSword_81
       rect:
         serializedVersion: 2
-        x: 209
-        y: 1408
-        width: 31
-        height: 52
+        x: 192
+        y: 1402
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3590,8 +4196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3595da9fbf18c5fb0800000000000000
-      internalID: -4657704995382273709
+      spriteID: b80f1e405574f4ea0800000000000000
+      internalID: -5886407757470240629
       vertices: []
       indices: 
       edges: []
@@ -3600,10 +4206,10 @@ TextureImporter:
       name: characterSword_82
       rect:
         serializedVersion: 2
-        x: 272
-        y: 1408
-        width: 32
-        height: 53
+        x: 256
+        y: 1402
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3611,8 +4217,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d97df85636c8fb550800000000000000
-      internalID: 6178811572309186461
+      spriteID: bb2ec3877603cefa0800000000000000
+      internalID: -5770183801611427141
       vertices: []
       indices: 
       edges: []
@@ -3621,10 +4227,10 @@ TextureImporter:
       name: characterSword_83
       rect:
         serializedVersion: 2
-        x: 336
-        y: 1409
-        width: 32
-        height: 52
+        x: 320
+        y: 1402
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3632,8 +4238,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdf061dc164d05a70800000000000000
-      internalID: 8813777987281752028
+      spriteID: 7da432d7a6f5525d0800000000000000
+      internalID: -3087957058521969961
       vertices: []
       indices: 
       edges: []
@@ -3642,10 +4248,10 @@ TextureImporter:
       name: characterSword_84
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1408
-        width: 32
-        height: 53
+        x: 384
+        y: 1402
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3653,8 +4259,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b192a074aa7ac9960800000000000000
-      internalID: 7610141820127422747
+      spriteID: 2f75ae75a305f0620800000000000000
+      internalID: 2742498909605222386
       vertices: []
       indices: 
       edges: []
@@ -3663,10 +4269,10 @@ TextureImporter:
       name: characterSword_85
       rect:
         serializedVersion: 2
-        x: 464
-        y: 1408
-        width: 31
-        height: 52
+        x: 448
+        y: 1402
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3674,8 +4280,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40c0e49b727f9dca0800000000000000
-      internalID: -5991486079255049212
+      spriteID: 9a396ac8194740e30800000000000000
+      internalID: 4468824898737181609
       vertices: []
       indices: 
       edges: []
@@ -3684,10 +4290,10 @@ TextureImporter:
       name: characterSword_86
       rect:
         serializedVersion: 2
-        x: 528
-        y: 1408
-        width: 33
-        height: 53
+        x: 512
+        y: 1402
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3695,8 +4301,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ef73dd8f170d2e60800000000000000
-      internalID: 7939009550228881381
+      spriteID: 2b67813f58c4b43c0800000000000000
+      internalID: -4374318474867476814
       vertices: []
       indices: 
       edges: []
@@ -3705,10 +4311,10 @@ TextureImporter:
       name: characterSword_87
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1345
-        width: 24
-        height: 51
+        x: 0
+        y: 1338
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3716,8 +4322,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eedb98bb5c681dc30800000000000000
-      internalID: 4382432096221249006
+      spriteID: 2e60911d1381d2070800000000000000
+      internalID: 8083143508440450786
       vertices: []
       indices: 
       edges: []
@@ -3726,10 +4332,10 @@ TextureImporter:
       name: characterSword_88
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1345
-        width: 27
-        height: 50
+        x: 64
+        y: 1338
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3737,8 +4343,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a42f6ddf4ecc8fd0800000000000000
-      internalID: -2338267264099343197
+      spriteID: 1f7d6da04c58c4830800000000000000
+      internalID: 4056764441395910641
       vertices: []
       indices: 
       edges: []
@@ -3747,10 +4353,10 @@ TextureImporter:
       name: characterSword_89
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1346
-        width: 24
-        height: 50
+        x: 128
+        y: 1338
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3758,8 +4364,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a84a226dddee90c0800000000000000
-      internalID: -4566951437016610655
+      spriteID: 0081e837a58639f90800000000000000
+      internalID: -6948095062407505920
       vertices: []
       indices: 
       edges: []
@@ -3768,10 +4374,10 @@ TextureImporter:
       name: characterSword_90
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1346
-        width: 26
-        height: 50
+        x: 192
+        y: 1338
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3779,8 +4385,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68f9477794d0a80c0800000000000000
-      internalID: -4572827862453411962
+      spriteID: 32cdcd9d98396a180800000000000000
+      internalID: -9104427376407946205
       vertices: []
       indices: 
       edges: []
@@ -3789,10 +4395,10 @@ TextureImporter:
       name: characterSword_91
       rect:
         serializedVersion: 2
-        x: 273
-        y: 1345
-        width: 27
-        height: 51
+        x: 256
+        y: 1338
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3800,8 +4406,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5517477ff4999e20800000000000000
-      internalID: 3357878822120133983
+      spriteID: 5dbac138f6279c950800000000000000
+      internalID: 6469828162961058773
       vertices: []
       indices: 
       edges: []
@@ -3810,10 +4416,10 @@ TextureImporter:
       name: characterSword_92
       rect:
         serializedVersion: 2
-        x: 335
-        y: 1345
-        width: 30
-        height: 50
+        x: 320
+        y: 1338
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3821,8 +4427,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b78280eae55970bc0800000000000000
-      internalID: -3816917925293971333
+      spriteID: 77c21a1b372566460800000000000000
+      internalID: 7234560508272127095
       vertices: []
       indices: 
       edges: []
@@ -3831,10 +4437,10 @@ TextureImporter:
       name: characterSword_93
       rect:
         serializedVersion: 2
-        x: 401
-        y: 1345
-        width: 28
-        height: 51
+        x: 384
+        y: 1338
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3842,8 +4448,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e752e5fb943b43d70800000000000000
-      internalID: 9022033082854548862
+      spriteID: 3cf70a16afab7db60800000000000000
+      internalID: 7770885266593578947
       vertices: []
       indices: 
       edges: []
@@ -3852,10 +4458,10 @@ TextureImporter:
       name: characterSword_94
       rect:
         serializedVersion: 2
-        x: 466
-        y: 1345
-        width: 27
-        height: 51
+        x: 448
+        y: 1338
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3863,8 +4469,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1731940afb65da080800000000000000
-      internalID: -9174581484855946383
+      spriteID: e7b886afff606e410800000000000000
+      internalID: 1505898821889592190
       vertices: []
       indices: 
       edges: []
@@ -3873,10 +4479,10 @@ TextureImporter:
       name: characterSword_95
       rect:
         serializedVersion: 2
-        x: 531
-        y: 1345
-        width: 25
-        height: 51
+        x: 512
+        y: 1338
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3884,8 +4490,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d4c87a6970e53830800000000000000
-      internalID: 4050390251971593424
+      spriteID: 2ba65da29a74ef090800000000000000
+      internalID: -7998877096269747534
       vertices: []
       indices: 
       edges: []
@@ -3894,10 +4500,10 @@ TextureImporter:
       name: characterSword_96
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1281
-        width: 32
-        height: 50
+        x: 0
+        y: 1274
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3905,8 +4511,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f84e21ec25f628a00800000000000000
-      internalID: 757290088787010703
+      spriteID: 15b1763ad0e3ada50800000000000000
+      internalID: 6546613236633377617
       vertices: []
       indices: 
       edges: []
@@ -3915,10 +4521,10 @@ TextureImporter:
       name: characterSword_97
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1280
-        width: 28
-        height: 50
+        x: 64
+        y: 1274
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3926,8 +4532,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2bdcf344d8b54c80800000000000000
-      internalID: -8339055913193383124
+      spriteID: 82d5e07a6a2637ec0800000000000000
+      internalID: -3570401611667841752
       vertices: []
       indices: 
       edges: []
@@ -3936,10 +4542,10 @@ TextureImporter:
       name: characterSword_98
       rect:
         serializedVersion: 2
-        x: 147
-        y: 1280
-        width: 27
-        height: 50
+        x: 128
+        y: 1274
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3947,8 +4553,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb218af4aba4a7580800000000000000
-      internalID: -8828661955445648709
+      spriteID: d202c163349705560800000000000000
+      internalID: 7300468325545156653
       vertices: []
       indices: 
       edges: []
@@ -3957,10 +4563,10 @@ TextureImporter:
       name: characterSword_99
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1280
-        width: 29
-        height: 51
+        x: 192
+        y: 1274
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3968,8 +4574,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47b1ae6186b02f710800000000000000
-      internalID: 1725454148925266804
+      spriteID: 694586de237e5e500800000000000000
+      internalID: 424999945773798550
       vertices: []
       indices: 
       edges: []
@@ -3978,10 +4584,10 @@ TextureImporter:
       name: characterSword_100
       rect:
         serializedVersion: 2
-        x: 273
-        y: 1280
-        width: 38
-        height: 51
+        x: 256
+        y: 1274
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3989,8 +4595,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c888a04bbd57e3470800000000000000
-      internalID: 8376261943434578060
+      spriteID: 355cc9499130d4710800000000000000
+      internalID: 1679001644481430867
       vertices: []
       indices: 
       edges: []
@@ -3999,10 +4605,10 @@ TextureImporter:
       name: characterSword_101
       rect:
         serializedVersion: 2
-        x: 337
-        y: 1280
-        width: 41
-        height: 51
+        x: 320
+        y: 1274
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4010,8 +4616,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c21962782923a0ac0800000000000000
-      internalID: -3888239723366936276
+      spriteID: 6edf24b38739095d0800000000000000
+      internalID: -3057782002384962074
       vertices: []
       indices: 
       edges: []
@@ -4020,10 +4626,10 @@ TextureImporter:
       name: characterSword_102
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1216
-        width: 24
-        height: 52
+        x: 0
+        y: 1210
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4031,8 +4637,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 384eac57fa010c890800000000000000
-      internalID: -7439928238634507133
+      spriteID: 42423ab9179a97be0800000000000000
+      internalID: -1478964697206938588
       vertices: []
       indices: 
       edges: []
@@ -4041,10 +4647,10 @@ TextureImporter:
       name: characterSword_103
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1216
-        width: 27
-        height: 50
+        x: 64
+        y: 1210
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4052,8 +4658,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c515668105f6bfb10800000000000000
-      internalID: 2016327647975854428
+      spriteID: a84fdba4b51ca86d0800000000000000
+      internalID: -2987362804966755190
       vertices: []
       indices: 
       edges: []
@@ -4062,10 +4668,10 @@ TextureImporter:
       name: characterSword_104
       rect:
         serializedVersion: 2
-        x: 146
-        y: 1216
-        width: 27
-        height: 52
+        x: 128
+        y: 1210
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4073,8 +4679,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91ea2041c1beab1f0800000000000000
-      internalID: -1028251059073405415
+      spriteID: 88182f531d9ed1d20800000000000000
+      internalID: 3251011590793888136
       vertices: []
       indices: 
       edges: []
@@ -4083,10 +4689,10 @@ TextureImporter:
       name: characterSword_105
       rect:
         serializedVersion: 2
-        x: 202
-        y: 1216
-        width: 36
-        height: 52
+        x: 192
+        y: 1210
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4094,8 +4700,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8309dc9d3cb8e2d0800000000000000
-      internalID: -3249140158337318003
+      spriteID: 796aacded7836bb10800000000000000
+      internalID: 1996845598296942231
       vertices: []
       indices: 
       edges: []
@@ -4104,10 +4710,10 @@ TextureImporter:
       name: characterSword_106
       rect:
         serializedVersion: 2
-        x: 263
-        y: 1216
-        width: 38
-        height: 52
+        x: 256
+        y: 1210
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4115,8 +4721,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5db69edd60f4d4a60800000000000000
-      internalID: 7659865432138542037
+      spriteID: 6043e0118fd732a90800000000000000
+      internalID: -7339884463292271610
       vertices: []
       indices: 
       edges: []
@@ -4125,10 +4731,10 @@ TextureImporter:
       name: characterSword_107
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1216
-        width: 35
-        height: 52
+        x: 320
+        y: 1210
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4136,8 +4742,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 497ddb1bb146573c0800000000000000
-      internalID: -4362470593929554028
+      spriteID: b68b7384857630e50800000000000000
+      internalID: 6774371893361752171
       vertices: []
       indices: 
       edges: []
@@ -4146,10 +4752,10 @@ TextureImporter:
       name: characterSword_108
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1152
-        width: 32
-        height: 53
+        x: 0
+        y: 1146
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4157,8 +4763,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e264e63df0509f830800000000000000
-      internalID: 4105318100854785582
+      spriteID: 7f5d3345014fe4330800000000000000
+      internalID: 3697160695087093239
       vertices: []
       indices: 
       edges: []
@@ -4167,10 +4773,10 @@ TextureImporter:
       name: characterSword_109
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1152
-        width: 28
-        height: 53
+        x: 64
+        y: 1146
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4178,8 +4784,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 321eb2978ab1e2d90800000000000000
-      internalID: -7120723550424800989
+      spriteID: 14f76d63e7247a990800000000000000
+      internalID: -7374852754942558399
       vertices: []
       indices: 
       edges: []
@@ -4188,10 +4794,10 @@ TextureImporter:
       name: characterSword_110
       rect:
         serializedVersion: 2
-        x: 145
-        y: 1152
-        width: 29
-        height: 51
+        x: 128
+        y: 1146
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4199,8 +4805,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 852f6b5787fd3c2b0800000000000000
-      internalID: -5565359006035807656
+      spriteID: 1fd969dff5a1db8b0800000000000000
+      internalID: -5134919000553775631
       vertices: []
       indices: 
       edges: []
@@ -4209,10 +4815,10 @@ TextureImporter:
       name: characterSword_111
       rect:
         serializedVersion: 2
-        x: 211
-        y: 1152
-        width: 28
-        height: 52
+        x: 192
+        y: 1146
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4220,8 +4826,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 599b8026da37af580800000000000000
-      internalID: -8792588133976196715
+      spriteID: 0e419fbd5ce474070800000000000000
+      internalID: 8090521867300443360
       vertices: []
       indices: 
       edges: []
@@ -4230,10 +4836,10 @@ TextureImporter:
       name: characterSword_112
       rect:
         serializedVersion: 2
-        x: 275
-        y: 1152
-        width: 37
-        height: 53
+        x: 256
+        y: 1146
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4241,8 +4847,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f62a3baad2fd8c10800000000000000
-      internalID: 2057567625767692022
+      spriteID: 9ba640c3bf5b33400800000000000000
+      internalID: 302785690612296377
       vertices: []
       indices: 
       edges: []
@@ -4251,10 +4857,10 @@ TextureImporter:
       name: characterSword_113
       rect:
         serializedVersion: 2
-        x: 338
-        y: 1152
-        width: 41
-        height: 53
+        x: 320
+        y: 1146
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4262,8 +4868,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79b577e37b344eab0800000000000000
-      internalID: -4979780833658840169
+      spriteID: b06a8199660d398c0800000000000000
+      internalID: -3993619305473726965
       vertices: []
       indices: 
       edges: []
@@ -4272,10 +4878,10 @@ TextureImporter:
       name: characterSword_114
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1089
-        width: 24
-        height: 51
+        x: 0
+        y: 1082
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4283,8 +4889,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ce42e1a1d19ee6f0800000000000000
-      internalID: -653424566371987775
+      spriteID: 237f906c326d72580800000000000000
+      internalID: -8851871093438679246
       vertices: []
       indices: 
       edges: []
@@ -4293,10 +4899,10 @@ TextureImporter:
       name: characterSword_115
       rect:
         serializedVersion: 2
-        x: 85
-        y: 1089
-        width: 27
-        height: 49
+        x: 64
+        y: 1082
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4304,8 +4910,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 662a5b42d105a86b0800000000000000
-      internalID: -5293330325920439706
+      spriteID: bf6aa74422880d040800000000000000
+      internalID: 4670382494342358779
       vertices: []
       indices: 
       edges: []
@@ -4314,10 +4920,10 @@ TextureImporter:
       name: characterSword_116
       rect:
         serializedVersion: 2
-        x: 147
-        y: 1089
-        width: 27
-        height: 51
+        x: 128
+        y: 1082
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4325,8 +4931,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af278da516dbf56e0800000000000000
-      internalID: -1846549096365001990
+      spriteID: ecde9d3844c49aa50800000000000000
+      internalID: 6532836591631199694
       vertices: []
       indices: 
       edges: []
@@ -4335,10 +4941,10 @@ TextureImporter:
       name: characterSword_117
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1089
-        width: 36
-        height: 51
+        x: 192
+        y: 1082
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4346,8 +4952,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 739ffebeeb51eac60800000000000000
-      internalID: 7831220711790213431
+      spriteID: be77982210cc21910800000000000000
+      internalID: 1806730705775458283
       vertices: []
       indices: 
       edges: []
@@ -4356,10 +4962,10 @@ TextureImporter:
       name: characterSword_118
       rect:
         serializedVersion: 2
-        x: 275
-        y: 1089
-        width: 38
-        height: 51
+        x: 256
+        y: 1082
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4367,8 +4973,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c9546cddccf01460800000000000000
-      internalID: 7210540964516223430
+      spriteID: 28e76b9ccb2838a00800000000000000
+      internalID: 757592909678018178
       vertices: []
       indices: 
       edges: []
@@ -4377,10 +4983,10 @@ TextureImporter:
       name: characterSword_119
       rect:
         serializedVersion: 2
-        x: 339
-        y: 1089
-        width: 35
-        height: 51
+        x: 320
+        y: 1082
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4388,8 +4994,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84bb3353b13219c30800000000000000
-      internalID: 4364308113662393160
+      spriteID: 9bba25a30405182b0800000000000000
+      internalID: -5584093826176078919
       vertices: []
       indices: 
       edges: []
@@ -4398,10 +5004,10 @@ TextureImporter:
       name: characterSword_120
       rect:
         serializedVersion: 2
-        x: 15
-        y: 1025
-        width: 32
-        height: 50
+        x: 0
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4409,8 +5015,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9eb99522106af4a0800000000000000
-      internalID: -6558824276255195489
+      spriteID: 897ffbacbb77b2e00800000000000000
+      internalID: 1021041388973717400
       vertices: []
       indices: 
       edges: []
@@ -4419,10 +5025,10 @@ TextureImporter:
       name: characterSword_121
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1023
-        width: 28
-        height: 51
+        x: 64
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4430,8 +5036,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6bcaf918b7d381e0800000000000000
-      internalID: -2196675007516849302
+      spriteID: 4615055aeb1c63dc0800000000000000
+      internalID: -3659524622630497948
       vertices: []
       indices: 
       edges: []
@@ -4440,10 +5046,10 @@ TextureImporter:
       name: characterSword_122
       rect:
         serializedVersion: 2
-        x: 147
-        y: 1023
-        width: 25
-        height: 52
+        x: 128
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4451,8 +5057,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f63c210e927cf86d0800000000000000
-      internalID: -2985949045256436881
+      spriteID: 5b49629eb2caf65a0800000000000000
+      internalID: -6525808030441368395
       vertices: []
       indices: 
       edges: []
@@ -4461,10 +5067,10 @@ TextureImporter:
       name: characterSword_123
       rect:
         serializedVersion: 2
-        x: 211
-        y: 1023
-        width: 25
-        height: 52
+        x: 192
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4472,8 +5078,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a801427fa969ab210800000000000000
-      internalID: 1349556630666350730
+      spriteID: e98916071b110fb90800000000000000
+      internalID: -7210243549627836258
       vertices: []
       indices: 
       edges: []
@@ -4482,10 +5088,10 @@ TextureImporter:
       name: characterSword_124
       rect:
         serializedVersion: 2
-        x: 275
-        y: 1023
-        width: 29
-        height: 52
+        x: 256
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4493,8 +5099,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c21d77521f143ab0800000000000000
-      internalID: -5029360720228314432
+      spriteID: 090f237eac30aa7b0800000000000000
+      internalID: -5212349448730775408
       vertices: []
       indices: 
       edges: []
@@ -4503,10 +5109,10 @@ TextureImporter:
       name: characterSword_125
       rect:
         serializedVersion: 2
-        x: 339
-        y: 1023
-        width: 27
-        height: 52
+        x: 320
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4514,8 +5120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 884e959eef3c03820800000000000000
-      internalID: 2896030060003320968
+      spriteID: 184220bae1b85e3e0800000000000000
+      internalID: -2025059493598845823
       vertices: []
       indices: 
       edges: []
@@ -4524,10 +5130,10 @@ TextureImporter:
       name: characterSword_126
       rect:
         serializedVersion: 2
-        x: 403
-        y: 1023
-        width: 28
-        height: 52
+        x: 384
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4535,8 +5141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 852db0381dd62fcf0800000000000000
-      internalID: -219992685173550504
+      spriteID: e688aad5dbe0ed520800000000000000
+      internalID: 2728634630716164206
       vertices: []
       indices: 
       edges: []
@@ -4545,10 +5151,10 @@ TextureImporter:
       name: characterSword_127
       rect:
         serializedVersion: 2
-        x: 467
-        y: 1023
-        width: 29
-        height: 52
+        x: 448
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4556,8 +5162,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2946747f77bc0b490800000000000000
-      internalID: -7732456844084943726
+      spriteID: f7b3f19b838c23c50800000000000000
+      internalID: 6643592546274458495
       vertices: []
       indices: 
       edges: []
@@ -4566,10 +5172,10 @@ TextureImporter:
       name: characterSword_128
       rect:
         serializedVersion: 2
-        x: 531
-        y: 1023
-        width: 30
-        height: 52
+        x: 512
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4577,8 +5183,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 229419be4e8972f90800000000000000
-      internalID: -6978440988615161566
+      spriteID: 1a7509a83f0948160800000000000000
+      internalID: 7026900694280984481
       vertices: []
       indices: 
       edges: []
@@ -4587,10 +5193,10 @@ TextureImporter:
       name: characterSword_129
       rect:
         serializedVersion: 2
-        x: 595
-        y: 1023
-        width: 30
-        height: 52
+        x: 576
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4598,8 +5204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a75aea589430f0da0800000000000000
-      internalID: -5976554566187047558
+      spriteID: 4acda6f4b4496a1c0800000000000000
+      internalID: -4492740527079629660
       vertices: []
       indices: 
       edges: []
@@ -4608,10 +5214,10 @@ TextureImporter:
       name: characterSword_130
       rect:
         serializedVersion: 2
-        x: 659
-        y: 1023
-        width: 25
-        height: 52
+        x: 640
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4619,8 +5225,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d864bc4f723cd3b0800000000000000
-      internalID: -5486454723714979626
+      spriteID: 5c171740923946500800000000000000
+      internalID: 388597272238191045
       vertices: []
       indices: 
       edges: []
@@ -4629,10 +5235,10 @@ TextureImporter:
       name: characterSword_131
       rect:
         serializedVersion: 2
-        x: 723
-        y: 1023
-        width: 25
-        height: 52
+        x: 704
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4640,8 +5246,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d6c49854520b3680800000000000000
-      internalID: -8774416887714625831
+      spriteID: eacc442773d73cdb0800000000000000
+      internalID: -4772833502988809042
       vertices: []
       indices: 
       edges: []
@@ -4650,10 +5256,10 @@ TextureImporter:
       name: characterSword_132
       rect:
         serializedVersion: 2
-        x: 787
-        y: 1023
-        width: 25
-        height: 52
+        x: 768
+        y: 1018
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4661,8 +5267,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbc0a005716eeea10800000000000000
-      internalID: 1940741477244734652
+      spriteID: f1f3715d19969dde0800000000000000
+      internalID: -1307898141708173537
       vertices: []
       indices: 
       edges: []
@@ -4671,10 +5277,10 @@ TextureImporter:
       name: characterSword_133
       rect:
         serializedVersion: 2
-        x: 21
-        y: 961
-        width: 24
-        height: 51
+        x: 0
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4682,8 +5288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc7208bd5399c84b0800000000000000
-      internalID: -5436802193548105779
+      spriteID: 1a6a82f6df420e060800000000000000
+      internalID: 6980620093334529697
       vertices: []
       indices: 
       edges: []
@@ -4692,10 +5298,10 @@ TextureImporter:
       name: characterSword_134
       rect:
         serializedVersion: 2
-        x: 83
-        y: 961
-        width: 27
-        height: 51
+        x: 64
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4703,8 +5309,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c57f41caf97ec6b60800000000000000
-      internalID: 7740816532515911516
+      spriteID: 4cb62079e48e09780800000000000000
+      internalID: -8678181057704334396
       vertices: []
       indices: 
       edges: []
@@ -4713,10 +5319,10 @@ TextureImporter:
       name: characterSword_135
       rect:
         serializedVersion: 2
-        x: 142
-        y: 961
-        width: 34
-        height: 51
+        x: 128
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4724,8 +5330,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 183613e22cc10c170800000000000000
-      internalID: 8196582942138524545
+      spriteID: 79f21a5c1d6aba950800000000000000
+      internalID: 6461441510287159191
       vertices: []
       indices: 
       edges: []
@@ -4734,10 +5340,10 @@ TextureImporter:
       name: characterSword_136
       rect:
         serializedVersion: 2
-        x: 204
-        y: 961
-        width: 37
-        height: 51
+        x: 192
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4745,8 +5351,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c96567fd8d5dc6a0800000000000000
-      internalID: -6427378228865439295
+      spriteID: 01d9134a39f134ab0800000000000000
+      internalID: -5025138040239973104
       vertices: []
       indices: 
       edges: []
@@ -4755,10 +5361,10 @@ TextureImporter:
       name: characterSword_137
       rect:
         serializedVersion: 2
-        x: 268
-        y: 961
-        width: 37
-        height: 51
+        x: 256
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4766,8 +5372,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a4cb9a878c251c30800000000000000
-      internalID: 4329415577444271266
+      spriteID: f16ef05cabb48e700800000000000000
+      internalID: 569788618404521503
       vertices: []
       indices: 
       edges: []
@@ -4776,10 +5382,10 @@ TextureImporter:
       name: characterSword_138
       rect:
         serializedVersion: 2
-        x: 331
-        y: 961
-        width: 34
-        height: 51
+        x: 320
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4787,8 +5393,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcca07afcb9747e90800000000000000
-      internalID: -7028859265856000819
+      spriteID: ca5ff1b64542f3620800000000000000
+      internalID: 2755961441967142316
       vertices: []
       indices: 
       edges: []
@@ -4797,10 +5403,10 @@ TextureImporter:
       name: characterSword_139
       rect:
         serializedVersion: 2
-        x: 395
-        y: 961
-        width: 36
-        height: 51
+        x: 384
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4808,8 +5414,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9362cafaee71220a0800000000000000
-      internalID: -6907932564515969479
+      spriteID: 681e65b505df4dc60800000000000000
+      internalID: 7842171372730507654
       vertices: []
       indices: 
       edges: []
@@ -4818,10 +5424,10 @@ TextureImporter:
       name: characterSword_140
       rect:
         serializedVersion: 2
-        x: 460
-        y: 961
-        width: 38
-        height: 51
+        x: 448
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4829,8 +5435,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3cfd12051da65570800000000000000
-      internalID: 8455135656176122942
+      spriteID: 161c8d3bf75be7810800000000000000
+      internalID: 1765047664058614113
       vertices: []
       indices: 
       edges: []
@@ -4839,10 +5445,10 @@ TextureImporter:
       name: characterSword_141
       rect:
         serializedVersion: 2
-        x: 524
-        y: 961
-        width: 40
-        height: 51
+        x: 512
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4850,8 +5456,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20edebe7de9739f30800000000000000
-      internalID: 4581139306906574338
+      spriteID: c3d7c722b44716a40800000000000000
+      internalID: 5359692897597553980
       vertices: []
       indices: 
       edges: []
@@ -4860,10 +5466,10 @@ TextureImporter:
       name: characterSword_142
       rect:
         serializedVersion: 2
-        x: 588
-        y: 961
-        width: 38
-        height: 51
+        x: 576
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4871,8 +5477,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c8e20b4d5bafd5f0800000000000000
-      internalID: -729676197431940924
+      spriteID: 135e6f348e937ec90800000000000000
+      internalID: -7140675014437182159
       vertices: []
       indices: 
       edges: []
@@ -4881,10 +5487,10 @@ TextureImporter:
       name: characterSword_143
       rect:
         serializedVersion: 2
-        x: 651
-        y: 961
-        width: 38
-        height: 51
+        x: 640
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4892,8 +5498,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eb1934f914f83520800000000000000
-      internalID: 2682161970407873513
+      spriteID: 82450decd5d426060800000000000000
+      internalID: 6945198640655782952
       vertices: []
       indices: 
       edges: []
@@ -4902,10 +5508,10 @@ TextureImporter:
       name: characterSword_144
       rect:
         serializedVersion: 2
-        x: 715
-        y: 961
-        width: 34
-        height: 51
+        x: 704
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4913,8 +5519,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 717aa1aa3954b9db0800000000000000
-      internalID: -4784153678634637545
+      spriteID: 493295e1344d3e950800000000000000
+      internalID: 6477254073825960852
       vertices: []
       indices: 
       edges: []
@@ -4923,10 +5529,10 @@ TextureImporter:
       name: characterSword_145
       rect:
         serializedVersion: 2
-        x: 779
-        y: 961
-        width: 37
-        height: 51
+        x: 768
+        y: 954
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4934,8 +5540,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fca5d16fb640cd4a0800000000000000
-      internalID: -6567369294875895089
+      spriteID: 9d5798da261bd8680800000000000000
+      internalID: -8751143463534627367
       vertices: []
       indices: 
       edges: []
@@ -4944,10 +5550,10 @@ TextureImporter:
       name: characterSword_146
       rect:
         serializedVersion: 2
-        x: 15
-        y: 897
-        width: 32
-        height: 52
+        x: 0
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4955,8 +5561,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e3171b6b8ac87c70800000000000000
-      internalID: 8969141358054282215
+      spriteID: 32fe96d6d11e94030800000000000000
+      internalID: 3479559703626379043
       vertices: []
       indices: 
       edges: []
@@ -4965,10 +5571,10 @@ TextureImporter:
       name: characterSword_147
       rect:
         serializedVersion: 2
-        x: 81
-        y: 898
-        width: 27
-        height: 51
+        x: 64
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4976,8 +5582,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 679fe36e875732c90800000000000000
-      internalID: -7195778617488508554
+      spriteID: 41711ccf9ca46b8c0800000000000000
+      internalID: -3983914588973230316
       vertices: []
       indices: 
       edges: []
@@ -4986,10 +5592,10 @@ TextureImporter:
       name: characterSword_148
       rect:
         serializedVersion: 2
-        x: 145
-        y: 898
-        width: 26
-        height: 51
+        x: 128
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4997,8 +5603,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbebaef8ca9d91b70800000000000000
-      internalID: 8870360276255030972
+      spriteID: 9d2cff0fb2a93a210800000000000000
+      internalID: 1343086627404104409
       vertices: []
       indices: 
       edges: []
@@ -5007,10 +5613,10 @@ TextureImporter:
       name: characterSword_149
       rect:
         serializedVersion: 2
-        x: 209
-        y: 897
-        width: 26
-        height: 52
+        x: 192
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5018,8 +5624,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05515df2271e07d80800000000000000
-      internalID: -8254850236425104048
+      spriteID: 7736a56da7b6f2fd0800000000000000
+      internalID: -2364553104019790985
       vertices: []
       indices: 
       edges: []
@@ -5028,10 +5634,10 @@ TextureImporter:
       name: characterSword_150
       rect:
         serializedVersion: 2
-        x: 273
-        y: 897
-        width: 26
-        height: 52
+        x: 256
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5039,8 +5645,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 267f54aaf986124c0800000000000000
-      internalID: -4314051933078423710
+      spriteID: 0a284b8051de9e730800000000000000
+      internalID: 4029012016255763104
       vertices: []
       indices: 
       edges: []
@@ -5049,10 +5655,10 @@ TextureImporter:
       name: characterSword_151
       rect:
         serializedVersion: 2
-        x: 337
-        y: 897
-        width: 27
-        height: 52
+        x: 320
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5060,8 +5666,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7807d6abdbf0f11b0800000000000000
-      internalID: -5683806897167306617
+      spriteID: 0b86f8afc041276f0800000000000000
+      internalID: -688465747058399056
       vertices: []
       indices: 
       edges: []
@@ -5070,10 +5676,10 @@ TextureImporter:
       name: characterSword_152
       rect:
         serializedVersion: 2
-        x: 401
-        y: 897
-        width: 27
-        height: 52
+        x: 384
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5081,8 +5687,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97af3191a1acc2110800000000000000
-      internalID: 1237586211058743929
+      spriteID: cd43abd2a8c8c07b0800000000000000
+      internalID: -5256672139947658020
       vertices: []
       indices: 
       edges: []
@@ -5091,10 +5697,10 @@ TextureImporter:
       name: characterSword_153
       rect:
         serializedVersion: 2
-        x: 465
-        y: 897
-        width: 27
-        height: 52
+        x: 448
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5102,8 +5708,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fea3f9b2eab38ad80800000000000000
-      internalID: -8239269899032118545
+      spriteID: 870af63a783f96990800000000000000
+      internalID: -7392109549463822216
       vertices: []
       indices: 
       edges: []
@@ -5112,10 +5718,10 @@ TextureImporter:
       name: characterSword_154
       rect:
         serializedVersion: 2
-        x: 529
-        y: 897
-        width: 26
-        height: 52
+        x: 512
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5123,8 +5729,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efddf27e9b254c1c0800000000000000
-      internalID: -4484368370553070082
+      spriteID: 7d3c2c36719b0d8b0800000000000000
+      internalID: -5129396465465900073
       vertices: []
       indices: 
       edges: []
@@ -5133,10 +5739,10 @@ TextureImporter:
       name: characterSword_155
       rect:
         serializedVersion: 2
-        x: 593
-        y: 897
-        width: 26
-        height: 52
+        x: 576
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5144,8 +5750,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea926aed837fe2280800000000000000
-      internalID: -9066037176224568914
+      spriteID: e7aa96ecb445a87d0800000000000000
+      internalID: -2915425124206663042
       vertices: []
       indices: 
       edges: []
@@ -5154,10 +5760,10 @@ TextureImporter:
       name: characterSword_156
       rect:
         serializedVersion: 2
-        x: 657
-        y: 897
-        width: 26
-        height: 52
+        x: 640
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5165,8 +5771,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e25ef957362d21a0800000000000000
-      internalID: -6832763040476278043
+      spriteID: 911e4c6fd105c42a0800000000000000
+      internalID: -6751933651710844647
       vertices: []
       indices: 
       edges: []
@@ -5175,10 +5781,10 @@ TextureImporter:
       name: characterSword_157
       rect:
         serializedVersion: 2
-        x: 721
-        y: 897
-        width: 26
-        height: 52
+        x: 704
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5186,8 +5792,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc92a5dc50b659c50800000000000000
-      internalID: 6671356095683504589
+      spriteID: 8e8da3ef65795ff20800000000000000
+      internalID: 3455834688964974824
       vertices: []
       indices: 
       edges: []
@@ -5196,10 +5802,10 @@ TextureImporter:
       name: characterSword_158
       rect:
         serializedVersion: 2
-        x: 785
-        y: 897
-        width: 26
-        height: 52
+        x: 768
+        y: 890
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5207,8 +5813,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 162f4f3f4cc2ab040800000000000000
-      internalID: 4664089588513698401
+      spriteID: f0a2794d3d6904100800000000000000
+      internalID: 90237829096352271
       vertices: []
       indices: 
       edges: []
@@ -5217,10 +5823,10 @@ TextureImporter:
       name: characterSword_159
       rect:
         serializedVersion: 2
-        x: 19
-        y: 833
-        width: 24
-        height: 51
+        x: 0
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5228,8 +5834,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d66514ac1875ac530800000000000000
-      internalID: 3876006644261410413
+      spriteID: d2d4fc8285f86f330800000000000000
+      internalID: 3744337749009714477
       vertices: []
       indices: 
       edges: []
@@ -5238,10 +5844,10 @@ TextureImporter:
       name: characterSword_160
       rect:
         serializedVersion: 2
-        x: 82
-        y: 833
-        width: 27
-        height: 51
+        x: 64
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5249,8 +5855,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ba380903a4fb720800000000000000
-      internalID: 2864089460474358661
+      spriteID: bdf18ec363fe126a0800000000000000
+      internalID: -6475631772952944677
       vertices: []
       indices: 
       edges: []
@@ -5259,10 +5865,10 @@ TextureImporter:
       name: characterSword_161
       rect:
         serializedVersion: 2
-        x: 144
-        y: 833
-        width: 34
-        height: 51
+        x: 128
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5270,8 +5876,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a14609495a0d44eb0800000000000000
-      internalID: -4736431498506247142
+      spriteID: 9a0639a35f6f34cc0800000000000000
+      internalID: -3727864533422481239
       vertices: []
       indices: 
       edges: []
@@ -5280,10 +5886,10 @@ TextureImporter:
       name: characterSword_162
       rect:
         serializedVersion: 2
-        x: 207
-        y: 833
-        width: 37
-        height: 51
+        x: 192
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5291,8 +5897,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e805ab57910ae0250800000000000000
-      internalID: 5912839391993811086
+      spriteID: 407885fc52ee7d890800000000000000
+      internalID: -7433210813791828220
       vertices: []
       indices: 
       edges: []
@@ -5301,10 +5907,10 @@ TextureImporter:
       name: characterSword_163
       rect:
         serializedVersion: 2
-        x: 271
-        y: 833
-        width: 37
-        height: 51
+        x: 256
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5312,8 +5918,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfa67ba91adddd5d0800000000000000
-      internalID: -3036026887622661380
+      spriteID: 5c471c16cf9fa5010800000000000000
+      internalID: 1178529114877949125
       vertices: []
       indices: 
       edges: []
@@ -5322,10 +5928,10 @@ TextureImporter:
       name: characterSword_164
       rect:
         serializedVersion: 2
-        x: 339
-        y: 833
-        width: 34
-        height: 51
+        x: 320
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5333,8 +5939,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d57a979fd00c1ba50800000000000000
-      internalID: 6535215700543907677
+      spriteID: 7c1711e0dd6ed8950800000000000000
+      internalID: 6453067678189973959
       vertices: []
       indices: 
       edges: []
@@ -5343,10 +5949,10 @@ TextureImporter:
       name: characterSword_165
       rect:
         serializedVersion: 2
-        x: 401
-        y: 833
-        width: 36
-        height: 51
+        x: 384
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5354,8 +5960,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6438635f60f46f80800000000000000
-      internalID: -8114096267683416982
+      spriteID: 48ffdc228ffc051e0800000000000000
+      internalID: -2211038752396148860
       vertices: []
       indices: 
       edges: []
@@ -5364,10 +5970,10 @@ TextureImporter:
       name: characterSword_166
       rect:
         serializedVersion: 2
-        x: 462
-        y: 833
-        width: 38
-        height: 51
+        x: 448
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5375,8 +5981,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c10e33d05ba48210800000000000000
-      internalID: 1334379753238299078
+      spriteID: 3ad2cd26ca52126f0800000000000000
+      internalID: -711245843824628317
       vertices: []
       indices: 
       edges: []
@@ -5385,10 +5991,10 @@ TextureImporter:
       name: characterSword_167
       rect:
         serializedVersion: 2
-        x: 524
-        y: 833
-        width: 40
-        height: 51
+        x: 512
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5396,8 +6002,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b18bf2b27192ab680800000000000000
-      internalID: -8738626947473491941
+      spriteID: 5a673ece2ffb027a0800000000000000
+      internalID: -6403907620043524443
       vertices: []
       indices: 
       edges: []
@@ -5406,10 +6012,10 @@ TextureImporter:
       name: characterSword_168
       rect:
         serializedVersion: 2
-        x: 591
-        y: 833
-        width: 37
-        height: 51
+        x: 576
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5417,8 +6023,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 310966f3ae203a550800000000000000
-      internalID: 6170779119537000467
+      spriteID: 9c064915765f11750800000000000000
+      internalID: 6274065580002926793
       vertices: []
       indices: 
       edges: []
@@ -5427,10 +6033,10 @@ TextureImporter:
       name: characterSword_169
       rect:
         serializedVersion: 2
-        x: 656
-        y: 833
-        width: 36
-        height: 51
+        x: 640
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5438,8 +6044,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f809c68fe05305d00800000000000000
-      internalID: 959325059043594383
+      spriteID: 01be985c57f10fae0800000000000000
+      internalID: -1517678483738072304
       vertices: []
       indices: 
       edges: []
@@ -5448,10 +6054,10 @@ TextureImporter:
       name: characterSword_170
       rect:
         serializedVersion: 2
-        x: 723
-        y: 833
-        width: 34
-        height: 51
+        x: 704
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5459,8 +6065,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c54e4610eb8ce3a40800000000000000
-      internalID: 5349934125755458652
+      spriteID: ad59d5281cac91fd0800000000000000
+      internalID: -2370640796369185318
       vertices: []
       indices: 
       edges: []
@@ -5469,10 +6075,10 @@ TextureImporter:
       name: characterSword_171
       rect:
         serializedVersion: 2
-        x: 784
-        y: 833
-        width: 37
-        height: 51
+        x: 768
+        y: 826
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5480,8 +6086,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c41a8371dbf73b00800000000000000
-      internalID: 808391535141459141
+      spriteID: 664dbc6210a4f66f0800000000000000
+      internalID: -689250849158081434
       vertices: []
       indices: 
       edges: []
@@ -5490,10 +6096,10 @@ TextureImporter:
       name: characterSword_172
       rect:
         serializedVersion: 2
-        x: 16
-        y: 769
-        width: 32
-        height: 52
+        x: 0
+        y: 762
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5501,8 +6107,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 063c9b6b5343a4920800000000000000
-      internalID: 2975247909135172448
+      spriteID: 5456e64882f8c5d50800000000000000
+      internalID: 6727409347567969605
       vertices: []
       indices: 
       edges: []
@@ -5511,10 +6117,10 @@ TextureImporter:
       name: characterSword_173
       rect:
         serializedVersion: 2
-        x: 81
-        y: 769
-        width: 33
-        height: 51
+        x: 64
+        y: 762
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5522,8 +6128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1700a9a03564e8a50800000000000000
-      internalID: 6525230232580522097
+      spriteID: e76fc699d1538e470800000000000000
+      internalID: 8424041504240891518
       vertices: []
       indices: 
       edges: []
@@ -5532,10 +6138,10 @@ TextureImporter:
       name: characterSword_174
       rect:
         serializedVersion: 2
-        x: 146
-        y: 769
-        width: 32
-        height: 45
+        x: 128
+        y: 762
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5543,8 +6149,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ff4ee890872a6be0800000000000000
-      internalID: -1483329693990105102
+      spriteID: b7ef0ce836bc974e0800000000000000
+      internalID: -1983330532422779269
       vertices: []
       indices: 
       edges: []
@@ -5553,10 +6159,10 @@ TextureImporter:
       name: characterSword_175
       rect:
         serializedVersion: 2
-        x: 210
-        y: 770
-        width: 32
-        height: 40
+        x: 192
+        y: 762
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5564,8 +6170,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d78a8d6c814568ef0800000000000000
-      internalID: -106305075804592003
+      spriteID: 20d35dee276d173c0800000000000000
+      internalID: -4363470774823731966
       vertices: []
       indices: 
       edges: []
@@ -5574,10 +6180,10 @@ TextureImporter:
       name: characterSword_176
       rect:
         serializedVersion: 2
-        x: 274
-        y: 770
-        width: 33
-        height: 34
+        x: 256
+        y: 762
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5585,8 +6191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db9c6e6b814f08bb0800000000000000
-      internalID: -4935676804613092931
+      spriteID: bdf872bfcb332e670800000000000000
+      internalID: 8566466327972646875
       vertices: []
       indices: 
       edges: []
@@ -5595,10 +6201,10 @@ TextureImporter:
       name: characterSword_177
       rect:
         serializedVersion: 2
-        x: 337
-        y: 767
-        width: 36
-        height: 38
+        x: 320
+        y: 762
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5606,8 +6212,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e91a3f8b8e629f40800000000000000
-      internalID: 5733766821278521831
+      spriteID: 221e17735d94fe6f0800000000000000
+      internalID: -653222240838360798
       vertices: []
       indices: 
       edges: []
@@ -5616,10 +6222,10 @@ TextureImporter:
       name: characterSword_178
       rect:
         serializedVersion: 2
-        x: 80
-        y: 641
-        width: 33
-        height: 50
+        x: 64
+        y: 634
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5627,8 +6233,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdfcc24088a1da500800000000000000
-      internalID: 409012312648503259
+      spriteID: 6413bbdb141f902d0800000000000000
+      internalID: -3311850786295959226
       vertices: []
       indices: 
       edges: []
@@ -5637,10 +6243,10 @@ TextureImporter:
       name: characterSword_179
       rect:
         serializedVersion: 2
-        x: 274
-        y: 640
-        width: 28
-        height: 50
+        x: 256
+        y: 634
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5648,8 +6254,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b8fd86d01fb127e0800000000000000
-      internalID: -1791941097676736330
+      spriteID: 39a6d117e4b0812f0800000000000000
+      internalID: -1002038485556827501
       vertices: []
       indices: 
       edges: []
@@ -5658,10 +6264,10 @@ TextureImporter:
       name: characterSword_180
       rect:
         serializedVersion: 2
-        x: 453
-        y: 640
-        width: 42
-        height: 50
+        x: 448
+        y: 634
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5669,8 +6275,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cd34791cad7c5740800000000000000
-      internalID: 5142123052665159113
+      spriteID: e851f4e3934d92c30800000000000000
+      internalID: 4335229458644407694
       vertices: []
       indices: 
       edges: []
@@ -5679,10 +6285,10 @@ TextureImporter:
       name: characterSword_181
       rect:
         serializedVersion: 2
-        x: 658
-        y: 640
-        width: 30
-        height: 51
+        x: 640
+        y: 634
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5690,8 +6296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27bfe78a016822470800000000000000
-      internalID: 8368398463712295794
+      spriteID: edecdef8c8d6000d0800000000000000
+      internalID: -3458644063342965026
       vertices: []
       indices: 
       edges: []
@@ -5700,10 +6306,10 @@ TextureImporter:
       name: characterSword_182
       rect:
         serializedVersion: 2
-        x: 848
-        y: 640
-        width: 48
-        height: 51
+        x: 832
+        y: 634
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5711,8 +6317,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d96ab5f61b64b7960800000000000000
-      internalID: 7600746524009277085
+      spriteID: 6b995708b9ed76400800000000000000
+      internalID: 317467058209397174
       vertices: []
       indices: 
       edges: []
@@ -5721,40 +6327,19 @@ TextureImporter:
       name: characterSword_183
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 640
+        x: 1042
+        y: 634
         width: 64
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 64
+      alignment: 9
+      pivot: {x: 0.21875, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76754ed5506d527f0800000000000000
-      internalID: -637868453664630937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: characterSword_184
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 449
-        width: 36
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33b43e31973e2e880800000000000000
-      internalID: -8583047830650533069
+      spriteID: 76dd1290a0686d8b0800000000000000
+      internalID: -5127763748053721753
       vertices: []
       indices: 
       edges: []
@@ -5763,10 +6348,10 @@ TextureImporter:
       name: characterSword_185
       rect:
         serializedVersion: 2
-        x: 272
-        y: 449
-        width: 27
-        height: 50
+        x: 64
+        y: 442
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5774,8 +6359,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6b06a414f3436900800000000000000
-      internalID: 676459084633213802
+      spriteID: 6e17f2726ee6dcaa0800000000000000
+      internalID: -6139128782257163802
       vertices: []
       indices: 
       edges: []
@@ -5784,10 +6369,10 @@ TextureImporter:
       name: characterSword_186
       rect:
         serializedVersion: 2
-        x: 466
-        y: 449
-        width: 28
-        height: 51
+        x: 256
+        y: 442
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5795,8 +6380,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba07bca186eed88e0800000000000000
-      internalID: -1689432154300518229
+      spriteID: 9876003a4d1b9bc40800000000000000
+      internalID: 5528645544399890313
       vertices: []
       indices: 
       edges: []
@@ -5805,10 +6390,10 @@ TextureImporter:
       name: characterSword_187
       rect:
         serializedVersion: 2
-        x: 648
-        y: 449
-        width: 38
-        height: 51
+        x: 448
+        y: 442
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5816,8 +6401,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bd0d354766ca4780800000000000000
-      internalID: -8697921583467131469
+      spriteID: 8b0b6dea535066e50800000000000000
+      internalID: 6802130015314423992
       vertices: []
       indices: 
       edges: []
@@ -5826,10 +6411,10 @@ TextureImporter:
       name: characterSword_188
       rect:
         serializedVersion: 2
-        x: 822
-        y: 449
-        width: 55
-        height: 51
+        x: 640
+        y: 442
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5837,29 +6422,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88fefcd03d5d5ecb0800000000000000
-      internalID: -4835223522465812600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: characterSword_189
-      rect:
-        serializedVersion: 2
-        x: 1011
-        y: 449
-        width: 58
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b3376b51d3998360800000000000000
-      internalID: 7172426408955163576
+      spriteID: 1efc009d60371bcf0800000000000000
+      internalID: -238282832026218527
       vertices: []
       indices: 
       edges: []
@@ -5868,40 +6432,19 @@ TextureImporter:
       name: characterSword_190
       rect:
         serializedVersion: 2
-        x: 80
-        y: 257
-        width: 34
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 820
+        y: 442
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6875, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e15cf58a36624c70800000000000000
-      internalID: 8953831410708009443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: characterSword_191
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 257
-        width: 38
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7447f12a62e3bd490800000000000000
-      internalID: -7720508800546933689
+      spriteID: 4538447b6f8cd9f80800000000000000
+      internalID: -8098095592980053164
       vertices: []
       indices: 
       edges: []
@@ -5910,19 +6453,19 @@ TextureImporter:
       name: characterSword_192
       rect:
         serializedVersion: 2
-        x: 453
-        y: 257
-        width: 42
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1010
+        y: 442
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.71875, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cf304bf21853bf40800000000000000
-      internalID: 5743030788375461827
+      spriteID: 401a2635e790872d0800000000000000
+      internalID: -3280861890369904380
       vertices: []
       indices: 
       edges: []
@@ -5931,10 +6474,10 @@ TextureImporter:
       name: characterSword_193
       rect:
         serializedVersion: 2
-        x: 652
-        y: 257
-        width: 36
-        height: 51
+        x: 64
+        y: 250
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5942,8 +6485,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 320e4d2836eb5f510800000000000000
-      internalID: 1582380178696626211
+      spriteID: ed1f141de9cc13b10800000000000000
+      internalID: 1959572295370535390
       vertices: []
       indices: 
       edges: []
@@ -5952,10 +6495,10 @@ TextureImporter:
       name: characterSword_194
       rect:
         serializedVersion: 2
-        x: 851
-        y: 251
-        width: 46
-        height: 58
+        x: 256
+        y: 250
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5963,8 +6506,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41ac87a7a523e4790800000000000000
-      internalID: -7544036961615820268
+      spriteID: d0b3f674d0966f740800000000000000
+      internalID: 5185447526717668109
       vertices: []
       indices: 
       edges: []
@@ -5973,10 +6516,10 @@ TextureImporter:
       name: characterSword_195
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 257
-        width: 65
-        height: 52
+        x: 448
+        y: 250
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5984,8 +6527,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6edadf98c1573e080800000000000000
-      internalID: -9159348451706819098
+      spriteID: 9a8379a8c9fc676d0800000000000000
+      internalID: -2992976631094101847
       vertices: []
       indices: 
       edges: []
@@ -5994,10 +6537,10 @@ TextureImporter:
       name: characterSword_196
       rect:
         serializedVersion: 2
-        x: 84
-        y: 64
-        width: 36
-        height: 52
+        x: 640
+        y: 250
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6005,8 +6548,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cebc5b082760bd70800000000000000
-      internalID: 9056852272329047749
+      spriteID: b3bfda645cd23a640800000000000000
+      internalID: 5089962329176406843
       vertices: []
       indices: 
       edges: []
@@ -6015,19 +6558,19 @@ TextureImporter:
       name: characterSword_197
       rect:
         serializedVersion: 2
-        x: 277
-        y: 64
-        width: 27
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 840
+        y: 250
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.375, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0dd2b51dc4a10540800000000000000
-      internalID: 4972436664333032719
+      spriteID: 6c00c11758a57bfa0800000000000000
+      internalID: -5785055667159301946
       vertices: []
       indices: 
       edges: []
@@ -6036,40 +6579,19 @@ TextureImporter:
       name: characterSword_198
       rect:
         serializedVersion: 2
-        x: 467
-        y: 64
-        width: 28
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1042
+        y: 250
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.21875, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97d6d0ce3f3a076b0800000000000000
-      internalID: -5300556493382390407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: characterSword_199
-      rect:
-        serializedVersion: 2
-        x: 658
-        y: 64
-        width: 37
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7465b7391daf3080800000000000000
-      internalID: -9205448789501582210
+      spriteID: 0b94e82f582e7ab80800000000000000
+      internalID: -8383483116398949968
       vertices: []
       indices: 
       edges: []
@@ -6078,10 +6600,10 @@ TextureImporter:
       name: characterSword_200
       rect:
         serializedVersion: 2
-        x: 851
-        y: 64
-        width: 55
-        height: 52
+        x: 64
+        y: 58
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6089,8 +6611,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01c3d1f134c200450800000000000000
-      internalID: 6052886565982387216
+      spriteID: d2f7a7c6a73c19120800000000000000
+      internalID: 2418929405448060717
       vertices: []
       indices: 
       edges: []
@@ -6099,10 +6621,10 @@ TextureImporter:
       name: characterSword_201
       rect:
         serializedVersion: 2
-        x: 1042
-        y: 64
-        width: 59
-        height: 52
+        x: 256
+        y: 58
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6110,8 +6632,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a75e8e0c3fdcfb30800000000000000
-      internalID: 4322575191404074914
+      spriteID: 5036e6a8dc3133390800000000000000
+      internalID: -7839900752810188027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterSword_202
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 58
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd7bf7027989a070800000000000000
+      internalID: 8118170926165229010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterSword_203
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 58
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7631b0e88a9b1e4a0800000000000000
+      internalID: -6565762648140737689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterSword_206
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 58
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfac38980d945eb0800000000000000
+      internalID: -4731984648220135458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterSword_184
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 58
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8663526045840dc0800000000000000
+      internalID: -3673664884453448054
       vertices: []
       indices: 
       edges: []

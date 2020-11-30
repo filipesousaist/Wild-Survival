@@ -2,23 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zombie : Enemy
+public class EnemyMovement : MonoBehaviour
 {
     private Transform target;
     private Rigidbody2D myRigidBody;
     private Animator animator;
     private float attackWaitTime;
+    private Enemy enemy;
+
+    public float maxAttackWaitTime;
+    public float moveSpeed;
+    public float chaseRadius;
+    public float attackRadius;
+    public float attackDuration;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
         target = GameObject.FindWithTag("player").transform;
         animator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
         attackWaitTime = maxAttackWaitTime;
+        enemy = GetComponent<Enemy>();
 
-        currentState = EnemyState.walk;
+        enemy.currentState = EnemyState.walk;
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
     }
@@ -30,12 +38,12 @@ public class Zombie : Enemy
 
         attackWaitTime = System.Math.Min(attackWaitTime + Time.deltaTime, maxAttackWaitTime);
 
-        if (currentState != EnemyState.stagger && difference.magnitude <= attackRadius)
+        if (enemy.currentState != EnemyState.stagger && difference.magnitude <= attackRadius)
         {
             if (attackWaitTime == maxAttackWaitTime)
                 StartCoroutine(AttackCo());
         }
-        else if (currentState == EnemyState.walk)
+        else if (enemy.currentState == EnemyState.walk)
         {
             if (difference.magnitude <= chaseRadius)
             {
@@ -72,9 +80,9 @@ public class Zombie : Enemy
 
     private void ChangeState(EnemyState newState)
     {
-        if (currentState != newState)
+        if (enemy.currentState != newState)
         {
-            currentState = newState;
+            enemy.currentState = newState;
         }
     }
 
@@ -84,10 +92,10 @@ public class Zombie : Enemy
 
         animator.SetBool("moving", false);
         animator.SetBool("attacking", true);
-        currentState = EnemyState.attack;
+        enemy.currentState = EnemyState.attack;
         yield return null;
         animator.SetBool("attacking", false);
         yield return new WaitForSeconds(.68f);
-        currentState = EnemyState.walk;
+        enemy.currentState = EnemyState.walk;
     }
 }
