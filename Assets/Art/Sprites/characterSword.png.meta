@@ -571,7 +571,7 @@ TextureImporter:
     second: characterSword_188
   - first:
       213: 7172426408955163576
-    second: characterSword_189
+    second: characterSword_face
   - first:
       213: 8953831410708009443
     second: characterSword_190
@@ -2359,7 +2359,7 @@ TextureImporter:
     second: characterSword_188
   - first:
       213: -6400412084576717030
-    second: characterSword_189
+    second: characterSword_face
   - first:
       213: -8098095592980053164
     second: characterSword_190
@@ -6718,6 +6718,27 @@ TextureImporter:
       bones: []
       spriteID: a8663526045840dc0800000000000000
       internalID: -3673664884453448054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterSword_face
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1943
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3376b51d3998360800000000000000
+      internalID: 7172426408955163576
       vertices: []
       indices: 
       edges: []

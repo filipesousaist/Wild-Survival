@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 change;
     private Animator animator;
     public PlayerState currentState;
+    public FloatValue currentHealth;
+    public Signal playerHealthSignal;
 
     // Start is called before the first frame update
     void Start()
