@@ -34200,6 +34200,8 @@ MonoBehaviour:
   health: 0
   enemyName: 
   baseAttack: 1
+  deathEffect: {fileID: 4376657538222972940, guid: d5cb48781ac0ae64b9a74ed9a7d114e7,
+    type: 3}
 --- !u!1 &1755303564
 GameObject:
   m_ObjectHideFlags: 0
