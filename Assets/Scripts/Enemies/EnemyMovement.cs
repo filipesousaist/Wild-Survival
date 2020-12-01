@@ -43,7 +43,8 @@ public class EnemyMovement : MonoBehaviour
             if (attackWaitTime == maxAttackWaitTime)
                 StartCoroutine(AttackCo());
         }
-        else if (enemy.currentState == EnemyState.walk)
+        else if (enemy.currentState == EnemyState.walk || 
+            enemy.currentState == EnemyState.idle)
         {
             if (difference.magnitude <= chaseRadius)
             {
