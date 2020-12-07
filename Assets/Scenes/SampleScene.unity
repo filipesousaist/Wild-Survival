@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068c0cac44928e841b9ef71e5da05e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 5
+  thrust: 2
   knockTime: 0.4
   damage: 1
 --- !u!1 &193378008
@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068c0cac44928e841b9ef71e5da05e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 5
+  thrust: 2
   knockTime: 0.4
   damage: 1
 --- !u!1 &499042335
@@ -869,6 +869,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   speed: 8
+  followRadius: 20
+  arriveRadius: 2
+  maxAttackWaitTime: 1
+  chaseRadius: 5
+  attackRadius: 1
+  attackDuration: 0.62
+  destinationRadius: 1
 --- !u!61 &499042342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33519,7 +33526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068c0cac44928e841b9ef71e5da05e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 5
+  thrust: 2
   knockTime: 0.4
   damage: 1
 --- !u!1 &2077810848
@@ -122546,6 +122553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068c0cac44928e841b9ef71e5da05e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 5
+  thrust: 2
   knockTime: 0.4
   damage: 1

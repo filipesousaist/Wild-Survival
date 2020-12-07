@@ -48,13 +48,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.gameObject.tag == "rhino" || collision.gameObject.tag == "enemy")
         {
-            Physics2D.IgnoreCollision(collision.collider, GetComponent<BoxCollider2D>());
+            Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
+            myRigidBody.velocity = Vector2.zero;
         }
 
     }
 
     private IEnumerator AttackCo()
     {
+        animator.SetBool("moving", false);
         animator.SetBool("attacking",true);
         currentState = PlayerState.attack;
         yield return null;

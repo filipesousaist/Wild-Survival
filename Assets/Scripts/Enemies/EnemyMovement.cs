@@ -86,6 +86,16 @@ public class EnemyMovement : MonoBehaviour
             enemy.currentState = newState;
         }
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.tag == "rhino" || collision.gameObject.tag == "player")
+        {
+            Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
+            myRigidBody.velocity = Vector2.zero;
+        }
+
+    }
 
     private IEnumerator AttackCo()
     {
