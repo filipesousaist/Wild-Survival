@@ -9950,10 +9950,10 @@ TextureImporter:
         serializedVersion: 2
         x: 448
         y: 864
-        width: 32
+        width: 64
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -9961,27 +9961,6 @@ TextureImporter:
       bones: []
       spriteID: dad955a5eafa5b820800000000000000
       internalID: 2933443895676476845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_68
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 864
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73f8565671cf57690800000000000000
-      internalID: -7604895218329612489
       vertices: []
       indices: 
       edges: []
@@ -10412,10 +10391,10 @@ TextureImporter:
         serializedVersion: 2
         x: 448
         y: 832
-        width: 32
+        width: 64
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10423,27 +10402,6 @@ TextureImporter:
       bones: []
       spriteID: 755c5c1b50c7047f0800000000000000
       internalID: -630367583932660393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_93
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 832
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b9be68151f248f00800000000000000
-      internalID: 1118070375145454009
       vertices: []
       indices: 
       edges: []
@@ -21919,9 +21877,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 96
-        width: 32
-        height: 32
+        y: 32
+        width: 160
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -21931,90 +21889,6 @@ TextureImporter:
       bones: []
       spriteID: e402bb6bfa1372f80800000000000000
       internalID: -8131475971439386546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_687
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3ab0d26ee012cb80800000000000000
-      internalID: -8376113740909594050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_688
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3cc1f8a4c8a5fa5d0800000000000000
-      internalID: -3049118864113722173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_689
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6b7c15a28e665600800000000000000
-      internalID: 456673919619595118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_690
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ecdeb9c467d8902b0800000000000000
-      internalID: -5617803520937038386
       vertices: []
       indices: 
       edges: []
@@ -22440,111 +22314,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_714
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8728fa0cc7622daf0800000000000000
-      internalID: -373193501867801992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_715
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8310f5e37f0300860800000000000000
-      internalID: 7494043618405974328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_716
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b8fe6c81337f3290800000000000000
-      internalID: -7908475763992627020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_717
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52b8c6eeb39760210800000000000000
-      internalID: 1298858840853089061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_718
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 247febeff07ec1d40800000000000000
-      internalID: 5556570096152803138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: hyptosis_til-art-batch-2_719
       rect:
         serializedVersion: 2
@@ -22897,48 +22666,6 @@ TextureImporter:
       bones: []
       spriteID: 1cdf57c905a924e90800000000000000
       internalID: -7042897196240994879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_738
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f70d99dd8e9fd3a70800000000000000
-      internalID: 8808471224752132223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_739
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58483f560b1307f80800000000000000
-      internalID: -8110928295199800187
       vertices: []
       indices: 
       edges: []
@@ -23427,54 +23154,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_763
+      name: hyptosis_til-art-batch-2_765
       rect:
         serializedVersion: 2
         x: 512
         y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85ce83d38af249540800000000000000
-      internalID: 5013684684798356568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_764
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e62121c35d23379e0800000000000000
-      internalID: -1624899149133376914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_til-art-batch-2_765
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 32
+        width: 96
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

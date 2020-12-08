@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 49407eb13e21f9142b1cf2e070af7308
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7052949005687385195
+    second: dawntree_0
+  - first:
+      213: -4969142148887531418
+    second: dawntree_1
+  - first:
+      213: 936162783123450593
+    second: dawntree_2
+  - first:
+      213: -2720503683333639152
+    second: dawntree_3
+  - first:
+      213: 8054804527535633839
+    second: dawntree_4
+  - first:
+      213: -2707729126358580326
+    second: dawntree_5
+  - first:
+      213: 1214013530823669320
+    second: dawntree_6
+  - first:
+      213: -2619101539202620316
+    second: dawntree_7
+  - first:
+      213: -5778577475505601651
+    second: dawntree_8
+  - first:
+      213: -4544802324538126785
+    second: dawntree_9
+  - first:
+      213: -8357752893676188092
+    second: dawntree_10
+  - first:
+      213: 4522016689517548317
+    second: dawntree_11
+  - first:
+      213: 9023450149201384916
+    second: dawntree_12
+  - first:
+      213: 3579630534025172708
+    second: dawntree_13
+  - first:
+      213: -3843744188615313111
+    second: dawntree_14
+  - first:
+      213: -8155531163209228970
+    second: dawntree_15
+  - first:
+      213: 7997648435787327168
+    second: dawntree_16
+  - first:
+      213: -7449077627370049210
+    second: dawntree_17
+  - first:
+      213: -5806098079818263664
+    second: dawntree_18
+  - first:
+      213: -1813722282804049183
+    second: dawntree_19
+  - first:
+      213: 436021121948460592
+    second: dawntree_20
+  - first:
+      213: -7516191238747711624
+    second: dawntree_21
+  - first:
+      213: 4472850569534016002
+    second: dawntree_22
+  - first:
+      213: 1442197800685247019
+    second: dawntree_23
+  - first:
+      213: -769092979158615172
+    second: dawntree_24
+  - first:
+      213: -6457852001799487912
+    second: dawntree_25
+  - first:
+      213: -469531050285211384
+    second: dawntree_26
+  - first:
+      213: 7148187658721536222
+    second: dawntree_27
+  - first:
+      213: -3739949129239258379
+    second: dawntree_28
+  - first:
+      213: 7213785843215350652
+    second: dawntree_29
+  - first:
+      213: 3054452089310588394
+    second: dawntree_30
+  - first:
+      213: 649196240917786538
+    second: dawntree_31
+  - first:
+      213: -398678636769381978
+    second: dawntree_32
+  - first:
+      213: 935937514633893374
+    second: dawntree_33
+  - first:
+      213: 4519842520985367920
+    second: dawntree_34
+  - first:
+      213: -4623255558859466898
+    second: dawntree_35
+  - first:
+      213: 8649036964289725735
+    second: dawntree_36
+  - first:
+      213: 864901466717736495
+    second: dawntree_37
+  - first:
+      213: -3738928571908766765
+    second: dawntree_38
+  - first:
+      213: 2146226663493890762
+    second: dawntree_39
+  - first:
+      213: -3043867575602415052
+    second: dawntree_40
+  - first:
+      213: 3706033773344123839
+    second: dawntree_41
+  - first:
+      213: 8325221512416838362
+    second: dawntree_42
+  - first:
+      213: -6896997070676178294
+    second: dawntree_43
+  - first:
+      213: 546042501862989593
+    second: dawntree_44
+  - first:
+      213: 1526783145606316176
+    second: dawntree_45
+  - first:
+      213: -2175329837816330972
+    second: dawntree_46
+  - first:
+      213: 416697686797960337
+    second: dawntree_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dawntree_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 128
+        height: 96
+      alignment: 9
+      pivot: {x: 0.375, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d194eed9bb1de80800000000000000
+      internalID: -8155531163209228970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawntree_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 16
+        width: 103
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8771a8e04ef11b790800000000000000
+      internalID: -7516191238747711624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawntree_27
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8ade98dc6733360800000000000000
+      internalID: 7148187658721536222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawntree_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa99a10518091cc0800000000000000
+      internalID: -3739949129239258379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawntree_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bb79e01048c1460800000000000000
+      internalID: 7213785843215350652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawntree_31
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 20
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf6c61aa88620900800000000000000
+      internalID: 649196240917786538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawntree_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2760d77cde8cd10800000000000000
+      internalID: 2146226663493890762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawntree_47
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 0
+        width: 123
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194c150a65868c500800000000000000
+      internalID: 416697686797960337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
