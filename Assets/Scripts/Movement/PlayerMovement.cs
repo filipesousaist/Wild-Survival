@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 public enum PlayerState
 {
@@ -7,37 +6,42 @@ public enum PlayerState
     attack
 }
 
-public class PlayerMovement : Movement
+public class PlayerMovement : EntityMovement
 {
-    private Rigidbody2D myRigidBody;
-    private Vector3 change;
-    private Animator animator;
     public PlayerState currentState;
-    public FloatValue currentHealth;
-    public Signal playerHealthSignal;
+    public bool inputEnabled;
+
 
     // Start is called before the first frame update
-    void Start()
+    override protected void OnStart()
     {
         currentState = PlayerState.walk;
-        animator = GetComponent<Animator>();
-        myRigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        change = Vector3.zero;
-        change.x = Input.GetAxisRaw("Horizontal");
-        change.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack)
-        {
-            //Debug.Log("attack" + i++);
-            StartCoroutine(AttackCo());
-        }
-        else if(currentState == PlayerState.walk)
-        {
-            UpdateAnimationAndMove();
+        if (inputEnabled) { 
+            Vector3 difference = Vector3.zero;
+            difference.x = Input.GetAxisRaw("Horizontal");
+            difference.y = Input.GetAxisRaw("Vertical");
+            if (Input.GetButtonDown("attack") && currentState != PlayerState.attack)
+            {
+                StartCoroutine(AttackCo());
+            }
+            else if (currentState == PlayerState.walk)
+            {
+                if (difference.magnitude > 0)
+                {
+                    MoveCharacter(difference);
+                }
+                else
+                {
+                    animator.SetBool("moving", false);
+                }
+
+                UpdateAnimation(difference);
+            }
         }
     }
     private IEnumerator OnTriggerEnter2D(Collider2D other)
@@ -56,45 +60,23 @@ public class PlayerMovement : Movement
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "rhino" || collision.gameObject.tag == "enemy")
-        {
-            Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
-            myRigidBody.velocity = Vector2.zero;
-        }
-    }
-    
     private IEnumerator AttackCo()
     {
         animator.SetBool("moving", false);
         animator.SetBool("attacking",true);
-        currentState = PlayerState.attack;
+        ChangeState(PlayerState.attack);
         yield return null;
         animator.SetBool("attacking",false);
         yield return new WaitForSeconds(.33f);
-        currentState = PlayerState.walk;
+        ChangeState(PlayerState.walk);
+        attackedRecently = false;
     }
 
-    void UpdateAnimationAndMove()
+    private void ChangeState(PlayerState newState)
     {
-        if (change != Vector3.zero)
+        if (currentState != newState)
         {
-            MoveCharacter();
-            animator.SetFloat("moveX", change.x);
-            animator.SetFloat("moveY", change.y);
-            animator.SetBool("moving", true);
+            currentState = newState;
         }
-        else
-        {
-            animator.SetBool("moving", false);
-        }
-    }
-
-    void MoveCharacter()
-    {
-        myRigidBody.MovePosition(
-            transform.position + change.normalized * speed * Time.deltaTime
-        );
     }
 }

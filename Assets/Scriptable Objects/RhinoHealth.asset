@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41c707d493438d74a82fbf4752449055, type: 3}
-  m_Name: ZombieHealth
+  m_Name: RhinoHealth
   m_EditorClassIdentifier: 
-  initialValue: 5
-  value: 5
+  initialValue: 12
+  value: 12
