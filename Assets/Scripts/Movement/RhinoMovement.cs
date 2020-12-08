@@ -9,10 +9,9 @@ public enum RhinoState
     combat,
     attack
 }
-public class RhinoMovement : MonoBehaviour
+public class RhinoMovement : Movement
 {
     public RhinoState currentState;
-    public float speed;
     public float followRadius;  // maximum distance to follow an activist
     public float arriveRadius;
     public float maxAttackWaitTime;
@@ -20,7 +19,6 @@ public class RhinoMovement : MonoBehaviour
     public float attackRadius;
     public float attackDuration;
     public float destinationRadius;
-    public float lastAttackTime;
 
     private float attackWaitTime;
     private Transform target;
@@ -40,7 +38,6 @@ public class RhinoMovement : MonoBehaviour
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         commandDestination = Vector3.zero;
-        lastAttackTime = Time.time;
     }
 
     // Update is called once per frame

@@ -10,7 +10,9 @@ public class Knockback : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("enemy") && Time.time - this.GetComponentInParent<RhinoMovement>().lastAttackTime > 0.1)
+        Movement movement = this.GetComponentInParent<Movement>();
+        
+        if (other.gameObject.CompareTag("enemy") && Time.time - movement.lastAttackTime > 0.1)
         {
             Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
             if (hit != null)
@@ -22,7 +24,7 @@ public class Knockback : MonoBehaviour
                     hit.AddForce(difference, ForceMode2D.Impulse);
                     hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
                     other.GetComponent<Enemy>().Knock(hit, knockTime, damage);
-                    this.GetComponentInParent<RhinoMovement>().lastAttackTime = Time.time;
+                    movement.lastAttackTime = Time.time;
 
                 }
                 

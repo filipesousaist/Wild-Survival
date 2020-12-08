@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMovement : Movement
 {
     private Transform target;
     private Rigidbody2D myRigidBody;
@@ -11,7 +11,6 @@ public class EnemyMovement : MonoBehaviour
     private Enemy enemy;
 
     public float maxAttackWaitTime;
-    public float moveSpeed;
     public float chaseRadius;
     public float attackRadius;
     public float attackDuration;
@@ -74,7 +73,7 @@ public class EnemyMovement : MonoBehaviour
     {
         animator.SetBool("moving", true);
         myRigidBody.MovePosition(
-            transform.position + difference.normalized * moveSpeed * Time.deltaTime
+            transform.position + difference.normalized * speed * Time.deltaTime
         );
         ChangeState(EnemyState.walk);
     }

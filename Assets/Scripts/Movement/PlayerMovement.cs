@@ -1,16 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public enum PlayerState
 {
     walk,
     attack
 }
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : Movement
 {
-    public float speed;
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator animator;
