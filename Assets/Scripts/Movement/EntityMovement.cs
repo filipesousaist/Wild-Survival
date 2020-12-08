@@ -52,7 +52,7 @@ public abstract class EntityMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (entity.IsOtherEntity(collision.gameObject))
+        if (collision.collider.CompareTag("player") || collision.collider.CompareTag("rhino") || collision.collider.CompareTag("enemy"))
         {
             Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
             myRigidBody.velocity = Vector2.zero;
