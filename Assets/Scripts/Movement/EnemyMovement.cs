@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMovement : Movement
 {
     private Transform target;
     private Rigidbody2D myRigidBody;
@@ -11,7 +11,6 @@ public class EnemyMovement : MonoBehaviour
     private Enemy enemy;
 
     public float maxAttackWaitTime;
-    public float moveSpeed;
     public float chaseRadius;
     public float attackRadius;
     public float attackDuration;
@@ -74,7 +73,7 @@ public class EnemyMovement : MonoBehaviour
     {
         animator.SetBool("moving", true);
         myRigidBody.MovePosition(
-            transform.position + difference.normalized * moveSpeed * Time.deltaTime
+            transform.position + difference.normalized * speed * Time.deltaTime
         );
         ChangeState(EnemyState.walk);
     }
@@ -85,6 +84,16 @@ public class EnemyMovement : MonoBehaviour
         {
             enemy.currentState = newState;
         }
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.tag == "rhino" || collision.gameObject.tag == "player")
+        {
+            Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
+            myRigidBody.velocity = Vector2.zero;
+        }
+
     }
 
     private IEnumerator AttackCo()

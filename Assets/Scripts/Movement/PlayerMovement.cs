@@ -7,9 +7,8 @@ public enum PlayerState
     attack
 }
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : Movement
 {
-    public float speed;
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator animator;
@@ -59,13 +58,13 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "rhino" || collision.gameObject.tag == "enemy")
         {
             Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
-            this.myRigidBody.velocity = Vector2.zero;
+            myRigidBody.velocity = Vector2.zero;
         }
     }
-
     
     private IEnumerator AttackCo()
     {
+        animator.SetBool("moving", false);
         animator.SetBool("attacking",true);
         currentState = PlayerState.attack;
         yield return null;
