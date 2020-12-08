@@ -127,7 +127,7 @@ public class RhinoMovement : Movement
     void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.gameObject.tag == "player" || collision.gameObject.tag == "enemy")
+        if (collision.gameObject.tag == "player" || collision.gameObject.tag == "enemy" || collision.gameObject.tag == "rhino")
         {
             Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
             myRigidBody.velocity = Vector2.zero;

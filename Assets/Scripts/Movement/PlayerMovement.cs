@@ -15,6 +15,8 @@ public class PlayerMovement : Movement
     public PlayerState currentState;
     public FloatValue currentHealth;
     public Signal playerHealthSignal;
+    public bool inputEnabled;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,17 +29,20 @@ public class PlayerMovement : Movement
     // Update is called once per frame
     void Update()
     {
-        change = Vector3.zero;
-        change.x = Input.GetAxisRaw("Horizontal");
-        change.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack)
-        {
-            //Debug.Log("attack" + i++);
-            StartCoroutine(AttackCo());
-        }
-        else if(currentState == PlayerState.walk)
-        {
-            UpdateAnimationAndMove();
+        if (inputEnabled) { 
+        
+            change = Vector3.zero;
+            change.x = Input.GetAxisRaw("Horizontal");
+            change.y = Input.GetAxisRaw("Vertical");
+            if (Input.GetButtonDown("attack") && currentState != PlayerState.attack)
+            {
+                //Debug.Log("attack" + i++);
+                StartCoroutine(AttackCo());
+            }
+            else if(currentState == PlayerState.walk)
+            {
+                UpdateAnimationAndMove();
+            }
         }
     }
     private IEnumerator OnTriggerEnter2D(Collider2D other)

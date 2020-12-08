@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Fade : MonoBehaviour
 {
-    public GameObject blackoutSquare;
 
     private Animator anim;
 
