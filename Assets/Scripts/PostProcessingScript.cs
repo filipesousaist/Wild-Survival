@@ -11,6 +11,10 @@ public class PostProcessingScript : MonoBehaviour
     private Vignette _vignette;
 
     private Bloom _bloom;
+
+    public Transform players;
+
+    public int currentPlayer = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +28,12 @@ public class PostProcessingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("player");
+        
         GameObject[] rhinos = GameObject.FindGameObjectsWithTag("rhino");
         // Active player
         foreach(GameObject rhino in rhinos)
         {
-            var dist = Mathf.Sqrt(Mathf.Pow(rhino.transform.position.x - players[0].transform.position.x, 2) + Mathf.Pow(rhino.transform.position.y - players[0].transform.position.y, 2));
+            var dist = Mathf.Sqrt(Mathf.Pow(rhino.transform.position.x - players.GetChild(currentPlayer).transform.position.x, 2) + Mathf.Pow(rhino.transform.position.y - players.GetChild(currentPlayer).transform.position.y, 2));
             if (dist > MAXDISTANCE)
             {
                 if(dist >= MAXDISTANCE + 3)
@@ -45,6 +49,7 @@ public class PostProcessingScript : MonoBehaviour
             else
             {
                 _bloom.intensity.value = 0;
+                _vignette.intensity.value = 0;
             }
         }
     }

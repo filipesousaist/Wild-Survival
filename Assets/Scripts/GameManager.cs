@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,12 +9,15 @@ public class GameManager : MonoBehaviour
     public PlayerMovement[] players;
     private int currentPlayer = 0;
     private CameraMovement cam;
+    public PostProcessVolume postVolume;
+    private PostProcessingScript dangerAnimation;
     void Start()
     {
         this.players = GetComponentsInChildren<PlayerMovement>();
         this.cam = Camera.main.GetComponent<CameraMovement>();
+        this.dangerAnimation = this.postVolume.GetComponent<PostProcessingScript>();
+        this.dangerAnimation.players = this.transform;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -28,6 +32,7 @@ public class GameManager : MonoBehaviour
             }
             this.players[currentPlayer].inputEnabled = true;
             this.cam.target = this.players[currentPlayer].transform;
+            this.dangerAnimation.currentPlayer = this.currentPlayer;
         }
     }
 }

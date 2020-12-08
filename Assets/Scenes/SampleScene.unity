@@ -700,6 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918dcd3ec24b2484ebc0c70d1e8c8e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   attackedRecently: 0
   speed: 8
   currentState: 0
@@ -1041,6 +1042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2608b8541fa83e44fbc4e697df1aca62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   attackedRecently: 0
   speed: 8
   currentState: 0
@@ -1580,6 +1582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   players: []
+  postVolume: {fileID: 1336292478}
 --- !u!1 &675319067
 GameObject:
   m_ObjectHideFlags: 0
@@ -34009,6 +34012,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume: {fileID: 1336292478}
+  players: {fileID: 0}
+  currentPlayer: 0
 --- !u!1 &1341858046
 GameObject:
   m_ObjectHideFlags: 0
@@ -34305,6 +34310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d569bc1f21aa4fd45bf2348a66396f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   attackedRecently: 0
   speed: 2
   currentState: 0
@@ -34505,6 +34511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918dcd3ec24b2484ebc0c70d1e8c8e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   attackedRecently: 0
   speed: 8
   currentState: 0
