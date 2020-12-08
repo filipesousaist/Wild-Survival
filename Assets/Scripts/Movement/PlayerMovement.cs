@@ -53,6 +53,8 @@ public class PlayerMovement : EntityMovement
             
             yield return StartCoroutine(fadeScript.FadeToBlack());
 
+            //codigo de restaurar vida
+
             animator.SetFloat("moveY", -1);
 
             yield return StartCoroutine(fadeScript.FadeToClear());
