@@ -42,12 +42,15 @@ public class PlayerMovement : Movement
     }
     private IEnumerator OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("FadeObstacle") && other.isTrigger)
+        if (other.CompareTag("FadeObstacle") && other.isTrigger && Input.GetAxisRaw("Vertical") > 0)
         {
 
             var fadeScript = Canvas.FindObjectOfType<Fade>();
             
             yield return StartCoroutine(fadeScript.FadeToBlack());
+
+            animator.SetFloat("moveY", -1);
+
             yield return StartCoroutine(fadeScript.FadeToClear());
 
         }
