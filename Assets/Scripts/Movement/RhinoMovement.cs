@@ -7,7 +7,9 @@ public enum RhinoState
     walk,
     command,
     combat,
-    attack
+    attack,
+    flee,
+    disabled
 }
 public class RhinoMovement : Movement
 {
@@ -19,6 +21,7 @@ public class RhinoMovement : Movement
     public float attackRadius;
     public float attackDuration;
     public float destinationRadius;
+    public Vector2 escapeCoordinates;
 
     private float attackWaitTime;
     private Transform target;
@@ -26,6 +29,7 @@ public class RhinoMovement : Movement
     private Rigidbody2D myRigidBody;
     private Vector3 commandDestination;
     private Animator animator;
+    private List<Vector2> path;
 
 
     // Start is called before the first frame update
@@ -44,12 +48,21 @@ public class RhinoMovement : Movement
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(1))
+        if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
+            Input.GetMouseButtonDown(1))
         {
             ChangeState(RhinoState.command);
             Clicked();
         }
-        
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            ChangeState(RhinoState.flee);
+            path = new List<Vector2>(Pathfinding.RequestPath(transform.position, escapeCoordinates));
+            animator.SetBool("moving", true);
+            speed = 10;
+        }
+
         if (currentState == RhinoState.command)
         {
             Vector3 difference = commandDestination - transform.position;
@@ -120,8 +133,36 @@ public class RhinoMovement : Movement
             }
 
             UpdateAnimation(difference);
+
+        } else if (currentState == RhinoState.flee)
+        {
+            if(path.Count > 0)
+            {
+                Vector3 difference = new Vector3(path[0].x, path[0].y) - transform.position;
+                if (difference.magnitude < 0.1)
+                {
+                    difference = Vector3.zero;
+                    path.Remove(path[0]);
+                }
+                else
+                {
+                    MoveCharacter(difference);
+                }
+                UpdateAnimation(difference);
+            }
+            else
+            {
+                animator.SetBool("moving", false);
+                ChangeState(RhinoState.disabled);
+                speed = 8;
+            }
+
         }
-        
+        else if(currentState == RhinoState.disabled)
+        {
+            UpdateAnimation(Vector3.zero);
+        }
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)
