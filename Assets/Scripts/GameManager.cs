@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             this.players[currentPlayer].inputEnabled = false;
+            this.players[currentPlayer].animator.SetBool("moving", false);
+            this.players[currentPlayer].animator.SetBool("attacking", false);
             currentPlayer++;
             if (currentPlayer >= this.players.Length) {
                 currentPlayer = 0;
