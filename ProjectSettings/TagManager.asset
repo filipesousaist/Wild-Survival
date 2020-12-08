@@ -8,6 +8,7 @@ TagManager:
   - rhino
   - enemy
   - obstacle
+  - FadeObstacle
   layers:
   - Default
   - TransparentFX

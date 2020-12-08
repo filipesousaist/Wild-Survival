@@ -49,7 +49,7 @@ public class RhinoMovement : MonoBehaviour
 
         if (collision.gameObject.tag == "player" || collision.gameObject.tag == "enemy")
         {
-            Physics2D.IgnoreCollision(collision.collider, GetComponent<BoxCollider2D>());
+            Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
         }
 
     }

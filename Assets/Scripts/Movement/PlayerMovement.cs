@@ -41,17 +41,29 @@ public class PlayerMovement : MonoBehaviour
             UpdateAnimationAndMove();
         }
     }
+    private IEnumerator OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("FadeObstacle") && other.isTrigger)
+        {
+
+            var fadeScript = Canvas.FindObjectOfType<Fade>();
+            
+            yield return StartCoroutine(fadeScript.FadeToBlack());
+            yield return StartCoroutine(fadeScript.FadeToClear());
+
+        }
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.gameObject.tag == "rhino" || collision.gameObject.tag == "enemy")
         {
-            Physics2D.IgnoreCollision(collision.collider, GetComponent<BoxCollider2D>());
+            Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
+            this.myRigidBody.velocity = Vector2.zero;
         }
-
     }
 
+    
     private IEnumerator AttackCo()
     {
         animator.SetBool("attacking",true);
