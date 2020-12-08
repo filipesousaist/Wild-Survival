@@ -7,7 +7,9 @@ public enum RhinoState
     walk,
     command,
     combat,
-    attack
+    attack,
+    flee,
+    disabled
 }
 public class RhinoMovement : EntityMovement
 {
@@ -19,11 +21,15 @@ public class RhinoMovement : EntityMovement
     public float attackRadius;
     public float attackDuration;
     public float destinationRadius;
+    public Vector2 escapeCoordinates;
 
     private float attackWaitTime;
     private Transform target;
     private Transform player;
     private Vector3 commandDestination;
+    private List<Vector2> path;
+    private bool isFleeing;
+
 
     // Start is called before the first frame update
     override protected void OnStart()
@@ -33,11 +39,15 @@ public class RhinoMovement : EntityMovement
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         commandDestination = Vector3.zero;
+        isFleeing = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
+            Input.GetMouseButtonDown(1))
         if (Input.GetMouseButtonDown(1))
         {
             ChangeState(RhinoState.command);
@@ -52,6 +62,10 @@ public class RhinoMovement : EntityMovement
                 CombatUpdate(); break;
             case RhinoState.walk:
                 WalkUpdate(); break;
+            case RhinoState.flee:
+                FleeUpdate(); break;
+            case RhinoState.disabled:
+                DisabledUpdate(); break;
         }
     }
 
@@ -108,6 +122,22 @@ public class RhinoMovement : EntityMovement
         }
 
         UpdateAnimation(difference);
+    }
+
+    void FleeUpdate()
+    {
+        if (!isFleeing)
+        {
+            StartCoroutine(FollowPath());
+            isFleeing = true;
+        }
+
+        
+    }
+
+    void DisabledUpdate()
+    {
+        UpdateAnimation(Vector3.zero);
     }
 
     void Clicked()
@@ -176,6 +206,47 @@ public class RhinoMovement : EntityMovement
         }
         UpdateAnimation(difference);
 
+    }
+
+    IEnumerator FollowPath()
+    {
+        if (path.Count > 0)
+        {
+            var targetIndex = 0;
+            Vector2 currentWaypoint = path[0];
+
+            while (true)
+            {
+                if ((Vector2)transform.position == currentWaypoint)
+                {
+                    targetIndex++;
+                    if (targetIndex >= path.Count)
+                    {
+                        animator.SetBool("moving", false);
+                        ChangeState(RhinoState.disabled);
+                        speed = 8;
+                        isFleeing = false;
+                        yield break;
+                    }
+                    currentWaypoint = path[targetIndex];
+                }
+
+                transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, speed * Time.deltaTime);
+                Vector3 difference = new Vector3(currentWaypoint.x, currentWaypoint.y) - transform.position;
+                UpdateAnimation(difference);
+                yield return null;
+
+
+            }
+        }
+    }
+
+    public override void Flee()
+    {
+        ChangeState(RhinoState.flee);
+        path = new List<Vector2>(Pathfinding.RequestPath(transform.position, escapeCoordinates));
+        animator.SetBool("moving", true);
+        speed = 5;
     }
 
     private void ChangeState(RhinoState newState)

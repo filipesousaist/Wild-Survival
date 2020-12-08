@@ -33,6 +33,11 @@ public abstract class EntityMovement : MonoBehaviour
             myRigidBody.velocity = Vector2.zero;
         }
     }
+
+    public virtual void Flee()
+    {
+
+    }
     protected virtual void UpdateAnimation(Vector3 difference)
     {
         if (difference != Vector3.zero)

@@ -6,5 +6,6 @@ public class Rhino : Entity
 {
     protected override void OnDeath()
     {
+        movement.Flee();
     }
 }
