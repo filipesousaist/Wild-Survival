@@ -1,34 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Knockback : MonoBehaviour
 {
     public float thrust;
     public float knockTime;
     public float damage;
+    public int i = 0;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Movement movement = this.GetComponentInParent<Movement>();
+        EntityMovement movement = GetComponentInParent<EntityMovement>();
         
-        if (other.gameObject.CompareTag("enemy") && Time.time - movement.lastAttackTime > 0.1)
+        if (other.isTrigger &&
+            AreOpponents(GetComponent<Collider2D>(), other) && 
+            ! movement.attackedRecently)
         {
-            Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
+            Rigidbody2D hit = other.attachedRigidbody;
             if (hit != null)
-            {
+            {  
                 Vector2 difference = hit.transform.position - transform.position;
                 difference = difference.normalized * thrust;
-                if (other.gameObject.CompareTag("enemy") && other.isTrigger)
-                {
-                    hit.AddForce(difference, ForceMode2D.Impulse);
-                    hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
-                    other.GetComponent<Enemy>().Knock(hit, knockTime, damage);
-                    movement.lastAttackTime = Time.time;
 
-                }
-                
+                hit.AddForce(difference, ForceMode2D.Impulse);
+
+                other.attachedRigidbody.GetComponent<Entity>().Knock(hit, knockTime, damage);
+                movement.attackedRecently = true;
             }
         }
+    }
+
+    private bool AreOpponents(Collider2D col1, Collider2D col2)
+    {
+        bool is1Evil = col1.attachedRigidbody.CompareTag("enemy");
+        bool is2Evil = col2.attachedRigidbody.CompareTag("enemy");
+
+        return is1Evil ^ is2Evil;
     }
 }
