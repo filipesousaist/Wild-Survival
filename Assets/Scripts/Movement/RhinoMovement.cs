@@ -25,7 +25,8 @@ public class RhinoMovement : EntityMovement
 
     private float attackWaitTime;
     private Transform target;
-    private Transform player;
+    private Player player;
+    private PlayerMovement playerMov;
     private Vector3 commandDestination;
     private List<Vector2> path;
     private bool isFleeing;
@@ -34,7 +35,8 @@ public class RhinoMovement : EntityMovement
     // Start is called before the first frame update
     override protected void OnStart()
     {
-        player = GameObject.FindWithTag("player").transform;
+        player = GetComponent<Rhino>().owner;
+        playerMov = player.GetComponent<PlayerMovement>();
         currentState = RhinoState.walk;
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
@@ -45,13 +47,14 @@ public class RhinoMovement : EntityMovement
     // Update is called once per frame
     void Update()
     {
-
-        if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
-            Input.GetMouseButtonDown(1))
-        if (Input.GetMouseButtonDown(1))
-        {
-            ChangeState(RhinoState.command);
-            Clicked();
+        if (playerMov.inputEnabled) { 
+            if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
+                Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(1))
+            {
+                ChangeState(RhinoState.command);
+                Clicked();
+            }
         }
 
         switch (currentState)
@@ -109,7 +112,7 @@ public class RhinoMovement : EntityMovement
 
     void WalkUpdate()
     {
-        Vector3 difference = player.position - transform.position;
+        Vector3 difference = player.transform.position - transform.position;
         if (difference.magnitude <= followRadius && difference.magnitude > arriveRadius)
         {
             MoveCharacter(difference);
