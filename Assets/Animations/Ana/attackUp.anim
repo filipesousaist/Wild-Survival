@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AnaAttackRight
+  m_Name: attackUp
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -42,34 +42,34 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: right hit box
+    path: up hit box
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 6572899725601465121, guid: 812e61843b8ea8148a76386755033a2a,
+      value: {fileID: 3037286439643085476, guid: 812e61843b8ea8148a76386755033a2a,
         type: 3}
-    - time: 0.083333336
-      value: {fileID: -3635485270517307929, guid: 812e61843b8ea8148a76386755033a2a,
+    - time: 0.11666667
+      value: {fileID: 2906586797071889053, guid: 812e61843b8ea8148a76386755033a2a,
         type: 3}
-    - time: 0.18333334
-      value: {fileID: -6832740973155463156, guid: 812e61843b8ea8148a76386755033a2a,
+    - time: 0.2
+      value: {fileID: -3477397606025692685, guid: 812e61843b8ea8148a76386755033a2a,
         type: 3}
-    - time: 0.26666668
-      value: {fileID: -5168446866882576791, guid: 812e61843b8ea8148a76386755033a2a,
+    - time: 0.28333333
+      value: {fileID: -7060293059302518653, guid: 812e61843b8ea8148a76386755033a2a,
         type: 3}
-    - time: 0.36666667
-      value: {fileID: 783116793421167725, guid: 812e61843b8ea8148a76386755033a2a,
+    - time: 0.38333333
+      value: {fileID: -4180360749645027230, guid: 812e61843b8ea8148a76386755033a2a,
         type: 3}
-    - time: 0.46666667
-      value: {fileID: -2142067446891032093, guid: 812e61843b8ea8148a76386755033a2a,
+    - time: 0.48333332
+      value: {fileID: 3724756357345710581, guid: 812e61843b8ea8148a76386755033a2a,
         type: 3}
-    - time: 0.56666666
-      value: {fileID: -5391537476449756894, guid: 812e61843b8ea8148a76386755033a2a,
+    - time: 0.5833333
+      value: {fileID: 4620396856473986910, guid: 812e61843b8ea8148a76386755033a2a,
         type: 3}
     - time: 0.6666667
-      value: {fileID: -2263627060145869164, guid: 812e61843b8ea8148a76386755033a2a,
+      value: {fileID: -6426265165313162629, guid: 812e61843b8ea8148a76386755033a2a,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -83,7 +83,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 1139526253
+      path: 907387680
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -97,14 +97,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 6572899725601465121, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
-    - {fileID: -3635485270517307929, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
-    - {fileID: -6832740973155463156, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
-    - {fileID: -5168446866882576791, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
-    - {fileID: 783116793421167725, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
-    - {fileID: -2142067446891032093, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
-    - {fileID: -5391537476449756894, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
-    - {fileID: -2263627060145869164, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
+    - {fileID: 3037286439643085476, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
+    - {fileID: 2906586797071889053, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
+    - {fileID: -3477397606025692685, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
+    - {fileID: -7060293059302518653, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
+    - {fileID: -4180360749645027230, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
+    - {fileID: 3724756357345710581, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
+    - {fileID: 4620396856473986910, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
+    - {fileID: -6426265165313162629, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -151,7 +151,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: right hit box
+    path: up hit box
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []

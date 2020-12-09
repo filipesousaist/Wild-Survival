@@ -870,8 +870,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: {fileID: 11400000, guid: dc52ac3a11ce0b24ca2902346f2876db, type: 2}
-  entityName: 
-  baseAttack: 0
+  entityName: Player
+  baseAttack: 2
   health: 0
   playerHealthSignal: {fileID: 11400000, guid: 8a1c7f2390e26f5419ecb12426813600, type: 2}
 --- !u!1 &478698563
@@ -1101,7 +1101,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499042335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.34, y: 0.48, z: 0}
+  m_LocalPosition: {x: 1.75, y: -5.45, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children:
   - {fileID: 478698564}
@@ -1630,7 +1630,7 @@ GameObject:
   - component: {fileID: 600836082}
   - component: {fileID: 600836081}
   m_Layer: 0
-  m_Name: A*
+  m_Name: A-star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34754,6 +34754,8 @@ GameObject:
   - component: {fileID: 1448629057}
   - component: {fileID: 1448629056}
   - component: {fileID: 1448629061}
+  - component: {fileID: 1448629062}
+  - component: {fileID: 1448629063}
   m_Layer: 0
   m_Name: AnaGaita
   m_TagString: player
@@ -34884,7 +34886,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448629055}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7744012, y: -1.6678106, z: 0.3383909}
+  m_LocalPosition: {x: 0.53, y: 1.4, z: 0.3383909}
   m_LocalScale: {x: 0.3932429, y: 0.4, z: 1}
   m_Children:
   - {fileID: 400717590}
@@ -34913,6 +34915,49 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1448629062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448629055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 697c5a91519b8cb48a1747d294735d64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: {fileID: 11400000, guid: dc52ac3a11ce0b24ca2902346f2876db, type: 2}
+  entityName: Ana Gaita
+  baseAttack: 2
+  health: 0
+  playerHealthSignal: {fileID: 11400000, guid: 8a1c7f2390e26f5419ecb12426813600, type: 2}
+--- !u!61 &1448629063
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448629055}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.023660392, y: -0.5001908}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 4, y: 4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9730237, y: 2.7801251}
+  m_EdgeRadius: 0
 --- !u!1 &1635240602
 GameObject:
   m_ObjectHideFlags: 0
@@ -34987,6 +35032,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 1.0398376, y: 0.86829567}
+      - {x: 0.9448823, y: 1.6156012}
       - {x: 0.88424826, y: 2.0927958}
       - {x: 0.072478175, y: 2.0450704}
       - {x: 0.010284781, y: 2.105789}
