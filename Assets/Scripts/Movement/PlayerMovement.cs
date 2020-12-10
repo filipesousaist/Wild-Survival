@@ -1,27 +1,40 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.AI;
+
 public enum PlayerState
 {
     walk,
-    attack
+    attack,
+    combat
 }
 
 public class PlayerMovement : EntityMovement
 {
     public PlayerState currentState;
     public bool inputEnabled;
+    public PlayerMovement[] players;
+
+    private Transform target;
+    private PlayerMovement playerToFollow;
+    private NavMeshAgent agent;
 
 
     // Start is called before the first frame update
     override protected void OnStart()
     {
         currentState = PlayerState.walk;
+        players = transform.parent.GetComponentsInChildren<PlayerMovement>();
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (inputEnabled) { 
+        if (inputEnabled) {
+            agent.enabled = false;
             Vector3 difference = Vector3.zero;
             difference.x = Input.GetAxisRaw("Horizontal");
             difference.y = Input.GetAxisRaw("Vertical");
@@ -43,7 +56,104 @@ public class PlayerMovement : EntityMovement
                 UpdateAnimation(difference);
             }
         }
+        else
+        {
+            agent.enabled = true;
+            CombatUpdate();
+            if (currentState == PlayerState.walk)
+            {
+                foreach (PlayerMovement player in players)
+                {
+                    if (player.inputEnabled)
+                    {
+                        playerToFollow = player;
+                        break;
+                    }
+                }
+                Vector3 difference = playerToFollow.transform.position - transform.position;
+                if (currentState == PlayerState.walk)
+                {
+                    if (difference.magnitude < 3)
+                    {
+                        difference = Vector3.zero;
+                        agent.velocity = Vector3.zero;
+                        agent.isStopped = true;
+                        animator.SetBool("moving", false);
+                    }
+                    else
+                    {
+                        animator.SetBool("moving", true);
+                        agent.destination = playerToFollow.transform.position;
+                        agent.isStopped = false;
+                        UpdateAnimation(difference);
+                    }
+                    UpdateAnimation(difference);
+
+                }
+            }
+        }
     }
+
+    void CombatUpdate()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+        if (enemies != null)
+        {
+            float closestEnemyDistance = 0f;
+            foreach (GameObject enemy in enemies)
+            {
+                Vector3 enemyPosition = enemy.transform.position;
+                float distanceFromEnemy = (enemyPosition - transform.position).magnitude;
+                if (distanceFromEnemy < chaseRadius && closestEnemyDistance < distanceFromEnemy)
+                {
+                    target = enemy.transform;
+                    closestEnemyDistance = distanceFromEnemy;
+                }
+            }
+            if (closestEnemyDistance == 0)
+                ChangeState(PlayerState.walk);
+            else
+            {
+                ChangeState(PlayerState.combat);
+                InCombat();
+            }
+        }
+        else
+            ChangeState(PlayerState.walk);
+    }
+
+    void InCombat()
+    {
+        Vector3 difference = target.position - transform.position;
+
+        attackWaitTime = System.Math.Min(attackWaitTime + Time.deltaTime, maxAttackWaitTime);
+
+        if (difference.magnitude <= attackRadius)
+        {
+            if (attackWaitTime == maxAttackWaitTime)
+                StartCoroutine(AttackCo());
+        }
+        else
+        {
+            if (difference.magnitude <= chaseRadius)
+            {
+                agent.destination = target.position;
+                agent.isStopped = false;
+                animator.SetBool("moving", true);
+                //MoveCharacter(difference);
+            }
+            else
+            {
+                agent.velocity = Vector3.zero;
+                agent.isStopped = true;
+                difference = Vector3.zero;
+                animator.SetBool("moving", false);
+            }
+        }
+        UpdateAnimation(difference);
+
+    }
+
     private IEnumerator OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("FadeObstacle") && other.isTrigger && Input.GetAxisRaw("Vertical") > 0)
@@ -65,13 +175,19 @@ public class PlayerMovement : EntityMovement
 
     private IEnumerator AttackCo()
     {
+        attackWaitTime = 0;
+
         animator.SetBool("moving", false);
         animator.SetBool("attacking",true);
+        agent.isStopped = true;
         ChangeState(PlayerState.attack);
         yield return null;
         animator.SetBool("attacking",false);
         yield return new WaitForSeconds(.33f);
-        ChangeState(PlayerState.walk);
+        if (inputEnabled)
+            ChangeState(PlayerState.walk);
+        else
+            ChangeState(PlayerState.combat);
         attackedRecently = false;
     }
 
