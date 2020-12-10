@@ -17,14 +17,9 @@ public class RhinoMovement : EntityMovement
     [ReadOnly] public RhinoState currentState;
     public float followRadius;  // maximum distance to follow an activist
     public float arriveRadius;
-    public float maxAttackWaitTime;
-    public float chaseRadius;  // maximum distance to follow a zombie
-    public float attackRadius;
-    public float attackDuration;
     public float destinationRadius;
     public Vector2 escapeCoordinates;
 
-    private float attackWaitTime;
     private Transform target;
     private Player player;
     private PlayerMovement playerMov;
@@ -68,7 +63,10 @@ public class RhinoMovement : EntityMovement
             case RhinoState.combat:
                 CombatUpdate(); break;
             case RhinoState.walk:
-                WalkUpdate(); break;
+                WalkUpdate();
+                if (!playerMov.inputEnabled)
+                    CombatUpdate();
+                break;
             case RhinoState.flee:
                 FleeUpdate(); break;
             case RhinoState.disabled:
@@ -79,7 +77,6 @@ public class RhinoMovement : EntityMovement
     void CommandUpdate()
     {
         Vector3 difference = commandDestination - transform.position;
-        attackWaitTime = System.Math.Min(attackWaitTime + Time.deltaTime, maxAttackWaitTime);
         if (difference.magnitude > destinationRadius)
         {
             agent.isStopped = false;
@@ -115,8 +112,11 @@ public class RhinoMovement : EntityMovement
             if (closestEnemyDistance == 0)
                 ChangeState(RhinoState.walk);
             else
+            {
                 InCombat();
-        }
+                ChangeState(RhinoState.combat);
+            }
+            }
         else
             ChangeState(RhinoState.walk);
     }
@@ -178,7 +178,11 @@ public class RhinoMovement : EntityMovement
 
     private IEnumerator AttackCo()
     {
+        attackWaitTime = 0;
+
+        animator.SetBool("moving", false);
         animator.SetBool("attacking", true);
+        agent.isStopped = true;
         ChangeState(RhinoState.attack);
         yield return null;
         animator.SetBool("attacking", false);
