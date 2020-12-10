@@ -47,7 +47,7 @@ public class RhinoMovement : EntityMovement
     // Update is called once per frame
     void Update()
     {
-        if (playerMov.inputEnabled) { 
+        if (playerMov.inputEnabled) {
             if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
                 Input.GetMouseButtonDown(1))
             {
@@ -163,8 +163,6 @@ public class RhinoMovement : EntityMovement
             StartCoroutine(FollowPath());
             isFleeing = true;
         }
-
-        
     }
 
     void DisabledUpdate()
