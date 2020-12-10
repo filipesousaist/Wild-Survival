@@ -30,27 +30,28 @@ public class PostProcessingScript : MonoBehaviour
     {
         
         GameObject[] rhinos = GameObject.FindGameObjectsWithTag("rhino");
+        float dist = float.MaxValue;
         // Active player
         foreach(GameObject rhino in rhinos)
         {
-            var dist = Mathf.Sqrt(Mathf.Pow(rhino.transform.position.x - players.GetChild(currentPlayer).transform.position.x, 2) + Mathf.Pow(rhino.transform.position.y - players.GetChild(currentPlayer).transform.position.y, 2));
-            if (dist > MAXDISTANCE)
+            dist = Mathf.Min(Mathf.Sqrt(Mathf.Pow(rhino.transform.position.x - players.GetChild(currentPlayer).transform.position.x, 2) + Mathf.Pow(rhino.transform.position.y - players.GetChild(currentPlayer).transform.position.y, 2)), dist);
+        }
+        if (dist > MAXDISTANCE)
+        {
+            if(dist >= MAXDISTANCE + 3)
             {
-                if(dist >= MAXDISTANCE + 3)
-                {
-                    _bloom.intensity.value = Mathf.PingPong(Time.time, 1) * 20;
-                }
-                else
-                {
-                    _bloom.intensity.value = 0;
-                }
-                _vignette.intensity.value = Mathf.Min((float)(dist - MAXDISTANCE) / 10, 0.5f);
+                _bloom.intensity.value = Mathf.PingPong(Time.time, 1) * 20;
             }
             else
             {
                 _bloom.intensity.value = 0;
-                _vignette.intensity.value = 0;
             }
+            _vignette.intensity.value = Mathf.Min((float)(dist - MAXDISTANCE) / 10, 0.5f);
+        }
+        else
+        {
+            _bloom.intensity.value = 0;
+            _vignette.intensity.value = 0;
         }
     }
 }
