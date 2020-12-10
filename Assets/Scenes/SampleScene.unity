@@ -34675,7 +34675,7 @@ MonoBehaviour:
   speed: 8
   maxAttackWaitTime: 1
   chaseRadius: 10
-  attackRadius: 1.5
+  attackRadius: 1
   attackDuration: 0.5
   currentState: 0
   inputEnabled: 0
