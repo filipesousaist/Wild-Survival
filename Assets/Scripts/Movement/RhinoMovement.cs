@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public enum RhinoState
 {
@@ -25,33 +26,39 @@ public class RhinoMovement : EntityMovement
 
     private float attackWaitTime;
     private Transform target;
-    private Transform player;
+    private Player player;
+    private PlayerMovement playerMov;
     private Vector3 commandDestination;
     private List<Vector2> path;
     private bool isFleeing;
+    private NavMeshAgent agent;
 
 
     // Start is called before the first frame update
     override protected void OnStart()
     {
-        player = GameObject.FindWithTag("player").transform;
+        player = GetComponent<Rhino>().owner;
+        playerMov = player.GetComponent<PlayerMovement>();
         currentState = RhinoState.walk;
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         commandDestination = Vector3.zero;
         isFleeing = false;
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
-            Input.GetMouseButtonDown(1))
-        if (Input.GetMouseButtonDown(1))
-        {
-            ChangeState(RhinoState.command);
-            Clicked();
+        if (playerMov.inputEnabled) { 
+            if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
+                Input.GetMouseButtonDown(1))
+            {
+                ChangeState(RhinoState.command);
+                Clicked();
+            }
         }
 
         switch (currentState)
@@ -75,11 +82,18 @@ public class RhinoMovement : EntityMovement
         attackWaitTime = System.Math.Min(attackWaitTime + Time.deltaTime, maxAttackWaitTime);
         if (difference.magnitude > destinationRadius)
         {
-            MoveCharacter(difference);
+            agent.isStopped = false;
+            animator.SetBool("moving", true);
+            agent.destination = commandDestination;
+            //MoveCharacter(difference);
             UpdateAnimation(difference);
         }
         else
+        {
+            agent.isStopped = true;
+            animator.SetBool("moving", false);
             ChangeState(RhinoState.combat);
+        }
     }
 
     void CombatUpdate()
@@ -106,18 +120,34 @@ public class RhinoMovement : EntityMovement
         else
             ChangeState(RhinoState.walk);
     }
+    public static void DebugDrawPath(Vector3[] corners)
+    {
+        if (corners.Length < 2) { return; }
+        int i = 0;
+        for (; i < corners.Length - 1; i++)
+        {
+            Debug.DrawLine(corners[i], corners[i + 1], Color.blue);
+        }
+        Debug.DrawLine(corners[0], corners[1], Color.red);
+    }
 
     void WalkUpdate()
     {
-        Vector3 difference = player.position - transform.position;
+        Vector3 difference = player.transform.position - transform.position;
         if (difference.magnitude <= followRadius && difference.magnitude > arriveRadius)
         {
-            MoveCharacter(difference);
+            //MoveCharacter(difference);
+            agent.destination = player.transform.position;
+            agent.isStopped = false;
+            animator.SetBool("moving", true);
             ChangeState(RhinoState.walk);
+            DebugDrawPath(agent.path.corners);
         }
         else
         {
             difference = Vector3.zero;
+            agent.velocity = Vector3.zero;
+            agent.isStopped = true;
             animator.SetBool("moving", false);
         }
 
@@ -196,10 +226,13 @@ public class RhinoMovement : EntityMovement
         {
             if (difference.magnitude <= chaseRadius)
             {
-                MoveCharacter(difference);
+                agent.destination = target.position;
+                //MoveCharacter(difference);
             }
             else
             {
+                agent.velocity = Vector3.zero;
+                agent.isStopped = true;
                 difference = Vector3.zero;
                 animator.SetBool("moving", false);
             }

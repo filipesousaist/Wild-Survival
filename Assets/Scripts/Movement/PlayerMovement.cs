@@ -54,6 +54,7 @@ public class PlayerMovement : EntityMovement
             yield return StartCoroutine(fadeScript.FadeToBlack());
 
             //codigo de restaurar vida
+            this.GetComponent<Player>().health = this.GetComponent<Player>().maxHealth.value;
 
             animator.SetFloat("moveY", -1);
 
