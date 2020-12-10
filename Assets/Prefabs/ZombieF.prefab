@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 7725795864494037428}
   - component: {fileID: 7725795864494037417}
   - component: {fileID: 7725795864494037422}
+  - component: {fileID: -2759210665878681477}
   m_Layer: 0
   m_Name: ZombieF
   m_TagString: enemy
@@ -250,11 +251,11 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackedRecently: 0
   speed: 2
-  currentState: 0
   maxAttackWaitTime: 2
   chaseRadius: 10
   attackRadius: 1
   attackDuration: 0.68
+  currentState: 0
 --- !u!61 &7725795864494037417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -299,6 +300,28 @@ MonoBehaviour:
   health: 0
   deathEffect: {fileID: 4376657538222972940, guid: d5cb48781ac0ae64b9a74ed9a7d114e7,
     type: 3}
+--- !u!195 &-2759210665878681477
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725795864494037430}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1.95
+  m_Speed: 1
+  m_Acceleration: 5
+  avoidancePriority: 50
+  m_AngularSpeed: 1
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 0
+  m_AutoRepath: 1
+  m_Height: 3.25
+  m_BaseOffset: 1.65
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 0
 --- !u!1 &7725795864604233042
 GameObject:
   m_ObjectHideFlags: 0

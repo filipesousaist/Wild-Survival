@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.AI;
 
 public enum EnemyState
 {
@@ -15,6 +16,7 @@ public class EnemyMovement : EntityMovement
     [ReadOnly] public EnemyState currentState;
 
     private Transform target;
+    private NavMeshAgent agent;
 
     // Start is called before the first frame update
     override protected void OnStart()
@@ -25,6 +27,10 @@ public class EnemyMovement : EntityMovement
         currentState = EnemyState.walk;
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
+
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
     
     // Update is called once per frame
@@ -46,12 +52,16 @@ public class EnemyMovement : EntityMovement
         {  
             if (difference.magnitude <= chaseRadius)
             {
-                MoveCharacter(difference);
+                animator.SetBool("moving", true);
+                agent.destination = target.transform.position;
+                agent.isStopped = false;
                 ChangeState(EnemyState.walk);
             }
             else
             {
                 difference = Vector3.zero;
+                agent.velocity = Vector3.zero;
+                agent.isStopped = true;
                 animator.SetBool("moving", false);
             }
         }
@@ -101,7 +111,9 @@ public class EnemyMovement : EntityMovement
     {
         attackWaitTime = 0;
 
+        animator.SetBool("moving", false);
         animator.SetBool("attacking", true);
+        agent.isStopped = true;
         ChangeState(EnemyState.attack);
         yield return null;
         animator.SetBool("attacking", false);
