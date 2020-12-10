@@ -674,6 +674,7 @@ GameObject:
   - component: {fileID: 425848076}
   - component: {fileID: 425848077}
   - component: {fileID: 425848078}
+  - component: {fileID: 425848079}
   m_Layer: 0
   m_Name: Player
   m_TagString: player
@@ -786,8 +787,13 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackedRecently: 0
   speed: 20
+  maxAttackWaitTime: 0.5
+  chaseRadius: 10
+  attackRadius: 2
+  attackDuration: 0.3
   currentState: 0
   inputEnabled: 1
+  players: []
 --- !u!61 &425848075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -876,6 +882,28 @@ MonoBehaviour:
   baseAttack: 2
   health: 0
   playerHealthSignal: {fileID: 11400000, guid: 8a1c7f2390e26f5419ecb12426813600, type: 2}
+--- !u!195 &425848079
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425848070}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1.95
+  m_Speed: 1
+  m_Acceleration: 5
+  avoidancePriority: 50
+  m_AngularSpeed: 1
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 0
+  m_AutoRepath: 1
+  m_Height: 3.25
+  m_BaseOffset: 1.625
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 0
 --- !u!1 &478698563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,13 +1157,13 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackedRecently: 0
   speed: 8
-  currentState: 0
-  followRadius: 20
-  arriveRadius: 2
   maxAttackWaitTime: 1
   chaseRadius: 5
   attackRadius: 1
   attackDuration: 0.62
+  currentState: 0
+  followRadius: 20
+  arriveRadius: 2
   destinationRadius: 1
   escapeCoordinates: {x: 50, y: -30}
 --- !u!114 &499042342
@@ -34797,13 +34825,13 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackedRecently: 0
   speed: 8
+  maxAttackWaitTime: 1
+  chaseRadius: 5
+  attackRadius: 1.5
+  attackDuration: 0.62
   currentState: 0
   followRadius: 20
   arriveRadius: 2
-  maxAttackWaitTime: 1
-  chaseRadius: 5
-  attackRadius: 1
-  attackDuration: 0.62
   destinationRadius: 1
   escapeCoordinates: {x: 50, y: -30}
 --- !u!95 &1430040757
@@ -35002,11 +35030,11 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackedRecently: 0
   speed: 2
-  currentState: 0
   maxAttackWaitTime: 2
   chaseRadius: 10
   attackRadius: 1
   attackDuration: 0.68
+  currentState: 0
 --- !u!61 &1444409231
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35183,6 +35211,7 @@ GameObject:
   - component: {fileID: 1448629061}
   - component: {fileID: 1448629062}
   - component: {fileID: 1448629063}
+  - component: {fileID: 1448629064}
   m_Layer: 0
   m_Name: AnaGaita
   m_TagString: player
@@ -35205,8 +35234,13 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackedRecently: 0
   speed: 8
+  maxAttackWaitTime: 1
+  chaseRadius: 10
+  attackRadius: 1.5
+  attackDuration: 0.5
   currentState: 0
   inputEnabled: 0
+  players: []
 --- !u!61 &1448629057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35385,6 +35419,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9730237, y: 2.7801251}
   m_EdgeRadius: 0
+--- !u!195 &1448629064
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448629055}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1.95
+  m_Speed: 1
+  m_Acceleration: 5
+  avoidancePriority: 50
+  m_AngularSpeed: 1
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 0
+  m_AutoRepath: 1
+  m_Height: 3.25
+  m_BaseOffset: 1.625
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 0
 --- !u!1 &1526171118
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,13 +14,7 @@ public class EnemyMovement : EntityMovement
 {
     [ReadOnly] public EnemyState currentState;
 
-    public float maxAttackWaitTime;
-    public float chaseRadius;
-    public float attackRadius;
-    public float attackDuration;
-
     private Transform target;
-    private float attackWaitTime;
 
     // Start is called before the first frame update
     override protected void OnStart()

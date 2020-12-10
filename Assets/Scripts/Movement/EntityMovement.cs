@@ -8,9 +8,15 @@ public abstract class EntityMovement : MonoBehaviour
     protected Rigidbody2D myRigidBody;
     protected Vector3 change;
     private Entity entity;
+    protected float attackWaitTime;
+
 
     [ReadOnly] public bool attackedRecently;
     public float speed;
+    public float maxAttackWaitTime;
+    public float chaseRadius;  // maximum distance to follow a zombie
+    public float attackRadius;
+    public float attackDuration;
 
     // Start is called before the first frame update
     void Start()
