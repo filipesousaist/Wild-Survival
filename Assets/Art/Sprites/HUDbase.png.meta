@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: d23c6e884294ede409e5d0ba99396fc9
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5681318273583751729
+    second: HUDbase_0
+  - first:
+      213: 8430056643095214235
+    second: HUDbase_1
+  - first:
+      213: 241816298193083454
+    second: HUDbase_2
+  - first:
+      213: 3702594981693228805
+    second: HUDbase_3
+  - first:
+      213: 4386398028616995790
+    second: HUDbase_4
+  - first:
+      213: 143589966137867088
+    second: HUDbase_5
+  - first:
+      213: 2278640343004399291
+    second: HUDbase_6
+  - first:
+      213: 1663142860958340232
+    second: HUDbase_7
+  - first:
+      213: 8306193666668721459
+    second: HUDbase_8
+  - first:
+      213: 7593311029960611681
+    second: HUDbase_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,7 +115,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: HUDbase_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 165
+        width: 112
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13225e07ed818de40800000000000000
+      internalID: 5681318273583751729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUDbase_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 165
+        width: 109
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98bc104ad39df470800000000000000
+      internalID: 8430056643095214235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUDbase_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 165
+        width: 109
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3cd2ba54aa1b5300800000000000000
+      internalID: 241816298193083454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUDbase_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 165
+        width: 109
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50708f6c482426330800000000000000
+      internalID: 3702594981693228805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUDbase_4
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 165
+        width: 111
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3903354cd9fdc30800000000000000
+      internalID: 4386398028616995790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUDbase_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 114
+        width: 522
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b35fc30522ef100800000000000000
+      internalID: 143589966137867088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUDbase_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 74
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6c6a7b15b5f9f10800000000000000
+      internalID: 2278640343004399291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUDbase_7
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 62
+        width: 262
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884162ece9ba41710800000000000000
+      internalID: 1663142860958340232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUDbase_8
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 41
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3357369b127854370800000000000000
+      internalID: 8306193666668721459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUDbase_9
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 8
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1679bd1962cd06960800000000000000
+      internalID: 7593311029960611681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

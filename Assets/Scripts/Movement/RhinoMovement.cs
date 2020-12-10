@@ -52,10 +52,9 @@ public class RhinoMovement : EntityMovement
     // Update is called once per frame
     void Update()
     {
-        if (playerMov.inputEnabled) { 
+        if (playerMov.inputEnabled) {
             if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
                 Input.GetMouseButtonDown(1))
-            if (Input.GetMouseButtonDown(1))
             {
                 ChangeState(RhinoState.command);
                 Clicked();
@@ -83,12 +82,16 @@ public class RhinoMovement : EntityMovement
         attackWaitTime = System.Math.Min(attackWaitTime + Time.deltaTime, maxAttackWaitTime);
         if (difference.magnitude > destinationRadius)
         {
+            agent.isStopped = false;
+            animator.SetBool("moving", true);
             agent.destination = commandDestination;
             //MoveCharacter(difference);
             UpdateAnimation(difference);
         }
         else
-        { 
+        {
+            agent.isStopped = true;
+            animator.SetBool("moving", false);
             ChangeState(RhinoState.combat);
         }
     }
@@ -158,8 +161,6 @@ public class RhinoMovement : EntityMovement
             StartCoroutine(FollowPath());
             isFleeing = true;
         }
-
-        
     }
 
     void DisabledUpdate()
