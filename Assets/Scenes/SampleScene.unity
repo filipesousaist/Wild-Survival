@@ -920,9 +920,9 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackedRecently: 0
   speed: 20
-  maxAttackWaitTime: 0.5
+  maxAttackWaitTime: 1
   chaseRadius: 10
-  attackRadius: 2
+  attackRadius: 1
   attackDuration: 0.3
   currentState: 0
   inputEnabled: 1
