@@ -34,6 +34,10 @@ public class PlayerMovement : EntityMovement
     void Update()
     {
         if (inputEnabled) {
+            if (currentState == PlayerState.combat)
+            {
+                ChangeState(PlayerState.walk);
+            }
             agent.enabled = false;
             Vector3 difference = Vector3.zero;
             difference.x = Input.GetAxisRaw("Horizontal");

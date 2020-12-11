@@ -34216,6 +34216,7 @@ MonoBehaviour:
   volume: {fileID: 1336292478}
   players: {fileID: 617111318}
   currentPlayer: 0
+  maxDamageWaitTime: 5
 --- !u!1001 &1363850391
 PrefabInstance:
   m_ObjectHideFlags: 0
