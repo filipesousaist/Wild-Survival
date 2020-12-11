@@ -202,7 +202,8 @@ public class PlayerMovement : EntityMovement
 
         animator.SetBool("moving", false);
         animator.SetBool("attacking",true);
-        agent.isStopped = true;
+        if (!inputEnabled)
+            agent.isStopped = true;
         ChangeState(PlayerState.attack);
         yield return null;
         animator.SetBool("attacking",false);
