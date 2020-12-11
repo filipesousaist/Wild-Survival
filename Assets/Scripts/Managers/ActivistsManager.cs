@@ -69,6 +69,7 @@ public class ActivistsManager : MonoBehaviour
             player.FullRestore();
             if (i == currentPlayer.value)
                 player.UpdateBarHealth();
+            activistDead = 0;
 
         }    
     }
