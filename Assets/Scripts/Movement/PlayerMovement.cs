@@ -101,30 +101,46 @@ public class PlayerMovement : EntityMovement
 
     void CombatUpdate()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-        if (enemies != null)
+        if (target != null)
         {
-            float closestEnemyDistance = 0f;
-            foreach (GameObject enemy in enemies)
-            {
-                Vector3 enemyPosition = enemy.transform.position;
-                float distanceFromEnemy = (enemyPosition - transform.position).magnitude;
-                if (distanceFromEnemy < chaseRadius && closestEnemyDistance < distanceFromEnemy)
-                {
-                    target = enemy.transform;
-                    closestEnemyDistance = distanceFromEnemy;
-                }
-            }
-            if (closestEnemyDistance == 0)
-                ChangeState(PlayerState.walk);
-            else
+            float distanceFromEnemy = (target.position - transform.position).magnitude;
+            if (distanceFromEnemy < chaseRadius )
             {
                 ChangeState(PlayerState.combat);
                 InCombat();
             }
+            else
+            {
+                ChangeState(PlayerState.walk);
+            }
         }
         else
-            ChangeState(PlayerState.walk);
+        {
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+            if (enemies != null)
+            {
+                float closestEnemyDistance = 0f;
+                foreach (GameObject enemy in enemies)
+                {
+                    Vector3 enemyPosition = enemy.transform.position;
+                    float distanceFromEnemy = (enemyPosition - transform.position).magnitude;
+                    if (distanceFromEnemy < chaseRadius && closestEnemyDistance < distanceFromEnemy)
+                    {
+                        target = enemy.transform;
+                        closestEnemyDistance = distanceFromEnemy;
+                    }
+                }
+                if (closestEnemyDistance == 0)
+                    ChangeState(PlayerState.walk);
+                else
+                {
+                    ChangeState(PlayerState.combat);
+                    InCombat();
+                }
+            }
+            else
+                ChangeState(PlayerState.walk);
+        }
     }
 
     void InCombat()
