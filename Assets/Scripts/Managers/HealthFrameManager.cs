@@ -4,11 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HealthFrameManager : MonoBehaviour
 {
-    public Image healthBar;
-    public Sprite fullHealth;
-    public Sprite threeQuartersHealth;
-    public Sprite twoQuartersHealth;
-    public Sprite oneQuartersHealth;
+    public GameObject healthBar;
+
     public FloatValue playerCurrentHealth;
 
     public Image portrait;
@@ -24,32 +21,22 @@ public class HealthFrameManager : MonoBehaviour
     
     public void InitHealth()
     {
-        healthBar.gameObject.SetActive(true);
-        healthBar.sprite = fullHealth;
+        healthBar.SetActive(true);
     }
 
     public void UpdateBar()
     {
-        float tempHealth = playerCurrentHealth.value;
-        
-        if (tempHealth == 4)
-        {
-            healthBar.sprite = fullHealth;
-        }
-        else if (tempHealth == 3)
-        {
-            healthBar.sprite = threeQuartersHealth;
-        }
-        else if (tempHealth == 2)
-        {
-            healthBar.sprite = twoQuartersHealth;
-        }
-        else if (tempHealth == 1)
-        {
-            healthBar.sprite = oneQuartersHealth;
-        }
-        
-        healthBar.gameObject.SetActive(tempHealth > 0);
+        Player player = FindObjectOfType<ActivistsManager>().players[currentPlayer.value].GetComponent<Player>();
+        Transform midRect = healthBar.transform.Find("Middle Rect");
+        Transform frontRect = healthBar.transform.Find("Front Rect");
+
+        float percentage = Mathf.Max(playerCurrentHealth.value / player.maxHealth.value, 0);
+        float newPosition = - midRect.localScale.x / 2;
+        float newWidth = midRect.localScale.x * percentage;
+        frontRect.localScale = new Vector3(newWidth, midRect.localScale.y);
+        frontRect.localPosition = new Vector3(newPosition, midRect.localPosition.y);
+
+        frontRect.GetComponent<Image>().color = player.ChooseBarColor(percentage);
     }
 
     public void UpdatePortrait()

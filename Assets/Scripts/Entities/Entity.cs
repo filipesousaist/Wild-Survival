@@ -63,7 +63,7 @@ public abstract class Entity : MonoBehaviour
         frontRect.GetComponent<SpriteRenderer>().color = ChooseBarColor(percentage);
     }
 
-    private Color ChooseBarColor(float percentage)
+    public Color ChooseBarColor(float percentage)
     {
         if (percentage == 1)
             return GREEN;
