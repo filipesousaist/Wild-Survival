@@ -720,12 +720,12 @@ PrefabInstance:
     - target: {fileID: 7725795864494037416, guid: 188da82ce7b525847924f08eb1c0b773,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58.71698
+      value: 58.64
       objectReference: {fileID: 0}
     - target: {fileID: 7725795864494037416, guid: 188da82ce7b525847924f08eb1c0b773,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -34.077187
+      value: -34.6
       objectReference: {fileID: 0}
     - target: {fileID: 7725795864494037416, guid: 188da82ce7b525847924f08eb1c0b773,
         type: 3}
@@ -34289,6 +34289,7 @@ MonoBehaviour:
   volume: {fileID: 1336292478}
   players: {fileID: 617111318}
   currentPlayer: 0
+  maxDamageWaitTime: 5
 --- !u!1 &1368846224
 GameObject:
   m_ObjectHideFlags: 0

@@ -158,11 +158,19 @@ public class RhinoMovement : EntityMovement
 
     void FleeUpdate()
     {
-        if (!isFleeing)
+        Vector3 difference = new Vector3(escapeCoordinates.x, escapeCoordinates.y) - transform.position;
+        if (difference.magnitude < 1)
         {
-            StartCoroutine(FollowPath());
-            isFleeing = true;
+            animator.SetBool("moving", false);
+            ChangeState(RhinoState.disabled);
+            agent.isStopped = true;
+            agent.destination = transform.position;
+            isFleeing = false;
+            agent.velocity = Vector3.zero;
         }
+
+        UpdateAnimation(agent.velocity);
+        
     }
 
     void DisabledUpdate()
@@ -246,45 +254,13 @@ public class RhinoMovement : EntityMovement
 
     }
 
-    IEnumerator FollowPath()
-    {
-        if (path.Count > 0)
-        {
-            var targetIndex = 0;
-            Vector2 currentWaypoint = path[0];
-
-            while (true)
-            {
-                if ((Vector2)transform.position == currentWaypoint)
-                {
-                    targetIndex++;
-                    if (targetIndex >= path.Count)
-                    {
-                        animator.SetBool("moving", false);
-                        ChangeState(RhinoState.disabled);
-                        speed = 8;
-                        isFleeing = false;
-                        yield break;
-                    }
-                    currentWaypoint = path[targetIndex];
-                }
-
-                transform.position = Vector2.MoveTowards(transform.position, currentWaypoint, speed * Time.deltaTime);
-                Vector3 difference = new Vector3(currentWaypoint.x, currentWaypoint.y) - transform.position;
-                UpdateAnimation(difference);
-                yield return null;
-
-
-            }
-        }
-    }
-
     public override void Flee()
     {
         ChangeState(RhinoState.flee);
-        path = new List<Vector2>(Pathfinding.RequestPath(transform.position, escapeCoordinates));
+        agent.destination = escapeCoordinates;
         animator.SetBool("moving", true);
-        speed = 5;
+        agent.isStopped = false;
+        isFleeing = true;
     }
 
     private void ChangeState(RhinoState newState)
