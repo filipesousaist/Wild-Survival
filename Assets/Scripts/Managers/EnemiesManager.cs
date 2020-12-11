@@ -32,7 +32,8 @@ public class EnemiesManager : MonoBehaviour
 
             for (int i = 0; i < waves[currentWave]; i ++)
             {
-                GameObject newEnemy = Instantiate(prefabs[0]);
+                int enemyIndex = (Random.value > 0.05) ? 0 : 1;
+                GameObject newEnemy = Instantiate(prefabs[enemyIndex]);
                 newEnemy.transform.parent = enemiesObject.transform;
                 newEnemy.transform.position = spawnPoints[i];
             }
