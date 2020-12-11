@@ -16,6 +16,7 @@ public class Player : Entity
     override protected void TakeDamage(float damage)
     {
         base.TakeDamage(damage);
+        
         UpdateBarHealth();
     }
 
@@ -45,7 +46,13 @@ public class Player : Entity
             movement.Die();
             StartCoroutine(DeathCo());
         }
- 
+        ActivistsManager manager = FindObjectOfType<ActivistsManager>();
+
+        if (manager.IsCurrentActivist(this))
+        {
+            manager.activistDead++;
+            manager.ChangePlayer();
+        }
     }
 
     IEnumerator DeathCo()
@@ -53,5 +60,6 @@ public class Player : Entity
         animator.SetBool("firstTimeDying", true);
         yield return null;
         animator.SetBool("firstTimeDying", false);
+        
     }
 }

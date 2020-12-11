@@ -529,6 +529,8 @@ MonoBehaviour:
   entityName: 
   baseAttack: 4
   health: 0
+  healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
+    type: 3}
   deathEffect: {fileID: 5802363849848596127, guid: 97088d85c306d1c478d66c509f87423b,
     type: 3}
 --- !u!195 &244674749891776438
