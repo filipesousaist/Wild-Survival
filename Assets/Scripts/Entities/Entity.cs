@@ -41,6 +41,11 @@ public abstract class Entity : MonoBehaviour
         TakeDamage(damage);
     }
 
+    public virtual void FullRestore()
+    {
+        health = maxHealth.value;
+    }
+
     public bool IsOtherEntity(GameObject gameObject)
     {
         return (gameObject.CompareTag("player") ||

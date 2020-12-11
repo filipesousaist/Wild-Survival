@@ -34,6 +34,10 @@ public class PlayerMovement : EntityMovement
     void Update()
     {
         if (inputEnabled) {
+            if (currentState == PlayerState.combat)
+            {
+                ChangeState(PlayerState.walk);
+            }
             agent.enabled = false;
             Vector3 difference = Vector3.zero;
             difference.x = Input.GetAxisRaw("Horizontal");
@@ -165,8 +169,9 @@ public class PlayerMovement : EntityMovement
             
             yield return StartCoroutine(fadeScript.FadeToBlack());
 
-            //codigo de restaurar vida
-            this.GetComponent<Player>().health = this.GetComponent<Player>().maxHealth.value;
+            // Restaurar vida
+            FindObjectOfType<ActivistsManager>().HealAll();
+            FindObjectOfType<RhinosManager>().HealAll();
 
             animator.SetFloat("moveY", -1);
 
