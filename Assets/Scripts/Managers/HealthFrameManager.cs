@@ -31,6 +31,7 @@ public class HealthFrameManager : MonoBehaviour
     public void UpdateBar()
     {
         float tempHealth = playerCurrentHealth.value;
+        
         if (tempHealth == 4)
         {
             healthBar.sprite = fullHealth;
@@ -47,8 +48,8 @@ public class HealthFrameManager : MonoBehaviour
         {
             healthBar.sprite = oneQuartersHealth;
         }
-        else
-            healthBar.gameObject.SetActive(false);
+        
+        healthBar.gameObject.SetActive(tempHealth > 0);
     }
 
     public void UpdatePortrait()
