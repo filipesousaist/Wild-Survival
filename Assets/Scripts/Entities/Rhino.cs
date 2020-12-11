@@ -11,7 +11,7 @@ public class Rhino : Entity
     public override void FullRestore()
     {
         base.FullRestore();
-        GetComponent<RhinoMovement>().currentState = RhinoState.command;
+        GetComponent<RhinoMovement>().currentState = RhinoState.walk;
     }
     override protected void OnDeath()
     {
