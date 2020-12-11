@@ -17,6 +17,7 @@ public class ActivistsManager : MonoBehaviour
     void Start()
     {
         players = GetComponentsInChildren<PlayerMovement>();
+        players[currentPlayer.value].GetComponent<Player>().UpdateBarHealth();
         
         cam = Camera.main.GetComponent<CameraMovement>();
         dangerAnimation = postVolume.GetComponent<PostProcessingScript>();
@@ -46,5 +47,22 @@ public class ActivistsManager : MonoBehaviour
         // Send signals
         playerMov.GetComponent<Player>().UpdateBarHealth();
         changePlayerSignal.Raise();
+    }
+
+    public void HealAll()
+    {
+        for (int i = 0; i < players.Length; i ++)
+        {
+            Player player = players[i].GetComponent<Player>();
+            player.FullRestore();
+            if (i == currentPlayer.value)
+                player.UpdateBarHealth();
+
+        }    
+    }
+
+    public bool IsCurrentActivist(Player activist)
+    {
+        return players[currentPlayer.value].GetComponent<Player>() == activist;
     }
 }

@@ -185,8 +185,9 @@ public class PlayerMovement : EntityMovement
             
             yield return StartCoroutine(fadeScript.FadeToBlack());
 
-            //codigo de restaurar vida
-            this.GetComponent<Player>().health = this.GetComponent<Player>().maxHealth.value;
+            // Restaurar vida
+            FindObjectOfType<ActivistsManager>().HealAll();
+            FindObjectOfType<RhinosManager>().HealAll();
 
             animator.SetFloat("moveY", -1);
 

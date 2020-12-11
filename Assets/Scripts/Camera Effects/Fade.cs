@@ -6,14 +6,13 @@ using UnityEngine.UI;
 
 public class Fade : MonoBehaviour
 {
-
     private Animator anim;
 
     private bool isFading = false;
 
     void Start()
     {
-        anim = Canvas.FindObjectOfType<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     public IEnumerator FadeToClear() {
