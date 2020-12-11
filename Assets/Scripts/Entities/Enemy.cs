@@ -2,12 +2,15 @@
 
 public class Enemy : Entity
 {
+    public Signal deathSignal;
     public GameObject deathEffect;
+    public int wave;
 
     override protected void OnAwake() { }
     override protected void OnDeath()
     {
         DeathEffect();
+        deathSignal.Raise();
         Destroy(gameObject);
     }
 

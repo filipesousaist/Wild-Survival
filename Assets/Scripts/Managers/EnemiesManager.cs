@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 public class EnemiesManager : MonoBehaviour
 {
@@ -8,10 +9,11 @@ public class EnemiesManager : MonoBehaviour
     public int[] waves;
     public Vector2[] baseSpawnPoints;
     public GameObject[] prefabs;
+    public GameObject wavesText;
 
     void Start()
     {
-        
+        UpdateWavesText();
     }
 
     void Update()
@@ -22,8 +24,7 @@ public class EnemiesManager : MonoBehaviour
 
     private void UpdateEnemies()
     {
-        GameObject enemiesObject = GameObject.Find("Enemies");
-        Enemy[] enemies = enemiesObject.GetComponentsInChildren<Enemy>();
+        Enemy[] enemies = GetAllEnemies();
 
         if (enemies.Length == 0 && (++ currentWave) < waves.Length)
         {
@@ -34,10 +35,18 @@ public class EnemiesManager : MonoBehaviour
             {
                 int enemyIndex = (Random.value > 0.05) ? 0 : 1;
                 GameObject newEnemy = Instantiate(prefabs[enemyIndex]);
-                newEnemy.transform.parent = enemiesObject.transform;
+                newEnemy.transform.parent = GameObject.Find("Enemies").transform;
                 newEnemy.transform.position = spawnPoints[i];
+                newEnemy.GetComponent<Enemy>().wave = currentWave;
             }
         }
+
+        UpdateWavesText();
+    }
+
+    private Enemy[] GetAllEnemies()
+    {
+        return GameObject.Find("Enemies").GetComponentsInChildren<Enemy>();
     }
 
     private Vector3[] GenerateSpawnPoints(Vector3 center, int n)
@@ -68,5 +77,28 @@ public class EnemiesManager : MonoBehaviour
                 coords[y * sideLength + x] = topLeft + new Vector3(x, y, 0);
 
         return coords;
+    }
+
+    public void UpdateWavesText()
+    {
+        string newText;
+        if (currentWave < 0)
+            newText = "Welcome to Wild Survival!";
+        else if (currentWave < waves.Length)
+        {
+            Enemy[] enemies = GetAllEnemies();
+            List<Enemy> currentWaveEnemies = new List<Enemy>();
+
+            foreach (Enemy en in enemies)
+                if (en.wave == currentWave)
+                    currentWaveEnemies.Add(en);
+
+            newText = "Wave " + (currentWave + 1) + " of " + waves.Length + ":";
+            newText += " " + currentWaveEnemies.Count() + "/" + waves[currentWave] + " zombies left";
+        }
+        else
+            newText = "All zombies defeated! :)";
+
+        wavesText.GetComponent<Text>().text = newText;
     }
 }

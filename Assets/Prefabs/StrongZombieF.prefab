@@ -531,8 +531,10 @@ MonoBehaviour:
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
+  deathSignal: {fileID: 11400000, guid: d46e0b22038395a44a69ca3923974060, type: 2}
   deathEffect: {fileID: 5802363849848596127, guid: 97088d85c306d1c478d66c509f87423b,
     type: 3}
+  wave: -1
 --- !u!195 &244674749891776438
 NavMeshAgent:
   m_ObjectHideFlags: 0

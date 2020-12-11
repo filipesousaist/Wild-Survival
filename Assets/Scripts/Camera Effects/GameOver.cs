@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour
 {
     public void Quit()
     {
-        //nao funciona enquanto Testamos no unity obviously
+        //nao funciona enquanto Testamos no unity
         Application.Quit();
     }
 
