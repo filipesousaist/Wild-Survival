@@ -66,7 +66,7 @@ public class PlayerMovement : EntityMovement
                 UpdateAnimation(difference);
             }
         }
-        else if(currentState != PlayerState.dead)
+        else if (currentState != PlayerState.dead)
         {
             agent.enabled = true;
             CombatUpdate();
@@ -184,10 +184,13 @@ public class PlayerMovement : EntityMovement
 
     private IEnumerator OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("FadeObstacle") && other.isTrigger && Input.GetAxisRaw("Vertical") > 0 && !onTrigger)
+        if (other.CompareTag("FadeObstacle") && other.isTrigger && Input.GetAxisRaw("Vertical") > 0 && !onTrigger && 
+            FindObjectOfType<ActivistsManager>().IsCurrentActivist(GetComponent<Player>()))
         {
             onTrigger = true;
             var fadeScript = Canvas.FindObjectOfType<Fade>();
+
+            inputEnabled = false;
 
             yield return StartCoroutine(fadeScript.FadeToBlack());
 
@@ -198,6 +201,8 @@ public class PlayerMovement : EntityMovement
             animator.SetFloat("moveY", -1);
 
             yield return StartCoroutine(fadeScript.FadeToClear());
+
+            inputEnabled = true;
         }     
     }
 
