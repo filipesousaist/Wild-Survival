@@ -15,6 +15,8 @@ public class PostProcessingScript : MonoBehaviour
     public Transform players;
 
     public int currentPlayer = 0;
+    public float maxDamageWaitTime;
+    private float damageWaitTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class PostProcessingScript : MonoBehaviour
 
         _vignette.intensity.value = 0;
         _bloom.intensity.value = 0;
+        damageWaitTime = 0;
     }
 
     // Update is called once per frame
@@ -41,6 +44,13 @@ public class PostProcessingScript : MonoBehaviour
             if(dist >= MAXDISTANCE + 3)
             {
                 _bloom.intensity.value = Mathf.PingPong(Time.time, 1) * 20;
+                damageWaitTime = System.Math.Min(damageWaitTime + Time.deltaTime, maxDamageWaitTime);
+                if (damageWaitTime == maxDamageWaitTime)
+                {
+                    GameObject player = players.GetChild(currentPlayer).gameObject;
+                    player.GetComponent<Player>().Knock(player.GetComponent<Rigidbody2D>(), 0, 1);
+                    damageWaitTime = 0;
+                }
             }
             else
             {

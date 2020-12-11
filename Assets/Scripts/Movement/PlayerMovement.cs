@@ -19,6 +19,10 @@ public class PlayerMovement : EntityMovement
     private PlayerMovement playerToFollow;
     private NavMeshAgent agent;
 
+    private bool onTrigger;
+
+    private readonly object lock_ = new object();
+
 
     // Start is called before the first frame update
     override protected void OnStart()
@@ -28,6 +32,7 @@ public class PlayerMovement : EntityMovement
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        onTrigger = false;
     }
 
     // Update is called once per frame
@@ -178,11 +183,11 @@ public class PlayerMovement : EntityMovement
 
     private IEnumerator OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("FadeObstacle") && other.isTrigger && Input.GetAxisRaw("Vertical") > 0)
+        if (other.CompareTag("FadeObstacle") && other.isTrigger && Input.GetAxisRaw("Vertical") > 0 && !onTrigger)
         {
-
+            onTrigger = true;
             var fadeScript = Canvas.FindObjectOfType<Fade>();
-            
+
             yield return StartCoroutine(fadeScript.FadeToBlack());
 
             // Restaurar vida
@@ -192,8 +197,12 @@ public class PlayerMovement : EntityMovement
             animator.SetFloat("moveY", -1);
 
             yield return StartCoroutine(fadeScript.FadeToClear());
+        }     
+    }
 
-        }
+    private void OnCollisionExit2D()
+    {
+        onTrigger = false;
     }
 
     private IEnumerator AttackCo()
@@ -202,7 +211,8 @@ public class PlayerMovement : EntityMovement
 
         animator.SetBool("moving", false);
         animator.SetBool("attacking",true);
-        agent.isStopped = true;
+        if (!inputEnabled)
+            agent.isStopped = true;
         ChangeState(PlayerState.attack);
         yield return null;
         animator.SetBool("attacking",false);
