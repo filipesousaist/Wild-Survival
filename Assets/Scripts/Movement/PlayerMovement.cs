@@ -6,7 +6,8 @@ public enum PlayerState
 {
     walk,
     attack,
-    combat
+    combat,
+    dead
 }
 
 public class PlayerMovement : EntityMovement
@@ -65,7 +66,7 @@ public class PlayerMovement : EntityMovement
                 UpdateAnimation(difference);
             }
         }
-        else
+        else if(currentState != PlayerState.dead)
         {
             agent.enabled = true;
             CombatUpdate();
@@ -222,6 +223,16 @@ public class PlayerMovement : EntityMovement
         else
             ChangeState(PlayerState.combat);
         attackedRecently = false;
+    }
+
+    public void Revive()
+    {
+        ChangeState(PlayerState.walk);
+    }
+    public override void Die()
+    {
+        ChangeState(PlayerState.dead);
+        inputEnabled = false;
     }
 
     private void ChangeState(PlayerState newState)

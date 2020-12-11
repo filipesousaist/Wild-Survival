@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Player : Entity
 {
@@ -7,6 +8,7 @@ public class Player : Entity
 
     public Signal healthSignal;
     public FloatValue barHealth;
+
 
     override protected void OnAwake()
     {
@@ -20,7 +22,7 @@ public class Player : Entity
     public override void FullRestore()
     {
         base.FullRestore();
-        GetComponent<SpriteRenderer>().color = OPAQUE;
+        animator.SetBool("dead", false);
     }
 
     public void UpdateBarHealth()
@@ -37,6 +39,19 @@ public class Player : Entity
     //TODO: improve method
     override protected void OnDeath()
     {
-        GetComponent<SpriteRenderer>().color = TRANSPARENT;
+        if (((PlayerMovement)movement).currentState != PlayerState.dead)
+        {
+            animator.SetBool("dead", true);
+            movement.Die();
+            StartCoroutine(DeathCo());
+        }
+ 
+    }
+
+    IEnumerator DeathCo()
+    {
+        animator.SetBool("firstTimeDying", true);
+        yield return null;
+        animator.SetBool("firstTimeDying", false);
     }
 }

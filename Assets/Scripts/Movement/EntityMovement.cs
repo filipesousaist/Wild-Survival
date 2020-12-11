@@ -44,6 +44,12 @@ public abstract class EntityMovement : MonoBehaviour
     {
 
     }
+
+    public virtual void Die()
+    {
+
+    }
+
     protected virtual void UpdateAnimation(Vector3 difference)
     {
         if (difference != Vector3.zero)

@@ -55,8 +55,12 @@ public class ActivistsManager : MonoBehaviour
         {
             Player player = players[i].GetComponent<Player>();
             player.FullRestore();
+            players[i].Revive();
             if (i == currentPlayer.value)
+            {
                 player.UpdateBarHealth();
+                players[i].inputEnabled = true;
+            }
 
         }    
     }

@@ -95,8 +95,20 @@ public class EnemyMovement : EntityMovement
             }
             else
             {
-                target = possibleTarget.transform;
-                difference = target.position - transform.position;
+                var possiblePlayerTarget = possibleTarget.GetComponent<PlayerMovement>();
+                if (possiblePlayerTarget != null)
+                {
+                    if (possiblePlayerTarget.currentState != PlayerState.dead)
+                    {
+                        target = possibleTarget.transform;
+                        difference = target.position - transform.position;
+                    }
+                }
+                else
+                {
+                    target = possibleTarget.transform;
+                    difference = target.position - transform.position;
+                }
             }
         }
 
