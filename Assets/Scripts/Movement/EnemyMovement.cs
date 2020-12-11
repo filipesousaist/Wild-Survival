@@ -17,6 +17,7 @@ public class EnemyMovement : EntityMovement
 
     private Transform target;
     private NavMeshAgent agent;
+    private Vector3 lastPosition;
 
     // Start is called before the first frame update
     override protected void OnStart()
@@ -31,6 +32,8 @@ public class EnemyMovement : EntityMovement
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
+        lastPosition = transform.position;
     }
     
     // Update is called once per frame
@@ -54,6 +57,7 @@ public class EnemyMovement : EntityMovement
             {
                 animator.SetBool("moving", true);
                 agent.destination = target.transform.position;
+                difference = agent.velocity;
                 agent.isStopped = false;
                 ChangeState(EnemyState.walk);
             }

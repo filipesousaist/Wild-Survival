@@ -85,6 +85,7 @@ public class PlayerMovement : EntityMovement
                         animator.SetBool("moving", true);
                         agent.destination = playerToFollow.transform.position;
                         agent.isStopped = false;
+                        difference = agent.velocity;
                         UpdateAnimation(difference);
                     }
                     UpdateAnimation(difference);
@@ -140,6 +141,7 @@ public class PlayerMovement : EntityMovement
                 agent.destination = target.position;
                 agent.isStopped = false;
                 animator.SetBool("moving", true);
+                difference = agent.velocity;
                 //MoveCharacter(difference);
             }
             else

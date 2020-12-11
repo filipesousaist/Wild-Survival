@@ -82,6 +82,7 @@ public class RhinoMovement : EntityMovement
             agent.isStopped = false;
             animator.SetBool("moving", true);
             agent.destination = commandDestination;
+            difference = agent.velocity;
             //MoveCharacter(difference);
             UpdateAnimation(difference);
         }
@@ -140,6 +141,7 @@ public class RhinoMovement : EntityMovement
             agent.destination = player.transform.position;
             agent.isStopped = false;
             animator.SetBool("moving", true);
+            difference = agent.velocity;
             ChangeState(RhinoState.walk);
             DebugDrawPath(agent.path.corners);
         }
@@ -229,6 +231,7 @@ public class RhinoMovement : EntityMovement
             if (difference.magnitude <= chaseRadius)
             {
                 agent.destination = target.position;
+                difference = agent.velocity;
                 //MoveCharacter(difference);
             }
             else
