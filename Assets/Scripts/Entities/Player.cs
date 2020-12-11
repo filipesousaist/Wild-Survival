@@ -14,6 +14,7 @@ public class Player : Entity
     override protected void TakeDamage(float damage)
     {
         base.TakeDamage(damage);
+        
         UpdateBarHealth();
     }
 
@@ -37,6 +38,14 @@ public class Player : Entity
     //TODO: improve method
     override protected void OnDeath()
     {
+        ActivistsManager manager = FindObjectOfType<ActivistsManager>();
+
         GetComponent<SpriteRenderer>().color = TRANSPARENT;
+
+        if (manager.IsCurrentActivist(this))
+        {
+            manager.activistDead++;
+            manager.ChangePlayer();
+        }
     }
 }

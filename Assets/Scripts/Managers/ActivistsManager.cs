@@ -13,6 +13,9 @@ public class ActivistsManager : MonoBehaviour
     private CameraMovement cam;
     public PostProcessVolume postVolume;
     private PostProcessingScript dangerAnimation;
+    [SerializeField]
+    private GameObject gameOverUI;
+    public int activistDead = 0;
 
     void Start()
     {
@@ -30,7 +33,7 @@ public class ActivistsManager : MonoBehaviour
             ChangePlayer();
     }
 
-    private void ChangePlayer()
+    public void ChangePlayer()
     {
         PlayerMovement playerMov = players[currentPlayer.value];
         playerMov.inputEnabled = false;
@@ -39,6 +42,15 @@ public class ActivistsManager : MonoBehaviour
 
         currentPlayer.value = (currentPlayer.value + 1) % players.Length;
         playerMov = players[currentPlayer.value];
+        while (playerMov.GetComponent<Player>().health <= 0) {
+            if (activistDead == players.Length) {
+                gameOverUI.SetActive(true);
+                this.gameObject.SetActive(false);
+                return;
+            }
+            currentPlayer.value = (currentPlayer.value + 1) % players.Length;
+            playerMov = players[currentPlayer.value];
+        }
 
         playerMov.inputEnabled = true;
         cam.target = playerMov.transform;
