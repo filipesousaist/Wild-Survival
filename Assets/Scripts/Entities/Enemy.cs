@@ -4,10 +4,11 @@ public class Enemy : Entity
 {
     public GameObject deathEffect;
 
+    override protected void OnAwake() { }
     override protected void OnDeath()
     {
         DeathEffect();
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
     private void DeathEffect()

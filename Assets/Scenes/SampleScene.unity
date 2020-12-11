@@ -304,6 +304,8 @@ GameObject:
   - component: {fileID: 193378012}
   - component: {fileID: 193378011}
   - component: {fileID: 193378010}
+  - component: {fileID: 193378014}
+  - component: {fileID: 193378013}
   m_Layer: 5
   m_Name: FrameAndHealthHolder
   m_TagString: Untagged
@@ -348,7 +350,7 @@ MonoBehaviour:
   signalEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1163415148}
+      - m_Target: {fileID: 193378013}
         m_MethodName: UpdateBar
         m_Mode: 1
         m_Arguments:
@@ -396,6 +398,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193378008}
   m_CullTransparentMesh: 0
+--- !u!114 &193378013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193378008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a0845055d05ee49930cd38734f663f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1427067954}
+  fullHealth: {fileID: 5235216049511467275, guid: 81f27e069e732b64eaca41062643b5ae,
+    type: 3}
+  threeQuartersHealth: {fileID: -6581021228822345160, guid: 81f27e069e732b64eaca41062643b5ae,
+    type: 3}
+  twoQuartersHealth: {fileID: -1246487339369159825, guid: 81f27e069e732b64eaca41062643b5ae,
+    type: 3}
+  oneQuartersHealth: {fileID: -1264772288087964892, guid: 81f27e069e732b64eaca41062643b5ae,
+    type: 3}
+  playerCurrentHealth: {fileID: 11400000, guid: 0ac4c84fbce88274dafabecb6412d4bb,
+    type: 2}
+  portrait: {fileID: 550478357}
+  activistPortraits:
+  - {fileID: 7172426408955163576, guid: 36f60f6b573878a48ace54ec8714a233, type: 3}
+  - {fileID: -8104733101979996130, guid: 812e61843b8ea8148a76386755033a2a, type: 3}
+  currentPlayer: {fileID: 11400000, guid: b7534efdf53e0664fa6340738d5f429f, type: 2}
+--- !u!114 &193378014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193378008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9108899d1c1adee41b9ea5bb3916c2ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signal: {fileID: 11400000, guid: 9baa1e51ed6618b4abf5c3aa8d23b1fc, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 193378013}
+        m_MethodName: UpdatePortrait
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &242813881
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,7 +1014,8 @@ MonoBehaviour:
   entityName: Player
   baseAttack: 2
   health: 0
-  playerHealthSignal: {fileID: 11400000, guid: 8a1c7f2390e26f5419ecb12426813600, type: 2}
+  healthSignal: {fileID: 11400000, guid: 8a1c7f2390e26f5419ecb12426813600, type: 2}
+  barHealth: {fileID: 11400000, guid: 0ac4c84fbce88274dafabecb6412d4bb, type: 2}
 --- !u!195 &425848079
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1574,6 +1632,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542774374}
   m_CullTransparentMesh: 0
+--- !u!1 &550478355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 550478356}
+  - component: {fileID: 550478358}
+  - component: {fileID: 550478357}
+  m_Layer: 5
+  m_Name: Portrait
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &550478356
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550478355}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 699023860}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &550478357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550478355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7172426408955163576, guid: 36f60f6b573878a48ace54ec8714a233,
+    type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &550478358
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550478355}
+  m_CullTransparentMesh: 0
 --- !u!1 &568584471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,6 +2039,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   players: []
+  currentPlayer: {fileID: 11400000, guid: b7534efdf53e0664fa6340738d5f429f, type: 2}
+  changePlayerSignal: {fileID: 11400000, guid: 9baa1e51ed6618b4abf5c3aa8d23b1fc, type: 2}
   postVolume: {fileID: 1336292478}
 --- !u!1 &633860653
 GameObject:
@@ -31212,8 +31347,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 699023860}
-  - component: {fileID: 699023862}
-  - component: {fileID: 699023861}
   m_Layer: 5
   m_Name: FramePicture
   m_TagString: Untagged
@@ -31231,7 +31364,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 550478356}
   m_Father: {fileID: 193378009}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31240,44 +31374,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &699023861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 699023859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 7172426408955163576, guid: 36f60f6b573878a48ace54ec8714a233,
-    type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &699023862
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 699023859}
-  m_CullTransparentMesh: 0
 --- !u!1 &748285353
 GameObject:
   m_ObjectHideFlags: 0
@@ -33351,8 +33447,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1163415145}
-  - component: {fileID: 1163415147}
-  - component: {fileID: 1163415148}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -33380,37 +33474,6 @@ RectTransform:
   m_AnchoredPosition: {x: 70, y: 15}
   m_SizeDelta: {x: 58, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1163415147
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163415144}
-  m_CullTransparentMesh: 0
---- !u!114 &1163415148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163415144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95a0845055d05ee49930cd38734f663f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 1427067954}
-  fullHealth: {fileID: 5235216049511467275, guid: 81f27e069e732b64eaca41062643b5ae,
-    type: 3}
-  threeQuartersHealth: {fileID: -6581021228822345160, guid: 81f27e069e732b64eaca41062643b5ae,
-    type: 3}
-  twoQuartersHealth: {fileID: -1246487339369159825, guid: 81f27e069e732b64eaca41062643b5ae,
-    type: 3}
-  oneQuartersHealth: {fileID: -1264772288087964892, guid: 81f27e069e732b64eaca41062643b5ae,
-    type: 3}
-  playerCurrentHealth: {fileID: 11400000, guid: dc52ac3a11ce0b24ca2902346f2876db,
-    type: 2}
 --- !u!1 &1196467172
 GameObject:
   m_ObjectHideFlags: 0
@@ -34832,7 +34895,8 @@ MonoBehaviour:
   entityName: Ana Gaita
   baseAttack: 2
   health: 0
-  playerHealthSignal: {fileID: 11400000, guid: 8a1c7f2390e26f5419ecb12426813600, type: 2}
+  healthSignal: {fileID: 11400000, guid: 8a1c7f2390e26f5419ecb12426813600, type: 2}
+  barHealth: {fileID: 11400000, guid: 0ac4c84fbce88274dafabecb6412d4bb, type: 2}
 --- !u!61 &1448629063
 BoxCollider2D:
   m_ObjectHideFlags: 0

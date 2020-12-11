@@ -1,14 +1,29 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : Entity
 {
-    public Signal playerHealthSignal;
+    public Signal healthSignal;
+    public FloatValue barHealth;
 
-    //TODO: implement method
-    protected override void OnDeath()
+    override protected void OnAwake()
     {
-        throw new System.NotImplementedException();
+        UpdateBarHealth();
+    }
+    override protected void TakeDamage(float damage)
+    {
+        base.TakeDamage(damage);
+        UpdateBarHealth();
+    }
+
+    public void UpdateBarHealth()
+    {
+        barHealth.value = Mathf.Max(health, 0);
+        healthSignal.Raise();
+    }
+
+    //TODO: improve method
+    override protected void OnDeath()
+    {
+        GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.5f);
     }
 }

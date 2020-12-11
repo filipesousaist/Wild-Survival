@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class HealthManager : MonoBehaviour
+public class HealthFrameManager : MonoBehaviour
 {
     public Image healthBar;
     public Sprite fullHealth;
@@ -10,6 +10,11 @@ public class HealthManager : MonoBehaviour
     public Sprite twoQuartersHealth;
     public Sprite oneQuartersHealth;
     public FloatValue playerCurrentHealth;
+
+    public Image portrait;
+    public Sprite[] activistPortraits;
+    public IntValue currentPlayer;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +30,7 @@ public class HealthManager : MonoBehaviour
 
     public void UpdateBar()
     {
-        float tempHealth = playerCurrentHealth.initialValue;
+        float tempHealth = playerCurrentHealth.value;
         if (tempHealth == 4)
         {
             healthBar.sprite = fullHealth;
@@ -44,5 +49,10 @@ public class HealthManager : MonoBehaviour
         }
         else
             healthBar.gameObject.SetActive(false);
+    }
+
+    public void UpdatePortrait()
+    {
+        portrait.sprite = activistPortraits[currentPlayer.value];
     }
 }

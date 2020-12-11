@@ -22,8 +22,11 @@ public abstract class Entity : MonoBehaviour
     protected void Awake()
     {
         health = maxHealth.value;
+        OnAwake();
     }
-    protected void TakeDamage(float damage)
+    abstract protected void OnAwake();
+
+    protected virtual void TakeDamage(float damage)
     {
         health -= damage;
         if (health <= 0)

@@ -7,36 +7,44 @@ public class ActivistsManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public PlayerMovement[] players;
-    private int currentPlayer = 0;
+    public IntValue currentPlayer;
+    public Signal changePlayerSignal;
+
     private CameraMovement cam;
     public PostProcessVolume postVolume;
     private PostProcessingScript dangerAnimation;
 
     void Start()
     {
-        this.players = GetComponentsInChildren<PlayerMovement>();
+        players = GetComponentsInChildren<PlayerMovement>();
         
-        this.cam = Camera.main.GetComponent<CameraMovement>();
-        this.dangerAnimation = this.postVolume.GetComponent<PostProcessingScript>();
-        this.dangerAnimation.players = this.transform;
+        cam = Camera.main.GetComponent<CameraMovement>();
+        dangerAnimation = postVolume.GetComponent<PostProcessingScript>();
+        dangerAnimation.players = transform;
     }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
-            this.ChangePlayer();
+            ChangePlayer();
     }
 
     private void ChangePlayer()
     {
-        this.players[currentPlayer].inputEnabled = false;
-        this.players[currentPlayer].animator.SetBool("moving", false);
-        this.players[currentPlayer].animator.SetBool("attacking", false);
+        PlayerMovement playerMov = players[currentPlayer.value];
+        playerMov.inputEnabled = false;
+        playerMov.animator.SetBool("moving", false);
+        playerMov.animator.SetBool("attacking", false);
 
-        this.currentPlayer = (this.currentPlayer + 1) % this.players.Length;
+        currentPlayer.value = (currentPlayer.value + 1) % players.Length;
+        playerMov = players[currentPlayer.value];
 
-        this.players[currentPlayer].inputEnabled = true;
-        this.cam.target = this.players[currentPlayer].transform;
-        this.dangerAnimation.currentPlayer = this.currentPlayer;
+        playerMov.inputEnabled = true;
+        cam.target = playerMov.transform;
+        dangerAnimation.currentPlayer = currentPlayer.value;
+
+        // Send signals
+        playerMov.GetComponent<Player>().UpdateBarHealth();
+        changePlayerSignal.Raise();
     }
 }

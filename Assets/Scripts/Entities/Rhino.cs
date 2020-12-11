@@ -5,7 +5,9 @@ using UnityEngine;
 public class Rhino : Entity
 {
     public Player owner;
-    protected override void OnDeath()
+
+    override protected void OnAwake() {}
+    override protected void OnDeath()
     {
         movement.Flee();
     }
