@@ -11,7 +11,7 @@ public abstract class EntityMovement : MonoBehaviour
     protected float attackWaitTime;
 
 
-    [ReadOnly] public bool attackedRecently;
+    public bool attackedRecently;
     public float speed;
     public float maxAttackWaitTime;
     public float chaseRadius;  // maximum distance to follow a zombie

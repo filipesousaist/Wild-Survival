@@ -10,7 +10,7 @@ public abstract class Entity : MonoBehaviour
     public FloatValue maxHealth;
     public string entityName;
     public int baseAttack;
-    [ReadOnly] public float health;
+    public float health;
 
     public GameObject healthBarPrefab;
     private GameObject healthBar;

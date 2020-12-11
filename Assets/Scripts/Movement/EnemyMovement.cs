@@ -13,7 +13,7 @@ public enum EnemyState
 }
 public class EnemyMovement : EntityMovement
 {
-    [ReadOnly] public EnemyState currentState;
+    public EnemyState currentState;
 
     private Transform target;
     private NavMeshAgent agent;
