@@ -27,7 +27,7 @@ public class ActivistsManager : MonoBehaviour
         dangerAnimation.players = transform;
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
             ChangePlayer();

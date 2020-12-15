@@ -44,7 +44,7 @@ public abstract class Entity : MonoBehaviour
         OnAwake();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         UpdateHealthBar();
     }

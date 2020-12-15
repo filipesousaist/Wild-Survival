@@ -37,7 +37,7 @@ public class PlayerMovement : EntityMovement
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (inputEnabled) {
             if (currentState == PlayerState.combat)
