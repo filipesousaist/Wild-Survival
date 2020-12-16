@@ -16,7 +16,7 @@ public class EnemiesManager : MonoBehaviour
         UpdateWavesText();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (currentWave < waves.Length)
             UpdateEnemies();

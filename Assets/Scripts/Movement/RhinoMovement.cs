@@ -45,7 +45,7 @@ public class RhinoMovement : EntityMovement
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (playerMov.inputEnabled) {
             if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&

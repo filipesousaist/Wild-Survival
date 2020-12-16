@@ -29,7 +29,7 @@ public class PostProcessingScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
         GameObject[] rhinos = GameObject.FindGameObjectsWithTag("rhino");
