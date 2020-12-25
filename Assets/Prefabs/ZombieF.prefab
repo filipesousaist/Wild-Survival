@@ -75,8 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  damage: 1
-  i: 0
+  baseDamage: 1
 --- !u!1 &7725795864494037430
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: {fileID: 11400000, guid: b3e1510041ded54419231151e3bd892b, type: 2}
   entityName: 
-  baseAttack: 2
+  baseAttack: 1
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
@@ -401,8 +400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  damage: 1
-  i: 0
+  baseDamage: 1
 --- !u!1 &7725795864752866225
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,8 +476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  damage: 1
-  i: 0
+  baseDamage: 1
 --- !u!1 &7725795864920217946
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,5 +552,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  damage: 1
-  i: 0
+  baseDamage: 1

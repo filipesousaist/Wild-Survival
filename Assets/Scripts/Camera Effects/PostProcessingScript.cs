@@ -27,15 +27,14 @@ public class PostProcessingScript : MonoBehaviour
         _bloom.intensity.value = 0;
         damageWaitTime = 0;
     }
-
-    // Update is called once per frame
+    
+    // FixedUpdate is called periodically, with a fixed period
     void FixedUpdate()
     {
-        
         GameObject[] rhinos = GameObject.FindGameObjectsWithTag("rhino");
         float dist = float.MaxValue;
         // Active player
-        foreach(GameObject rhino in rhinos)
+        foreach (GameObject rhino in rhinos)
         {
             dist = Mathf.Min(Mathf.Sqrt(Mathf.Pow(rhino.transform.position.x - players.GetChild(currentPlayer).transform.position.x, 2) + Mathf.Pow(rhino.transform.position.y - players.GetChild(currentPlayer).transform.position.y, 2)), dist);
         }
@@ -44,7 +43,7 @@ public class PostProcessingScript : MonoBehaviour
             if(dist >= MAXDISTANCE + 3)
             {
                 _bloom.intensity.value = Mathf.PingPong(Time.time, 1) * 20;
-                damageWaitTime = System.Math.Min(damageWaitTime + Time.deltaTime, maxDamageWaitTime);
+                damageWaitTime = Mathf.Min(damageWaitTime + Time.deltaTime, maxDamageWaitTime);
                 if (damageWaitTime == maxDamageWaitTime)
                 {
                     GameObject player = players.GetChild(currentPlayer).gameObject;
