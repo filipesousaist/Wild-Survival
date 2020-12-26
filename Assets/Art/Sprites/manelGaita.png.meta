@@ -1,0 +1,6572 @@
+fileFormatVersion: 2
+guid: d86b8fcc1dd86974999f7ad2665bc77f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6692876457659583566
+    second: manelGaita_0
+  - first:
+      213: 7468301476537889713
+    second: manelGaita_1
+  - first:
+      213: -6989804863657245661
+    second: manelGaita_2
+  - first:
+      213: -4288390492765093885
+    second: manelGaita_3
+  - first:
+      213: 6812001987295034194
+    second: manelGaita_4
+  - first:
+      213: 8793333386836137
+    second: manelGaita_5
+  - first:
+      213: 3225326442594449163
+    second: manelGaita_6
+  - first:
+      213: -6776484519951711765
+    second: manelGaita_7
+  - first:
+      213: 67911390203023938
+    second: manelGaita_8
+  - first:
+      213: -7833134603198744654
+    second: manelGaita_9
+  - first:
+      213: 3762175628595542460
+    second: manelGaita_10
+  - first:
+      213: 5735566252549188524
+    second: manelGaita_11
+  - first:
+      213: 3598389316183917490
+    second: manelGaita_12
+  - first:
+      213: -921511457612657325
+    second: manelGaita_13
+  - first:
+      213: 1735915670398256267
+    second: manelGaita_14
+  - first:
+      213: 7618280256535166479
+    second: manelGaita_15
+  - first:
+      213: 7984855431456307564
+    second: manelGaita_16
+  - first:
+      213: -8049767986716244401
+    second: manelGaita_17
+  - first:
+      213: -1712044068313481645
+    second: manelGaita_18
+  - first:
+      213: -3388454418024856467
+    second: manelGaita_19
+  - first:
+      213: 1033683203445916186
+    second: manelGaita_20
+  - first:
+      213: -4322486915524017554
+    second: manelGaita_21
+  - first:
+      213: 8742784590698319052
+    second: manelGaita_22
+  - first:
+      213: -8108542999538689889
+    second: manelGaita_23
+  - first:
+      213: 5441625388737314874
+    second: manelGaita_24
+  - first:
+      213: 6346332903383848081
+    second: manelGaita_25
+  - first:
+      213: -2156911770033398757
+    second: manelGaita_26
+  - first:
+      213: -7879742643067670999
+    second: manelGaita_27
+  - first:
+      213: 1191647446015738015
+    second: manelGaita_28
+  - first:
+      213: 916919258437726144
+    second: manelGaita_29
+  - first:
+      213: 7800730663668641031
+    second: manelGaita_30
+  - first:
+      213: 3775180718151108562
+    second: manelGaita_31
+  - first:
+      213: 2375685788730457589
+    second: manelGaita_32
+  - first:
+      213: 1992175044434560187
+    second: manelGaita_33
+  - first:
+      213: 1210682140723837147
+    second: manelGaita_34
+  - first:
+      213: -4597438225504530192
+    second: manelGaita_35
+  - first:
+      213: -7497891252456952309
+    second: manelGaita_36
+  - first:
+      213: 2999969032580431033
+    second: manelGaita_37
+  - first:
+      213: -1309527020821939849
+    second: manelGaita_38
+  - first:
+      213: 8934078001982606322
+    second: manelGaita_39
+  - first:
+      213: -66791046259235705
+    second: manelGaita_40
+  - first:
+      213: -1156746041968840215
+    second: manelGaita_41
+  - first:
+      213: 7536389379812154294
+    second: manelGaita_42
+  - first:
+      213: -5323981826513134962
+    second: manelGaita_43
+  - first:
+      213: 5242518321564930827
+    second: manelGaita_44
+  - first:
+      213: 2966414204391327145
+    second: manelGaita_45
+  - first:
+      213: 5521380242345298987
+    second: manelGaita_46
+  - first:
+      213: -4075934733984188340
+    second: manelGaita_47
+  - first:
+      213: -3087927700330882175
+    second: manelGaita_48
+  - first:
+      213: -3714084318299259728
+    second: manelGaita_49
+  - first:
+      213: -6814323030831598761
+    second: manelGaita_50
+  - first:
+      213: -1945048779351069117
+    second: manelGaita_51
+  - first:
+      213: 5166572121905468712
+    second: manelGaita_52
+  - first:
+      213: 7726442263163174983
+    second: manelGaita_53
+  - first:
+      213: 7371700234254451638
+    second: manelGaita_54
+  - first:
+      213: -7378545422284376256
+    second: manelGaita_55
+  - first:
+      213: 2159807779973592596
+    second: manelGaita_56
+  - first:
+      213: -6013469888582684467
+    second: manelGaita_57
+  - first:
+      213: -3573126005339938236
+    second: manelGaita_58
+  - first:
+      213: 2942798016470604754
+    second: manelGaita_59
+  - first:
+      213: -1040600846796978957
+    second: manelGaita_60
+  - first:
+      213: 9124329181307117707
+    second: manelGaita_61
+  - first:
+      213: 5215152362932617385
+    second: manelGaita_62
+  - first:
+      213: -8935271932092972499
+    second: manelGaita_63
+  - first:
+      213: 9178088431179568466
+    second: manelGaita_64
+  - first:
+      213: -2209780178961658600
+    second: manelGaita_65
+  - first:
+      213: 7286532863560986900
+    second: manelGaita_66
+  - first:
+      213: 6821852302266773580
+    second: manelGaita_67
+  - first:
+      213: -4488321761362133980
+    second: manelGaita_68
+  - first:
+      213: -3271155530261809803
+    second: manelGaita_69
+  - first:
+      213: 3464815339267900076
+    second: manelGaita_70
+  - first:
+      213: 1460680730718053734
+    second: manelGaita_71
+  - first:
+      213: 2204873049344363639
+    second: manelGaita_72
+  - first:
+      213: 3845978716720253597
+    second: manelGaita_73
+  - first:
+      213: -4738298421466982461
+    second: manelGaita_74
+  - first:
+      213: 2750423996549505837
+    second: manelGaita_75
+  - first:
+      213: 3804454993639237746
+    second: manelGaita_76
+  - first:
+      213: 2560863412630280897
+    second: manelGaita_77
+  - first:
+      213: 1621012981404806296
+    second: manelGaita_78
+  - first:
+      213: -7336461190571527174
+    second: manelGaita_79
+  - first:
+      213: 1921744992572274067
+    second: manelGaita_80
+  - first:
+      213: 1325409960547293486
+    second: manelGaita_81
+  - first:
+      213: -8968416158446168570
+    second: manelGaita_82
+  - first:
+      213: -8124020391888982431
+    second: manelGaita_83
+  - first:
+      213: -8992102954533568119
+    second: manelGaita_84
+  - first:
+      213: 4048097557898454022
+    second: manelGaita_85
+  - first:
+      213: -8791110634495114025
+    second: manelGaita_86
+  - first:
+      213: 4504104773770718728
+    second: manelGaita_87
+  - first:
+      213: 2962841299158631054
+    second: manelGaita_88
+  - first:
+      213: -1363668612426022180
+    second: manelGaita_89
+  - first:
+      213: 6469550822980882524
+    second: manelGaita_90
+  - first:
+      213: 7475123005898992376
+    second: manelGaita_91
+  - first:
+      213: -2028317104120861242
+    second: manelGaita_92
+  - first:
+      213: 757730809566559852
+    second: manelGaita_93
+  - first:
+      213: -4759933321339896645
+    second: manelGaita_94
+  - first:
+      213: -382637227921185314
+    second: manelGaita_95
+  - first:
+      213: -8079895257931845736
+    second: manelGaita_96
+  - first:
+      213: 3442346473309875535
+    second: manelGaita_97
+  - first:
+      213: 94547270369918636
+    second: manelGaita_98
+  - first:
+      213: 5870783763897097605
+    second: manelGaita_99
+  - first:
+      213: 7418631725759466529
+    second: manelGaita_100
+  - first:
+      213: -4743105390499666139
+    second: manelGaita_101
+  - first:
+      213: 2260995200342941372
+    second: manelGaita_102
+  - first:
+      213: -6918203189370511204
+    second: manelGaita_103
+  - first:
+      213: 4009799497435646888
+    second: manelGaita_104
+  - first:
+      213: 6628452247698630224
+    second: manelGaita_105
+  - first:
+      213: 1611847974535902888
+    second: manelGaita_106
+  - first:
+      213: 1324515089469373893
+    second: manelGaita_107
+  - first:
+      213: -1856225601920956564
+    second: manelGaita_108
+  - first:
+      213: 1497047464216500233
+    second: manelGaita_109
+  - first:
+      213: -3653355385915250632
+    second: manelGaita_110
+  - first:
+      213: -3700661538528242289
+    second: manelGaita_111
+  - first:
+      213: 6110912515047042435
+    second: manelGaita_112
+  - first:
+      213: -6221268500587534477
+    second: manelGaita_113
+  - first:
+      213: -289432692404993242
+    second: manelGaita_114
+  - first:
+      213: -401993711669098151
+    second: manelGaita_115
+  - first:
+      213: -173834737146779996
+    second: manelGaita_116
+  - first:
+      213: -1306607602086640035
+    second: manelGaita_117
+  - first:
+      213: 2081678540462644107
+    second: manelGaita_118
+  - first:
+      213: -3188029778660904769
+    second: manelGaita_119
+  - first:
+      213: 4448443255870487184
+    second: manelGaita_120
+  - first:
+      213: -1086729029370431237
+    second: manelGaita_121
+  - first:
+      213: -7925031853277204688
+    second: manelGaita_122
+  - first:
+      213: 4646063638727893792
+    second: manelGaita_123
+  - first:
+      213: -6087836359306383533
+    second: manelGaita_124
+  - first:
+      213: -1363287955535910969
+    second: manelGaita_125
+  - first:
+      213: -4483858662607747582
+    second: manelGaita_126
+  - first:
+      213: 3525592436431041164
+    second: manelGaita_127
+  - first:
+      213: 1931975821141574835
+    second: manelGaita_128
+  - first:
+      213: -870880470442362732
+    second: manelGaita_129
+  - first:
+      213: -1949331696426192932
+    second: manelGaita_130
+  - first:
+      213: -5314922515045031781
+    second: manelGaita_131
+  - first:
+      213: 4895731332131957484
+    second: manelGaita_132
+  - first:
+      213: -8829647716395560798
+    second: manelGaita_133
+  - first:
+      213: 4618078468613845745
+    second: manelGaita_134
+  - first:
+      213: 646526159019150648
+    second: manelGaita_135
+  - first:
+      213: -7391577145199380381
+    second: manelGaita_136
+  - first:
+      213: -8662530424742650643
+    second: manelGaita_137
+  - first:
+      213: -7079092960041967710
+    second: manelGaita_138
+  - first:
+      213: 6647761193060342485
+    second: manelGaita_139
+  - first:
+      213: 2889313248417167609
+    second: manelGaita_140
+  - first:
+      213: -2001856955407273892
+    second: manelGaita_141
+  - first:
+      213: 747557349266758178
+    second: manelGaita_142
+  - first:
+      213: 1357742236493971234
+    second: manelGaita_143
+  - first:
+      213: -3941893648530094238
+    second: manelGaita_144
+  - first:
+      213: -5246036334631466999
+    second: manelGaita_145
+  - first:
+      213: 6370999048660778567
+    second: manelGaita_146
+  - first:
+      213: 3900285591527195927
+    second: manelGaita_147
+  - first:
+      213: -5648163142942807762
+    second: manelGaita_148
+  - first:
+      213: -685745445774146865
+    second: manelGaita_149
+  - first:
+      213: 5700610884584370081
+    second: manelGaita_150
+  - first:
+      213: -4132422714486837903
+    second: manelGaita_151
+  - first:
+      213: 5481940289533192218
+    second: manelGaita_152
+  - first:
+      213: -7987949858553917234
+    second: manelGaita_153
+  - first:
+      213: 8350672223579210691
+    second: manelGaita_154
+  - first:
+      213: 416086982706688981
+    second: manelGaita_155
+  - first:
+      213: 3273639622847617730
+    second: manelGaita_156
+  - first:
+      213: 5043039812106655522
+    second: manelGaita_157
+  - first:
+      213: 4384721719977915352
+    second: manelGaita_158
+  - first:
+      213: -4270284322355705239
+    second: manelGaita_159
+  - first:
+      213: 5908652436367361435
+    second: manelGaita_160
+  - first:
+      213: 8779271061099326138
+    second: manelGaita_161
+  - first:
+      213: 7228124954172597146
+    second: manelGaita_162
+  - first:
+      213: 106313167621948993
+    second: manelGaita_163
+  - first:
+      213: 1189581640476654742
+    second: manelGaita_164
+  - first:
+      213: -2748118863156167595
+    second: manelGaita_165
+  - first:
+      213: -8077327182898083560
+    second: manelGaita_166
+  - first:
+      213: -9015303696541395259
+    second: manelGaita_167
+  - first:
+      213: 7613745535462739973
+    second: manelGaita_168
+  - first:
+      213: -1437450448786571016
+    second: manelGaita_169
+  - first:
+      213: -6527227447509599435
+    second: manelGaita_170
+  - first:
+      213: -9136381483213685019
+    second: manelGaita_171
+  - first:
+      213: 7998422301815928980
+    second: manelGaita_172
+  - first:
+      213: -6920454632726242145
+    second: manelGaita_173
+  - first:
+      213: 992074810190948025
+    second: manelGaita_174
+  - first:
+      213: -7101812056162856093
+    second: manelGaita_175
+  - first:
+      213: -2597799310687806465
+    second: manelGaita_176
+  - first:
+      213: 2344929875716615009
+    second: manelGaita_177
+  - first:
+      213: 6384059485365593340
+    second: manelGaita_178
+  - first:
+      213: 9110507989938255658
+    second: manelGaita_179
+  - first:
+      213: -2455409004847380455
+    second: manelGaita_180
+  - first:
+      213: 1966814697179235806
+    second: manelGaita_181
+  - first:
+      213: -4399625218756510897
+    second: manelGaita_182
+  - first:
+      213: -7869717474085492381
+    second: manelGaita_183
+  - first:
+      213: 1370965158576695633
+    second: manelGaita_184
+  - first:
+      213: 3305551984506631407
+    second: manelGaita_185
+  - first:
+      213: -2240133734850735284
+    second: manelGaita_186
+  - first:
+      213: -3164069499007537876
+    second: manelGaita_187
+  - first:
+      213: 3362864126234673085
+    second: manelGaita_188
+  - first:
+      213: 7237857901339133394
+    second: manelGaita_189
+  - first:
+      213: -1614437116868516469
+    second: manelGaita_190
+  - first:
+      213: -234780319613003731
+    second: manelGaita_191
+  - first:
+      213: -7000324010899421488
+    second: manelGaita_192
+  - first:
+      213: 7705392906687717151
+    second: manelGaita_193
+  - first:
+      213: 2969141834473815915
+    second: manelGaita_194
+  - first:
+      213: 8496874596325053070
+    second: manelGaita_195
+  - first:
+      213: 6105418558608495394
+    second: manelGaita_196
+  - first:
+      213: 2487479639478151520
+    second: manelGaita_197
+  - first:
+      213: -6077565031121298774
+    second: manelGaita_198
+  - first:
+      213: 6225502454947305393
+    second: manelGaita_199
+  - first:
+      213: 7299187596023362525
+    second: manelGaita_200
+  - first:
+      213: 2760062711310239841
+    second: manelGaita_201
+  - first:
+      213: 2585220648202874755
+    second: manelGaita_202
+  - first:
+      213: -6254400693391615220
+    second: manelGaita_203
+  - first:
+      213: -1901724542177397733
+    second: manelGaita_204
+  - first:
+      213: -7036907971010225862
+    second: manelGaita_205
+  - first:
+      213: 38097595646948651
+    second: manelGaita_206
+  - first:
+      213: 3298863295319039343
+    second: manelGaita_207
+  - first:
+      213: 5677291096012941396
+    second: manelGaita_208
+  - first:
+      213: -2029062653480764830
+    second: manelGaita_209
+  - first:
+      213: -3341770520684045813
+    second: manelGaita_210
+  - first:
+      213: 680199438912793474
+    second: manelGaita_211
+  - first:
+      213: -4989787009563119495
+    second: manelGaita_212
+  - first:
+      213: 4541440241990668802
+    second: manelGaita_213
+  - first:
+      213: -2091973687094729016
+    second: manelGaita_214
+  - first:
+      213: 5009256510427381162
+    second: manelGaita_215
+  - first:
+      213: -470340469044705228
+    second: manelGaita_216
+  - first:
+      213: -468890335412576770
+    second: manelGaita_217
+  - first:
+      213: -6906432719667828492
+    second: manelGaita_218
+  - first:
+      213: 5672102988018288374
+    second: manelGaita_219
+  - first:
+      213: -2554610357685763243
+    second: manelGaita_220
+  - first:
+      213: 152596480932342489
+    second: manelGaita_221
+  - first:
+      213: -2049992061316604963
+    second: manelGaita_222
+  - first:
+      213: -1839124275051012175
+    second: manelGaita_223
+  - first:
+      213: 7219258032155487930
+    second: manelGaita_224
+  - first:
+      213: -6777677992293348799
+    second: manelGaita_225
+  - first:
+      213: 3703743265652313338
+    second: manelGaita_226
+  - first:
+      213: -5535344078690076964
+    second: manelGaita_227
+  - first:
+      213: -4664891912800696399
+    second: manelGaita_228
+  - first:
+      213: 7221970900978635015
+    second: manelGaita_229
+  - first:
+      213: 7912252087006493987
+    second: manelGaita_230
+  - first:
+      213: 1030637930367585797
+    second: manelGaita_231
+  - first:
+      213: -4245322358835912684
+    second: manelGaita_232
+  - first:
+      213: 7273101842258592970
+    second: manelGaita_233
+  - first:
+      213: 8719346217311642933
+    second: manelGaita_234
+  - first:
+      213: 1826583872637810571
+    second: manelGaita_235
+  - first:
+      213: 3282367042991433410
+    second: manelGaita_236
+  - first:
+      213: 6780364432590158431
+    second: manelGaita_237
+  - first:
+      213: -2701411901496346048
+    second: manelGaita_238
+  - first:
+      213: -7156460465243242174
+    second: manelGaita_239
+  - first:
+      213: 6589477787688524713
+    second: manelGaita_240
+  - first:
+      213: 6592807383800381946
+    second: manelGaita_241
+  - first:
+      213: 7275666143561478913
+    second: manelGaita_242
+  - first:
+      213: -3407749894694469678
+    second: manelGaita_243
+  - first:
+      213: -5452923419450418606
+    second: manelGaita_244
+  - first:
+      213: 4555019430441549476
+    second: manelGaita_245
+  - first:
+      213: -7088851110390653166
+    second: manelGaita_246
+  - first:
+      213: 1553774280837141327
+    second: manelGaita_247
+  - first:
+      213: -7794888588140207074
+    second: manelGaita_248
+  - first:
+      213: -1029451968030330185
+    second: manelGaita_249
+  - first:
+      213: -8256291852755937758
+    second: manelGaita_250
+  - first:
+      213: -4988880692106243089
+    second: manelGaita_251
+  - first:
+      213: 705100429489991456
+    second: manelGaita_252
+  - first:
+      213: -6301502219712830306
+    second: manelGaita_253
+  - first:
+      213: 2671864401108174041
+    second: manelGaita_254
+  - first:
+      213: 7790834917004956462
+    second: manelGaita_255
+  - first:
+      213: 7513710476701198680
+    second: manelGaita_256
+  - first:
+      213: -6170542609104735332
+    second: manelGaita_257
+  - first:
+      213: 7216731706920401618
+    second: manelGaita_258
+  - first:
+      213: 6002896878565643082
+    second: manelGaita_259
+  - first:
+      213: -5888862873114412653
+    second: manelGaita_260
+  - first:
+      213: 4998482102167378104
+    second: manelGaita_261
+  - first:
+      213: 406485305145878658
+    second: manelGaita_262
+  - first:
+      213: -5849432837151725499
+    second: manelGaita_263
+  - first:
+      213: 4433810984807438963
+    second: manelGaita_264
+  - first:
+      213: 4568297415189249889
+    second: manelGaita_265
+  - first:
+      213: 1533135883065898591
+    second: manelGaita_266
+  - first:
+      213: -4372299750078494357
+    second: manelGaita_267
+  - first:
+      213: 1497265680157064232
+    second: manelGaita_268
+  - first:
+      213: 2438777447717751371
+    second: manelGaita_269
+  - first:
+      213: -2466272475742466852
+    second: manelGaita_270
+  - first:
+      213: -6789723045116362067
+    second: manelGaita_271
+  - first:
+      213: -1912338950886157974
+    second: manelGaita_272
+  - first:
+      213: 557462181229599744
+    second: manelGaita_273
+  - first:
+      213: 3867126719742805868
+    second: manelGaita_274
+  - first:
+      213: -2616055021277471547
+    second: manelGaita_275
+  - first:
+      213: 8542368426632760610
+    second: manelGaita_276
+  - first:
+      213: -1548141146780655356
+    second: manelGaita_277
+  - first:
+      213: -4945180853011172527
+    second: manelGaita_278
+  - first:
+      213: -3739538411439140504
+    second: manelGaita_279
+  - first:
+      213: -2620877064927952324
+    second: manelGaita_280
+  - first:
+      213: -6684948260881853259
+    second: manelGaita_281
+  - first:
+      213: -7503139792106074632
+    second: manelGaita_282
+  - first:
+      213: -6653898024529682558
+    second: manelGaita_283
+  - first:
+      213: 8481309339625043766
+    second: manelGaita_284
+  - first:
+      213: 3376123440663279995
+    second: manelGaita_285
+  - first:
+      213: -7708322694125425087
+    second: manelGaita_286
+  - first:
+      213: 3903816176119351913
+    second: manelGaita_287
+  - first:
+      213: 7117770207270627408
+    second: manelGaita_288
+  - first:
+      213: -2200939121776477344
+    second: manelGaita_289
+  - first:
+      213: -6812928615963451107
+    second: manelGaita_290
+  - first:
+      213: 3747564987706517267
+    second: manelGaita_291
+  - first:
+      213: 3185332320692139819
+    second: manelGaita_292
+  - first:
+      213: 749518712873594853
+    second: manelGaita_293
+  - first:
+      213: 8069908752572991225
+    second: manelGaita_294
+  - first:
+      213: -827673729730380108
+    second: manelGaita_295
+  - first:
+      213: 24560051768085434
+    second: manelGaita_296
+  - first:
+      213: 7086180611410437484
+    second: manelGaita_297
+  - first:
+      213: -1578586848880672658
+    second: manelGaita_298
+  - first:
+      213: -633565393198739930
+    second: manelGaita_299
+  - first:
+      213: 7741967664854191190
+    second: manelGaita_300
+  - first:
+      213: 6390020979417332763
+    second: manelGaita_301
+  - first:
+      213: -1136929208800785723
+    second: manelGaita_302
+  - first:
+      213: -9092516603585627677
+    second: manelGaita_303
+  - first:
+      213: -2240991392074962548
+    second: manelGaita_304
+  - first:
+      213: 332215234420335050
+    second: manelGaita_305
+  - first:
+      213: -6776422795503279959
+    second: manelGaita_306
+  - first:
+      213: 6195785592234196545
+    second: manelGaita_307
+  - first:
+      213: -5104356201793124215
+    second: manelGaita_308
+  - first:
+      213: 3369795534807040811
+    second: manelGaita_309
+  - first:
+      213: 4667133322311387413
+    second: manelGaita_310
+  - first:
+      213: -5361807455730378002
+    second: manelGaita_311
+  - first:
+      213: 4965021887773423789
+    second: manelGaita_312
+  - first:
+      213: -6200421301874413132
+    second: manelGaita_313
+  - first:
+      213: 7760304993927309796
+    second: manelGaita_314
+  - first:
+      213: -5268258730472595331
+    second: manelGaita_315
+  - first:
+      213: 8885941063114889060
+    second: manelGaita_316
+  - first:
+      213: 1003316043093843088
+    second: manelGaita_317
+  - first:
+      213: -6416438431396184908
+    second: manelGaita_318
+  - first:
+      213: -2044934975325334607
+    second: manelGaita_319
+  - first:
+      213: 8299637257683196645
+    second: manelGaita_320
+  - first:
+      213: 8276345599364742203
+    second: manelGaita_321
+  - first:
+      213: 2265499163231992095
+    second: manelGaita_322
+  - first:
+      213: -7232795947253933789
+    second: manelGaita_323
+  - first:
+      213: 2462564077923942568
+    second: manelGaita_324
+  - first:
+      213: 2739997276511333669
+    second: manelGaita_325
+  - first:
+      213: -2896178641079444087
+    second: manelGaita_326
+  - first:
+      213: 755960171033856677
+    second: manelGaita_327
+  - first:
+      213: 5147055210632587759
+    second: manelGaita_328
+  - first:
+      213: 8090576220379051992
+    second: manelGaita_329
+  - first:
+      213: 5175567110070736751
+    second: manelGaita_330
+  - first:
+      213: 2678660681066485825
+    second: manelGaita_331
+  - first:
+      213: 5401751403420516924
+    second: manelGaita_332
+  - first:
+      213: 6447982878744959973
+    second: manelGaita_333
+  - first:
+      213: -2365020287912956798
+    second: manelGaita_334
+  - first:
+      213: 815044386355433807
+    second: manelGaita_335
+  - first:
+      213: 4548646547404279831
+    second: manelGaita_336
+  - first:
+      213: 535042022698314963
+    second: manelGaita_337
+  - first:
+      213: 6355875206264164099
+    second: manelGaita_338
+  - first:
+      213: -4335903043643878963
+    second: manelGaita_339
+  - first:
+      213: -4341842948477226282
+    second: manelGaita_340
+  - first:
+      213: 741641665236229004
+    second: manelGaita_341
+  - first:
+      213: -2571079837479964320
+    second: manelGaita_342
+  - first:
+      213: 3940084910049975513
+    second: manelGaita_343
+  - first:
+      213: -6384888723494780880
+    second: manelGaita_344
+  - first:
+      213: -3225553725296990689
+    second: manelGaita_345
+  - first:
+      213: -571598391382338575
+    second: manelGaita_346
+  - first:
+      213: -1945876550155886041
+    second: manelGaita_347
+  - first:
+      213: -839293741007473370
+    second: manelGaita_348
+  - first:
+      213: -3326538336852524563
+    second: manelGaita_349
+  - first:
+      213: -1307264689973011432
+    second: manelGaita_350
+  - first:
+      213: -8563276455327205159
+    second: manelGaita_351
+  - first:
+      213: 3051565476347059296
+    second: manelGaita_352
+  - first:
+      213: -973793336459023311
+    second: manelGaita_353
+  - first:
+      213: 2908907745199840696
+    second: manelGaita_354
+  - first:
+      213: 174957458048235293
+    second: manelGaita_355
+  - first:
+      213: 5429666544750624235
+    second: manelGaita_356
+  - first:
+      213: 4745008383805127497
+    second: manelGaita_357
+  - first:
+      213: -1738361969116450372
+    second: manelGaita_358
+  - first:
+      213: -1538621088219930905
+    second: manelGaita_359
+  - first:
+      213: 5478592967138408765
+    second: manelGaita_360
+  - first:
+      213: 8793627067267054503
+    second: manelGaita_361
+  - first:
+      213: -3649109764491630307
+    second: manelGaita_362
+  - first:
+      213: -2195990241167937904
+    second: manelGaita_363
+  - first:
+      213: 3594062169884379503
+    second: manelGaita_364
+  - first:
+      213: 3502994983481560540
+    second: manelGaita_365
+  - first:
+      213: 7897355021699009485
+    second: manelGaita_366
+  - first:
+      213: 2539434325199427219
+    second: manelGaita_367
+  - first:
+      213: -127545670441620295
+    second: manelGaita_368
+  - first:
+      213: -7025143976207443785
+    second: manelGaita_369
+  - first:
+      213: 5422705314369346206
+    second: manelGaita_370
+  - first:
+      213: 7351261527235837527
+    second: manelGaita_371
+  - first:
+      213: 2091708672927147307
+    second: manelGaita_372
+  - first:
+      213: 2629192881757730044
+    second: manelGaita_373
+  - first:
+      213: 3769905875513048883
+    second: manelGaita_374
+  - first:
+      213: -6695113934538097562
+    second: manelGaita_375
+  - first:
+      213: 2404149747148989667
+    second: manelGaita_376
+  - first:
+      213: -7467042324313098500
+    second: manelGaita_377
+  - first:
+      213: 3711243299557753052
+    second: manelGaita_378
+  - first:
+      213: -3475161760872236900
+    second: manelGaita_379
+  - first:
+      213: -3487746026398882652
+    second: manelGaita_380
+  - first:
+      213: 1420159141591666784
+    second: manelGaita_381
+  - first:
+      213: -1035858389320608587
+    second: manelGaita_382
+  - first:
+      213: 7331837452330831805
+    second: manelGaita_383
+  - first:
+      213: -1855885413499874919
+    second: manelGaita_384
+  - first:
+      213: -5751189783608424814
+    second: manelGaita_385
+  - first:
+      213: 7552483161463159362
+    second: manelGaita_386
+  - first:
+      213: 4021992979126738529
+    second: manelGaita_387
+  - first:
+      213: 4244828840368124061
+    second: manelGaita_388
+  - first:
+      213: -1214111920759978940
+    second: manelGaita_389
+  - first:
+      213: 9024190833472900389
+    second: manelGaita_390
+  - first:
+      213: -1871402993372847171
+    second: manelGaita_391
+  - first:
+      213: 2022434979022400950
+    second: manelGaita_392
+  - first:
+      213: -6191998321541152500
+    second: manelGaita_393
+  - first:
+      213: -755054332531086887
+    second: manelGaita_394
+  - first:
+      213: 1075921639392531287
+    second: manelGaita_395
+  - first:
+      213: 1829918234937825235
+    second: manelGaita_396
+  - first:
+      213: -2938983441166760052
+    second: manelGaita_397
+  - first:
+      213: 5307017602238156139
+    second: manelGaita_398
+  - first:
+      213: -9021128215380700129
+    second: manelGaita_399
+  - first:
+      213: 8297931948268326677
+    second: manelGaita_400
+  - first:
+      213: 8133436661259323617
+    second: manelGaita_401
+  - first:
+      213: 1922201888311698669
+    second: manelGaita_402
+  - first:
+      213: 2725666176528811513
+    second: manelGaita_403
+  - first:
+      213: 6999890892858061051
+    second: manelGaita_404
+  - first:
+      213: -6638126140210650285
+    second: manelGaita_405
+  - first:
+      213: 9017512544774625689
+    second: manelGaita_406
+  - first:
+      213: -87867306449988894
+    second: manelGaita_407
+  - first:
+      213: 849988404608243579
+    second: manelGaita_408
+  - first:
+      213: -7155630955854089416
+    second: manelGaita_409
+  - first:
+      213: -2016609767206968279
+    second: manelGaita_410
+  - first:
+      213: 1490934057937212360
+    second: manelGaita_411
+  - first:
+      213: 3067579977883815332
+    second: manelGaita_412
+  - first:
+      213: -1949105673374077422
+    second: manelGaita_413
+  - first:
+      213: 6721124602810879087
+    second: manelGaita_414
+  - first:
+      213: -7681747902018749925
+    second: manelGaita_415
+  - first:
+      213: -6727626317793563878
+    second: manelGaita_416
+  - first:
+      213: 1103925542433466500
+    second: manelGaita_417
+  - first:
+      213: -2447282602620070814
+    second: manelGaita_418
+  - first:
+      213: 2790996798346281883
+    second: manelGaita_419
+  - first:
+      213: -4912653925460413720
+    second: manelGaita_420
+  - first:
+      213: -6574306344672313758
+    second: manelGaita_421
+  - first:
+      213: -1574142398928947990
+    second: manelGaita_422
+  - first:
+      213: 3801410027833253341
+    second: manelGaita_423
+  - first:
+      213: 8209042628320595010
+    second: manelGaita_424
+  - first:
+      213: -5184302519740239680
+    second: manelGaita_425
+  - first:
+      213: 6864997242064089726
+    second: manelGaita_426
+  - first:
+      213: -4956173426459851927
+    second: manelGaita_427
+  - first:
+      213: -5322646515040914397
+    second: manelGaita_428
+  - first:
+      213: 4966591178161181705
+    second: manelGaita_429
+  - first:
+      213: -4958615582020253265
+    second: manelGaita_430
+  - first:
+      213: 2822903027363653509
+    second: manelGaita_431
+  - first:
+      213: -6926480465545443904
+    second: manelGaita_432
+  - first:
+      213: -8316255022693033900
+    second: manelGaita_433
+  - first:
+      213: 845086368400266133
+    second: manelGaita_434
+  - first:
+      213: -1901815627214203605
+    second: manelGaita_435
+  - first:
+      213: 5631570383510517560
+    second: manelGaita_436
+  - first:
+      213: 53359011267520430
+    second: manelGaita_437
+  - first:
+      213: 541085709282647992
+    second: manelGaita_438
+  - first:
+      213: -836751539456288901
+    second: manelGaita_439
+  - first:
+      213: -8440842579981943046
+    second: manelGaita_440
+  - first:
+      213: 4722264020348156944
+    second: manelGaita_441
+  - first:
+      213: 4382172181775794410
+    second: manelGaita_442
+  - first:
+      213: 7155492518471839289
+    second: manelGaita_443
+  - first:
+      213: -8594193437715529395
+    second: manelGaita_444
+  - first:
+      213: 2688515685884707131
+    second: manelGaita_445
+  - first:
+      213: 5590124404591769028
+    second: manelGaita_446
+  - first:
+      213: 788662223074454835
+    second: manelGaita_447
+  - first:
+      213: -8770461688082908178
+    second: manelGaita_448
+  - first:
+      213: 1523067107591685766
+    second: manelGaita_449
+  - first:
+      213: 1584100158728620613
+    second: manelGaita_450
+  - first:
+      213: 42605281325756534
+    second: manelGaita_451
+  - first:
+      213: 3213117079601201830
+    second: manelGaita_452
+  - first:
+      213: -8452720517813790853
+    second: manelGaita_453
+  - first:
+      213: -244706093937600900
+    second: manelGaita_454
+  - first:
+      213: 8878814415470361827
+    second: manelGaita_455
+  - first:
+      213: -2259146115621152007
+    second: manelGaita_456
+  - first:
+      213: -7342221261742894287
+    second: manelGaita_457
+  - first:
+      213: 7309876563670337197
+    second: manelGaita_458
+  - first:
+      213: -8657662816893480932
+    second: manelGaita_459
+  - first:
+      213: 77632850382975636
+    second: manelGaita_460
+  - first:
+      213: -5655467295309026798
+    second: manelGaita_461
+  - first:
+      213: 4962900125374002806
+    second: manelGaita_462
+  - first:
+      213: -3513343488847610675
+    second: manelGaita_463
+  - first:
+      213: -3441421123666694357
+    second: manelGaita_464
+  - first:
+      213: 4877408607943469519
+    second: manelGaita_465
+  - first:
+      213: -7300374115145771452
+    second: manelGaita_466
+  - first:
+      213: -7167271623612457999
+    second: manelGaita_467
+  - first:
+      213: 7903859803397549531
+    second: manelGaita_468
+  - first:
+      213: 3140312044229735840
+    second: manelGaita_469
+  - first:
+      213: 8174206872646991635
+    second: manelGaita_470
+  - first:
+      213: 2302356201891321868
+    second: manelGaita_471
+  - first:
+      213: 2064962958766873777
+    second: manelGaita_472
+  - first:
+      213: -3735351469448978134
+    second: manelGaita_473
+  - first:
+      213: 8961748539349005306
+    second: manelGaita_474
+  - first:
+      213: 2022692807192428112
+    second: manelGaita_475
+  - first:
+      213: -1271006035203887487
+    second: manelGaita_476
+  - first:
+      213: 8046683865171248740
+    second: manelGaita_477
+  - first:
+      213: -6601264377887257678
+    second: manelGaita_478
+  - first:
+      213: 782604429514821246
+    second: manelGaita_479
+  - first:
+      213: -3255115532159293596
+    second: manelGaita_480
+  - first:
+      213: 1565492208122602738
+    second: manelGaita_481
+  - first:
+      213: 837971719967481770
+    second: manelGaita_482
+  - first:
+      213: 5189580137895116306
+    second: manelGaita_483
+  - first:
+      213: 2750933515338828083
+    second: manelGaita_484
+  - first:
+      213: 2772955963642334768
+    second: manelGaita_485
+  - first:
+      213: -2848718802378396071
+    second: manelGaita_486
+  - first:
+      213: -2102347780559798312
+    second: manelGaita_487
+  - first:
+      213: -8664731911893030857
+    second: manelGaita_488
+  - first:
+      213: -2918995660511471352
+    second: manelGaita_489
+  - first:
+      213: -5414207596801346858
+    second: manelGaita_490
+  - first:
+      213: -7201555127692133801
+    second: manelGaita_491
+  - first:
+      213: 4321269118067031275
+    second: manelGaita_492
+  - first:
+      213: 5079472830927526208
+    second: manelGaita_493
+  - first:
+      213: -1776937360920076526
+    second: manelGaita_494
+  - first:
+      213: 6905624251656154441
+    second: manelGaita_495
+  - first:
+      213: -4884644391326186335
+    second: manelGaita_496
+  - first:
+      213: 3906710934126899482
+    second: manelGaita_497
+  - first:
+      213: -1346222545423589582
+    second: manelGaita_498
+  - first:
+      213: -8252848121243395876
+    second: manelGaita_499
+  - first:
+      213: 939654554765041985
+    second: manelGaita_500
+  - first:
+      213: 5578561424877962661
+    second: manelGaita_501
+  - first:
+      213: 5348253260496773490
+    second: manelGaita_502
+  - first:
+      213: -5727320874882192376
+    second: manelGaita_503
+  - first:
+      213: -4120119535204341233
+    second: manelGaita_504
+  - first:
+      213: 2844508128818945511
+    second: manelGaita_505
+  - first:
+      213: 5406159249858466238
+    second: manelGaita_506
+  - first:
+      213: 204542298906566598
+    second: manelGaita_507
+  - first:
+      213: 2122714176070419098
+    second: manelGaita_508
+  - first:
+      213: 8700794216098203719
+    second: manelGaita_509
+  - first:
+      213: -707314746935003927
+    second: manelGaita_510
+  - first:
+      213: 7227199541575534929
+    second: manelGaita_511
+  - first:
+      213: -7870838664000972595
+    second: manelGaita_512
+  - first:
+      213: 1077039664789552357
+    second: manelGaita_513
+  - first:
+      213: 3283993674729104177
+    second: manelGaita_514
+  - first:
+      213: 1538732661534168279
+    second: manelGaita_515
+  - first:
+      213: -2936782946913859425
+    second: manelGaita_516
+  - first:
+      213: -8071254400780475131
+    second: manelGaita_517
+  - first:
+      213: 4017128613780943063
+    second: manelGaita_518
+  - first:
+      213: 1799242738322389194
+    second: manelGaita_519
+  - first:
+      213: 769231105766875895
+    second: manelGaita_520
+  - first:
+      213: -2215835559736145488
+    second: manelGaita_521
+  - first:
+      213: -4230603572262575536
+    second: manelGaita_522
+  - first:
+      213: 1621974149744330018
+    second: manelGaita_523
+  - first:
+      213: -2709670724079272679
+    second: manelGaita_524
+  - first:
+      213: -691268611434471681
+    second: manelGaita_525
+  - first:
+      213: 610854248236645256
+    second: manelGaita_526
+  - first:
+      213: 796796307075521974
+    second: manelGaita_527
+  - first:
+      213: -2019438051799055236
+    second: manelGaita_528
+  - first:
+      213: 6357368306291864879
+    second: manelGaita_529
+  - first:
+      213: 7867756696701975308
+    second: manelGaita_530
+  - first:
+      213: 4378379251888629768
+    second: manelGaita_531
+  - first:
+      213: 4840907995747001244
+    second: manelGaita_532
+  - first:
+      213: 7075318882791131169
+    second: manelGaita_533
+  - first:
+      213: -3702728372097538738
+    second: manelGaita_534
+  - first:
+      213: -6253729252570677187
+    second: manelGaita_535
+  - first:
+      213: -2973418030790285340
+    second: manelGaita_536
+  - first:
+      213: 5348606347970339066
+    second: manelGaita_537
+  - first:
+      213: 1990214102221234851
+    second: manelGaita_538
+  - first:
+      213: -7785894830041125978
+    second: manelGaita_539
+  - first:
+      213: 6423389763197999432
+    second: manelGaita_540
+  - first:
+      213: 8063087612038692763
+    second: manelGaita_541
+  - first:
+      213: 7229605933094770644
+    second: manelGaita_542
+  - first:
+      213: -4446075638982199084
+    second: manelGaita_543
+  - first:
+      213: -5282030721899590540
+    second: manelGaita_544
+  - first:
+      213: -5935388528053712529
+    second: manelGaita_545
+  - first:
+      213: 8309688789068569487
+    second: manelGaita_546
+  - first:
+      213: -6446135284127495749
+    second: manelGaita_547
+  - first:
+      213: 4798877872352087798
+    second: manelGaita_548
+  - first:
+      213: -372062681411150108
+    second: manelGaita_549
+  - first:
+      213: -2526476410825755294
+    second: manelGaita_550
+  - first:
+      213: 7797462924124304612
+    second: manelGaita_551
+  - first:
+      213: -8936755477679809191
+    second: manelGaita_552
+  - first:
+      213: -6850656210853891489
+    second: manelGaita_553
+  - first:
+      213: -6926138199161509409
+    second: manelGaita_554
+  - first:
+      213: -5416862575938274108
+    second: manelGaita_555
+  - first:
+      213: -7842027541995694121
+    second: manelGaita_556
+  - first:
+      213: 914936090120339900
+    second: manelGaita_557
+  - first:
+      213: 2867462722526360497
+    second: manelGaita_558
+  - first:
+      213: 2086108446955948661
+    second: manelGaita_559
+  - first:
+      213: 9135396003377638719
+    second: manelGaita_560
+  - first:
+      213: -6703229277465370060
+    second: manelGaita_561
+  - first:
+      213: -3988271887629426816
+    second: manelGaita_562
+  - first:
+      213: -2177475884522970439
+    second: manelGaita_563
+  - first:
+      213: -6226472216774806258
+    second: manelGaita_564
+  - first:
+      213: 8633531665623585094
+    second: manelGaita_565
+  - first:
+      213: -6194615248662906237
+    second: manelGaita_566
+  - first:
+      213: -3473465540293828703
+    second: manelGaita_567
+  - first:
+      213: -7900272229252189177
+    second: manelGaita_568
+  - first:
+      213: -9120177945161456519
+    second: manelGaita_569
+  - first:
+      213: -1284319927147741125
+    second: manelGaita_570
+  - first:
+      213: 1936689944229280204
+    second: manelGaita_571
+  - first:
+      213: -3019380248193549856
+    second: manelGaita_572
+  - first:
+      213: -454397644656751750
+    second: manelGaita_573
+  - first:
+      213: 4991134468235734719
+    second: manelGaita_574
+  - first:
+      213: 6771439276429116206
+    second: manelGaita_575
+  - first:
+      213: 202254720078702233
+    second: manelGaita_576
+  - first:
+      213: 1834876921087579564
+    second: manelGaita_577
+  - first:
+      213: -1313517053601697201
+    second: manelGaita_578
+  - first:
+      213: -4645024937304652700
+    second: manelGaita_579
+  - first:
+      213: -6264486476600753695
+    second: manelGaita_580
+  - first:
+      213: -9096227635311918526
+    second: manelGaita_581
+  - first:
+      213: 7334373893694513881
+    second: manelGaita_582
+  - first:
+      213: -4524105980347159159
+    second: manelGaita_583
+  - first:
+      213: -8013464791107291694
+    second: manelGaita_584
+  - first:
+      213: -3221536166250657429
+    second: manelGaita_585
+  - first:
+      213: -3633487398398689607
+    second: manelGaita_586
+  - first:
+      213: 3311891872873481678
+    second: manelGaita_587
+  - first:
+      213: 6256526536363700247
+    second: manelGaita_588
+  - first:
+      213: -4762993308678188740
+    second: manelGaita_589
+  - first:
+      213: 1218570406035830765
+    second: manelGaita_590
+  - first:
+      213: 8559964134240210294
+    second: manelGaita_591
+  - first:
+      213: -2417794029948076884
+    second: manelGaita_592
+  - first:
+      213: 3307913633277952802
+    second: manelGaita_593
+  - first:
+      213: 5217422360695519761
+    second: manelGaita_594
+  - first:
+      213: -8303401391243101850
+    second: manelGaita_595
+  - first:
+      213: 6632229600138585913
+    second: manelGaita_596
+  - first:
+      213: 722866726428830389
+    second: manelGaita_597
+  - first:
+      213: -945544401710842778
+    second: manelGaita_598
+  - first:
+      213: 2116444029390229181
+    second: manelGaita_599
+  - first:
+      213: -7292307894905214908
+    second: manelGaita_600
+  - first:
+      213: -4784507598023058353
+    second: manelGaita_601
+  - first:
+      213: -48470162532282873
+    second: manelGaita_602
+  - first:
+      213: -6818560952652075772
+    second: manelGaita_603
+  - first:
+      213: 2214054695893248438
+    second: manelGaita_604
+  - first:
+      213: 8886852563032754893
+    second: manelGaita_605
+  - first:
+      213: -8689338460504125751
+    second: manelGaita_606
+  - first:
+      213: -5364820685273609260
+    second: manelGaita_607
+  - first:
+      213: -3513582741620633025
+    second: manelGaita_608
+  - first:
+      213: -7844002752326714204
+    second: manelGaita_609
+  - first:
+      213: 8472241750288595806
+    second: manelGaita_610
+  - first:
+      213: 2233155990059226294
+    second: manelGaita_611
+  - first:
+      213: 5386257256272868143
+    second: manelGaita_612
+  - first:
+      213: -2634580947066236823
+    second: manelGaita_613
+  - first:
+      213: 4682829835467026483
+    second: manelGaita_614
+  - first:
+      213: 1131029677735626127
+    second: manelGaita_615
+  - first:
+      213: 6369594542605262788
+    second: manelGaita_616
+  - first:
+      213: 8282158479564573688
+    second: manelGaita_617
+  - first:
+      213: 6571630242126696898
+    second: manelGaita_618
+  - first:
+      213: -3113149935712420911
+    second: manelGaita_619
+  - first:
+      213: 5357001279409962172
+    second: manelGaita_620
+  - first:
+      213: -5488194576062287301
+    second: manelGaita_621
+  - first:
+      213: 7043450521422588304
+    second: manelGaita_622
+  - first:
+      213: -6847132756151283602
+    second: manelGaita_623
+  - first:
+      213: 2037938274304431601
+    second: manelGaita_624
+  - first:
+      213: -5958110451208545479
+    second: manelGaita_625
+  - first:
+      213: 9019156273409357343
+    second: manelGaita_626
+  - first:
+      213: 5213029630704093953
+    second: manelGaita_627
+  - first:
+      213: -4838783049516065664
+    second: manelGaita_628
+  - first:
+      213: -8197579497627024982
+    second: manelGaita_629
+  - first:
+      213: -1301076070177049340
+    second: manelGaita_630
+  - first:
+      213: -3307794800778160666
+    second: manelGaita_631
+  - first:
+      213: 8410760697038779422
+    second: manelGaita_632
+  - first:
+      213: 6972254145457065365
+    second: manelGaita_633
+  - first:
+      213: 3446766237268051885
+    second: manelGaita_634
+  - first:
+      213: -6631394295360087637
+    second: manelGaita_635
+  - first:
+      213: -9165128508694568342
+    second: manelGaita_636
+  - first:
+      213: -2643943252133166640
+    second: manelGaita_637
+  - first:
+      213: 42362695811472893
+    second: manelGaita_638
+  - first:
+      213: 5862623757661104116
+    second: manelGaita_639
+  - first:
+      213: 4137218515475685821
+    second: manelGaita_640
+  - first:
+      213: -6437314537761443715
+    second: manelGaita_641
+  - first:
+      213: 3734862854928613519
+    second: manelGaita_642
+  - first:
+      213: -4150930366504986327
+    second: manelGaita_643
+  - first:
+      213: 3879910561147789373
+    second: manelGaita_644
+  - first:
+      213: -7631110240160916467
+    second: manelGaita_645
+  - first:
+      213: -5530907944901291190
+    second: manelGaita_646
+  - first:
+      213: 7271587597954901027
+    second: manelGaita_647
+  - first:
+      213: -7859082096437718293
+    second: manelGaita_648
+  - first:
+      213: 4306553387782757105
+    second: manelGaita_649
+  - first:
+      213: -4558853613434764439
+    second: manelGaita_650
+  - first:
+      213: 1153020823132018123
+    second: manelGaita_651
+  - first:
+      213: 5392847524349772218
+    second: manelGaita_652
+  - first:
+      213: -7438390411391194583
+    second: manelGaita_653
+  - first:
+      213: -8082446905098236192
+    second: manelGaita_654
+  - first:
+      213: -6715971534122455303
+    second: manelGaita_655
+  - first:
+      213: 2268242381117430351
+    second: manelGaita_656
+  - first:
+      213: -6662640724464766698
+    second: manelGaita_657
+  - first:
+      213: -4507058765108124182
+    second: manelGaita_658
+  - first:
+      213: 4254260089723336878
+    second: manelGaita_659
+  - first:
+      213: 1266551484865156802
+    second: manelGaita_660
+  - first:
+      213: -6386419191045898419
+    second: manelGaita_661
+  - first:
+      213: -6467449706706458316
+    second: manelGaita_662
+  - first:
+      213: -8104091107871945660
+    second: manelGaita_663
+  - first:
+      213: 3379305394699443858
+    second: manelGaita_664
+  - first:
+      213: 2639437733029563695
+    second: manelGaita_665
+  - first:
+      213: 6986632425819053687
+    second: manelGaita_666
+  - first:
+      213: -4838303074194443191
+    second: manelGaita_667
+  - first:
+      213: 4453427903070189599
+    second: manelGaita_668
+  - first:
+      213: -6286842205318929626
+    second: manelGaita_669
+  - first:
+      213: 1953552241802621393
+    second: manelGaita_670
+  - first:
+      213: -6532467330434539228
+    second: manelGaita_671
+  - first:
+      213: -2121253227377473167
+    second: manelGaita_672
+  - first:
+      213: 1115949571898039481
+    second: manelGaita_673
+  - first:
+      213: -7396118623438154718
+    second: manelGaita_674
+  - first:
+      213: -1280175238782413455
+    second: manelGaita_675
+  - first:
+      213: -7605854833728645622
+    second: manelGaita_676
+  - first:
+      213: -7833461174640989368
+    second: manelGaita_677
+  - first:
+      213: -1099678343632306311
+    second: manelGaita_678
+  - first:
+      213: -5511915950951999739
+    second: manelGaita_679
+  - first:
+      213: -5018037339921820801
+    second: manelGaita_680
+  - first:
+      213: 8957318418371174844
+    second: manelGaita_681
+  - first:
+      213: 2526048023958217652
+    second: manelGaita_682
+  - first:
+      213: -7907299627908197476
+    second: manelGaita_683
+  - first:
+      213: 6079428043817692921
+    second: manelGaita_684
+  - first:
+      213: 1003596628224752816
+    second: manelGaita_685
+  - first:
+      213: -6923680572520194022
+    second: manelGaita_686
+  - first:
+      213: 2762665731155290598
+    second: manelGaita_687
+  - first:
+      213: -3450220205911806217
+    second: manelGaita_688
+  - first:
+      213: -2195317656838204142
+    second: manelGaita_689
+  - first:
+      213: -3050790552151134225
+    second: manelGaita_690
+  - first:
+      213: -3294857685366266630
+    second: manelGaita_691
+  - first:
+      213: 5282697538784424354
+    second: manelGaita_692
+  - first:
+      213: -8896557152802309214
+    second: manelGaita_693
+  - first:
+      213: 1356108149944422413
+    second: manelGaita_694
+  - first:
+      213: 6570774151790712980
+    second: manelGaita_695
+  - first:
+      213: 2302196361178926696
+    second: manelGaita_696
+  - first:
+      213: 5369893571325081154
+    second: manelGaita_697
+  - first:
+      213: -3296750169816065681
+    second: manelGaita_698
+  - first:
+      213: 172039224149503484
+    second: manelGaita_699
+  - first:
+      213: 6051184245496014330
+    second: manelGaita_700
+  - first:
+      213: -2492071958258673665
+    second: manelGaita_701
+  - first:
+      213: 8032567418343988255
+    second: manelGaita_702
+  - first:
+      213: 3734889378227352195
+    second: manelGaita_703
+  - first:
+      213: -2623041466923986864
+    second: manelGaita_704
+  - first:
+      213: 2370344537398939515
+    second: manelGaita_705
+  - first:
+      213: -5049830187980939497
+    second: manelGaita_706
+  - first:
+      213: -1044930271587995122
+    second: manelGaita_707
+  - first:
+      213: -853662148101463993
+    second: manelGaita_708
+  - first:
+      213: -2782649629288471081
+    second: manelGaita_709
+  - first:
+      213: -5014316934252808374
+    second: manelGaita_710
+  - first:
+      213: -4850184912888128464
+    second: manelGaita_711
+  - first:
+      213: -7782758589775858000
+    second: manelGaita_712
+  - first:
+      213: 6287350234321481292
+    second: manelGaita_713
+  - first:
+      213: -377021238270324997
+    second: manelGaita_714
+  - first:
+      213: 2933455478271807898
+    second: manelGaita_715
+  - first:
+      213: -4887594788791859695
+    second: manelGaita_716
+  - first:
+      213: -4279052261349710311
+    second: manelGaita_717
+  - first:
+      213: -4095443596752280032
+    second: manelGaita_718
+  - first:
+      213: 3819721096340045387
+    second: manelGaita_719
+  - first:
+      213: -4817671870387217966
+    second: manelGaita_720
+  - first:
+      213: 6332261047200119692
+    second: manelGaita_721
+  - first:
+      213: -389882674027085518
+    second: manelGaita_722
+  - first:
+      213: -7677922089873521872
+    second: manelGaita_723
+  - first:
+      213: 9068412871646783564
+    second: manelGaita_724
+  - first:
+      213: -6876035394465363927
+    second: manelGaita_725
+  - first:
+      213: -5882878236334738756
+    second: manelGaita_726
+  - first:
+      213: -2978241455490399330
+    second: manelGaita_727
+  - first:
+      213: -1433336971014842584
+    second: manelGaita_728
+  - first:
+      213: -874289377556919677
+    second: manelGaita_729
+  - first:
+      213: 5059255424655104917
+    second: manelGaita_730
+  - first:
+      213: 7353134031794940463
+    second: manelGaita_731
+  - first:
+      213: 5644199638108078082
+    second: manelGaita_732
+  - first:
+      213: -6368750855242519730
+    second: manelGaita_733
+  - first:
+      213: 5653966990015579679
+    second: manelGaita_734
+  - first:
+      213: -4460470336634587159
+    second: manelGaita_735
+  - first:
+      213: -3560763354796054354
+    second: manelGaita_736
+  - first:
+      213: -6389775310733733353
+    second: manelGaita_737
+  - first:
+      213: 5459182478591774667
+    second: manelGaita_738
+  - first:
+      213: -2130943068189313968
+    second: manelGaita_739
+  - first:
+      213: 2390766140267552144
+    second: manelGaita_740
+  - first:
+      213: 3314452725551037920
+    second: manelGaita_741
+  - first:
+      213: -1017442202020120851
+    second: manelGaita_742
+  - first:
+      213: -8253865216862763064
+    second: manelGaita_743
+  - first:
+      213: 1641562907451586024
+    second: manelGaita_744
+  - first:
+      213: 8071870368554469726
+    second: manelGaita_745
+  - first:
+      213: 8686540990296019576
+    second: manelGaita_746
+  - first:
+      213: -3758972271532086566
+    second: manelGaita_747
+  - first:
+      213: -4336705483580195381
+    second: manelGaita_748
+  - first:
+      213: -8894610770138772484
+    second: manelGaita_749
+  - first:
+      213: -4432107302375999940
+    second: manelGaita_750
+  - first:
+      213: -1990099866497273186
+    second: manelGaita_751
+  - first:
+      213: -5003161827021510913
+    second: manelGaita_752
+  - first:
+      213: 1136218477185781691
+    second: manelGaita_753
+  - first:
+      213: -4298201862519906234
+    second: manelGaita_754
+  - first:
+      213: 4862155398837199749
+    second: manelGaita_755
+  - first:
+      213: -9017388443707467344
+    second: manelGaita_756
+  - first:
+      213: 493837216039478047
+    second: manelGaita_757
+  - first:
+      213: 8462460690377320178
+    second: manelGaita_758
+  - first:
+      213: 7877253304702742338
+    second: manelGaita_759
+  - first:
+      213: 7666425281000859484
+    second: manelGaita_760
+  - first:
+      213: -165295113332981203
+    second: manelGaita_761
+  - first:
+      213: 766383226431407274
+    second: manelGaita_762
+  - first:
+      213: 4090237147980613259
+    second: manelGaita_763
+  - first:
+      213: 8246394478564230776
+    second: manelGaita_764
+  - first:
+      213: 4638362560448035752
+    second: manelGaita_765
+  - first:
+      213: -197976854289517421
+    second: manelGaita_766
+  - first:
+      213: 5841400028337926310
+    second: manelGaita_767
+  - first:
+      213: 5704293222916249332
+    second: manelGaita_768
+  - first:
+      213: -4666025073111640466
+    second: manelGaita_769
+  - first:
+      213: 1796459799951227525
+    second: manelGaita_770
+  - first:
+      213: -1428443172540828930
+    second: manelGaita_771
+  - first:
+      213: 7421837161216779634
+    second: manelGaita_772
+  - first:
+      213: -7042470704558040162
+    second: manelGaita_773
+  - first:
+      213: -3435857393990471979
+    second: manelGaita_774
+  - first:
+      213: 1510421631539995275
+    second: manelGaita_775
+  - first:
+      213: -5280888278224231345
+    second: manelGaita_776
+  - first:
+      213: 8218019521195495310
+    second: manelGaita_777
+  - first:
+      213: -8192540163250678623
+    second: manelGaita_778
+  - first:
+      213: -2124246371551593211
+    second: manelGaita_779
+  - first:
+      213: -6825720056246006261
+    second: manelGaita_780
+  - first:
+      213: -8881997336203443766
+    second: manelGaita_781
+  - first:
+      213: -4937089829503318395
+    second: manelGaita_782
+  - first:
+      213: 5623296715635630145
+    second: manelGaita_783
+  - first:
+      213: -8808450127369297818
+    second: manelGaita_784
+  - first:
+      213: -9043250336024490398
+    second: manelGaita_785
+  - first:
+      213: 8260361996848005826
+    second: manelGaita_786
+  - first:
+      213: -6596395484786592960
+    second: manelGaita_787
+  - first:
+      213: -8840802472833104824
+    second: manelGaita_788
+  - first:
+      213: -7722773265607439789
+    second: manelGaita_789
+  - first:
+      213: -2923104123361245716
+    second: manelGaita_790
+  - first:
+      213: -6698117459249106682
+    second: manelGaita_791
+  - first:
+      213: -3052805533680755280
+    second: manelGaita_792
+  - first:
+      213: 305769061893875831
+    second: manelGaita_793
+  - first:
+      213: -8643271005270481180
+    second: manelGaita_794
+  - first:
+      213: 1061058171520634277
+    second: manelGaita_795
+  - first:
+      213: -1737500231639194102
+    second: manelGaita_796
+  - first:
+      213: 4976557935480073707
+    second: manelGaita_797
+  - first:
+      213: 718109279946161186
+    second: manelGaita_798
+  - first:
+      213: 4596137543870833743
+    second: manelGaita_799
+  - first:
+      213: 4167509946947934844
+    second: manelGaita_800
+  - first:
+      213: 6695876815602295535
+    second: manelGaita_801
+  - first:
+      213: -4992323002064786626
+    second: manelGaita_802
+  - first:
+      213: -1594454770184471092
+    second: manelGaita_803
+  - first:
+      213: 9218084197936020009
+    second: manelGaita_804
+  - first:
+      213: 7154463344904810372
+    second: manelGaita_805
+  - first:
+      213: -5659668507044405429
+    second: manelGaita_806
+  - first:
+      213: 2762547137892452664
+    second: manelGaita_807
+  - first:
+      213: -2591989108770927072
+    second: manelGaita_808
+  - first:
+      213: 2898034796963474935
+    second: manelGaita_809
+  - first:
+      213: 6478943917175341531
+    second: manelGaita_810
+  - first:
+      213: -2888312408665969165
+    second: manelGaita_811
+  - first:
+      213: -8832092413702921602
+    second: manelGaita_812
+  - first:
+      213: -7269585664554509228
+    second: manelGaita_813
+  - first:
+      213: 8186472906813507262
+    second: manelGaita_814
+  - first:
+      213: -8596056715425927674
+    second: manelGaita_815
+  - first:
+      213: -6862568057502403107
+    second: manelGaita_816
+  - first:
+      213: 156530190537633508
+    second: manelGaita_817
+  - first:
+      213: -5632528397976509337
+    second: manelGaita_818
+  - first:
+      213: -5388237335126262081
+    second: manelGaita_819
+  - first:
+      213: 4805230874432683534
+    second: manelGaita_820
+  - first:
+      213: 271878378951390389
+    second: manelGaita_821
+  - first:
+      213: -7979210845703720416
+    second: manelGaita_822
+  - first:
+      213: -3941251715461940009
+    second: manelGaita_823
+  - first:
+      213: -6427523426408797567
+    second: manelGaita_824
+  - first:
+      213: 7904257143958556703
+    second: manelGaita_825
+  - first:
+      213: -3351948956134846074
+    second: manelGaita_826
+  - first:
+      213: -145613469800602075
+    second: manelGaita_827
+  - first:
+      213: 108656953758483173
+    second: manelGaita_828
+  - first:
+      213: 6179352585024830547
+    second: manelGaita_829
+  - first:
+      213: -2832614439095481263
+    second: manelGaita_830
+  - first:
+      213: -7213834092624308242
+    second: manelGaita_831
+  - first:
+      213: -6427514963965442074
+    second: manelGaita_832
+  - first:
+      213: -791244410853729721
+    second: manelGaita_833
+  - first:
+      213: 6064793895923382266
+    second: manelGaita_834
+  - first:
+      213: -7893141652610256854
+    second: manelGaita_835
+  - first:
+      213: 7072042964937873005
+    second: manelGaita_836
+  - first:
+      213: -9120678968641298427
+    second: manelGaita_837
+  - first:
+      213: 2983887331255506768
+    second: manelGaita_838
+  - first:
+      213: 7279650131853632531
+    second: manelGaita_839
+  - first:
+      213: -3012046437007901753
+    second: manelGaita_840
+  - first:
+      213: -8054080152162283667
+    second: manelGaita_841
+  - first:
+      213: -3843971017967680751
+    second: manelGaita_842
+  - first:
+      213: -6541081743022740062
+    second: manelGaita_843
+  - first:
+      213: -918590820041797589
+    second: manelGaita_844
+  - first:
+      213: 3539454184262108083
+    second: manelGaita_845
+  - first:
+      213: -8743924575871058469
+    second: manelGaita_846
+  - first:
+      213: 4212645014356646082
+    second: manelGaita_847
+  - first:
+      213: -6788123251398898712
+    second: manelGaita_848
+  - first:
+      213: 2907923215190515431
+    second: manelGaita_849
+  - first:
+      213: -3714119234172435854
+    second: manelGaita_850
+  - first:
+      213: -7188563373664013685
+    second: manelGaita_851
+  - first:
+      213: -7352608263385151111
+    second: manelGaita_852
+  - first:
+      213: 2606930193554964791
+    second: manelGaita_853
+  - first:
+      213: 3858271538240584308
+    second: manelGaita_854
+  - first:
+      213: -583693496239781837
+    second: manelGaita_855
+  - first:
+      213: -3895161682835764378
+    second: manelGaita_856
+  - first:
+      213: 5876078763330719419
+    second: manelGaita_857
+  - first:
+      213: 5643418090048468177
+    second: manelGaita_858
+  - first:
+      213: 240660972410965803
+    second: manelGaita_859
+  - first:
+      213: 731650820021662350
+    second: manelGaita_860
+  - first:
+      213: 2766057533384175328
+    second: manelGaita_861
+  - first:
+      213: -331341914987707021
+    second: manelGaita_862
+  - first:
+      213: 4081667978947134683
+    second: manelGaita_863
+  - first:
+      213: 422250236219274054
+    second: manelGaita_864
+  - first:
+      213: 6231527851099768038
+    second: manelGaita_865
+  - first:
+      213: -9156495225726645273
+    second: manelGaita_866
+  - first:
+      213: -5295225143127795423
+    second: manelGaita_867
+  - first:
+      213: 1742914662758581999
+    second: manelGaita_868
+  - first:
+      213: -6090791896903111331
+    second: manelGaita_869
+  - first:
+      213: 1289737990783650465
+    second: manelGaita_870
+  - first:
+      213: -1381423371012901785
+    second: manelGaita_871
+  - first:
+      213: -7225259252361938271
+    second: manelGaita_872
+  - first:
+      213: 7989912801300940430
+    second: manelGaita_873
+  - first:
+      213: -7964502445027548744
+    second: manelGaita_874
+  - first:
+      213: -2298949835264048130
+    second: manelGaita_875
+  - first:
+      213: -4513178796458168487
+    second: manelGaita_876
+  - first:
+      213: -3036799502069306368
+    second: manelGaita_877
+  - first:
+      213: 7049829596460319980
+    second: manelGaita_878
+  - first:
+      213: -5688606607409749997
+    second: manelGaita_879
+  - first:
+      213: 47165958513504905
+    second: manelGaita_880
+  - first:
+      213: 291859385343015745
+    second: manelGaita_881
+  - first:
+      213: 7239887952925709154
+    second: manelGaita_882
+  - first:
+      213: 1291294804132314397
+    second: manelGaita_883
+  - first:
+      213: 4224731736145259848
+    second: manelGaita_884
+  - first:
+      213: 52456223617302463
+    second: manelGaita_885
+  - first:
+      213: -3463927223773580448
+    second: manelGaita_886
+  - first:
+      213: 6720189520683424433
+    second: manelGaita_887
+  - first:
+      213: -6911170603001270764
+    second: manelGaita_888
+  - first:
+      213: 1949447292509458778
+    second: manelGaita_889
+  - first:
+      213: 2964793762213345588
+    second: manelGaita_890
+  - first:
+      213: -1729222939207243718
+    second: manelGaita_891
+  - first:
+      213: 2189276024926651052
+    second: manelGaita_892
+  - first:
+      213: -3494195753966580107
+    second: manelGaita_893
+  - first:
+      213: -665064558856199719
+    second: manelGaita_894
+  - first:
+      213: -4738210793138718878
+    second: manelGaita_895
+  - first:
+      213: -7902543029389518105
+    second: manelGaita_896
+  - first:
+      213: 6870920894673419626
+    second: manelGaita_897
+  - first:
+      213: 7245314042892019526
+    second: manelGaita_898
+  - first:
+      213: 6733525269634756318
+    second: manelGaita_899
+  - first:
+      213: 8304310933219415103
+    second: manelGaita_900
+  - first:
+      213: 1889154290901163915
+    second: manelGaita_901
+  - first:
+      213: 3729903670105026177
+    second: manelGaita_902
+  - first:
+      213: 2696400326842680755
+    second: manelGaita_903
+  - first:
+      213: 865519448269866376
+    second: manelGaita_904
+  - first:
+      213: -448586993963908888
+    second: manelGaita_905
+  - first:
+      213: 5784781898914125376
+    second: manelGaita_906
+  - first:
+      213: -5799708855224405225
+    second: manelGaita_907
+  - first:
+      213: -9000915898447636475
+    second: manelGaita_908
+  - first:
+      213: 5677958387159585669
+    second: manelGaita_909
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: manelGaita_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1282
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ccf588dafd1ec50800000000000000
+      internalID: 6692876457659583566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1282
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3f098cf9cb4a760800000000000000
+      internalID: 7468301476537889713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1282
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324896492893ffe90800000000000000
+      internalID: -6989804863657245661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1282
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300039451939c74c0800000000000000
+      internalID: -4288390492765093885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1282
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bb9f547b7198e50800000000000000
+      internalID: 6812001987295034194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1282
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8f9e87d7d3f1000800000000000000
+      internalID: 8793333386836137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1282
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07348f9f49a2cc20800000000000000
+      internalID: 3225326442594449163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_7
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1218
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be148528b3715f1a0800000000000000
+      internalID: -6776484519951711765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_8
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1218
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2421141bc0541f000800000000000000
+      internalID: 67911390203023938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_9
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1218
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7b482849d1b4390800000000000000
+      internalID: -7833134603198744654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1218
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9b1152dcee53430800000000000000
+      internalID: 3762175628595542460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_11
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1218
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caba9ec4e13d89f40800000000000000
+      internalID: 5735566252549188524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_12
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1218
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b304ba940c00f130800000000000000
+      internalID: 3598389316183917490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_13
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1218
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d8b8036322633f0800000000000000
+      internalID: -921511457612657325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1154
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b844f1eda16371810800000000000000
+      internalID: 1735915670398256267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1154
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e762aa78199b960800000000000000
+      internalID: 7618280256535166479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_16
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1154
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c693dc695b7efce60800000000000000
+      internalID: 7984855431456307564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_17
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1154
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4687736aaa794090800000000000000
+      internalID: -8049767986716244401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_18
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1154
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e3c5c9df89d38e0800000000000000
+      internalID: -1712044068313481645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1154
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64860cd8aac9f0d0800000000000000
+      internalID: -3388454418024856467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_20
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1154
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a128ea79561685e00800000000000000
+      internalID: 1033683203445916186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_21
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1090
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62cae54d017304c0800000000000000
+      internalID: -4322486915524017554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_22
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1090
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc0554934c945970800000000000000
+      internalID: 8742784590698319052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_23
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1090
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9814825a1ba87f80800000000000000
+      internalID: -8108542999538689889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_24
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1090
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a304f68c579848b40800000000000000
+      internalID: 5441625388737314874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_25
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1090
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194519cb624b21850800000000000000
+      internalID: 6346332903383848081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_26
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1090
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cdc474c2c1112e0800000000000000
+      internalID: -2156911770033398757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1090
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e247690d785a290800000000000000
+      internalID: -7879742643067670999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_28
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1026
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90054dd905998010800000000000000
+      internalID: 1191647446015738015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_29
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1024
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf25ee153d89bc00800000000000000
+      internalID: 916919258437726144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_30
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1024
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d67746533c14c60800000000000000
+      internalID: 7800730663668641031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_31
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1024
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d70d448cd2246430800000000000000
+      internalID: 3775180718151108562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_32
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1024
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdf83f43a128f020800000000000000
+      internalID: 2375685788730457589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_33
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1024
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb48bedd5a0a5ab10800000000000000
+      internalID: 1992175044434560187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_34
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1024
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8f0c51ef43dc010800000000000000
+      internalID: 1210682140723837147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_35
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1024
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0100cca4e9230c0800000000000000
+      internalID: -4597438225504530192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 962
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e6bc4a1a322f790800000000000000
+      internalID: -7497891252456952309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_37
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 962
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcf02cc0f702a920800000000000000
+      internalID: 2999969032580431033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_38
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 962
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779f12cdc10a3dde0800000000000000
+      internalID: -1309527020821939849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_39
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 962
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb0ec7ab983cfb70800000000000000
+      internalID: 8934078001982606322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_40
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 962
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784aa85b5e5b21ff0800000000000000
+      internalID: -66791046259235705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_41
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 962
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1bb118a9962ffe0800000000000000
+      internalID: -1156746041968840215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_42
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 962
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbdab02632a69860800000000000000
+      internalID: 7536389379812154294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_43
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 962
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a9c088cba6d16b0800000000000000
+      internalID: -5323981826513134962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_44
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 898
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03da5d23aa21c840800000000000000
+      internalID: 5242518321564930827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_45
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 899
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a50b6d8002da2920800000000000000
+      internalID: 2966414204391327145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_46
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 897
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c0adea312ef9c40800000000000000
+      internalID: 5521380242345298987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_47
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 899
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48323564fe5f67c0800000000000000
+      internalID: -4075934733984188340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_48
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 899
+        width: 24
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b50b9fd1a7525d0800000000000000
+      internalID: -3087927700330882175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_49
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 896
+        width: 24
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc7ce59dfbe47cc0800000000000000
+      internalID: -3714084318299259728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_50
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 899
+        width: 24
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753f48aae49ae61a0800000000000000
+      internalID: -6814323030831598761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_51
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 899
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ee8f3c07cc105e0800000000000000
+      internalID: -1945048779351069117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_52
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 834
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8259c90a8f953b740800000000000000
+      internalID: 5166572121905468712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_53
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 834
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74008694d46d93b60800000000000000
+      internalID: 7726442263163174983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_54
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 834
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3866d5e4a8d4660800000000000000
+      internalID: 7371700234254451638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_55
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 834
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047b7a918042a9990800000000000000
+      internalID: -7378545422284376256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_56
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 834
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41673749bbd29fd10800000000000000
+      internalID: 2159807779973592596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_57
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 834
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0758f3ffcdb8ca0800000000000000
+      internalID: -6013469888582684467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_58
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 834
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442a00254d4b96ec0800000000000000
+      internalID: -3573126005339938236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_59
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 834
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db5471543be6d820800000000000000
+      internalID: 2942798016470604754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_60
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 771
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f402bd0b0b0f81f0800000000000000
+      internalID: -1040600846796978957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_61
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 771
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80aa813c0120ae70800000000000000
+      internalID: 9124329181307117707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_62
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 770
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0432a6171ff5840800000000000000
+      internalID: 5215152362932617385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_63
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 769
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d228414d4898ff380800000000000000
+      internalID: -8935271932092972499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_64
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 770
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2559491fcce1f5f70800000000000000
+      internalID: 9178088431179568466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_65
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 771
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d8a4992a84551e0800000000000000
+      internalID: -2209780178961658600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_66
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 770
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41133c0a807fe1560800000000000000
+      internalID: 7286532863560986900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_67
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 769
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40bac276861cae50800000000000000
+      internalID: 6821852302266773580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_68
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 770
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cba50632746b1c0800000000000000
+      internalID: -4488321761362133980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_69
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 706
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575b0b560658a92d0800000000000000
+      internalID: -3271155530261809803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_70
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 706
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca24365913f751030800000000000000
+      internalID: 3464815339267900076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_71
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 707
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66525b4b261654410800000000000000
+      internalID: 1460680730718053734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_72
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 707
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cc0014b58499e10800000000000000
+      internalID: 2204873049344363639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_73
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 706
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ac2d71449af5530800000000000000
+      internalID: 3845978716720253597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_74
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 705
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c79aa4b0be2e3eb0800000000000000
+      internalID: -4738298421466982461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_75
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 706
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d232b007d087b2620800000000000000
+      internalID: 2750423996549505837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_76
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 706
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278e3dbe8a32cc430800000000000000
+      internalID: 3804454993639237746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_77
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 706
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca5f1ca4b30a8320800000000000000
+      internalID: 2560863412630280897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_78
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 642
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c2ee4d7befe7610800000000000000
+      internalID: 1621012981404806296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_79
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 642
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af37b8bda67af2a90800000000000000
+      internalID: -7336461190571527174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_80
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 640
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395f72f83e86baa10800000000000000
+      internalID: 1921744992572274067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_81
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 641
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e299f28365dc46210800000000000000
+      internalID: 1325409960547293486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_82
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 640
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60651f54509c98380800000000000000
+      internalID: -8968416158446168570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_83
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 642
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e6d691f7ea14f80800000000000000
+      internalID: -8124020391888982431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_84
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 641
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981494b4102a53380800000000000000
+      internalID: -8992102954533568119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_85
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 641
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604e9aaf74bbd2830800000000000000
+      internalID: 4048097557898454022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_86
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 641
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d482c98473bff580800000000000000
+      internalID: -8791110634495114025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_87
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 578
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80eaebf8d6bc18e30800000000000000
+      internalID: 4504104773770718728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_88
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 578
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82053ab6702e1920800000000000000
+      internalID: 2962841299158631054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_89
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 579
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd24ffc3f96431de0800000000000000
+      internalID: -1363668612426022180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_90
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 579
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c509c14423678c950800000000000000
+      internalID: 6469550822980882524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_91
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 578
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8faa5fad4c8fcb760800000000000000
+      internalID: 7475123005898992376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_92
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 577
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cde60d1758f9d3e0800000000000000
+      internalID: -2028317104120861242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_93
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 578
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e759b1820048a00800000000000000
+      internalID: 757730809566559852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_94
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 578
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc7dfa0dd151fdb0800000000000000
+      internalID: -4759933321339896645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_95
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 578
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5eaefe77990baf0800000000000000
+      internalID: -382637227921185314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_96
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 514
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89feb9072127edf80800000000000000
+      internalID: -8079895257931845736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_97
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 513
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d247f01eba5cf20800000000000000
+      internalID: 3442346473309875535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_98
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 513
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caeb1e0dd36ef4100800000000000000
+      internalID: 94547270369918636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_99
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 513
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d97308ab6397150800000000000000
+      internalID: 5870783763897097605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_100
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 513
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c065dbf3644f660800000000000000
+      internalID: 7418631725759466529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_101
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 513
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527e60307ca1d2eb0800000000000000
+      internalID: -4743105390499666139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_102
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 450
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbedd4bc72ba06f10800000000000000
+      internalID: 2260995200342941372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_103
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 450
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90a89d7ada9dff90800000000000000
+      internalID: -6918203189370511204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_104
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 450
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab0139e56ba5a730800000000000000
+      internalID: 4009799497435646888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_105
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 450
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05667b2433efcfb50800000000000000
+      internalID: 6628452247698630224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_106
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 450
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a63522613f6e5610800000000000000
+      internalID: 1611847974535902888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_107
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 450
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd777fc47f916210800000000000000
+      internalID: 1324515089469373893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_108
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 386
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67048656ac5d36e0800000000000000
+      internalID: -1856225601920956564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_109
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 386
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908168cacb496c410800000000000000
+      internalID: 1497047464216500233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_110
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 386
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838e24002acac4dc0800000000000000
+      internalID: -3653355385915250632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_111
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 386
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85d21a00fb94acc0800000000000000
+      internalID: -3700661538528242289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_112
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 386
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d2ed03e825ec450800000000000000
+      internalID: 6110912515047042435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_113
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 386
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377272aa24d99a9a0800000000000000
+      internalID: -6221268500587534477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_114
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 322
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623c0deef7abbfbf0800000000000000
+      internalID: -289432692404993242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_115
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 322
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959c50e59d4db6af0800000000000000
+      internalID: -401993711669098151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_116
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 322
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a62eb24a3a669df0800000000000000
+      internalID: -173834737146779996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_117
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 322
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d560dc00f4ffddde0800000000000000
+      internalID: -1306607602086640035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_118
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 322
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b54d47a9b93ec10800000000000000
+      internalID: 2081678540462644107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_119
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 322
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0bc85aec7d1c3d0800000000000000
+      internalID: -3188029778660904769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_120
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 258
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a74a5829b0cbd30800000000000000
+      internalID: 4448443255870487184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_121
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 256
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8354d94b92be0f0800000000000000
+      internalID: -1086729029370431237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_122
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 256
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fa1cf9481a40290800000000000000
+      internalID: -7925031853277204688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_123
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 256
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0232c3673422a7040800000000000000
+      internalID: 4646063638727893792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_124
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 256
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fe5d00619a38ba0800000000000000
+      internalID: -6087836359306383533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_125
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 256
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7a6b3d3d0a41de0800000000000000
+      internalID: -1363287955535910969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_126
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 256
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20605388d4226c1c0800000000000000
+      internalID: -4483858662607747582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_127
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 256
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82b64c34ab6de030800000000000000
+      internalID: 3525592436431041164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_128
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 256
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b489c5f5c1cfca10800000000000000
+      internalID: 1931975821141574835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_129
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 256
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498357583d20ae3f0800000000000000
+      internalID: -870880470442362732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_130
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 256
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf6b1d662592f4e0800000000000000
+      internalID: -1949331696426192932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_131
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 256
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90e30ad12a9d36b0800000000000000
+      internalID: -5314922515045031781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_132
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 256
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceaa97735b121f340800000000000000
+      internalID: 4895731332131957484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_133
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 194
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a05764fe2ac67580800000000000000
+      internalID: -8829647716395560798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_134
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 194
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2bb9a46e5b61040800000000000000
+      internalID: 4618078468613845745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_135
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 194
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d855ebd1ce8f800800000000000000
+      internalID: 646526159019150648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_136
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 194
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368be7aafb7db6990800000000000000
+      internalID: -7391577145199380381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_137
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 194
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec5339897288c780800000000000000
+      internalID: -8662530424742650643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_138
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 194
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afdab0a57202cd90800000000000000
+      internalID: -7079092960041967710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_139
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 194
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da1dff6597914c50800000000000000
+      internalID: 6647761193060342485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_140
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 194
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f83cb85717e81820800000000000000
+      internalID: 2889313248417167609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_141
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 194
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50fdc194b9f734e0800000000000000
+      internalID: -2001856955407273892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_142
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 194
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a174cc27bdf5a00800000000000000
+      internalID: 747557349266758178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_143
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 194
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f74c6de5ba7d210800000000000000
+      internalID: 1357742236493971234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_144
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 194
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267cef89c949b49c0800000000000000
+      internalID: -3941893648530094238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_145
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 194
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908cf739fb55237b0800000000000000
+      internalID: -5246036334631466999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_146
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 130
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ef6c731e55a6850800000000000000
+      internalID: 6370999048660778567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_147
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 131
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7158d85b419902630800000000000000
+      internalID: 3900285591527195927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_148
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 131
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29a077fb81bd91b0800000000000000
+      internalID: -5648163142942807762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_149
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 130
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc24a4a762ebb76f0800000000000000
+      internalID: -685745445774146865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_150
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 130
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af606a7563ac1f40800000000000000
+      internalID: 5700610884584370081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_151
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 130
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17da1498f6fa6a6c0800000000000000
+      internalID: -4132422714486837903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_152
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 130
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18278516a3c31c40800000000000000
+      internalID: 5481940289533192218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_153
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 130
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec01345fce9152190800000000000000
+      internalID: -7987949858553917234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_154
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 130
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c30922c42c83e370800000000000000
+      internalID: 8350672223579210691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_155
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 130
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d375eff7ec36c500800000000000000
+      internalID: 416086982706688981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_156
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 130
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cad97a74ed4e6d20800000000000000
+      internalID: 3273639622847617730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_157
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 130
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22715cc6df97cf540800000000000000
+      internalID: 5043039812106655522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_158
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 130
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3393e4c29a9dc30800000000000000
+      internalID: 4384721719977915352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_159
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 66
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a8114a807ecb4c0800000000000000
+      internalID: -4270284322355705239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_160
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 66
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b954ce2e510cff150800000000000000
+      internalID: 5908652436367361435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_161
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 66
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba21b7f38c36d970800000000000000
+      internalID: 8779271061099326138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_162
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 66
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93289d79557f4460800000000000000
+      internalID: 7228124954172597146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_163
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 66
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1468d0f3343b97100800000000000000
+      internalID: 106313167621948993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_164
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 66
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cffe7033e328010800000000000000
+      internalID: 1189581640476654742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_165
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 66
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cb6014478bcd9d0800000000000000
+      internalID: -2748118863156167595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_166
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 66
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819c0c009b197ef80800000000000000
+      internalID: -8077327182898083560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_167
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 66
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c652699d0533e280800000000000000
+      internalID: -9015303696541395259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_168
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 66
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5001973a93579a960800000000000000
+      internalID: 7613745535462739973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_169
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 66
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0c9d9ce662d0ce0800000000000000
+      internalID: -1437450448786571016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_170
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 66
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bb20f1831aa65a0800000000000000
+      internalID: -6527227447509599435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_171
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 66
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee7798927d053180800000000000000
+      internalID: -9136381483213685019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_172
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498fc4fb4ba100f60800000000000000
+      internalID: 7998422301815928980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_173
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c552c7d2b95ff90800000000000000
+      internalID: -6920454632726242145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_174
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 2
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b66b0c98ce84cd00800000000000000
+      internalID: 992074810190948025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_175
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 3
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36393dadf8b417d90800000000000000
+      internalID: -7101812056162856093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_176
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 3
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbd2b86a43c2fbd0800000000000000
+      internalID: -2597799310687806465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_177
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b2a494c4dda8020800000000000000
+      internalID: 2344929875716615009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
