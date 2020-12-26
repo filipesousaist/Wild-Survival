@@ -88,6 +88,21 @@ public abstract class Entity : MonoBehaviour
 
     protected abstract void OnDeath();
 
+    protected void GiveXp(int xpReceived)
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("player");
+        foreach (var player in players)
+        {
+            player.transform.GetComponent<Player>().ReceiveXp(xpReceived);
+        }
+
+        GameObject[] rhinos = GameObject.FindGameObjectsWithTag("rhino");
+        foreach (var rhino in rhinos)
+        {
+            rhino.transform.GetComponent<Rhino>().ReceiveXp(xpReceived);
+        }
+    }
+
     public void Knock(Rigidbody2D myRigidBody, float knockTime, float damage)
     {
         StartCoroutine(movement.KnockCo(myRigidBody, knockTime));

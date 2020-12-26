@@ -4,8 +4,7 @@ public class Knockback : MonoBehaviour
 {
     public float thrust;
     public float knockTime;
-    public float damage;
-    public int i = 0;
+    public float baseDamage;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,7 +22,9 @@ public class Knockback : MonoBehaviour
 
                 hit.AddForce(difference, ForceMode2D.Impulse);
 
-                other.attachedRigidbody.GetComponent<Entity>().Knock(hit, knockTime, damage);
+                Entity entity = GetComponentInParent<Entity>();
+                Entity otherEntity = other.attachedRigidbody.GetComponent<Entity>();
+                otherEntity.Knock(hit, knockTime, baseDamage * entity.baseAttack);
                 movement.attackedRecently = true;
             }
         }

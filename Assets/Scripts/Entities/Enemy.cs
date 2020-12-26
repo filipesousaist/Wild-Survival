@@ -5,13 +5,19 @@ public class Enemy : Entity
     public Signal deathSignal;
     public GameObject deathEffect;
     public int wave;
-
+    public int xpReward;
+    private bool xpGiven = false;
     override protected void OnAwake() { }
     override protected void OnDeath()
     {
         DeathEffect();
         deathSignal.Raise();
         Destroy(gameObject);
+        if (!xpGiven)
+        {
+            GiveXp(xpReward);
+            xpGiven = true;
+        }
     }
 
     private void DeathEffect()

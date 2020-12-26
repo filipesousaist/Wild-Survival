@@ -5,7 +5,6 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class ActivistsManager : MonoBehaviour
 {
-    // Start is called before the first frame update
     public PlayerMovement[] players;
     public IntValue currentPlayer;
     public Signal changePlayerSignal;
@@ -19,6 +18,7 @@ public class ActivistsManager : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 60; // Debug
         players = GetComponentsInChildren<PlayerMovement>();
         players[currentPlayer.value].GetComponent<Player>().UpdateBarHealth();
         
@@ -27,10 +27,17 @@ public class ActivistsManager : MonoBehaviour
         dangerAnimation.players = transform;
     }
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
             ChangePlayer();
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            Application.targetFrameRate = 70 - Application.targetFrameRate;  // Debug
+            Debug.Log(Time.time);
+            Debug.Log(Time.timeScale);
+        }
     }
 
     public void ChangePlayer()
@@ -81,5 +88,10 @@ public class ActivistsManager : MonoBehaviour
     public bool IsCurrentActivist(Player activist)
     {
         return players[currentPlayer.value].GetComponent<Player>() == activist;
+    }
+
+    public PlayerMovement GetCurrentPlayerMovement()
+    {
+        return players[currentPlayer.value];
     }
 }

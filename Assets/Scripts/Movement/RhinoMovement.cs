@@ -44,8 +44,8 @@ public class RhinoMovement : EntityMovement
         agent.updateUpAxis = false;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    // FixedUpdate is called periodically, with a fixed period
+    void Update()
     {
         if (playerMov.inputEnabled) {
             if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
@@ -76,21 +76,16 @@ public class RhinoMovement : EntityMovement
 
     void CommandUpdate()
     {
-        Vector3 difference = commandDestination - transform.position;
-        if (difference.magnitude > destinationRadius)
-        {
-            agent.isStopped = false;
-            animator.SetBool("moving", true);
-            agent.destination = commandDestination;
-            difference = agent.velocity;
-            //MoveCharacter(difference);
-            UpdateAnimation(difference);
-        }
+        bool isNearDestination = (commandDestination - transform.position).magnitude <= destinationRadius;
+        agent.isStopped = isNearDestination;
+        animator.SetBool("moving", !isNearDestination);
+
+        if (isNearDestination)
+            ChangeState(RhinoState.combat);
         else
         {
-            agent.isStopped = true;
-            animator.SetBool("moving", false);
-            ChangeState(RhinoState.combat);
+            agent.destination = commandDestination;
+            UpdateAnimation(agent.velocity);
         }
     }
 
