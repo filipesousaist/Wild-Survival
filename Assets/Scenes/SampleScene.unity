@@ -22759,7 +22759,7 @@ Animator:
   m_GameObject: {fileID: 1141677850}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d8d7f5d12a89dd14090e03df7f78ceb8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 60af3e8d13c27a547a33a01fad00e0d6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22780,7 +22780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918dcd3ec24b2484ebc0c70d1e8c8e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1141677855}
   attackedRecently: 0
   speed: 3
   maxAttackWaitTime: 1
@@ -31889,7 +31889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 918dcd3ec24b2484ebc0c70d1e8c8e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1448629061}
   attackedRecently: 0
   speed: 3
   maxAttackWaitTime: 1
@@ -32025,7 +32025,7 @@ Animator:
   m_GameObject: {fileID: 1448629055}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d8d7f5d12a89dd14090e03df7f78ceb8, type: 2}
+  m_Controller: {fileID: 9100000, guid: d312dc217c71c874095bb5b50ed6f357, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
