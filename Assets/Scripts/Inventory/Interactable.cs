@@ -1,20 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
 
-    public float radius = 3f;
-
-    public Transform interactionTransform;
-
-    bool isFocus = false;
-
-    Transform player;
+    
 
     bool hasInteracted = false;
 
+    bool isInteractable = false;
     public virtual void Interact() 
     {
         Debug.Log("Interacting with " + transform.name);
@@ -22,37 +15,27 @@ public class Interactable : MonoBehaviour
 
     void Update()
     {
-        if (isFocus && !hasInteracted) {
-            float distance = Vector3.Distance(player.position, interactionTransform.position);
-            if(distance <= radius) {
+        if (!hasInteracted) {
+            //float distance = Vector3.Distance(player.position, interactionTransform.position);
+            if(/*distance <= radius*/ isInteractable && Input.GetKeyDown(KeyCode.E)) {
                 Interact();
                 hasInteracted = true;
             }
         }    
     }
 
-    public void OnFocused(Transform playerTransform)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        isFocus = true;
-        player = playerTransform;
-        hasInteracted = false;
-    }
-
-    public void OnDefocused()
-    {
-        isFocus = false;
-        player = null; ;
-        hasInteracted = false;
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        if (interactionTransform == null)
-        { 
-            interactionTransform = transform;
+        if (other.CompareTag("player"))
+        {
+            isInteractable = true;
         }
+    }
 
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(interactionTransform.position, radius);
+    private void OnTriggerExit2D(Collider2D other) {
+        if (other.CompareTag("player") )
+        {
+            isInteractable = false;
+        }
     }
 }

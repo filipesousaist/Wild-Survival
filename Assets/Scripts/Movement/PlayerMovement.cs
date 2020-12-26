@@ -79,6 +79,8 @@ public class PlayerMovement : EntityMovement
 
         if (onTrigger && !inTent && difference.y > 0)
             StartCoroutine(RestInTent());
+
+        //if(onTrigger && )
     }
 
     // Called when this player is being controlled by the NavMesh agent
@@ -203,11 +205,16 @@ public class PlayerMovement : EntityMovement
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("FadeObstacle") && other.isTrigger && 
+        if (other.CompareTag("FadeObstacle") && other.isTrigger &&
             activistsManager.IsCurrentActivist(player))
         {
             onTrigger = true;
-        }     
+        }
+        /*else if(other.CompareTag("item") && other.isTrigger && 
+            activistsManager.IsCurrentActivist(player) && 
+            Input.GetKeyDown(KeyCode.E)) {
+            //onTrigger = true;
+        }*/
     }
 
     private void OnTriggerExit2D()

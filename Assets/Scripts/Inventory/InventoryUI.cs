@@ -13,7 +13,7 @@ public class InventoryUI : MonoBehaviour
 
     InventorySlot[] slots;
 
-    GameObject inventoryUI;
+    public GameObject inventoryUI;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,6 @@ public class InventoryUI : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I)) {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
-
         }
     }
 
