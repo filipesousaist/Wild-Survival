@@ -73,10 +73,10 @@ public class Player : Entity
             StartCoroutine(DeathCo());
         }
         ActivistsManager manager = FindObjectOfType<ActivistsManager>();
+        manager.activistDead++;
 
         if (manager.IsCurrentActivist(this))
         {
-            manager.activistDead++;
             manager.ChangePlayer();
         }
     }

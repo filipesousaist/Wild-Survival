@@ -51,6 +51,7 @@ public class ActivistsManager : MonoBehaviour
         playerMov = players[currentPlayer.value];
         while (playerMov.GetComponent<Player>().health <= 0) {
             if (activistDead == players.Length) {
+                Time.timeScale = 0;
                 gameOverUI.SetActive(true);
                 this.gameObject.SetActive(false);
                 return;
