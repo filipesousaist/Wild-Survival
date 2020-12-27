@@ -13,8 +13,8 @@ public class GameOver : MonoBehaviour
     public void Reset()
     {
         ActivistsManager activistsManager = activists.GetComponent<ActivistsManager>();
-        activistsManager.currentPlayer.value = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        activistsManager.currentPlayer.value = 0;
         Time.timeScale = 1;
     }
 }
