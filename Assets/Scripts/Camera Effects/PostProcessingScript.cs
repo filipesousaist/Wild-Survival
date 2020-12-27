@@ -63,4 +63,51 @@ public class PostProcessingScript : MonoBehaviour
             _vignette.intensity.value = 0;
         }
     }
+
+    /*  Faz com que todos os ativistas fora do alcance do rhinos percam vida - bugado quando morrem todos ao mesmo tempo
+    void FixedUpdate()
+    {
+        GameObject[] rhinos = GameObject.FindGameObjectsWithTag("rhino");
+        PlayerMovement[] playersList = players.GetComponent<ActivistsManager>().players;
+        float dist = float.MaxValue;
+        foreach (PlayerMovement player in playersList)
+        { 
+            foreach (GameObject rhino in rhinos)
+            {
+                dist = Mathf.Min(Mathf.Sqrt(Mathf.Pow(rhino.transform.position.x - player.transform.position.x, 2) + Mathf.Pow(rhino.transform.position.y - player.transform.position.y, 2)), dist);
+            }
+            if (dist > MAXDISTANCE)
+            {
+                if(dist >= MAXDISTANCE + 3)
+                {
+                    if(player.transform == players.GetChild(currentPlayer).transform){
+                        _bloom.intensity.value = Mathf.PingPong(Time.time, 1) * 20;
+                     }
+                    damageWaitTime = Mathf.Min(damageWaitTime + Time.deltaTime, maxDamageWaitTime);
+                    if (damageWaitTime == maxDamageWaitTime)
+                    {
+                        player.gameObject.GetComponent<Player>().Knock(player.GetComponent<Rigidbody2D>(), 0, 1);
+                        damageWaitTime = 0;
+                    }
+                }
+                else
+                {   
+                    if(player.transform == players.GetChild(currentPlayer).transform){
+                        _bloom.intensity.value = 0;
+                     }
+                }
+                if(player.transform == players.GetChild(currentPlayer).transform){
+                        _vignette.intensity.value = Mathf.Min((float)(dist - MAXDISTANCE) / 10, 0.5f);
+                }
+            }
+            else
+            {
+                if(player.transform == players.GetChild(currentPlayer).transform){
+                    _bloom.intensity.value = 0;
+                    _vignette.intensity.value = 0;
+                }
+            }
+        }
+    }
+     */
 }
