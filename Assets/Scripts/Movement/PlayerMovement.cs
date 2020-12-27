@@ -203,11 +203,11 @@ public class PlayerMovement : EntityMovement
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("FadeObstacle") && other.isTrigger && 
+        if (other.CompareTag("FadeObstacle") && other.isTrigger &&
             activistsManager.IsCurrentActivist(player))
         {
             onTrigger = true;
-        }     
+        }
     }
 
     private void OnTriggerExit2D()

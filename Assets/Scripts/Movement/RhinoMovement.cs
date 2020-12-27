@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -51,8 +52,11 @@ public class RhinoMovement : EntityMovement
             if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
                 Input.GetMouseButtonDown(1))
             {
-                ChangeState(RhinoState.command);
-                Clicked();
+                //evita controlar o rino quando se esta a mexer no inventario
+                if (!EventSystem.current.IsPointerOverGameObject()) { 
+                    ChangeState(RhinoState.command);
+                    Clicked();
+                }
             }
         }
 
