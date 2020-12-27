@@ -30,7 +30,6 @@ public class Knockback : MonoBehaviour
         }
     }
 
-
     private bool AreOpponents(Collider2D col1, Collider2D col2)
     {
         bool is1Evil = col1.attachedRigidbody.CompareTag("enemy");
