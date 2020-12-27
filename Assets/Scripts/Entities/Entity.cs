@@ -10,7 +10,7 @@ public abstract class Entity : MonoBehaviour
     public FloatValue maxHealth;
     public string entityName;
     public int baseAttack;
-    [ReadOnly] public float health;
+    public float health;
 
     public GameObject healthBarPrefab;
     private GameObject healthBar;
@@ -87,6 +87,21 @@ public abstract class Entity : MonoBehaviour
     }
 
     protected abstract void OnDeath();
+
+    protected void GiveXp(int xpReceived)
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("player");
+        foreach (var player in players)
+        {
+            player.transform.GetComponent<Player>().ReceiveXp(xpReceived);
+        }
+
+        GameObject[] rhinos = GameObject.FindGameObjectsWithTag("rhino");
+        foreach (var rhino in rhinos)
+        {
+            rhino.transform.GetComponent<Rhino>().ReceiveXp(xpReceived);
+        }
+    }
 
     public void Knock(Rigidbody2D myRigidBody, float knockTime, float damage)
     {

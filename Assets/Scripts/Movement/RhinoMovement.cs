@@ -15,7 +15,7 @@ public enum RhinoState
 }
 public class RhinoMovement : EntityMovement
 {
-    [ReadOnly] public RhinoState currentState;
+    public RhinoState currentState;
     public float followRadius;  // maximum distance to follow an activist
     public float arriveRadius;
     public float destinationRadius;

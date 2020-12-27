@@ -531,6 +531,7 @@ MonoBehaviour:
   deathEffect: {fileID: 5802363849848596127, guid: 97088d85c306d1c478d66c509f87423b,
     type: 3}
   wave: -1
+  xpReward: 2
 --- !u!195 &244674749891776438
 NavMeshAgent:
   m_ObjectHideFlags: 0

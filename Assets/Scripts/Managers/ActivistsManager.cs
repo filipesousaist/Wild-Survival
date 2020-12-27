@@ -5,7 +5,6 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class ActivistsManager : MonoBehaviour
 {
-    // Start is called before the first frame update
     public PlayerMovement[] players;
     public IntValue currentPlayer;
     public Signal changePlayerSignal;
