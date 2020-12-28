@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.Rendering.PostProcessing;
 public class PostProcessingScript : MonoBehaviour
 {
@@ -14,17 +15,32 @@ public class PostProcessingScript : MonoBehaviour
 
     public Transform players;
 
+    public Light2D[] lights;
+
+    public Light2D redLight;
+
     public int currentPlayer = 0;
     public float maxDamageWaitTime;
     private float damageWaitTime;
     // Start is called before the first frame update
     void Start()
     {
-        volume.profile.TryGetSettings(out _vignette);
-        volume.profile.TryGetSettings(out _bloom);
+       /* volume.profile.TryGetSettings(out _vignette);
+        volume.profile.TryGetSettings(out _bloom);*/
 
-        _vignette.intensity.value = 0;
-        _bloom.intensity.value = 0;
+        lights = FindObjectsOfType<Light2D>();
+
+        for (int i = 0; i < lights.Length; i++)
+        {
+            if (lights[i].name.Equals("RedLight"))
+            {
+                redLight = lights[i];
+            }
+        }
+        redLight.intensity = 0;
+
+        /*_vignette.intensity.value = 0;
+        _bloom.intensity.value = 0;*/
         damageWaitTime = 0;
     }
     
@@ -40,9 +56,10 @@ public class PostProcessingScript : MonoBehaviour
         }
         if (dist > MAXDISTANCE)
         {
-            if(dist >= MAXDISTANCE + 3)
-            {
-                _bloom.intensity.value = Mathf.PingPong(Time.time, 1) * 20;
+            /*if(dist >= MAXDISTANCE + 3)
+            {*/
+                //_bloom.intensity.value = Mathf.PingPong(Time.time, 1) * 20;
+                redLight.intensity = Mathf.PingPong(Time.time, 0.8f) / 4 ;
                 damageWaitTime = Mathf.Min(damageWaitTime + Time.deltaTime, maxDamageWaitTime);
                 if (damageWaitTime == maxDamageWaitTime)
                 {
@@ -50,17 +67,19 @@ public class PostProcessingScript : MonoBehaviour
                     player.GetComponent<Player>().Knock(player.GetComponent<Rigidbody2D>(), 0, 1);
                     damageWaitTime = 0;
                 }
-            }
+           /* }
             else
             {
-                _bloom.intensity.value = 0;
+                //_bloom.intensity.value = 0;
+                redLight.intensity = 0;
             }
-            _vignette.intensity.value = Mathf.Min((float)(dist - MAXDISTANCE) / 10, 0.5f);
+            _vignette.intensity.value = Mathf.Min((float)(dist - MAXDISTANCE) / 10, 0.5f);*/
         }
         else
         {
-            _bloom.intensity.value = 0;
-            _vignette.intensity.value = 0;
+            /*_bloom.intensity.value = 0;
+            _vignette.intensity.value = 0;*/
+            redLight.intensity = 0;
         }
     }
 
