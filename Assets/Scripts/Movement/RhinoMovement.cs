@@ -26,7 +26,6 @@ public class RhinoMovement : EntityMovement
     private PlayerMovement playerMov;
     private Vector3 commandDestination;
     private List<Vector2> path;
-    private bool isFleeing;
     private NavMeshAgent agent;
 
 
@@ -39,7 +38,6 @@ public class RhinoMovement : EntityMovement
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         commandDestination = Vector3.zero;
-        isFleeing = false;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -164,7 +162,6 @@ public class RhinoMovement : EntityMovement
             ChangeState(RhinoState.disabled);
             agent.isStopped = true;
             agent.destination = transform.position;
-            isFleeing = false;
             agent.velocity = Vector3.zero;
         }
 
@@ -259,7 +256,6 @@ public class RhinoMovement : EntityMovement
         agent.destination = escapeCoordinates;
         animator.SetBool("moving", true);
         agent.isStopped = false;
-        isFleeing = true;
     }
 
     private void ChangeState(RhinoState newState)

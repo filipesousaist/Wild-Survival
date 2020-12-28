@@ -11,13 +11,14 @@ public class HealthXpFrameManager : MonoBehaviour
     public IntValue playerCurrentXp;
 
     public Image portrait;
-    public Sprite[] activistPortraits;
-    public IntValue currentPlayer;
+
+    private ActivistsManager activistsManager;
     
 
     // Start is called before the first frame update
     void Start()
     {
+        activistsManager = FindObjectOfType<ActivistsManager>();
         InitHealth();
         InitXp();
     }
@@ -32,9 +33,10 @@ public class HealthXpFrameManager : MonoBehaviour
         xpBar.SetActive(true);
     }
 
-    public void UpdateBar()
+    public void UpdateHealthBar()
     {
-        Player player = FindObjectOfType<ActivistsManager>().players[currentPlayer.value].GetComponent<Player>();
+        Player player = activistsManager.GetCurrentPlayer();
+
         Transform midRect = healthBar.transform.Find("Middle Rect");
         Transform frontRect = healthBar.transform.Find("Front Rect");
 
@@ -49,7 +51,7 @@ public class HealthXpFrameManager : MonoBehaviour
 
     public void UpdateXpBar()
     {
-        Player player = FindObjectOfType<ActivistsManager>().players[currentPlayer.value].GetComponent<Player>();
+        Player player = activistsManager.GetCurrentPlayer();
         Transform midRect = xpBar.transform.Find("Middle Rect");
         Transform frontRect = xpBar.transform.Find("Front Rect");
 
@@ -58,12 +60,10 @@ public class HealthXpFrameManager : MonoBehaviour
         float newWidth = midRect.localScale.x * percentage;
         frontRect.localScale = new Vector3(newWidth, midRect.localScale.y);
         frontRect.localPosition = new Vector3(newPosition, midRect.localPosition.y);
-
-        frontRect.GetComponent<Image>().color = new Color(1, 1, 0);
     }
 
     public void UpdatePortrait()
     {
-        portrait.sprite = activistPortraits[currentPlayer.value];
+        portrait.sprite = activistsManager.GetCurrentPlayer().portrait;
     }
 }

@@ -5,8 +5,9 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class ActivistsManager : MonoBehaviour
 {
-    public PlayerMovement[] players;
-    public IntValue currentPlayer;
+    public PlayerMovement[] playerMovs;
+    [ReadOnly]
+    public int currentPlayer = 0;
     public Signal changePlayerSignal;
 
     private CameraMovement cam;
@@ -14,13 +15,12 @@ public class ActivistsManager : MonoBehaviour
     private PostProcessingScript dangerAnimation;
     [SerializeField]
     private GameObject gameOverUI;
-    public int activistDead = 0;
+    public int activistsDead = 0;
 
     void Start()
     {
-        Application.targetFrameRate = 60; // Debug
-        players = GetComponentsInChildren<PlayerMovement>();
-        players[currentPlayer.value].GetComponent<Player>().UpdateBarHealth();
+        playerMovs = GetComponentsInChildren<PlayerMovement>();
+        playerMovs[currentPlayer].GetComponent<Player>().UpdateBarHealth();
         
         cam = Camera.main.GetComponent<CameraMovement>();
         dangerAnimation = postVolume.GetComponent<PostProcessingScript>();
@@ -31,68 +31,67 @@ public class ActivistsManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
             ChangePlayer();
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            Application.targetFrameRate = 70 - Application.targetFrameRate;  // Debug
-            Debug.Log(Time.time);
-            Debug.Log(Time.timeScale);
-        }
     }
 
     public void ChangePlayer()
     {
-        PlayerMovement playerMov = players[currentPlayer.value];
+        PlayerMovement playerMov = playerMovs[currentPlayer];
         playerMov.inputEnabled = false;
         playerMov.animator.SetBool("moving", false);
         playerMov.animator.SetBool("attacking", false);
 
-        currentPlayer.value = (currentPlayer.value + 1) % players.Length;
-        playerMov = players[currentPlayer.value];
+        currentPlayer = (currentPlayer + 1) % playerMovs.Length;
+        playerMov = playerMovs[currentPlayer];
         while (playerMov.GetComponent<Player>().health <= 0) {
-            if (activistDead == players.Length) {
+            if (activistsDead == playerMovs.Length) {
                 Time.timeScale = 0;
                 gameOverUI.SetActive(true);
-                this.gameObject.SetActive(false);
+                gameObject.SetActive(false);
                 return;
             }
-            currentPlayer.value = (currentPlayer.value + 1) % players.Length;
-            playerMov = players[currentPlayer.value];
+            currentPlayer = (currentPlayer + 1) % playerMovs.Length;
+            playerMov = playerMovs[currentPlayer];
         }
 
         playerMov.inputEnabled = true;
         cam.target = playerMov.transform;
-        dangerAnimation.currentPlayer = currentPlayer.value;
+        dangerAnimation.currentPlayer = currentPlayer;
 
         // Send signals
         playerMov.GetComponent<Player>().UpdateBarHealth();
         changePlayerSignal.Raise();
+        Debug.Log("Current player: " + playerMov.GetComponent<Player>().entityName);
     }
 
     public void HealAll()
     {
-        for (int i = 0; i < players.Length; i ++)
+        for (int i = 0; i < playerMovs.Length; i ++)
         {
-            Player player = players[i].GetComponent<Player>();
+            Player player = playerMovs[i].GetComponent<Player>();
             player.FullRestore();
-            players[i].Revive();
-            if (i == currentPlayer.value)
+            playerMovs[i].Revive();
+            if (i == currentPlayer)
             {
                 player.UpdateBarHealth();
-                players[i].inputEnabled = true;
+                playerMovs[i].inputEnabled = true;
             }
-            activistDead = 0;
+            activistsDead = 0;
 
         }    
     }
 
     public bool IsCurrentActivist(Player activist)
     {
-        return players[currentPlayer.value].GetComponent<Player>() == activist;
+        return playerMovs[currentPlayer].GetComponent<Player>() == activist;
     }
 
     public PlayerMovement GetCurrentPlayerMovement()
     {
-        return players[currentPlayer.value];
+        return playerMovs[currentPlayer];
+    }
+
+    public Player GetCurrentPlayer()
+    {
+        return playerMovs[currentPlayer].GetComponent<Player>();
     }
 }
