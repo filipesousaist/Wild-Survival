@@ -14,7 +14,7 @@ public class GameOver : MonoBehaviour
     {
         ActivistsManager activistsManager = activists.GetComponent<ActivistsManager>();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        activistsManager.currentPlayer.value = 0;
+        activistsManager.currentPlayer = 0;
         Time.timeScale = 1;
     }
 }
