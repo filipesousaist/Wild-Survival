@@ -36,6 +36,7 @@ public class ActivistsManager : MonoBehaviour
     public void ChangePlayer()
     {
         PlayerMovement playerMov = playerMovs[currentPlayer];
+        playerMov.GetComponent<SpriteRenderer>().color = Color.white;
         playerMov.inputEnabled = false;
         playerMov.animator.SetBool("moving", false);
         playerMov.animator.SetBool("attacking", false);

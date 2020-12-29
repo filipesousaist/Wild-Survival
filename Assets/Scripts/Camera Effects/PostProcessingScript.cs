@@ -22,6 +22,18 @@ public class PostProcessingScript : MonoBehaviour
     public int currentPlayer = 0;
     public float maxDamageWaitTime;
     private float damageWaitTime;
+
+    private float r = 0;
+
+    private float g = 0;
+
+    private float b = 1;
+
+    private Color baseColor;
+
+    private Color color = Color.red;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +50,8 @@ public class PostProcessingScript : MonoBehaviour
             }
         }
         redLight.intensity = 0;
+
+        baseColor = players.GetChild(currentPlayer).gameObject.GetComponent<SpriteRenderer>().color;
 
         /*_vignette.intensity.value = 0;
         _bloom.intensity.value = 0;*/
@@ -60,6 +74,11 @@ public class PostProcessingScript : MonoBehaviour
             {*/
                 //_bloom.intensity.value = Mathf.PingPong(Time.time, 1) * 20;
                 redLight.intensity = Mathf.PingPong(Time.time, 0.8f) / 4 ;
+            g = Mathf.PingPong(Time.time, 1f);
+            b = g;
+            color.g = g;
+            color.b = b;
+            players.GetChild(currentPlayer).gameObject.GetComponent<SpriteRenderer>().color = color;
                 damageWaitTime = Mathf.Min(damageWaitTime + Time.deltaTime, maxDamageWaitTime);
                 if (damageWaitTime == maxDamageWaitTime)
                 {
@@ -80,6 +99,7 @@ public class PostProcessingScript : MonoBehaviour
             /*_bloom.intensity.value = 0;
             _vignette.intensity.value = 0;*/
             redLight.intensity = 0;
+            players.GetChild(currentPlayer).gameObject.GetComponent<SpriteRenderer>().color = baseColor;
         }
     }
 

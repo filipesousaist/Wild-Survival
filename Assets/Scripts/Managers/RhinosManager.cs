@@ -17,6 +17,7 @@ public class RhinosManager : MonoBehaviour
 
     void Update()
     {
+        // can be changed to a light script where each light will have the script avoiding this for cycle
         for (var i = 0; i < light2Ds.Length; i++) {
             light2Ds[i].transform.position = rhinos[i].transform.position;
         }
