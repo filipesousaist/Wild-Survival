@@ -1,97 +1,94 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 
 public class ActivistsManager : MonoBehaviour
 {
-    public PlayerMovement[] players;
-    public IntValue currentPlayer;
+    public PlayerMovement[] playerMovs;
+    [ReadOnly] public int currentPlayer = 0;
     public Signal changePlayerSignal;
     public SelectPartyManager partyManager;
 
     private CameraMovement cam;
     public PostProcessVolume postVolume;
     private PostProcessingScript dangerAnimation;
-    [SerializeField]
-    private GameObject gameOverUI;
-    public int activistDead = 0;
+    [SerializeField] private GameObject gameOverUI;
+    public int activistsDead = 0;
 
-    void Start()
+    // Awake is called before every Start method
+    private void Awake()
     {
-        Application.targetFrameRate = 60; // Debug
-        players = GetComponentsInChildren<PlayerMovement>();
-        players[currentPlayer.value].GetComponent<Player>().UpdateBarHealth();
-        
+        playerMovs = GetComponentsInChildren<PlayerMovement>();
         cam = Camera.main.GetComponent<CameraMovement>();
         dangerAnimation = postVolume.GetComponent<PostProcessingScript>();
         dangerAnimation.players = transform;
 
         partyManager = FindObjectOfType<SelectPartyManager>();
     }
+    private void Start()
+    {
+        Player player = playerMovs[currentPlayer].GetComponent<Player>();
+        player.UpdateBarHealth();
+        player.ReceiveXp(0); // To update XP bar
+    }
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
             ChangePlayer();
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            Application.targetFrameRate = 70 - Application.targetFrameRate;  // Debug
-            Debug.Log(Time.time);
-            Debug.Log(Time.timeScale);
-        }
     }
 
     public void ChangePlayer()
     {
-        PlayerMovement playerMov = players[currentPlayer.value];
+        PlayerMovement playerMov = playerMovs[currentPlayer];
+        playerMov.GetComponent<SpriteRenderer>().color = Color.white;
         playerMov.inputEnabled = false;
         playerMov.animator.SetBool("moving", false);
         playerMov.animator.SetBool("attacking", false);
 
-        currentPlayer.value = (currentPlayer.value + 1) % players.Length;
-        playerMov = players[currentPlayer.value];
+        currentPlayer = (currentPlayer + 1) % playerMovs.Length;
+        playerMov = playerMovs[currentPlayer];
         while (playerMov.currentState == PlayerState.disabled || 
             playerMov.GetComponent<Player>().health <= 0) {
-            if (activistDead == partyManager.partySize) {
+            if (activistsDead == partyManager.partySize) {
+                Time.timeScale = 0;
                 gameOverUI.SetActive(true);
-                this.gameObject.SetActive(false);
+                gameObject.SetActive(false);
                 return;
             }
-            currentPlayer.value = (currentPlayer.value + 1) % players.Length;
-            playerMov = players[currentPlayer.value];
+            currentPlayer = (currentPlayer + 1) % playerMovs.Length;
+            playerMov = playerMovs[currentPlayer];
         }
 
         playerMov.inputEnabled = true;
         cam.target = playerMov.transform;
-        dangerAnimation.currentPlayer = currentPlayer.value;
+        dangerAnimation.currentPlayer = currentPlayer;
 
         // Send signals
         playerMov.GetComponent<Player>().UpdateBarHealth();
+        playerMov.GetComponent<Player>().ReceiveXp(0); // To update XP bar
         changePlayerSignal.Raise();
     }
 
     public void HealAll()
     {
-        for (int i = 0; i < players.Length; i ++)
+        for (int i = 0; i < playerMovs.Length; i ++)
         {
-            Player player = players[i].GetComponent<Player>();
+            Player player = playerMovs[i].GetComponent<Player>();
             player.FullRestore();
-            players[i].Revive();
-            if (i == currentPlayer.value)
+            playerMovs[i].Revive();
+            if (i == currentPlayer)
             {
                 player.UpdateBarHealth();
-                players[i].inputEnabled = true;
+                playerMovs[i].inputEnabled = true;
             }
-            activistDead = 0;
+            activistsDead = 0;
 
         }    
     }
 
     public void UpdateCamera()
     {
-        if (players[currentPlayer.value].currentState == PlayerState.disabled)
+        if (playerMovs[currentPlayer].currentState == PlayerState.disabled)
         {
             ChangePlayer();
         }
@@ -99,10 +96,10 @@ public class ActivistsManager : MonoBehaviour
 
     public void UpdatePartyPosition()
     {
-        Vector3 currentPlayerPos = players[currentPlayer.value].transform.position;
-        foreach(PlayerMovement player in players)
+        Vector3 currentPlayerPos = playerMovs[currentPlayer].transform.position;
+        foreach(PlayerMovement player in playerMovs)
         {
-            if (player != players[currentPlayer.value] && player.currentState != PlayerState.disabled)
+            if (player != playerMovs[currentPlayer] && player.currentState != PlayerState.disabled)
             {
                 player.transform.position = currentPlayerPos;
                 player.TeleportRhino();
@@ -112,11 +109,16 @@ public class ActivistsManager : MonoBehaviour
 
     public bool IsCurrentActivist(Player activist)
     {
-        return players[currentPlayer.value].GetComponent<Player>() == activist;
+        return playerMovs[currentPlayer].GetComponent<Player>() == activist;
     }
 
     public PlayerMovement GetCurrentPlayerMovement()
     {
-        return players[currentPlayer.value];
+        return playerMovs[currentPlayer];
+    }
+
+    public Player GetCurrentPlayer()
+    {
+        return playerMovs[currentPlayer].GetComponent<Player>();
     }
 }

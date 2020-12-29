@@ -13,11 +13,12 @@ public enum EnemyState
 }
 public class EnemyMovement : EntityMovement
 {
-    public EnemyState currentState;
+    [ReadOnly] public EnemyState currentState;
+    [ReadOnly] public bool isVisible;
 
     private Transform target;
     private NavMeshAgent agent;
-    private Vector3 lastPosition;
+    private Renderer myRenderer;
 
     // Start is called before the first frame update
     override protected void OnStart()
@@ -25,6 +26,7 @@ public class EnemyMovement : EntityMovement
         target = GameObject.FindWithTag("player").transform;
         attackWaitTime = maxAttackWaitTime;
 
+        isVisible = false;
         currentState = EnemyState.walk;
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
@@ -33,7 +35,7 @@ public class EnemyMovement : EntityMovement
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
-        lastPosition = transform.position;
+        myRenderer = GetComponent<Renderer>();
     }
     
     // Update is called once per frame
@@ -70,6 +72,8 @@ public class EnemyMovement : EntityMovement
             }
         }
         UpdateAnimation(difference);
+
+        isVisible = myRenderer.isVisible;
     }
 
     private Vector3 UpdateTarget()

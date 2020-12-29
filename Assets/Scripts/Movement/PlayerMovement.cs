@@ -17,8 +17,6 @@ public class PlayerMovement : EntityMovement
     public bool inputEnabled;
     public PlayerMovement[] players;
 
-    public Sprite selectPartySprite;
-
     private Transform target;
     private PlayerMovement playerToFollow;
     private NavMeshAgent agent;
@@ -255,6 +253,13 @@ public class PlayerMovement : EntityMovement
         {
             player.rhino.transform.position = transform.position;
         }
+    }
+
+    public Sprite GetSelectPartySprite()
+    {
+        if (player == null)
+            player = GetComponent<Player>();
+        return player.selectPartySprite;
     }
 
     public void Revive()

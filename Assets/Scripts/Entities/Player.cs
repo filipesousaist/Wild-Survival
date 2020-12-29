@@ -3,21 +3,23 @@ using UnityEngine;
 
 public class Player : Entity
 {
-    private static readonly Color OPAQUE = new Color(1, 1, 1);
-    private static readonly Color TRANSPARENT = new Color(1, 1, 1, 0.5f);
+    public Sprite portrait;
+    public Sprite selectPartySprite;
 
     public Signal healthSignal;
-    public Signal XpSignal;
     public FloatValue barHealth;
+
+    public Signal XpSignal;
     public IntValue barXp;
-    public int level;
-    public int xp;
-    public int requiredXp;
+    [ReadOnly] public int xp;
+    [ReadOnly] public int requiredXp;
+    [ReadOnly] public int level;
     public Rhino rhino;
 
 
     override protected void OnAwake()
     {
+        xp = 0;
         level = 1;
         requiredXp = level * 10;
     }
@@ -52,16 +54,21 @@ public class Player : Entity
         ActivistsManager manager = FindObjectOfType<ActivistsManager>();
         xp += xpReward;
         while (xp >= requiredXp)
-        {
-            xp -= requiredXp;
-            level++;
-            requiredXp = level * 10;
-        }
+            LevelUp();
         if (manager.IsCurrentActivist(this))
         {
             barXp.value = xp;
             XpSignal.Raise();
         }
+    }
+
+    private void LevelUp()
+    {
+        xp -= requiredXp;
+        level++;
+        requiredXp = level * 10;
+
+        baseAttack += 1;
     }
 
 
@@ -74,10 +81,10 @@ public class Player : Entity
             StartCoroutine(DeathCo());
         }
         ActivistsManager manager = FindObjectOfType<ActivistsManager>();
+        manager.activistsDead++;
 
         if (manager.IsCurrentActivist(this))
         {
-            manager.activistDead++;
             manager.ChangePlayer();
         }
     }

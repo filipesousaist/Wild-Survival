@@ -64,7 +64,7 @@ public class SelectPartyManager : MonoBehaviour
     {
         for (int i = 0; i < players.Length; i++)
         {
-            slots[i].GetComponent<Image>().sprite = players[i].selectPartySprite;
+            slots[i].GetComponent<Image>().sprite = players[i].GetSelectPartySprite();
             
             if (players[i].currentState != PlayerState.disabled && partySize < 3)
             {

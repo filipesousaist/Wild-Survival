@@ -4,7 +4,7 @@ public class Enemy : Entity
 {
     public Signal deathSignal;
     public GameObject deathEffect;
-    public int wave;
+    [ReadOnly] public int wave;
     public int xpReward;
     private bool xpGiven = false;
     override protected void OnAwake() { }

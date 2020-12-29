@@ -10,7 +10,7 @@ public abstract class Entity : MonoBehaviour
     public FloatValue maxHealth;
     public string entityName;
     public int baseAttack;
-    public float health;
+    [ReadOnly] public float health;
 
     public GameObject healthBarPrefab;
     private GameObject healthBar;
@@ -81,6 +81,10 @@ public abstract class Entity : MonoBehaviour
 
     protected virtual void TakeDamage(float damage)
     {
+        // caso um ativista morto seja atacado evita que onDeath seja chamado novamente
+        if (health < 0) {
+            return;
+        }
         health -= damage;
         if (health <= 0)
             OnDeath();
