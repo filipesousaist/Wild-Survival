@@ -27,11 +27,6 @@ public class Inventory : MonoBehaviour
     {
         if (!item.isDefaultItem)
         {
-            if(items.Count >= space)
-            {
-                Debug.Log("Not enough room!");
-                return false;
-            }
             items.Add(item);
 
             if (onItemChangedCallback != null) { 
