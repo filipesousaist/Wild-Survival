@@ -1,33 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 
 public class ActivistsManager : MonoBehaviour
 {
     public PlayerMovement[] playerMovs;
-    [ReadOnly]
-    public int currentPlayer = 0;
+    [ReadOnly] public int currentPlayer = 0;
     public Signal changePlayerSignal;
 
     private CameraMovement cam;
     public PostProcessVolume postVolume;
     private PostProcessingScript dangerAnimation;
-    [SerializeField]
-    private GameObject gameOverUI;
+    [SerializeField] private GameObject gameOverUI;
     public int activistsDead = 0;
 
-    void Start()
+    // Awake is called before every Start method
+    private void Awake()
     {
         playerMovs = GetComponentsInChildren<PlayerMovement>();
-        playerMovs[currentPlayer].GetComponent<Player>().UpdateBarHealth();
-        
         cam = Camera.main.GetComponent<CameraMovement>();
         dangerAnimation = postVolume.GetComponent<PostProcessingScript>();
         dangerAnimation.players = transform;
     }
+    private void Start()
+    {
+        playerMovs[currentPlayer].GetComponent<Player>().UpdateBarHealth();
+    }
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
             ChangePlayer();
@@ -61,7 +60,6 @@ public class ActivistsManager : MonoBehaviour
         // Send signals
         playerMov.GetComponent<Player>().UpdateBarHealth();
         changePlayerSignal.Raise();
-        Debug.Log("Current player: " + playerMov.GetComponent<Player>().entityName);
     }
 
     public void HealAll()
