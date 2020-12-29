@@ -8,6 +8,7 @@ public class ActivistsManager : MonoBehaviour
     public PlayerMovement[] players;
     public IntValue currentPlayer;
     public Signal changePlayerSignal;
+    public SelectPartyManager partyManager;
 
     private CameraMovement cam;
     public PostProcessVolume postVolume;
@@ -25,6 +26,8 @@ public class ActivistsManager : MonoBehaviour
         cam = Camera.main.GetComponent<CameraMovement>();
         dangerAnimation = postVolume.GetComponent<PostProcessingScript>();
         dangerAnimation.players = transform;
+
+        partyManager = FindObjectOfType<SelectPartyManager>();
     }
     // Update is called once per frame
     void Update()
@@ -49,8 +52,9 @@ public class ActivistsManager : MonoBehaviour
 
         currentPlayer.value = (currentPlayer.value + 1) % players.Length;
         playerMov = players[currentPlayer.value];
-        while (playerMov.GetComponent<Player>().health <= 0) {
-            if (activistDead == players.Length) {
+        while (playerMov.currentState == PlayerState.disabled || 
+            playerMov.GetComponent<Player>().health <= 0) {
+            if (activistDead == partyManager.partySize) {
                 gameOverUI.SetActive(true);
                 this.gameObject.SetActive(false);
                 return;
@@ -83,6 +87,27 @@ public class ActivistsManager : MonoBehaviour
             activistDead = 0;
 
         }    
+    }
+
+    public void UpdateCamera()
+    {
+        if (players[currentPlayer.value].currentState == PlayerState.disabled)
+        {
+            ChangePlayer();
+        }
+    }
+
+    public void UpdatePartyPosition()
+    {
+        Vector3 currentPlayerPos = players[currentPlayer.value].transform.position;
+        foreach(PlayerMovement player in players)
+        {
+            if (player != players[currentPlayer.value] && player.currentState != PlayerState.disabled)
+            {
+                player.transform.position = currentPlayerPos;
+                player.TeleportRhino();
+            }
+        }
     }
 
     public bool IsCurrentActivist(Player activist)

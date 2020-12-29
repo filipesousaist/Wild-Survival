@@ -7,6 +7,7 @@ public enum PlayerState
     walk,
     attack,
     combat,
+    disabled,
     dead
 }
 
@@ -15,6 +16,8 @@ public class PlayerMovement : EntityMovement
     public PlayerState currentState;
     public bool inputEnabled;
     public PlayerMovement[] players;
+
+    public Sprite selectPartySprite;
 
     private Transform target;
     private PlayerMovement playerToFollow;
@@ -30,7 +33,10 @@ public class PlayerMovement : EntityMovement
     // Start is called before the first frame update
     override protected void OnStart()
     {
-        currentState = PlayerState.walk;
+        if (currentState != PlayerState.disabled)
+        {
+            currentState = PlayerState.walk;
+        }
         player = GetComponent<Player>();
         players = transform.parent.GetComponentsInChildren<PlayerMovement>();
         agent = GetComponent<NavMeshAgent>();
@@ -44,10 +50,19 @@ public class PlayerMovement : EntityMovement
     // Update is called once per frame
     private void Update()
     {
-        if (activistsManager.IsCurrentActivist(player))
-            InputControlUpdate();
-        else if (currentState != PlayerState.dead)
-            AgentUpdate();
+        if (currentState != PlayerState.disabled)
+        {
+            if (activistsManager.IsCurrentActivist(player))
+                InputControlUpdate();
+            else if (currentState != PlayerState.dead)
+                AgentUpdate();
+        }
+        else
+        {
+            agent.velocity = Vector3.zero;
+            animator.SetBool("moving", false);
+            animator.SetBool("attacking", false);
+        }
     }
 
     // Called when this player is being controlled by input (keyboard)
@@ -234,9 +249,20 @@ public class PlayerMovement : EntityMovement
         attackedRecently = false;
     }
 
+    public void TeleportRhino()
+    {
+        if (player.rhino != null)
+        {
+            player.rhino.transform.position = transform.position;
+        }
+    }
+
     public void Revive()
     {
-        ChangeState(PlayerState.walk);
+        if (currentState != PlayerState.dead)
+        {
+            ChangeState(PlayerState.walk);
+        }
     }
     public override void Die()
     {

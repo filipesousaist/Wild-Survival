@@ -92,7 +92,7 @@ public class EnemyMovement : EntityMovement
                     var possiblePlayerTarget = possibleTarget.GetComponent<PlayerMovement>();
                     if (possiblePlayerTarget != null)
                     {
-                        if (possiblePlayerTarget.currentState != PlayerState.dead)
+                        if (possiblePlayerTarget.currentState != PlayerState.dead && possiblePlayerTarget.currentState != PlayerState.disabled)
                         {
                             target = newTarget;
                             difference = newDifference;

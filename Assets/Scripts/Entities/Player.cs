@@ -13,6 +13,7 @@ public class Player : Entity
     public int level;
     public int xp;
     public int requiredXp;
+    public Rhino rhino;
 
 
     override protected void OnAwake()
