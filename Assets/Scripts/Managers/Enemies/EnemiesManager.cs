@@ -89,7 +89,6 @@ public class EnemiesManager : MonoBehaviour
         if (numInvisble > 0)
         {
             Vector2 difference = GetNearestToCamera(invisibleEnemyMovs).position - Camera.main.transform.position;
-            Debug.Log("Pos: " + Camera.main.transform.position + " Diff: " + difference);
 
             float angle = Vector3.SignedAngle(E_Y, difference.normalized, E_Z);
             helpArrow.transform.eulerAngles = 

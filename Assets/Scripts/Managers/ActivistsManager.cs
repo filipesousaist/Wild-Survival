@@ -23,7 +23,9 @@ public class ActivistsManager : MonoBehaviour
     }
     private void Start()
     {
-        playerMovs[currentPlayer].GetComponent<Player>().UpdateBarHealth();
+        Player player = playerMovs[currentPlayer].GetComponent<Player>();
+        player.UpdateBarHealth();
+        player.ReceiveXp(0); // To update XP bar
     }
     // Update is called once per frame
     private void Update()
@@ -59,6 +61,7 @@ public class ActivistsManager : MonoBehaviour
 
         // Send signals
         playerMov.GetComponent<Player>().UpdateBarHealth();
+        playerMov.GetComponent<Player>().ReceiveXp(0); // To update XP bar
         changePlayerSignal.Raise();
     }
 
@@ -75,7 +78,6 @@ public class ActivistsManager : MonoBehaviour
                 playerMovs[i].inputEnabled = true;
             }
             activistsDead = 0;
-
         }    
     }
 
