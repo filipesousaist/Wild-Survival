@@ -14,6 +14,8 @@ public class InventorySlot : MonoBehaviour
 
     public Button removeButton;
 
+    public int index;
+
     public void AddItem(Item newItem)
     {
         item = newItem;
@@ -34,8 +36,9 @@ public class InventorySlot : MonoBehaviour
 
     public void OnRemoveButton()
     {
-        Inventory.instance.Remove(item);
-
+        int index = transform.GetSiblingIndex();
+        //Debug.Log("slot index=" + transform.GetSiblingIndex());
+        Inventory.instance.Remove(index);
     }
     
     public void UseItem()

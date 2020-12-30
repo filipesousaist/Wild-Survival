@@ -24,6 +24,7 @@ public class EnemiesManager : MonoBehaviour
 
     public GameObject helpArrow;
     private static readonly Vector3 E_Y = new Vector3(0, 1, 0);
+    private static readonly Vector3 E_Z = new Vector3(0, 0, 1);
     private static readonly float QUARTER_H = Screen.height / 4;
 
     private void Awake()
@@ -87,10 +88,10 @@ public class EnemiesManager : MonoBehaviour
         int numInvisble = invisibleEnemyMovs.Count;
         if (numInvisble > 0)
         {
-            Vector3 cameraPos = Camera.main.transform.position - new Vector3(0, 0, Camera.main.transform.position.z);
-            Vector3 difference = GetNearestToCamera(invisibleEnemyMovs).position - cameraPos;
+            Vector2 difference = GetNearestToCamera(invisibleEnemyMovs).position - Camera.main.transform.position;
+            Debug.Log("Pos: " + Camera.main.transform.position + " Diff: " + difference);
 
-            float angle = Vector3.Angle(E_Y, difference.normalized);
+            float angle = Vector3.SignedAngle(E_Y, difference.normalized, E_Z);
             helpArrow.transform.eulerAngles = 
                 new Vector3(0, 0, angle);
             helpArrow.transform.localPosition = new Vector3(
@@ -106,13 +107,15 @@ public class EnemiesManager : MonoBehaviour
 
     private Transform GetNearestToCamera(List<EnemyMovement> enemyMovs)
     {
-        Vector3 cameraPos = Camera.main.transform.position - new Vector3(0, 0, Camera.main.transform.position.z);
+        Vector2 cameraPos = Camera.main.transform.position;
+        Vector2 enemyPos = enemyMovs[0].transform.position;
 
-        float minDistance = (enemyMovs[0].transform.position - cameraPos).magnitude;
+        float minDistance = (enemyPos - cameraPos).magnitude;
         Transform nearest = enemyMovs[0].transform;
         for (int i = 1; i < enemyMovs.Count; i ++)
         {
-            float distance = (enemyMovs[i].transform.position - cameraPos).magnitude;
+            enemyPos = enemyMovs[i].transform.position;
+            float distance = (enemyPos - cameraPos).magnitude;
             if (distance < minDistance)
             {
                 minDistance = distance;
