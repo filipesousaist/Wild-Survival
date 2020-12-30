@@ -60,6 +60,11 @@ public class Player : Entity
             barXp.value = xp;
             XpSignal.Raise();
         }
+
+        if (rhino != null)
+        {
+            rhino.ReceiveXp(xpReward);
+        }
     }
 
     private void LevelUp()

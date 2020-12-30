@@ -97,13 +97,8 @@ public abstract class Entity : MonoBehaviour
         GameObject[] players = GameObject.FindGameObjectsWithTag("player");
         foreach (var player in players)
         {
-            player.transform.GetComponent<Player>().ReceiveXp(xpReceived);
-        }
-
-        GameObject[] rhinos = GameObject.FindGameObjectsWithTag("rhino");
-        foreach (var rhino in rhinos)
-        {
-            rhino.transform.GetComponent<Rhino>().ReceiveXp(xpReceived);
+            if (player.transform.GetComponent<PlayerMovement>().currentState != PlayerState.disabled)
+                player.transform.GetComponent<Player>().ReceiveXp(xpReceived);
         }
     }
 
