@@ -6,6 +6,7 @@ public class ActivistsManager : MonoBehaviour
     public PlayerMovement[] playerMovs;
     [ReadOnly] public int currentPlayer = 0;
     public Signal changePlayerSignal;
+    public SelectPartyManager partyManager;
 
     private CameraMovement cam;
     public PostProcessVolume postVolume;
@@ -20,10 +21,14 @@ public class ActivistsManager : MonoBehaviour
         cam = Camera.main.GetComponent<CameraMovement>();
         dangerAnimation = postVolume.GetComponent<PostProcessingScript>();
         dangerAnimation.players = transform;
+
+        partyManager = FindObjectOfType<SelectPartyManager>();
     }
     private void Start()
     {
-        playerMovs[currentPlayer].GetComponent<Player>().UpdateBarHealth();
+        Player player = playerMovs[currentPlayer].GetComponent<Player>();
+        player.UpdateBarHealth();
+        player.ReceiveXp(0); // To update XP bar
     }
     // Update is called once per frame
     private void Update()
@@ -42,8 +47,9 @@ public class ActivistsManager : MonoBehaviour
 
         currentPlayer = (currentPlayer + 1) % playerMovs.Length;
         playerMov = playerMovs[currentPlayer];
-        while (playerMov.GetComponent<Player>().health <= 0) {
-            if (activistsDead == playerMovs.Length) {
+        while (playerMov.currentState == PlayerState.disabled || 
+            playerMov.GetComponent<Player>().health <= 0) {
+            if (activistsDead == partyManager.partySize) {
                 Time.timeScale = 0;
                 gameOverUI.SetActive(true);
                 gameObject.SetActive(false);
@@ -59,6 +65,7 @@ public class ActivistsManager : MonoBehaviour
 
         // Send signals
         playerMov.GetComponent<Player>().UpdateBarHealth();
+        playerMov.GetComponent<Player>().ReceiveXp(0); // To update XP bar
         changePlayerSignal.Raise();
     }
 
@@ -77,6 +84,27 @@ public class ActivistsManager : MonoBehaviour
             activistsDead = 0;
 
         }    
+    }
+
+    public void UpdateCamera()
+    {
+        if (playerMovs[currentPlayer].currentState == PlayerState.disabled)
+        {
+            ChangePlayer();
+        }
+    }
+
+    public void UpdatePartyPosition()
+    {
+        Vector3 currentPlayerPos = playerMovs[currentPlayer].transform.position;
+        foreach(PlayerMovement player in playerMovs)
+        {
+            if (player != playerMovs[currentPlayer] && player.currentState != PlayerState.disabled)
+            {
+                player.transform.position = currentPlayerPos;
+                player.TeleportRhino();
+            }
+        }
     }
 
     public bool IsCurrentActivist(Player activist)

@@ -40,13 +40,17 @@ public class HealthXpFrameManager : MonoBehaviour
         Transform midRect = healthBar.transform.Find("Middle Rect");
         Transform frontRect = healthBar.transform.Find("Front Rect");
 
-        float percentage = Mathf.Max(playerCurrentHealth.value / player.maxHealth.value, 0);
+        float health = Mathf.Max(playerCurrentHealth.value, 0);
+        float percentage = health / player.maxHealth.value;
         float newPosition = - midRect.localScale.x / 2;
         float newWidth = midRect.localScale.x * percentage;
         frontRect.localScale = new Vector3(newWidth, midRect.localScale.y);
         frontRect.localPosition = new Vector3(newPosition, midRect.localPosition.y);
 
         frontRect.GetComponent<Image>().color = player.ChooseBarColor(percentage);
+
+        GameObject.Find("HP Amount Text").GetComponent<Text>().text = 
+            health + "/" + player.maxHealth.value;
     }
 
     public void UpdateXpBar()
@@ -55,11 +59,14 @@ public class HealthXpFrameManager : MonoBehaviour
         Transform midRect = xpBar.transform.Find("Middle Rect");
         Transform frontRect = xpBar.transform.Find("Front Rect");
 
-        float percentage = Mathf.Max((float)playerCurrentXp.value / player.requiredXp, 0);
+        float percentage = playerCurrentXp.value / player.requiredXp;
         float newPosition = -midRect.localScale.x / 2;
         float newWidth = midRect.localScale.x * percentage;
         frontRect.localScale = new Vector3(newWidth, midRect.localScale.y);
         frontRect.localPosition = new Vector3(newPosition, midRect.localPosition.y);
+
+        GameObject.Find("XP Amount Text").GetComponent<Text>().text =
+            playerCurrentXp.value + "/" + player.requiredXp;
     }
 
     public void UpdatePortrait()

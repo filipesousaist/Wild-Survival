@@ -4,6 +4,7 @@ using UnityEngine;
 public class Player : Entity
 {
     public Sprite portrait;
+    public Sprite selectPartySprite;
 
     public Signal healthSignal;
     public FloatValue barHealth;
@@ -13,6 +14,7 @@ public class Player : Entity
     [ReadOnly] public int xp;
     [ReadOnly] public int requiredXp;
     [ReadOnly] public int level;
+    public Rhino rhino;
 
 
     override protected void OnAwake()
@@ -57,6 +59,11 @@ public class Player : Entity
         {
             barXp.value = xp;
             XpSignal.Raise();
+        }
+
+        if (rhino != null)
+        {
+            rhino.ReceiveXp(xpReward);
         }
     }
 
