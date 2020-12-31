@@ -26,9 +26,7 @@ public class ActivistsManager : MonoBehaviour
     }
     private void Start()
     {
-        Player player = playerMovs[currentPlayer].GetComponent<Player>();
-        player.UpdateBarHealth();
-        player.ReceiveXp(0); // To update XP bar
+        UpdateCharactersInfo();
     }
     // Update is called once per frame
     private void Update()
@@ -63,10 +61,22 @@ public class ActivistsManager : MonoBehaviour
         cam.target = playerMov.transform;
         dangerAnimation.currentPlayer = currentPlayer;
 
-        // Send signals
-        playerMov.GetComponent<Player>().UpdateBarHealth();
-        playerMov.GetComponent<Player>().ReceiveXp(0); // To update XP bar
+        UpdateCharactersInfo();
+    }
+
+    private void UpdateCharactersInfo()
+    {
         changePlayerSignal.Raise();
+
+        Player player = GetCurrentPlayer();
+
+        player.UpdateBarHealth();
+        player.ReceiveXp(0); // To update XP bar
+        if (player.rhino != null)
+        {
+            player.rhino.UpdateBarHealth();
+            player.rhino.ReceiveXp(0);
+        }
     }
 
     public void HealAll()
