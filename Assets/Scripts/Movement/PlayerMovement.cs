@@ -255,6 +255,11 @@ public class PlayerMovement : EntityMovement
         }
     }
 
+    public bool IsDead()
+    {
+        return player.health <= 0;
+    }
+
     public Sprite GetSelectPartySprite()
     {
         if (player == null)

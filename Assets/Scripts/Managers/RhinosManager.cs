@@ -45,6 +45,6 @@ public class RhinosManager : MonoBehaviour
     // Can remove when all activists have a rhino
     public void ToggleRhinoInfo()
     {
-        rhinoInfoHolder.transform.localScale = GetCurrentRhino() != null ? new Vector3(0.75f, 0.75f, 1) : new Vector3(0, 0, 1);
+        rhinoInfoHolder.transform.localScale = GetCurrentRhino() != null ? Vector3.one : Vector3.zero;
     }
 }

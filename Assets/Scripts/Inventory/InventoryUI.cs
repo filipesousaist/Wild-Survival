@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class InventoryUI : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class InventoryUI : MonoBehaviour
 
     public Transform itemsParent;
 
-    InventorySlot[] slots;
+    public InventorySlot itemSlotPrefab;
+
+    [SerializeField] List<InventorySlot> slots;
 
     public GameObject inventoryUI;
 
@@ -21,7 +24,7 @@ public class InventoryUI : MonoBehaviour
         inventory = Inventory.instance;
         inventory.onItemChangedCallback += UpdateUI;
 
-        slots = itemsParent.GetComponentsInChildren<InventorySlot>();
+        slots = new List<InventorySlot>();
     }
 
     // Update is called once per frame
@@ -34,16 +37,58 @@ public class InventoryUI : MonoBehaviour
 
     void UpdateUI() 
     {
-        for (int i = 0; i < slots.Length; i++) 
+        //https://www.youtube.com/watch?v=QPYGPGvg0PI
+        if (inventory.items.Count > slots.Count) {
+            InventorySlot slot = Instantiate(itemSlotPrefab);
+            slot.transform.parent = itemsParent;
+            slot.transform.localScale = new Vector3(1, 1, 1);
+            slot.AddItem(inventory.items[inventory.items.Count - 1]);
+            slots.Add(slot);
+        }
+        else if(inventory.items.Count < slots.Count) {
+            var slot = slots[inventory.GetLastRemovedIndex()];
+            slots.RemoveAt(inventory.GetLastRemovedIndex());
+            Destroy(slot.gameObject);
+        }
+        /*for (int i = 0; i <= slots.Count; i++) 
         {
             if (i < inventory.items.Count) 
             {
                 slots[i].AddItem(inventory.items[i]);
-            }
-            else 
+                /*InventorySlot slot = Instantiate(itemSlotPrefab);
+                slot.index = slots.Count;
+                slot.transform.parent = itemsParent;
+                slot.transform.localScale = slots[0].transform.localScale;
+                slot.AddItem(inventory.items[i]);
+                slots.Add(slot);*/
+           // }
+           // else 
+           // {
+           //     slots[i].ClearSlot();
+               /* var lastSlot = slots[i];
+                slots.RemoveAt(i);
+                Destroy(lastSlot.gameObject);*/
+
+        //    }
+       // }
+       /* if (inventory.items.Count >= inventory.space)
+        {
+            if (inventory.items.Count > slots.Count) 
             {
-                slots[i].ClearSlot();
+                InventorySlot slot = Instantiate(itemSlotPrefab);
+                slot.index = slots.Count;
+                slot.transform.parent = itemsParent;
+                slot.transform.localScale = slots[0].transform.localScale;
+                slot.AddItem(inventory.items[inventory.items.Count - 1]);
+                slots.Add(slot);
             }
-        }
+            if (inventory.items.Count < slots.Count) 
+            {
+                //var index = inventory.GetLastRemovedIndex();
+                var lastSlot = slots[index];
+                slots.RemoveAt(index);
+                Destroy(lastSlot.gameObject);
+            }
+        }*/
     }
 }

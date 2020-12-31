@@ -22,16 +22,13 @@ public class Inventory : MonoBehaviour
 
     public List<Item> items = new List<Item>();
 
-    public int space = 9;
+    //public int space = 9;
+
+    private int lastItemRemoved;
     public bool Add(Item item)
     {
         if (!item.isDefaultItem)
         {
-            if(items.Count >= space)
-            {
-                Debug.Log("Not enough room!");
-                return false;
-            }
             items.Add(item);
 
             if (onItemChangedCallback != null) { 
@@ -41,12 +38,17 @@ public class Inventory : MonoBehaviour
         return true;
     }
 
-    public void Remove(Item item)
+    public void Remove(int index)
     {
-        items.Remove(item);
+        items.RemoveAt(index);
+        lastItemRemoved = index;
         if (onItemChangedCallback != null)
         {
             onItemChangedCallback.Invoke();
         }
+    }
+
+    public int GetLastRemovedIndex() {
+        return lastItemRemoved;
     }
 }
