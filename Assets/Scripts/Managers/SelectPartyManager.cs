@@ -51,7 +51,14 @@ public class SelectPartyManager : MonoBehaviour
         {
             if (slots[i].GetComponent<Toggle>().isOn)
             {
-                players[i].currentState = PlayerState.walk;
+                if (players[i].IsDead())
+                {
+                    players[i].currentState = PlayerState.dead;
+                }
+                else
+                {
+                    players[i].currentState = PlayerState.walk;
+                }
             }
             else
             {
