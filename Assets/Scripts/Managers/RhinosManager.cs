@@ -8,11 +8,16 @@ public class RhinosManager : MonoBehaviour
     public RhinoMovement[] rhinos;
     public Light2D[] light2Ds;
 
-    // Start is called before the first frame update
-    void Start()
+    private GameObject rhinoInfoHolder;
+    private ActivistsManager activistsManager;
+
+    void Awake()
     {
         rhinos = GetComponentsInChildren<RhinoMovement>();
         light2Ds = GetComponentsInChildren<Light2D>();
+
+        rhinoInfoHolder = GameObject.Find("RhinoInfoHolder");
+        activistsManager = FindObjectOfType<ActivistsManager>();
     }
 
     void Update()
@@ -30,5 +35,16 @@ public class RhinosManager : MonoBehaviour
             Rhino rhino = rhinos[i].GetComponent<Rhino>();
             rhino.FullRestore();
         }
+    }
+
+    public Rhino GetCurrentRhino()
+    {
+        return activistsManager.GetCurrentPlayer().rhino;
+    }
+
+    // Can remove when all activists have a rhino
+    public void ToggleRhinoInfo()
+    {
+        rhinoInfoHolder.transform.localScale = GetCurrentRhino() != null ? Vector3.one : Vector3.zero;
     }
 }

@@ -1,34 +1,10 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Player : Entity
+public class Player : Character
 {
-    public Sprite portrait;
     public Sprite selectPartySprite;
-
-    public Signal healthSignal;
-    public FloatValue barHealth;
-
-    public Signal XpSignal;
-    public IntValue barXp;
-    [ReadOnly] public int xp;
-    [ReadOnly] public int requiredXp;
-    [ReadOnly] public int level;
     public Rhino rhino;
-
-
-    override protected void OnAwake()
-    {
-        xp = 0;
-        level = 1;
-        requiredXp = level * 10;
-    }
-    override protected void TakeDamage(float damage)
-    {
-        base.TakeDamage(damage);
-        
-        UpdateBarHealth();
-    }
 
     public override void FullRestore()
     {
@@ -36,7 +12,7 @@ public class Player : Entity
         animator.SetBool("dead", false);
     }
 
-    public void UpdateBarHealth()
+    override public void UpdateBarHealth()
     {
         ActivistsManager manager = FindObjectOfType<ActivistsManager>();
 
@@ -48,31 +24,26 @@ public class Player : Entity
     }
 
     //for now just the level increases, don't know what else to do, perhaps damage and hp?
-    public void ReceiveXp(int xpReward)
+    override public void ReceiveXp(int xpReward)
     {
-        //for now a simple xp curve, can make more complex later
+        base.ReceiveXp(xpReward);
+        
         ActivistsManager manager = FindObjectOfType<ActivistsManager>();
-        xp += xpReward;
-        while (xp >= requiredXp)
-            LevelUp();
         if (manager.IsCurrentActivist(this))
         {
             barXp.value = xp;
             XpSignal.Raise();
         }
-
-        if (rhino != null)
-        {
-            rhino.ReceiveXp(xpReward);
-        }
     }
 
-    private void LevelUp()
+    protected override void UpdateRequiredXp()
     {
-        xp -= requiredXp;
-        level++;
+        //for now a simple xp curve, can make more complex later
         requiredXp = level * 10;
+    }
 
+    override protected void IncreaseAttributes()
+    {
         baseAttack += 1;
     }
 
@@ -89,9 +60,7 @@ public class Player : Entity
         manager.activistsDead++;
 
         if (manager.IsCurrentActivist(this))
-        {
             manager.ChangePlayer();
-        }
     }
 
     IEnumerator DeathCo()
@@ -99,6 +68,5 @@ public class Player : Entity
         animator.SetBool("firstTimeDying", true);
         yield return null;
         animator.SetBool("firstTimeDying", false);
-        
     }
 }

@@ -7,9 +7,10 @@ public abstract class Entity : MonoBehaviour
     protected Animator animator;
     protected EntityMovement movement;
 
-    public FloatValue maxHealth;
     public string entityName;
-    public int baseAttack;
+
+    public FloatValue maxHealth;
+    public float baseAttack;
     [ReadOnly] public float health;
 
     public GameObject healthBarPrefab;
@@ -20,6 +21,7 @@ public abstract class Entity : MonoBehaviour
     private static readonly Color YELLOW = new Color(1, 1, 0);
     private static readonly Color ORANGE = new Color(1, 0.7f, 0);
     private static readonly Color RED = new Color(1, 0, 0);
+    private static readonly Color[] HP_COLORS = { RED, ORANGE, YELLOW, GREENYELLOW, GREEN };
 
 
     // Start is called before the first frame update
@@ -35,7 +37,6 @@ public abstract class Entity : MonoBehaviour
         healthBar = Instantiate(healthBarPrefab);
         healthBar.transform.position = new Vector3(0, 2, 0);
         healthBar.transform.SetParent(transform, false);
-        
     }
 
     protected void Awake()
@@ -65,40 +66,37 @@ public abstract class Entity : MonoBehaviour
 
     public Color ChooseBarColor(float percentage)
     {
-        if (percentage == 1)
-            return GREEN;
-        else if (percentage >= 0.75)
-            return GREENYELLOW;
-        else if (percentage >= 0.5)
-            return YELLOW;
-        else if (percentage >= 0.25)
-            return ORANGE;
-        else
-            return RED;
-
+        int index = Mathf.FloorToInt(4 * percentage);
+        return HP_COLORS[index];
     }
     abstract protected void OnAwake();
 
     protected virtual void TakeDamage(float damage)
     {
         // caso um ativista morto seja atacado evita que onDeath seja chamado novamente
-        if (health < 0) {
-            return;
+        if (health > 0)
+        {
+            health -= damage;
+            if (health <= 0)
+                OnDeath();
         }
-        health -= damage;
-        if (health <= 0)
-            OnDeath();
     }
 
     protected abstract void OnDeath();
 
     protected void GiveXp(int xpReceived)
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("player");
-        foreach (var player in players)
+        GameObject[] playerObjs = GameObject.FindGameObjectsWithTag("player");
+        foreach (GameObject playerObj in playerObjs)
         {
-            if (player.transform.GetComponent<PlayerMovement>().currentState != PlayerState.disabled)
-                player.transform.GetComponent<Player>().ReceiveXp(xpReceived);
+            if (playerObj.GetComponent<PlayerMovement>().currentState != PlayerState.disabled)
+            {
+                Player player = playerObj.GetComponent<Player>();
+                player.ReceiveXp(xpReceived);
+                if (player.rhino != null)
+                    player.rhino.ReceiveXp(xpReceived);
+                
+            }
         }
     }
 
