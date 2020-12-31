@@ -4,6 +4,7 @@ public class Enemy : Entity
 {
     public Signal deathSignal;
     public GameObject deathEffect;
+    public LootTable lootTable;
     [ReadOnly] public int wave;
     public int xpReward;
     private bool xpGiven = false;
@@ -12,6 +13,7 @@ public class Enemy : Entity
     {
         DeathEffect();
         deathSignal.Raise();
+         MakeLoot();
         Destroy(gameObject);
         if (!xpGiven)
         {
@@ -28,6 +30,18 @@ public class Enemy : Entity
             Animator effectAnimator = effect.GetComponent<Animator>();
             effectAnimator.SetFloat("moveX", animator.GetFloat("moveX"));
             effectAnimator.SetFloat("moveY", animator.GetFloat("moveY"));
+        }
+    }
+
+    private void MakeLoot() 
+    {
+        if (lootTable != null)
+        {
+            GameObject item = lootTable.LootItem();
+            if (item != null)
+            {
+                Instantiate(item, transform.position, transform.rotation);
+            }
         }
     }
 }

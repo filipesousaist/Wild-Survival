@@ -531,6 +531,7 @@ MonoBehaviour:
   deathSignal: {fileID: 11400000, guid: d46e0b22038395a44a69ca3923974060, type: 2}
   deathEffect: {fileID: 5802363849848596127, guid: 97088d85c306d1c478d66c509f87423b,
     type: 3}
+  lootTable: {fileID: 11400000, guid: 9ad72f61603c96c4ab296d5df28a8f4d, type: 2}
   wave: -1
   xpReward: 2
 --- !u!195 &244674749891776438
