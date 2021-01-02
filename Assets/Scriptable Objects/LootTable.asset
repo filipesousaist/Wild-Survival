@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LootTable
   m_EditorClassIdentifier: 
   loots:
-  - item: {fileID: 11400000, guid: c900bfd9067f56740acf4fd7b233f5c8, type: 2}
+  - item: {fileID: 561601454736449442, guid: ab7f70f7b4e3f8f44b0b89c34908aa47, type: 3}
     chance: 80

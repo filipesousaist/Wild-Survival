@@ -87,6 +87,8 @@ public class PlayerMovement : EntityMovement
             else
                 animator.SetBool("moving", false);
 
+            difference.x = Mathf.Round(difference.x);
+            difference.y = Mathf.Round(difference.y);
             UpdateAnimation(difference);
         }
 
