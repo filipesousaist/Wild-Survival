@@ -3,6 +3,9 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class ActivistsManager : MonoBehaviour
 {
+    public delegate void OnPlayerChanged();
+    public OnPlayerChanged onPlayerChangedCallback;
+
     public PlayerMovement[] playerMovs;
     [ReadOnly] public int currentPlayer = 0;
     public Signal changePlayerSignal;
@@ -55,6 +58,11 @@ public class ActivistsManager : MonoBehaviour
             }
             currentPlayer = (currentPlayer + 1) % playerMovs.Length;
             playerMov = playerMovs[currentPlayer];
+        }
+
+        if (onPlayerChangedCallback != null)
+        {
+            onPlayerChangedCallback.Invoke();
         }
 
         playerMov.inputEnabled = true;

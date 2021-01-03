@@ -1,10 +1,14 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : Character
 {
     public Sprite selectPartySprite;
     public Rhino rhino;
+
+    //Equipment list 0-upperBody 1-bottomBody 2-Weapon
+    public List<Equipment> equipments;
 
     public override void FullRestore()
     {
