@@ -226,7 +226,7 @@ Animator:
   m_GameObject: {fileID: 7725795864494037430}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0796b93fdf46834409ebe2f0da9c46aa, type: 2}
+  m_Controller: {fileID: 9100000, guid: 933e62fae5cf64e40bde72a39cc7a71e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -294,8 +294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e526db49c9c4714d9fa2f062469b3d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: {fileID: 11400000, guid: b3e1510041ded54419231151e3bd892b, type: 2}
   entityName: 
+  maxHealth: {fileID: 11400000, guid: b3e1510041ded54419231151e3bd892b, type: 2}
   baseAttack: 2
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,

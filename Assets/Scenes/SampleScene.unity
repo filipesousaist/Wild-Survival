@@ -1069,7 +1069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -48.01}
+  m_AnchoredPosition: {x: -0.6, y: -47.99}
   m_SizeDelta: {x: 343.03308, y: 77.937256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &124962425
@@ -4132,12 +4132,12 @@ GameObject:
   - component: {fileID: 425848073}
   - component: {fileID: 425848072}
   - component: {fileID: 425848071}
-  - component: {fileID: 425848075}
   - component: {fileID: 425848074}
   - component: {fileID: 425848076}
   - component: {fileID: 425848077}
   - component: {fileID: 425848078}
   - component: {fileID: 425848079}
+  - component: {fileID: 425848075}
   - component: {fileID: 425848080}
   m_Layer: 0
   m_Name: Player
@@ -4271,7 +4271,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03287983, y: -1.25}
+  m_Offset: {x: -0.03250003, y: -1.2997923}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4282,7 +4282,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5657597, y: 0.50879717}
+  m_Size: {x: 1.55, y: 0.47458458}
   m_EdgeRadius: 0
 --- !u!95 &425848076
 Animator:
@@ -4397,8 +4397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9946f96e9c97ad0428dc80bcdd20f22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: -0.03, y: -1.25}
-  size: {x: 1.107982, y: 0.5087972}
 --- !u!1 &443267352
 GameObject:
   m_ObjectHideFlags: 0
@@ -5346,12 +5344,12 @@ GameObject:
   - component: {fileID: 501521668}
   - component: {fileID: 501521677}
   - component: {fileID: 501521676}
-  - component: {fileID: 501521675}
   - component: {fileID: 501521674}
   - component: {fileID: 501521673}
   - component: {fileID: 501521672}
   - component: {fileID: 501521671}
   - component: {fileID: 501521670}
+  - component: {fileID: 501521675}
   - component: {fileID: 501521669}
   m_Layer: 0
   m_Name: Manuel Gaita
@@ -5368,7 +5366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501521667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 62.01, y: -36.05, z: 0}
+  m_LocalPosition: {x: 62.01, y: -35.55, z: 0}
   m_LocalScale: {x: 0.3932429, y: 0.4, z: 1}
   m_Children:
   - {fileID: 1300785216}
@@ -5390,8 +5388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9946f96e9c97ad0428dc80bcdd20f22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: -0.03, y: -1.25}
-  size: {x: 1.107982, y: 0.5087972}
 --- !u!195 &501521670
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5427,7 +5423,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.023660392, y: -0.5001908}
+  m_Offset: {x: 0.06452891, y: -0.10019076}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5438,7 +5434,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9730237, y: 2.7801251}
+  m_Size: {x: 0.98211926, y: 2.7801251}
   m_EdgeRadius: 0
 --- !u!114 &501521672
 MonoBehaviour:
@@ -5528,7 +5524,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.008485287, y: -1.6884251}
+  m_Offset: {x: 0.064388275, y: -1.3453798}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5539,7 +5535,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.216685, y: 0.5522089}
+  m_Size: {x: 1.496242, y: 0.44405937}
   m_EdgeRadius: 0
 --- !u!50 &501521676
 Rigidbody2D:
@@ -5687,8 +5683,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 425848073}
   smoothing: 0.3
-  maxPosition: {x: 62.95499, y: 20.90158}
-  minPosition: {x: -39.91502, y: -31.95842}
+  bottomLeft: {x: -56, y: -42}
+  topRight: {x: 79, y: 31}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -6576,6 +6572,8 @@ MonoBehaviour:
   prefabs:
   - {fileID: 7725795864494037430, guid: 188da82ce7b525847924f08eb1c0b773, type: 3}
   - {fileID: 3596010507049557627, guid: 033b5afb495efc448b6a9e86cdf1f5a7, type: 3}
+  - {fileID: 1964989270982647165, guid: f88d9ed4b4c6d0a4e83ce1c0f6e47447, type: 3}
+  - {fileID: 5695559983803194665, guid: 908b17556dd47f245a81aa2a4e27158e, type: 3}
   helpArrow: {fileID: 1017084354}
 --- !u!4 &592369380
 Transform:
@@ -6665,6 +6663,7 @@ MonoBehaviour:
   - If you feel tired, you can rest in a camp.
   welcomeMessageDuration: 15
   miscMessageDuration: 7.5
+  spawnPeriod: 3
 --- !u!114 &592369382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26633,6 +26632,50 @@ Transform:
   m_Father: {fileID: 813293634}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1092337995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1092337997}
+  - component: {fileID: 1092337996}
+  m_Layer: 0
+  m_Name: Debug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1092337996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092337995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084d293b22dd35945a28cb22d0bc6e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 365114816519112973, guid: db48a47a97d65214d9b165da9247c4eb, type: 3}
+--- !u!4 &1092337997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092337995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1098092720
 GameObject:
   m_ObjectHideFlags: 0
@@ -26796,12 +26839,12 @@ GameObject:
   - component: {fileID: 1141677851}
   - component: {fileID: 1141677859}
   - component: {fileID: 1141677858}
-  - component: {fileID: 1141677857}
   - component: {fileID: 1141677856}
   - component: {fileID: 1141677855}
   - component: {fileID: 1141677854}
   - component: {fileID: 1141677853}
   - component: {fileID: 1141677852}
+  - component: {fileID: 1141677857}
   - component: {fileID: 1141677860}
   m_Layer: 0
   m_Name: Andreia Gaita
@@ -26818,7 +26861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141677850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.52, y: -35.35, z: 0}
+  m_LocalPosition: {x: 58.72, y: -35.28, z: 0}
   m_LocalScale: {x: 0.3932429, y: 0.4, z: 1}
   m_Children:
   - {fileID: 279660011}
@@ -26863,7 +26906,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.023660392, y: -0.5001908}
+  m_Offset: {x: -0.031380445, y: -0.20019078}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -26874,7 +26917,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9730237, y: 2.7801251}
+  m_Size: {x: 1.0102627, y: 2.7801251}
   m_EdgeRadius: 0
 --- !u!114 &1141677854
 MonoBehaviour:
@@ -26964,7 +27007,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.008485287, y: -1.6884251}
+  m_Offset: {x: -0.03102535, y: -1.4382753}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -26975,7 +27018,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.216685, y: 0.5522089}
+  m_Size: {x: 1.1298014, y: 0.4423809}
   m_EdgeRadius: 0
 --- !u!50 &1141677858
 Rigidbody2D:
@@ -27061,8 +27104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9946f96e9c97ad0428dc80bcdd20f22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: -0.03, y: -1.25}
-  size: {x: 1.107982, y: 0.5087972}
 --- !u!1 &1143160117
 GameObject:
   m_ObjectHideFlags: 0
@@ -37650,12 +37691,12 @@ GameObject:
   - component: {fileID: 1448629060}
   - component: {fileID: 1448629059}
   - component: {fileID: 1448629058}
-  - component: {fileID: 1448629057}
   - component: {fileID: 1448629056}
   - component: {fileID: 1448629061}
   - component: {fileID: 1448629062}
   - component: {fileID: 1448629063}
   - component: {fileID: 1448629064}
+  - component: {fileID: 1448629057}
   - component: {fileID: 1448629065}
   m_Layer: 0
   m_Name: Ana Gaita
@@ -37697,7 +37738,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0.008485287, y: -1.6884251}
   m_SpriteTilingProperty:
@@ -37915,8 +37956,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9946f96e9c97ad0428dc80bcdd20f22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: -0.03, y: -1.25}
-  size: {x: 1.107982, y: 0.5087972}
 --- !u!213 &1454540320
 Sprite:
   m_ObjectHideFlags: 0
@@ -40127,7 +40166,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669528510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.52, y: -35.35, z: 0}
+  m_LocalPosition: {x: 58.75, y: -35.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

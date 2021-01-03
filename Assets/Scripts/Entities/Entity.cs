@@ -118,4 +118,16 @@ public abstract class Entity : MonoBehaviour
                 gameObject.CompareTag("enemy")) &&
                 !(gameObject == this.gameObject);
     }
+
+    // Get the collider which collides with the environment (tiles in the map)
+    public BoxCollider2D GetEnvironmentCollider()
+    {
+        BoxCollider2D[] boxCollider2Ds = GetComponents<BoxCollider2D>();
+
+        foreach (BoxCollider2D boxCollider2D in boxCollider2Ds)
+            if (!boxCollider2D.isTrigger)
+                return boxCollider2D;
+
+        return null;
+    }
 }

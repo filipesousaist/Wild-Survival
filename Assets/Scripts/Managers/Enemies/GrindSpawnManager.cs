@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,9 +15,23 @@ public class GrindSpawnManager : SpawnManager
     public float welcomeMessageDuration;
     public float miscMessageDuration;
 
+    public float spawnPeriod;
+    private float spawnTime;
+
+    private void FixedUpdate()
+    {
+        spawnTime += Time.deltaTime;
+        if (spawnTime >= spawnPeriod)
+        {
+            spawnTime = 0;
+            UpdateEnemies();
+        }
+    }
+
     override public void OnEnterMode()
     {
         StartCoroutine(UpdateAll());
+        spawnTime = 0;
     }
 
     override public void OnExitMode()
@@ -27,10 +42,10 @@ public class GrindSpawnManager : SpawnManager
     override protected void UpdateEnemies()
     {
         Enemy[] enemies = enemiesManager.GetAllEnemies();
-       
-        for (int numEnemies = enemies.Length; numEnemies < maxEnemies; numEnemies ++)
+        if (enemies.Length < maxEnemies)
             SpawnEnemy(GetRandomSpawnPoint());
     }
+
 
     private Vector2 GetRandomSpawnPoint()
     {
@@ -120,6 +135,5 @@ public class GrindSpawnManager : SpawnManager
         }
 
         textObj.GetComponent<Text>().text = newText;
-
     }
 }

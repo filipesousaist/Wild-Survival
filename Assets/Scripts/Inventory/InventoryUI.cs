@@ -40,8 +40,7 @@ public class InventoryUI : MonoBehaviour
         //https://www.youtube.com/watch?v=QPYGPGvg0PI
         if (inventory.items.Count > slots.Count) {
             InventorySlot slot = Instantiate(itemSlotPrefab);
-            slot.transform.parent = itemsParent;
-            slot.transform.localScale = new Vector3(1, 1, 1);
+            slot.transform.SetParent(itemsParent, false);
             slot.AddItem(inventory.items[inventory.items.Count - 1]);
             slots.Add(slot);
         }

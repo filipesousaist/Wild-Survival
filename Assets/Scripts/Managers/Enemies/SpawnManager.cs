@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public abstract class SpawnManager : MonoBehaviour
 {
@@ -36,10 +37,11 @@ public abstract class SpawnManager : MonoBehaviour
 
     protected GameObject SpawnEnemy(Vector2 position)
     {
-        int enemyIndex = (Random.value > 0.05) ? 0 : 1;
+        int strongIncr = (Random.value > 0.05) ? 0 : 1;
+        int enemyIndex = 2 * Random.Range(0, 2) + strongIncr;
         GameObject newEnemy = Instantiate(prefabs[enemyIndex]);
         newEnemy.transform.parent = enemiesObj.transform;
-        newEnemy.transform.position = position;
+        newEnemy.GetComponent<NavMeshAgent>().Warp(position);
         return newEnemy;
     }
 }

@@ -4,13 +4,15 @@ using UnityEngine;
 public class KinematicBoxCollider2D : MonoBehaviour
 {
     private static readonly Vector2 E_X = new Vector2(1, 0);
-    public Vector2 position;
-    public Vector2 size;
+    //public Vector2 position;
+    //public Vector2 size;
 
+    private Vector2 position;
     private Vector2 bottomLeft;
     private Vector2 bottomRight;
     private Vector2 topLeft;
     private Vector2 topRight;
+
 
     private Rigidbody2D myRigidbody;
 
@@ -23,11 +25,14 @@ public class KinematicBoxCollider2D : MonoBehaviour
 
     void InitCorners()
     {
-        Vector2 offset = size / 2;
-        float x1 = (position.x - offset.x) * transform.localScale.x;
-        float x2 = (position.x + offset.x) * transform.localScale.x;
-        float y1 = (position.y - offset.y) * transform.localScale.y;
-        float y2 = (position.y + offset.y) * transform.localScale.y;
+        BoxCollider2D environmentCollider = GetComponent<Entity>().GetEnvironmentCollider();
+
+        position = environmentCollider.offset;
+        Vector2 halfSize = environmentCollider.size / 2;
+        float x1 = (position.x - halfSize.x) * transform.localScale.x;
+        float x2 = (position.x + halfSize.x) * transform.localScale.x;
+        float y1 = (position.y - halfSize.y) * transform.localScale.y;
+        float y2 = (position.y + halfSize.y) * transform.localScale.y;
         bottomLeft = new Vector2(x1, y1);
         bottomRight = new Vector2(x2, y1);
         topLeft = new Vector2(x1, y2);
