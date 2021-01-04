@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 799973320d5b965478cb55977a98011f, type: 3}
-  m_Name: Machete
+  m_Name: Pants
   m_EditorClassIdentifier: 
-  name: Machete
-  icon: {fileID: 21300000, guid: 994a68880f7cdb74ab5192a872584d6a, type: 3}
+  name: Pants
+  icon: {fileID: 21300000, guid: fa9ecc2f00ddfb64f9e569d0a1fcf893, type: 3}
   isDefaultItem: 0
+  initialLevel: 1
   level: 1
   materials:
   - item: {fileID: 11400000, guid: c900bfd9067f56740acf4fd7b233f5c8, type: 2}
-    n: 10
-  - item: {fileID: 11400000, guid: ed4ca684126607f4f9dff724ed0239c4, type: 2}
     n: 10

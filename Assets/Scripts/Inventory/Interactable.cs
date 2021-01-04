@@ -15,13 +15,10 @@ public class Interactable : MonoBehaviour
 
     void Update()
     {
-        if (!hasInteracted) {
             //float distance = Vector3.Distance(player.position, interactionTransform.position);
             if(/*distance <= radius*/ isInteractable && Input.GetKeyDown(KeyCode.E)) {
                 Interact();
-                hasInteracted = true;
             }
-        }    
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -32,7 +29,7 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other) {
+    public virtual void OnTriggerExit2D(Collider2D other) {
         if (other.CompareTag("player") )
         {
             isInteractable = false;

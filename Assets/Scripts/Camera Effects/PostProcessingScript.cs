@@ -9,9 +9,9 @@ public class PostProcessingScript : MonoBehaviour
     public PostProcessVolume volume;
     private const int MAXDISTANCE = 10;
 
-    private Vignette _vignette;
+    //private Vignette _vignette;
 
-    private Bloom _bloom;
+    //private Bloom _bloom;
 
     public Transform players;
 
