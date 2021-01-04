@@ -11,11 +11,24 @@ public class MatDict
 }
 
 [CreateAssetMenu(fileName = "New Equipment", menuName = "Inventory/Equipment")]
-public class Equipment : Item
+public class Equipment : Item, ISerializationCallbackReceiver
 {
     //7->https://www.youtube.com/watch?v=d9oLS5hy0zU
+
+    public int initialLevel;
 
     public int level;
 
     public List<MatDict> materials;
+
+    public void OnAfterDeserialize()
+    {
+        level = initialLevel;
+    }
+
+    public void OnBeforeSerialize() { }
+
+    public void Upgrade() {
+        level += 1;
+    }
 }

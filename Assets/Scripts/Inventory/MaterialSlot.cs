@@ -20,4 +20,13 @@ public class MaterialSlot : MonoBehaviour
 
         requiredNumber.text = n.ToString();
     }
+
+    public string GetName() {
+        return item.name;
+    }
+
+    public Item GetItem()
+    {
+        return item;
+    }
 }
