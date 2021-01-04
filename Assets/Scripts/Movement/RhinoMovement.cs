@@ -135,7 +135,16 @@ public class RhinoMovement : EntityMovement
         if (difference.magnitude <= followRadius && difference.magnitude > arriveRadius)
         {
             //MoveCharacter(difference);
-            agent.destination = player.transform.position;
+            Vector3 orientation = new Vector3(playerMov.animator.GetFloat("moveX"), playerMov.animator.GetFloat("moveY"));
+            Vector3 destination = player.transform.position - orientation.normalized * 2;
+            Vector3 direction = destination - transform.position;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized, 4, LayerMask.GetMask("unwalkable"));
+            if (hit.collider != null)
+            {
+                Debug.DrawLine(transform.position, destination, Color.red);
+                destination = player.transform.position;
+            }
+            agent.destination = destination;
             agent.isStopped = false;
             animator.SetBool("moving", true);
             difference = agent.velocity;

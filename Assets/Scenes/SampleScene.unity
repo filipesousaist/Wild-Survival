@@ -6800,6 +6800,12 @@ MonoBehaviour:
   postVolume: {fileID: 1336292478}
   gameOverUI: {fileID: 1575346359}
   activistsDead: 0
+  walkOffset:
+  - 140
+  - -140
+  warpOffset:
+  - {x: 0.5, y: 1, z: 0}
+  - {x: -0.5, y: 1, z: 0}
 --- !u!114 &617111320
 MonoBehaviour:
   m_ObjectHideFlags: 0

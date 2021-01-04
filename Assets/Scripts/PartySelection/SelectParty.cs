@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SelectPartyManager : MonoBehaviour
+public class SelectParty : MonoBehaviour
 {
     private ActivistsManager manager;
     private PlayerMovement[] players;
@@ -83,6 +83,8 @@ public class SelectPartyManager : MonoBehaviour
                 players[i].currentState = PlayerState.disabled;
             }
         }
+
+        manager.UpdateOffset();
     }
 
 

@@ -70,7 +70,7 @@ public class KinematicBoxCollider2D : MonoBehaviour
         return true;
     }
 
-    private static Vector2 Rotate(Vector2 v, float angle)
+    public static Vector2 Rotate(Vector2 v, float angle)
     {
         return new Vector2(
         v.x * Mathf.Cos(angle) - v.y * Mathf.Sin(angle),
