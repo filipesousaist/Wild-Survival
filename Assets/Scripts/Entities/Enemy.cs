@@ -13,7 +13,7 @@ public class Enemy : Entity
     {
         DeathEffect();
         deathSignal.Raise();
-         MakeLoot();
+        MakeLoot();
         Destroy(gameObject);
         if (!xpGiven)
         {

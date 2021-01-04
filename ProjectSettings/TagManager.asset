@@ -11,6 +11,8 @@ TagManager:
   - FadeObstacle
   - item
   - backLights
+  - dummy
+  - deadDummy
   layers:
   - Default
   - TransparentFX

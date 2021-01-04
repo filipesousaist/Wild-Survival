@@ -11,7 +11,7 @@ public class Knockback : MonoBehaviour
         EntityMovement movement = GetComponentInParent<EntityMovement>();
         
         if (other.isTrigger &&
-            AreOpponents(GetComponent<Collider2D>(), other) && 
+            (AreOpponents(GetComponent<Collider2D>(), other) || other.CompareTag("dummy")) && 
             ! movement.attackedRecently)
         {
             Rigidbody2D hit = other.attachedRigidbody;
@@ -20,7 +20,9 @@ public class Knockback : MonoBehaviour
                 Vector2 difference = hit.transform.position - transform.position;
                 difference = difference.normalized * thrust;
 
-                hit.AddForce(difference, ForceMode2D.Impulse);
+                if (!other.CompareTag("dummy")) { 
+                    hit.AddForce(difference, ForceMode2D.Impulse);
+                }
 
                 Entity entity = GetComponentInParent<Entity>();
                 Entity otherEntity = other.attachedRigidbody.GetComponent<Entity>();
