@@ -94,6 +94,7 @@ public class RhinoMovement : EntityMovement
     void CombatUpdate()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+        GameObject dummy = GameObject.FindGameObjectWithTag("dummy");
         if (enemies != null)
         {
             float closestEnemyDistance = 0f;
@@ -105,6 +106,16 @@ public class RhinoMovement : EntityMovement
                 {
                     target = enemy.transform;
                     closestEnemyDistance = distanceFromEnemy;
+                }
+            }
+            if (closestEnemyDistance == 0 && dummy != null && playerMov.inputEnabled)
+            {
+                Vector3 enemyPosition = dummy.transform.position;
+                float distanceFromEnemy = (enemyPosition - transform.position).magnitude;
+                if (distanceFromEnemy < chaseRadius)
+                {
+                    target = dummy.transform;
+                    closestEnemyDistance = 1;
                 }
             }
             if (closestEnemyDistance == 0)

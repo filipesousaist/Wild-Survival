@@ -100,7 +100,7 @@ public abstract class Entity : MonoBehaviour
         }
     }
 
-    public void Knock(Rigidbody2D myRigidBody, float knockTime, float damage)
+    public virtual void Knock(Rigidbody2D myRigidBody, float knockTime, float damage)
     {
         StartCoroutine(movement.KnockCo(myRigidBody, knockTime));
         TakeDamage(damage);
@@ -114,6 +114,7 @@ public abstract class Entity : MonoBehaviour
     public bool IsOtherEntity(GameObject gameObject)
     {
         return (gameObject.CompareTag("player") ||
+                gameObject.CompareTag("dummy") ||
                 gameObject.CompareTag("rhino") ||
                 gameObject.CompareTag("enemy")) &&
                 !(gameObject == this.gameObject);
