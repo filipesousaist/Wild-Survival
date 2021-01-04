@@ -5497,7 +5497,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 4, y: 4}
-    newSize: {x: 1.875, y: 3.125}
+    newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5523,7 +5523,7 @@ MonoBehaviour:
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
-  portrait: {fileID: 6384059485365593340, guid: d86b8fcc1dd86974999f7ad2665bc77f,
+  portrait: {fileID: 1735915670398256267, guid: d86b8fcc1dd86974999f7ad2665bc77f,
     type: 3}
   healthSignal: {fileID: 11400000, guid: 8a1c7f2390e26f5419ecb12426813600, type: 2}
   barHealth: {fileID: 11400000, guid: 0ac4c84fbce88274dafabecb6412d4bb, type: 2}
@@ -5598,7 +5598,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 4, y: 4}
-    newSize: {x: 1.875, y: 3.125}
+    newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5666,13 +5666,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1621012981404806296, guid: d86b8fcc1dd86974999f7ad2665bc77f,
+  m_Sprite: {fileID: -8791110634495114025, guid: d86b8fcc1dd86974999f7ad2665bc77f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.875, y: 3.125}
+  m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
