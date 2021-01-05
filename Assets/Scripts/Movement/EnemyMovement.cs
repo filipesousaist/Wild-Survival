@@ -6,7 +6,6 @@ using UnityEngine.AI;
 
 public enum EnemyState
 {
-    idle,
     walk,
     attack,
     stagger
@@ -52,8 +51,7 @@ public class EnemyMovement : EntityMovement
                 StartCoroutine(AttackCo(difference));
                 
         }
-        else if (currentState == EnemyState.walk || 
-            currentState == EnemyState.idle)
+        else if (currentState == EnemyState.walk)
         {  
             if (difference.magnitude <= chaseRadius)
             {
@@ -61,7 +59,7 @@ public class EnemyMovement : EntityMovement
                 agent.destination = target.transform.position;
                 difference = agent.velocity;
                 agent.isStopped = false;
-                ChangeState(EnemyState.walk);
+                currentState = EnemyState.walk;
             }
             else
             {
@@ -86,6 +84,8 @@ public class EnemyMovement : EntityMovement
         target = null;
         foreach (GameObject possibleTarget in possibleTargets)
         {
+            if (!possibleTarget.GetComponent<EntityMovement>().CanBeTargeted())
+                continue;
             if (target != null)
             {
                 Transform newTarget = possibleTarget.transform;
@@ -93,50 +93,19 @@ public class EnemyMovement : EntityMovement
 
                 if (newDifference.magnitude < difference.magnitude)
                 {
-                    var possiblePlayerTarget = possibleTarget.GetComponent<PlayerMovement>();
-                    if (possiblePlayerTarget != null)
-                    {
-                        if (possiblePlayerTarget.currentState != PlayerState.dead && possiblePlayerTarget.currentState != PlayerState.disabled)
-                        {
-                            target = newTarget;
-                            difference = newDifference;
-                        }
-                    }
-                    else
-                    {
-                        target = newTarget;
-                        difference = newDifference;
-                    }
+                    target = newTarget;
+                    difference = newDifference;
                 }
             }
             else
             {
-                var possiblePlayerTarget = possibleTarget.GetComponent<PlayerMovement>();
-                if (possiblePlayerTarget != null)
-                {
-                    if (possiblePlayerTarget.currentState != PlayerState.dead)
-                    {
-                        target = possibleTarget.transform;
-                        difference = target.position - transform.position;
-                    }
-                }
-                else
-                {
-                    target = possibleTarget.transform;
-                    difference = target.position - transform.position;
-                }
+                target = possibleTarget.transform;
+                difference = target.position - transform.position;
             }
+
         }
 
         return difference;    
-    }
-
-    private void ChangeState(EnemyState newState)
-    {
-        if (currentState != newState)
-        {
-            currentState = newState;
-        }
     }
 
     private IEnumerator AttackCo(Vector3 difference)
@@ -146,7 +115,7 @@ public class EnemyMovement : EntityMovement
         animator.SetBool("moving", false);
         animator.SetBool("attacking", true);
         agent.isStopped = true;
-        ChangeState(EnemyState.attack);
+        currentState = EnemyState.attack;
         yield return null;
         animator.SetBool("attacking", false);
 
@@ -156,7 +125,7 @@ public class EnemyMovement : EntityMovement
         DisableHitbox(correctHitbox);
         yield return new WaitForSeconds(.023f);
 
-        ChangeState(EnemyState.walk);
+        currentState = EnemyState.walk;
         attackedRecently = false;
     }
 
@@ -164,6 +133,6 @@ public class EnemyMovement : EntityMovement
     {
         currentState = EnemyState.stagger;
         yield return base.KnockCo(myRigidBody, knockTime);
-        currentState = EnemyState.idle;
+        currentState = EnemyState.walk;
     }
 }

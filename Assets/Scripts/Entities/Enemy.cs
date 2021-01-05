@@ -9,11 +9,12 @@ public class Enemy : Entity
     public int xpReward;
     private bool xpGiven = false;
     override protected void OnAwake() { }
+    override protected void OnStart() { }
     override protected void OnDeath()
     {
         DeathEffect();
         deathSignal.Raise();
-         MakeLoot();
+        MakeLoot();
         Destroy(gameObject);
         if (!xpGiven)
         {
@@ -30,6 +31,22 @@ public class Enemy : Entity
             Animator effectAnimator = effect.GetComponent<Animator>();
             effectAnimator.SetFloat("moveX", animator.GetFloat("moveX"));
             effectAnimator.SetFloat("moveY", animator.GetFloat("moveY"));
+        }
+    }
+
+    protected void GiveXp(int xpReceived)
+    {
+        GameObject[] playerObjs = GameObject.FindGameObjectsWithTag("player");
+        foreach (GameObject playerObj in playerObjs)
+        {
+            if (playerObj.GetComponent<PlayerMovement>().currentState != PlayerState.disabled)
+            {
+                Player player = playerObj.GetComponent<Player>();
+                player.ReceiveXp(xpReceived);
+                if (player.rhino != null)
+                    player.rhino.ReceiveXp(xpReceived);
+
+            }
         }
     }
 

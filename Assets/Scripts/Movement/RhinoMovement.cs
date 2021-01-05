@@ -25,12 +25,11 @@ public class RhinoMovement : EntityMovement
     private Player player;
     private PlayerMovement playerMov;
     private Vector3 commandDestination;
-    private List<Vector2> path;
     private NavMeshAgent agent;
 
 
     // Start is called before the first frame update
-    override protected void OnStart()
+    protected override void OnStart()
     {
         player = GetComponent<Rhino>().owner;
         playerMov = player.GetComponent<PlayerMovement>();
@@ -52,7 +51,7 @@ public class RhinoMovement : EntityMovement
             {
                 //evita controlar o rino quando se esta a mexer no inventario
                 if (!EventSystem.current.IsPointerOverGameObject()) { 
-                    ChangeState(RhinoState.command);
+                    currentState = RhinoState.command;
                     Clicked();
                 }
             }
@@ -83,7 +82,7 @@ public class RhinoMovement : EntityMovement
         animator.SetBool("moving", !isNearDestination);
 
         if (isNearDestination)
-            ChangeState(RhinoState.combat);
+            currentState = RhinoState.combat;
         else
         {
             agent.destination = commandDestination;
@@ -108,15 +107,15 @@ public class RhinoMovement : EntityMovement
                 }
             }
             if (closestEnemyDistance == 0)
-                ChangeState(RhinoState.walk);
+                currentState = RhinoState.walk;
             else
             {
                 InCombat();
-                ChangeState(RhinoState.combat);
+                currentState = RhinoState.combat;
             }
             }
         else
-            ChangeState(RhinoState.walk);
+            currentState = RhinoState.walk;
     }
     public static void DebugDrawPath(Vector3[] corners)
     {
@@ -134,12 +133,11 @@ public class RhinoMovement : EntityMovement
         Vector3 difference = player.transform.position - transform.position;
         if (difference.magnitude <= followRadius && difference.magnitude > arriveRadius)
         {
-            //MoveCharacter(difference);
             agent.destination = player.transform.position;
             agent.isStopped = false;
             animator.SetBool("moving", true);
             difference = agent.velocity;
-            ChangeState(RhinoState.walk);
+            currentState = RhinoState.walk;
             DebugDrawPath(agent.path.corners);
         }
         else
@@ -159,7 +157,7 @@ public class RhinoMovement : EntityMovement
         if (difference.magnitude < 1)
         {
             animator.SetBool("moving", false);
-            ChangeState(RhinoState.disabled);
+            currentState = RhinoState.disabled;
             agent.isStopped = true;
             agent.destination = transform.position;
             agent.velocity = Vector3.zero;
@@ -182,6 +180,12 @@ public class RhinoMovement : EntityMovement
         commandDestination.y = ray.origin.y;
     }
 
+    public override bool CanBeTargeted()
+    {
+        return !(currentState is RhinoState.disabled ||
+                 currentState is RhinoState.flee);
+    }
+
     private IEnumerator AttackCo()
     {
         attackWaitTime = 0;
@@ -189,11 +193,11 @@ public class RhinoMovement : EntityMovement
         animator.SetBool("moving", false);
         animator.SetBool("attacking", true);
         agent.isStopped = true;
-        ChangeState(RhinoState.attack);
+        currentState = RhinoState.attack;
         yield return null;
         animator.SetBool("attacking", false);
         yield return new WaitForSeconds(.62f);
-        ChangeState(RhinoState.combat);
+        currentState = RhinoState.combat;
         attackedRecently = false;
     }
 
@@ -236,7 +240,6 @@ public class RhinoMovement : EntityMovement
             {
                 agent.destination = target.position;
                 difference = agent.velocity;
-                //MoveCharacter(difference);
             }
             else
             {
@@ -252,17 +255,9 @@ public class RhinoMovement : EntityMovement
 
     public override void Flee()
     {
-        ChangeState(RhinoState.flee);
+        currentState = RhinoState.flee;
         agent.destination = escapeCoordinates;
         animator.SetBool("moving", true);
         agent.isStopped = false;
-    }
-
-    private void ChangeState(RhinoState newState)
-    {
-        if (currentState != newState)
-        {
-            currentState = newState;
-        }
     }
 }

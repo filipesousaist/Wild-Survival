@@ -30,12 +30,15 @@ public class EnemiesManager : MonoBehaviour
     private void Awake()
     {
         enemiesObj = GameObject.Find("Enemies");
+        spawnManagers = new Dictionary<EnemiesMode, SpawnManager>
+        {
+            { EnemiesMode.grind, grindSpawnManager },
+            { EnemiesMode.waves, wavesSpawnManager }
+        };
     }
     private void Start()
     {
-        spawnManagers = new Dictionary<EnemiesMode, SpawnManager>();
-        spawnManagers.Add(EnemiesMode.grind, grindSpawnManager);
-        spawnManagers.Add(EnemiesMode.waves, wavesSpawnManager);
+        
         foreach (SpawnManager manager in spawnManagers.Values)
             manager.Init(this);
 

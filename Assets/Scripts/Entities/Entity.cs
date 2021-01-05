@@ -9,40 +9,36 @@ public abstract class Entity : MonoBehaviour
 
     public string entityName;
 
-    public FloatValue maxHealth;
+    public float maxHealth;
     public float baseAttack;
     [ReadOnly] public float health;
 
     public GameObject healthBarPrefab;
-    private GameObject healthBar;
+    protected GameObject healthBar;
 
-    private static readonly Color GREEN = new Color(0, 1, 0);
-    private static readonly Color GREENYELLOW = new Color(0.5f, 1, 0);
-    private static readonly Color YELLOW = new Color(1, 1, 0);
-    private static readonly Color ORANGE = new Color(1, 0.7f, 0);
-    private static readonly Color RED = new Color(1, 0, 0);
-    private static readonly Color[] HP_COLORS = { RED, ORANGE, YELLOW, GREENYELLOW, GREEN };
-
-
-    // Start is called before the first frame update
-    protected void Start()
+    protected void Awake()
     {
         animator = GetComponent<Animator>();
         movement = GetComponent<EntityMovement>();
         CreateHealthBar();
+        OnAwake();
     }
+
+    abstract protected void OnAwake();
+
+    protected void Start()
+    {
+        FullRestore();
+        OnStart();
+    }
+
+    abstract protected void OnStart();
 
     private void CreateHealthBar()
     {
         healthBar = Instantiate(healthBarPrefab);
         healthBar.transform.position = new Vector3(0, 2, 0);
         healthBar.transform.SetParent(transform, false);
-    }
-
-    protected void Awake()
-    {
-        health = maxHealth.value;
-        OnAwake();
     }
 
     private void FixedUpdate()
@@ -55,7 +51,7 @@ public abstract class Entity : MonoBehaviour
         Transform midRect = healthBar.transform.Find("Middle Rect");
         Transform frontRect = healthBar.transform.Find("Front Rect");
 
-        float percentage = Mathf.Max(health / maxHealth.value, 0);
+        float percentage = Mathf.Max(health / maxHealth, 0);
         float newPosition = midRect.localScale.x * (percentage - 1) / 2;
         float newWidth = midRect.localScale.x * percentage;
         frontRect.localScale = new Vector3(newWidth, midRect.localScale.y);
@@ -67,9 +63,9 @@ public abstract class Entity : MonoBehaviour
     public Color ChooseBarColor(float percentage)
     {
         int index = Mathf.FloorToInt(4 * percentage);
-        return HP_COLORS[index];
+        return Colors.HP[index];
     }
-    abstract protected void OnAwake();
+    
 
     protected virtual void TakeDamage(float damage)
     {
@@ -84,22 +80,6 @@ public abstract class Entity : MonoBehaviour
 
     protected abstract void OnDeath();
 
-    protected void GiveXp(int xpReceived)
-    {
-        GameObject[] playerObjs = GameObject.FindGameObjectsWithTag("player");
-        foreach (GameObject playerObj in playerObjs)
-        {
-            if (playerObj.GetComponent<PlayerMovement>().currentState != PlayerState.disabled)
-            {
-                Player player = playerObj.GetComponent<Player>();
-                player.ReceiveXp(xpReceived);
-                if (player.rhino != null)
-                    player.rhino.ReceiveXp(xpReceived);
-                
-            }
-        }
-    }
-
     public void Knock(Rigidbody2D myRigidBody, float knockTime, float damage)
     {
         StartCoroutine(movement.KnockCo(myRigidBody, knockTime));
@@ -108,7 +88,7 @@ public abstract class Entity : MonoBehaviour
 
     public virtual void FullRestore()
     {
-        health = maxHealth.value;
+        health = maxHealth;
     }
 
     public bool IsOtherEntity(GameObject gameObject)

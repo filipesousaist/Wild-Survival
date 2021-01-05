@@ -8,7 +8,6 @@ public abstract class EntityMovement : MonoBehaviour
     protected Rigidbody2D myRigidBody;
     protected Vector3 change;
     private Entity entity;
-    private KinematicBoxCollider2D kCollider;
     protected float attackWaitTime;
 
 
@@ -25,7 +24,7 @@ public abstract class EntityMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
         entity = GetComponent<Entity>();
-        kCollider = GetComponent<KinematicBoxCollider2D>();
+        
         attackedRecently = false;
 
         OnStart();
@@ -42,14 +41,22 @@ public abstract class EntityMovement : MonoBehaviour
         }
     }
 
+
     public virtual void Flee()
     {
 
     }
 
+
     public virtual void Die()
     {
 
+    }
+
+ 
+    public virtual bool CanBeTargeted()
+    {
+        return true;
     }
 
     protected virtual void UpdateAnimation(Vector3 difference)
@@ -59,16 +66,6 @@ public abstract class EntityMovement : MonoBehaviour
             animator.SetFloat("moveX", difference.x);
             animator.SetFloat("moveY", difference.y);
         }
-    }
-
-    public void MoveCharacter(Vector3 difference)
-    {
-        animator.SetBool("moving", true);
-       
-        Vector3 offset = difference.normalized * Time.deltaTime * speed;
-        if (kCollider.CanMove(offset))
-            transform.position += offset;
-        
     }
 
     void OnCollisionEnter2D(Collision2D collision)
