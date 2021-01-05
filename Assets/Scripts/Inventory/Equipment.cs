@@ -17,7 +17,7 @@ public class Equipment : Item, ISerializationCallbackReceiver
 
     public int initialLevel;
 
-    public int level;
+    [ReadOnly] public int level;
 
     public List<MatDict> materials;
 

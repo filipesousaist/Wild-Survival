@@ -35,8 +35,8 @@ public class Knockback : MonoBehaviour
 
     private bool AreOpponents(Collider2D col1, Collider2D col2)
     {
-        bool is1Evil = col1.attachedRigidbody.CompareTag("enemy");
-        bool is2Evil = col2.attachedRigidbody.CompareTag("enemy");
+        bool is1Evil = col1.CompareTag("enemy");
+        bool is2Evil = col2.CompareTag("enemy");
 
         return is1Evil ^ is2Evil;
     }

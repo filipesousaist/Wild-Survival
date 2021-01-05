@@ -9,7 +9,6 @@ public class OpenEquipmentUpgrade : Interactable
     public override void Interact()
     {
         base.Interact();
-
         OpenUI();
     }
 
@@ -17,7 +16,7 @@ public class OpenEquipmentUpgrade : Interactable
         upgradeUI.SetActive(!upgradeUI.activeSelf);
     }
 
-    public override void OnTriggerExit2D(Collider2D other)
+    protected override void OnTriggerExit2D(Collider2D other)
     {
         base.OnTriggerExit2D(other);
         if (upgradeUI.activeSelf) {

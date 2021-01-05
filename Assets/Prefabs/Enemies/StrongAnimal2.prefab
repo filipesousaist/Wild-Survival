@@ -150,7 +150,7 @@ Animator:
   m_GameObject: {fileID: 1060196853479390663}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30f94617ded52c544b4c24f18803f249, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   attackedRecently: 0
-  speed: 4
+  speed: 5
   maxAttackWaitTime: 1.5
   chaseRadius: 10
   attackRadius: 1
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: 
-  maxHealth: {fileID: 11400000, guid: a0d133a1acb234749b43727839f057ff, type: 2}
+  maxHealth: 10
   baseAttack: 3
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,

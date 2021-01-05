@@ -524,7 +524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityName: 
   maxHealth: 10
-  baseAttack: 3
+  baseAttack: 4
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}

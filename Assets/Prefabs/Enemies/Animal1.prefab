@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   attackedRecently: 0
-  speed: 2
+  speed: 3
   maxAttackWaitTime: 2
   chaseRadius: 10
   attackRadius: 1
@@ -218,8 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: 
-  maxHealth: {fileID: 11400000, guid: b3e1510041ded54419231151e3bd892b, type: 2}
-  baseAttack: 2
+  maxHealth: 5
+  baseAttack: 1
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
