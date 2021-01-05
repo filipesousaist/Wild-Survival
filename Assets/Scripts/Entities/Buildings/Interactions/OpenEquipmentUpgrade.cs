@@ -6,9 +6,9 @@ public class OpenEquipmentUpgrade : Interactable
 {
     public GameObject upgradeUI;
 
-    public override void Interact()
+    protected override IEnumerator OnInteract()
     {
-        base.Interact();
+        yield return base.OnInteract();
         OpenUI();
     }
 

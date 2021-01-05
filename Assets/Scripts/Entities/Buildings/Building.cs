@@ -6,16 +6,14 @@ public abstract class Building : Entity
 {
     protected int level;
 
-    protected bool playerNear = false;
-    protected bool interacting = false;
-
-    protected ActivistsManager activistsManager;
     protected NavMeshSurface2d navMesh;
+    protected Interactable interactable;
     
     protected override void OnAwake()
     {
         navMesh = FindObjectOfType<NavMeshSurface2d>();
-        activistsManager = FindObjectOfType<ActivistsManager>();
+        interactable = GetComponentInChildren<Interactable>();
+        Debug.Log(interactable);
     }
 
     protected override void OnStart()
@@ -33,18 +31,11 @@ public abstract class Building : Entity
 
     private void Update()
     {
-        if (IsPlayerTryingToInteract())
-            StartCoroutine(InteractCo());
         //DEBUG
         if (Input.GetKeyDown(KeyCode.L))
             Upgrade();
         if (Input.GetKeyDown(KeyCode.K))
             OnDeath();
-    }
-
-    protected virtual bool IsPlayerTryingToInteract()
-    {
-        return playerNear && Input.GetKeyDown(KeyCode.E) && !interacting;
     }
 
     public void Upgrade()
@@ -59,7 +50,8 @@ public abstract class Building : Entity
     private void Hide()
     {
         gameObject.layer = Layers.DEFAULT;
-        navMesh.BuildNavMesh();
+        SilentBuildNavMesh();
+        SetInteractibleActive(false);
         OnHide();
     }
     protected abstract void OnHide();
@@ -67,20 +59,22 @@ public abstract class Building : Entity
     private void Show()
     {
         gameObject.layer = Layers.UNWALKABLE;
-        navMesh.BuildNavMesh();
+        SilentBuildNavMesh();
+        SetInteractibleActive(true);
         OnShow();
     }
     protected abstract void OnShow();
 
-    private IEnumerator InteractCo()
+    private void SetInteractibleActive(bool active)
     {
-        interacting = true;
-        yield return OnInteract();
-        interacting = false;
+        if (interactable != null)
+            interactable.gameObject.SetActive(active);
     }
 
-    protected virtual IEnumerator OnInteract()
+    private void SilentBuildNavMesh()
     {
-        yield return null;
+        Debug.unityLogger.logEnabled = false;
+        navMesh.BuildNavMesh();
+        Debug.unityLogger.logEnabled = true;
     }
 }

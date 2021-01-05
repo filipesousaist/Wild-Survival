@@ -1,19 +1,22 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour
 {
-    bool hasInteracted = false;
+    protected bool isInteractable = false;
+    protected bool interacting = false;
 
-    bool isInteractable = false;
-
-    private ActivistsManager activistsManager;
+    protected ActivistsManager activistsManager;
     private Collider2D trigger;
 
     private void Awake()
     {
         trigger = InitTrigger();
         activistsManager = FindObjectOfType<ActivistsManager>();
+        OnAwake();
     }
+
+    protected virtual void OnAwake() { }
 
     private Collider2D InitTrigger()
     {
@@ -23,16 +26,10 @@ public class Interactable : MonoBehaviour
         return null;
     }
 
-    public virtual void Interact() 
-    {
-        Debug.Log("Interacting with " + transform.name);
-    }
-
     void Update()
     {
-        if(isInteractable && Input.GetKeyDown(KeyCode.E)) {
-            Interact();
-        }
+        if (IsPlayerTryingToInteract())
+            StartCoroutine(InteractCo());
     }
 
     protected void OnTriggerEnter2D(Collider2D other)
@@ -57,5 +54,23 @@ public class Interactable : MonoBehaviour
                 return true;
         }
         return false;
+    }
+
+    protected virtual bool IsPlayerTryingToInteract()
+    {
+        return isInteractable && Input.GetKeyDown(KeyCode.E) && !interacting;
+    }
+
+    private IEnumerator InteractCo()
+    {
+        interacting = true;
+        yield return OnInteract();
+        interacting = false;
+    }
+
+    protected virtual IEnumerator OnInteract()
+    {
+        Debug.Log("Interacting with " + transform.name);
+        yield return null;
     }
 }
