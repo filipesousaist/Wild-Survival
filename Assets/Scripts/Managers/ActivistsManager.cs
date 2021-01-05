@@ -9,7 +9,7 @@ public class ActivistsManager : MonoBehaviour
     public PlayerMovement[] playerMovs;
     [ReadOnly] public int currentPlayer = 0;
     public Signal changePlayerSignal;
-    public SelectPartyManager partyManager;
+    public SelectParty partyManager;
 
     private CameraMovement cam;
     public PostProcessVolume postVolume;
@@ -17,6 +17,8 @@ public class ActivistsManager : MonoBehaviour
     [SerializeField] private GameObject gameOverUI;
     public int activistsDead = 0;
 
+    public float[] walkOffset;
+    public Vector3[] warpOffset;
     // Awake is called before every Start method
     private void Awake()
     {
@@ -25,7 +27,7 @@ public class ActivistsManager : MonoBehaviour
         dangerAnimation = postVolume.GetComponent<PostProcessingScript>();
         dangerAnimation.players = transform;
 
-        partyManager = FindObjectOfType<SelectPartyManager>();
+        partyManager = FindObjectOfType<SelectParty>();
     }
     private void Start()
     {
@@ -70,6 +72,7 @@ public class ActivistsManager : MonoBehaviour
         dangerAnimation.currentPlayer = currentPlayer;
 
         UpdateCharactersInfo();
+        UpdateOffset();
     }
 
     private void UpdateCharactersInfo()
@@ -112,14 +115,28 @@ public class ActivistsManager : MonoBehaviour
         }
     }
 
+    public void UpdateOffset()
+    {
+        int i = 0;
+        foreach (PlayerMovement player in playerMovs)
+        {
+            if (player != playerMovs[currentPlayer] && player.currentState != PlayerState.disabled)
+            {
+                player.SetWalkOffset(walkOffset[i++]);
+            }
+        }
+    }
+
     public void UpdatePartyPosition()
     {
         Vector3 currentPlayerPos = playerMovs[currentPlayer].transform.position;
+        int i = 0;
         foreach(PlayerMovement player in playerMovs)
         {
             if (player != playerMovs[currentPlayer] && player.currentState != PlayerState.disabled)
             {
-                player.transform.position = currentPlayerPos;
+                player.SetWalkOffset(walkOffset[i]);
+                player.TeleportPlayer(currentPlayerPos + warpOffset[i++]);
                 player.TeleportRhino();
             }
         }
@@ -133,6 +150,12 @@ public class ActivistsManager : MonoBehaviour
     public PlayerMovement GetCurrentPlayerMovement()
     {
         return playerMovs[currentPlayer];
+    }
+
+    public Vector3 GetCurrentPlayerOrientation()
+    {
+        Vector3 orientation = new Vector3(playerMovs[currentPlayer].animator.GetFloat("moveX"), playerMovs[currentPlayer].animator.GetFloat("moveY"));
+        return orientation;
     }
 
     public Player GetCurrentPlayer()

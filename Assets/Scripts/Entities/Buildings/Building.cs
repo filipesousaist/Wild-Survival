@@ -22,7 +22,7 @@ public abstract class Building : Entity
     {
         level = 0;
         Hide();
-        healthBar.transform.localScale *= 1.5f;
+        healthBar.transform.localScale = Vector3.zero;
     }
 
     protected override void OnDeath()

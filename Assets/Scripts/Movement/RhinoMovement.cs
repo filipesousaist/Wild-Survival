@@ -93,6 +93,7 @@ public class RhinoMovement : EntityMovement
     void CombatUpdate()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+        GameObject dummy = GameObject.FindGameObjectWithTag("dummy");
         if (enemies != null)
         {
             float closestEnemyDistance = 0f;
@@ -104,6 +105,16 @@ public class RhinoMovement : EntityMovement
                 {
                     target = enemy.transform;
                     closestEnemyDistance = distanceFromEnemy;
+                }
+            }
+            if (closestEnemyDistance == 0 && dummy != null && playerMov.inputEnabled)
+            {
+                Vector3 enemyPosition = dummy.transform.position;
+                float distanceFromEnemy = (enemyPosition - transform.position).magnitude;
+                if (distanceFromEnemy < chaseRadius)
+                {
+                    target = dummy.transform;
+                    closestEnemyDistance = 1;
                 }
             }
             if (closestEnemyDistance == 0)
@@ -133,7 +144,17 @@ public class RhinoMovement : EntityMovement
         Vector3 difference = player.transform.position - transform.position;
         if (difference.magnitude <= followRadius && difference.magnitude > arriveRadius)
         {
-            agent.destination = player.transform.position;
+            //MoveCharacter(difference);
+            Vector3 orientation = new Vector3(playerMov.animator.GetFloat("moveX"), playerMov.animator.GetFloat("moveY"));
+            Vector3 destination = player.transform.position - orientation.normalized * 2;
+            Vector3 direction = destination - transform.position;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized, 4, LayerMask.GetMask("unwalkable"));
+            if (hit.collider != null)
+            {
+                Debug.DrawLine(transform.position, destination, Color.red);
+                destination = player.transform.position;
+            }
+            agent.destination = destination;
             agent.isStopped = false;
             animator.SetBool("moving", true);
             difference = agent.velocity;

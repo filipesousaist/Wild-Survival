@@ -25,6 +25,8 @@ public class PlayerMovement : EntityMovement
     private Player player;
     private ActivistsManager activistsManager;
 
+    private float walkOffset;
+
     // Start is called before the first frame update
     override protected void OnStart()
     {
@@ -109,15 +111,19 @@ public class PlayerMovement : EntityMovement
             agent.isStopped = isNearTarget;
             animator.SetBool("moving", !isNearTarget);
 
-            Vector3 difference;
-            if (isNearTarget)
-                difference = agent.velocity = Vector3.zero;
-            else
+            Vector3 orientation = activistsManager.GetCurrentPlayerOrientation();
+            Vector2 offset = KinematicBoxCollider2D.Rotate(orientation, walkOffset);
+            Vector3 destination = playerToFollow.transform.position + new Vector3(offset.x, offset.y).normalized * 2;
+            Vector3 direction = destination - transform.position;
+
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized, 4f, LayerMask.GetMask("unwalkable"));
+            if (hit.collider != null)
             {
-                difference = agent.velocity;
-                agent.destination = playerToFollow.transform.position;
+                destination = playerToFollow.transform.position;
             }
-            UpdateAnimation(difference);
+            agent.destination = destination;
+            
+            UpdateAnimation(agent.velocity);
         }
     }
 
@@ -226,6 +232,10 @@ public class PlayerMovement : EntityMovement
         return !(currentState is PlayerState.disabled || 
                  currentState is PlayerState.dead);
     }
+    public void TeleportPlayer(Vector3 newPosition)
+    {
+        agent.Warp(newPosition);
+    }
 
     public void TeleportRhino()
     {
@@ -245,6 +255,10 @@ public class PlayerMovement : EntityMovement
         if (player == null)
             player = GetComponent<Player>();
         return player.selectPartySprite;
+    }
+
+    public void SetWalkOffset(float offset) {
+        walkOffset = Mathf.Deg2Rad * offset;
     }
 
     public void Revive()

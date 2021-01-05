@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class CharacterSlot : MonoBehaviour
 {
-    public SelectPartyManager manager;
+    public SelectParty manager;
     public Toggle toggleButton;
 
     private bool limitReached = false;
 
     private void Awake()
     {
-        manager = FindObjectOfType<SelectPartyManager>();
+        manager = FindObjectOfType<SelectParty>();
     }
 
     public void VerifySelection(bool change)
