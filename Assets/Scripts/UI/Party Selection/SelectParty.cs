@@ -36,11 +36,7 @@ public class SelectParty : MonoBehaviour
                 selectParty.SetActive(!selectParty.activeSelf);
                 scrollBar.SetActive(!scrollBar.activeSelf);
                 if (!selectParty.activeSelf)
-                {
-                    UpdateParty();
-                    manager.UpdateCamera();
-                    manager.UpdatePartyPosition();
-                }
+                    UpdateAll();
             }
         }
     }
@@ -87,5 +83,10 @@ public class SelectParty : MonoBehaviour
         manager.UpdateOffset();
     }
 
-
+    public void UpdateAll()
+    {
+        UpdateParty();
+        manager.UpdateCamera();
+        manager.UpdatePartyPosition();
+    }
 }

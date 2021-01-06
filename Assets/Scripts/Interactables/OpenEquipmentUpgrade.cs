@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class OpenEquipmentUpgrade : Interactable
@@ -9,10 +8,10 @@ public class OpenEquipmentUpgrade : Interactable
     protected override IEnumerator OnInteract()
     {
         yield return base.OnInteract();
-        OpenUI();
+        ToggleUI();
     }
 
-    void OpenUI() {
+    private void ToggleUI() {
         upgradeUI.SetActive(!upgradeUI.activeSelf);
     }
 
@@ -20,7 +19,7 @@ public class OpenEquipmentUpgrade : Interactable
     {
         base.OnTriggerExit2D(other);
         if (upgradeUI.activeSelf) {
-            OpenUI();
+            ToggleUI();
         }
     }
 }

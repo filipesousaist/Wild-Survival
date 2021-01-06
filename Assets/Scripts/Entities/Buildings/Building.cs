@@ -13,7 +13,6 @@ public abstract class Building : Entity
     {
         navMesh = FindObjectOfType<NavMeshSurface2d>();
         interactable = GetComponentInChildren<Interactable>();
-        Debug.Log(interactable);
     }
 
     protected override void OnStart()
