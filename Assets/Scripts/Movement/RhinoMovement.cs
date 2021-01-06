@@ -27,17 +27,21 @@ public class RhinoMovement : EntityMovement
     private Vector3 commandDestination;
     private NavMeshAgent agent;
 
+    override protected void OnAwake()
+    {
+        player = GetComponent<Rhino>().owner;
+        playerMov = player.GetComponent<PlayerMovement>();
+        agent = GetComponent<NavMeshAgent>();
+    }
 
     // Start is called before the first frame update
     protected override void OnStart()
     {
-        player = GetComponent<Rhino>().owner;
-        playerMov = player.GetComponent<PlayerMovement>();
         currentState = RhinoState.walk;
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         commandDestination = Vector3.zero;
-        agent = GetComponent<NavMeshAgent>();
+        
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     }

@@ -19,22 +19,25 @@ public class EnemyMovement : EntityMovement
     private NavMeshAgent agent;
     private Renderer myRenderer;
 
+    override protected void OnAwake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+        myRenderer = GetComponent<Renderer>();
+        target = GameObject.FindWithTag("player").transform;
+    }
+
     // Start is called before the first frame update
     override protected void OnStart()
-    {
-        target = GameObject.FindWithTag("player").transform;
+    {   
         attackWaitTime = maxAttackWaitTime;
 
         isVisible = false;
         currentState = EnemyState.walk;
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
-
-        agent = GetComponent<NavMeshAgent>();
+        
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-
-        myRenderer = GetComponent<Renderer>();
     }
     
     // Update is called once per frame
@@ -102,9 +105,7 @@ public class EnemyMovement : EntityMovement
                 target = possibleTarget.transform;
                 difference = target.position - transform.position;
             }
-
         }
-
         return difference;    
     }
 

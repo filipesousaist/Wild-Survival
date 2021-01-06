@@ -18,13 +18,19 @@ public abstract class EntityMovement : MonoBehaviour
     public float attackRadius;
     public float attackDuration;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         animator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
         entity = GetComponent<Entity>();
-        
+
+        OnAwake();
+    }
+
+    abstract protected void OnAwake();
+
+    private void Start()
+    {
         attackedRecently = false;
 
         OnStart();
