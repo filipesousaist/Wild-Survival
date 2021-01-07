@@ -11,6 +11,7 @@ public abstract class Character : Entity
 
     public Signal XpSignal;
     public IntValue barXp;
+
     [ReadOnly] public int xp;
     [ReadOnly] public int requiredXp;
     [ReadOnly] public int level;
@@ -22,7 +23,7 @@ public abstract class Character : Entity
         UpdateRequiredXp();
     }
 
-    override protected void TakeDamage(float damage)
+    override public void TakeDamage(float damage)
     {
         base.TakeDamage(damage);
 
@@ -49,5 +50,6 @@ public abstract class Character : Entity
     protected abstract void UpdateRequiredXp();
     protected abstract void IncreaseAttributes();
 
-    public abstract void UpdateBarHealth(); 
+    public abstract void UpdateBarHealth();
+
 }

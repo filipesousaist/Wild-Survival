@@ -5,11 +5,15 @@ using UnityEngine;
 public class Rhino : Character
 {
     private static readonly int XP_MULT = 15;
+    private static readonly int RADIATION_REQUIREMENT = 10;
     public Player owner;
+
+    [ReadOnly] public int radiation;
 
     override protected void OnAwake() 
     {
         base.OnAwake();
+        radiation = 0;
         requiredXp = level * XP_MULT;
     }
 
@@ -29,6 +33,16 @@ public class Rhino : Character
             healthSignal.Raise();
         }
     }
+    public void ReceiveRadiation(int radiationReceived)
+    {
+        radiation += radiationReceived;
+        if (radiation >= RADIATION_REQUIREMENT)
+        {
+            radiation = 0;
+            GetMutation();
+        }
+
+    }
 
     override public void ReceiveXp(int xpReward)
     {
@@ -40,6 +54,11 @@ public class Rhino : Character
             barXp.value = xp;
             XpSignal.Raise();
         }
+    }
+
+    private void GetMutation()
+    {
+
     }
 
     protected override void UpdateRequiredXp()
