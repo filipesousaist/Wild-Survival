@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2110,6 +2110,7 @@ GameObject:
   - component: {fileID: 242813888}
   - component: {fileID: 242813890}
   - component: {fileID: 242813889}
+  - component: {fileID: 242813892}
   - component: {fileID: 242813891}
   m_Layer: 5
   m_Name: Canvas
@@ -2174,7 +2175,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2195,6 +2196,7 @@ RectTransform:
   - {fileID: 557772671}
   - {fileID: 1219782517}
   - {fileID: 1017084355}
+  - {fileID: 636156765}
   - {fileID: 542774375}
   - {fileID: 1575346360}
   - {fileID: 1286819503}
@@ -2303,6 +2305,22 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &242813892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242813881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef0fddd3122c6b4380cd38fe1b46354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rhinos: {fileID: 1743826005}
+  parent: {fileID: 1074213309}
+  abilitySlotPrefab: {fileID: 8986293584976013109, guid: 644cfc8783352f6408522f858f993e75,
+    type: 3}
 --- !u!213 &245151741
 Sprite:
   m_ObjectHideFlags: 0
@@ -5694,6 +5712,7 @@ MonoBehaviour:
   requiredXp: 0
   level: 0
   owner: {fileID: 425848078}
+  radiation: 0
   abilities: []
 --- !u!61 &499042343
 BoxCollider2D:
@@ -6408,7 +6427,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 242813885}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7400,6 +7419,42 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!1 &636156764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 636156765}
+  m_Layer: 5
+  m_Name: RhinoAbilities
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &636156765
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636156764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1074213309}
+  m_Father: {fileID: 242813885}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &675319067
 GameObject:
   m_ObjectHideFlags: 0
@@ -23298,38 +23353,6 @@ CompositeCollider2D:
         Y: 70000000
       - X: 780000000
         Y: 70000000
-    - - X: -420000000
-        Y: 70000000
-      - X: -440000000
-        Y: 70000000
-      - X: -440000000
-        Y: 60000000
-      - X: -420000000
-        Y: 60000000
-    - - X: -230000000
-        Y: 30000000
-      - X: -230000000
-        Y: 70000000
-      - X: -110000000
-        Y: 70000000
-      - X: -110000000
-        Y: 30000000
-    - - X: 790000000
-        Y: 70000000
-      - X: 780000000
-        Y: 70000000
-      - X: 780000000
-        Y: 60000000
-      - X: 790000000
-        Y: 60000000
-    - - X: 590000000
-        Y: 70000000
-      - X: 570000000
-        Y: 70000000
-      - X: 570000000
-        Y: 60000000
-      - X: 590000000
-        Y: 60000000
     - - X: 370000000
         Y: 60000000
       - X: 380000000
@@ -23346,6 +23369,38 @@ CompositeCollider2D:
         Y: 50000000
       - X: 370000000
         Y: 50000000
+    - - X: 790000000
+        Y: 70000000
+      - X: 780000000
+        Y: 70000000
+      - X: 780000000
+        Y: 60000000
+      - X: 790000000
+        Y: 60000000
+    - - X: 590000000
+        Y: 70000000
+      - X: 570000000
+        Y: 70000000
+      - X: 570000000
+        Y: 60000000
+      - X: 590000000
+        Y: 60000000
+    - - X: -420000000
+        Y: 70000000
+      - X: -440000000
+        Y: 70000000
+      - X: -440000000
+        Y: 60000000
+      - X: -420000000
+        Y: 60000000
+    - - X: -230000000
+        Y: 30000000
+      - X: -230000000
+        Y: 70000000
+      - X: -110000000
+        Y: 70000000
+      - X: -110000000
+        Y: 30000000
     - - X: 780000000
         Y: 60000000
       - X: 770000000
@@ -24142,6 +24197,14 @@ CompositeCollider2D:
         Y: -340000000
       - X: -420000000
         Y: -340000000
+    - - X: 170000000
+        Y: -340000000
+      - X: 150000000
+        Y: -340000000
+      - X: 150000000
+        Y: -350000000
+      - X: 170000000
+        Y: -350000000
     - - X: 280000000
         Y: -340000000
       - X: 260000000
@@ -24189,14 +24252,6 @@ CompositeCollider2D:
       - X: 220000000
         Y: -350000000
       - X: 240000000
-        Y: -350000000
-    - - X: 170000000
-        Y: -340000000
-      - X: 150000000
-        Y: -340000000
-      - X: 150000000
-        Y: -350000000
-      - X: 170000000
         Y: -350000000
     - - X: -40000000
         Y: -350000000
@@ -24314,6 +24369,14 @@ CompositeCollider2D:
         Y: -380000000
       - X: 30000000
         Y: -380000000
+    - - X: 210000000
+        Y: -370000000
+      - X: 170000000
+        Y: -370000000
+      - X: 170000000
+        Y: -380000000
+      - X: 210000000
+        Y: -380000000
     - - X: -470000000
         Y: -370000000
       - X: -480000000
@@ -24361,14 +24424,6 @@ CompositeCollider2D:
       - X: 260000000
         Y: -380000000
       - X: 280000000
-        Y: -380000000
-    - - X: 210000000
-        Y: -370000000
-      - X: 170000000
-        Y: -370000000
-      - X: 170000000
-        Y: -380000000
-      - X: 210000000
         Y: -380000000
     - - X: 10000000
         Y: -380000000
@@ -29036,6 +29091,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 180
   obj: {fileID: 8927197123687246571, guid: 2a27e32597bb55f4fa877feca18d7892, type: 3}
+--- !u!1 &1074213308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1074213309}
+  - component: {fileID: 1074213312}
+  - component: {fileID: 1074213311}
+  - component: {fileID: 1074213310}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1074213309
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074213308}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 636156765}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -343.9, y: -220.9}
+  m_SizeDelta: {x: 142.77493, y: 29.459595}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1074213310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074213308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 10
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 6
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+--- !u!114 &1074213311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074213308}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1074213312
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074213308}
+  m_CullTransparentMesh: 0
 --- !u!1 &1075777053
 GameObject:
   m_ObjectHideFlags: 0
@@ -40448,7 +40603,7 @@ RectTransform:
   - {fileID: 854146771}
   - {fileID: 1534475933}
   m_Father: {fileID: 242813885}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -41973,6 +42128,7 @@ MonoBehaviour:
   requiredXp: 0
   level: 0
   owner: {fileID: 1448629062}
+  radiation: 0
   abilities:
   - {fileID: 9184538142257413929, guid: e0a8fabd3009d0940aa8ad3a1bd7dae5, type: 3}
 --- !u!61 &1430040755
@@ -45259,7 +45415,7 @@ RectTransform:
   - {fileID: 46147554}
   - {fileID: 1545895272}
   m_Father: {fileID: 242813885}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

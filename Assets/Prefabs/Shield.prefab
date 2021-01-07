@@ -176,7 +176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f76df1cb73f4b9459aaf00b42318cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: d3d230bef4fc75a4abae1cc21ac7f126, type: 3}
   cooldown: 5
+  cooldownTimer: 0
+  active: 0
   shield: {fileID: 9184538142257413929}
   shieldTime: 7
-  active: 0

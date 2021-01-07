@@ -8,9 +8,9 @@ public class Shield : Ability
 
     public float shieldTime;
 
-    public bool active;
-
     SpriteRenderer[] sprites;
+
+    float shieldStart;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -20,12 +20,12 @@ public class Shield : Ability
         {
             cooldown = shieldTime + 2;
         }
-        active = false;
     }
 
     protected override void Update()
     {
-        if (active && Time.time - lastUsed >= shieldTime) {
+        base.Update();
+        if (active && Time.time - shieldStart >= shieldTime) {
             Deactivate();
         }
     }
@@ -35,14 +35,13 @@ public class Shield : Ability
         {
             item.enabled = false;
         }
-        active = false;
-        lastUsed = Time.time;
+        base.Deactivate();
     }
 
     protected override void Effect()
     {
         base.Effect();
-        active = true;
+        shieldStart = Time.time;
         foreach (var item in sprites)
         {
             item.enabled = true;

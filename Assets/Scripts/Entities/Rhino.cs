@@ -129,4 +129,19 @@ public class Rhino : Character
     {
         movement.Flee();
     }
+
+    public List<Ability> GetAbilities() {
+        if (abilities.Count == 0)
+        {
+            return null;
+        }
+        else {
+            List<Ability> abs = new List<Ability>();
+            foreach (var item in abilities)
+            {
+                abs.Add(item.GetComponent<Ability>());
+            }
+            return abs;
+        }
+    }
 }
