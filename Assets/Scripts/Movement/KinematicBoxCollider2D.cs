@@ -82,5 +82,6 @@ public class KinematicBoxCollider2D : MonoBehaviour
     {
         return point.x >= center.x - 0.5f && point.x < center.x + 0.5f &&
                point.y >= center.y - 0.5f && point.y < center.y + 0.5f;
+        
     }
 }

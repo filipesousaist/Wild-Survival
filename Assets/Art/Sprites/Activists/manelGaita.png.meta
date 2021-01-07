@@ -1497,10 +1497,10 @@ TextureImporter:
       name: manelGaita_14
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1174
-        width: 32
-        height: 32
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4933,6 +4933,27 @@ TextureImporter:
       bones: []
       spriteID: b85a8d0fefd5899e0800000000000000
       internalID: -1614437116868516469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: manelGaita_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1175
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62cae54d017304c0800000000000000
+      internalID: -4322486915524017554
       vertices: []
       indices: 
       edges: []

@@ -63,7 +63,7 @@ public abstract class CharacterInfoManager : MonoBehaviour
         Character character = GetCurrentCharacter();
 
         float health = Mathf.Max(currentHealth.value, 0);
-        float percentage = health / character.maxHealth.value;
+        float percentage = health / character.maxHealth;
         float newPosition = - healthMidRect.localScale.x / 2;
         float newWidth = healthMidRect.localScale.x * percentage;
         healthFrontRect.localScale = new Vector3(newWidth, healthMidRect.localScale.y);
@@ -71,7 +71,7 @@ public abstract class CharacterInfoManager : MonoBehaviour
 
         healthFrontRect.GetComponent<Image>().color = character.ChooseBarColor(percentage);
 
-        healthText.text = health + "/" + character.maxHealth.value;
+        healthText.text = health + "/" + character.maxHealth;
     }
 
     public void UpdateXpBar()

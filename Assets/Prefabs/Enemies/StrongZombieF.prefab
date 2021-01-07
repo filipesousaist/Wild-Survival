@@ -523,8 +523,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: 
-  maxHealth: {fileID: 11400000, guid: a0d133a1acb234749b43727839f057ff, type: 2}
-  baseAttack: 3
+  maxHealth: 10
+  baseAttack: 4
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}

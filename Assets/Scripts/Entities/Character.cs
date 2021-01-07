@@ -16,7 +16,9 @@ public abstract class Character : Entity
     [ReadOnly] public int requiredXp;
     [ReadOnly] public int level;
 
-    override protected void OnAwake()
+    override protected void OnAwake() { }
+
+    protected override void OnStart()
     {
         xp = 0;
         level = 1;

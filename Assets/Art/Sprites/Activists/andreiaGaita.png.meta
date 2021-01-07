@@ -3321,13 +3321,13 @@ TextureImporter:
       name: andreiaGaita_26
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1174
-        width: 32
-        height: 32
+        x: 0
+        y: 1150
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 7, y: 0, z: 9, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -6778,6 +6778,27 @@ TextureImporter:
       bones: []
       spriteID: 47fa96f72d7ecdd20800000000000000
       internalID: 3304771117849882484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: andreiaGaita_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1174
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869311e94f0a95f50800000000000000
+      internalID: 6870699679014795624
       vertices: []
       indices: 
       edges: []

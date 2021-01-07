@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 public enum PlayerState
@@ -17,34 +16,35 @@ public class PlayerMovement : EntityMovement
     public bool inputEnabled;
     public PlayerMovement[] players;
 
+    private KinematicBoxCollider2D kCollider;
+
     private Transform target;
     private PlayerMovement playerToFollow;
     private NavMeshAgent agent;
 
     private Player player;
     private ActivistsManager activistsManager;
-    private RhinosManager rhinosManager;
-
-    private bool onTrigger;
-    private bool inTent = false;
 
     private float walkOffset;
 
-    // Start is called before the first frame update
+    override protected void OnAwake()
+    {
+        player = GetComponent<Player>();
+        players = transform.parent.GetComponentsInChildren<PlayerMovement>();
+        kCollider = GetComponent<KinematicBoxCollider2D>();
+        agent = GetComponent<NavMeshAgent>();
+        activistsManager = FindObjectOfType<ActivistsManager>();
+    }
+
     override protected void OnStart()
     {
         if (currentState != PlayerState.disabled)
         {
             currentState = PlayerState.walk;
         }
-        player = GetComponent<Player>();
-        players = transform.parent.GetComponentsInChildren<PlayerMovement>();
-        agent = GetComponent<NavMeshAgent>();
-        activistsManager = FindObjectOfType<ActivistsManager>();
-        rhinosManager = FindObjectOfType<RhinosManager>();
+        
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        onTrigger = false;
     }
 
     // Update is called once per frame
@@ -71,31 +71,35 @@ public class PlayerMovement : EntityMovement
         agent.enabled = false;
 
         if (currentState == PlayerState.combat)
-            ChangeState(PlayerState.walk);
+            currentState = PlayerState.walk;
 
-        Vector2 difference;
-        difference.x = Input.GetAxisRaw("Horizontal");
-        difference.y = Input.GetAxisRaw("Vertical");
-
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack)
-            StartCoroutine(AttackCo());
-        else if (currentState == PlayerState.walk)
+        if (inputEnabled)
         {
-            if (difference.magnitude > 0)
+            Vector2 difference;
+            difference.x = Input.GetAxisRaw("Horizontal");
+            difference.y = Input.GetAxisRaw("Vertical");
+
+            if (Input.GetButtonDown("attack") && currentState != PlayerState.attack)
+                StartCoroutine(AttackCo());
+            else if (currentState == PlayerState.walk)
             {
-                MoveCharacter(difference);
+                if (difference.magnitude > 0)
+                {
+                    MoveCharacter(difference);
+                }
+
+                else
+                    animator.SetBool("moving", false);
+
+                difference.x = Mathf.Round(difference.x);
+                difference.y = Mathf.Round(difference.y);
+                UpdateAnimation(difference);
             }
-                
-            else
-                animator.SetBool("moving", false);
-
-            difference.x = Mathf.Round(difference.x);
-            difference.y = Mathf.Round(difference.y);
-            UpdateAnimation(difference);
         }
-
-        if (onTrigger && !inTent && difference.y > 0)
-            StartCoroutine(RestInTent());
+        else
+        {
+            animator.SetBool("moving", false);
+        }
     }
 
     // Called when this player is being controlled by the NavMesh agent
@@ -134,12 +138,12 @@ public class PlayerMovement : EntityMovement
             float distanceFromEnemy = (target.position - transform.position).magnitude;
             if (distanceFromEnemy < chaseRadius )
             {
-                ChangeState(PlayerState.combat);
+                currentState = PlayerState.combat;
                 InCombat();
             }
             else
             {
-                ChangeState(PlayerState.walk);
+                currentState = PlayerState.walk;
             }
         }
         else
@@ -159,15 +163,15 @@ public class PlayerMovement : EntityMovement
                     }
                 }
                 if (closestEnemyDistance == 0)
-                    ChangeState(PlayerState.walk);
+                    currentState = PlayerState.walk;
                 else
                 {
-                    ChangeState(PlayerState.combat);
+                    currentState = PlayerState.combat;
                     InCombat();
                 }
             }
             else
-                ChangeState(PlayerState.walk);
+                currentState = PlayerState.walk;
         }
     }
 
@@ -201,41 +205,6 @@ public class PlayerMovement : EntityMovement
         UpdateAnimation(difference);
     }
 
-    private IEnumerator RestInTent()
-    {
-        Fade fadeScript = FindObjectOfType<Fade>();
-
-        inTent = true;
-        inputEnabled = false;
-
-        yield return StartCoroutine(fadeScript.FadeToBlack());
-
-        // Restaurar vida
-        activistsManager.HealAll();
-        FindObjectOfType<RhinosManager>().HealAll();
-
-        animator.SetFloat("moveY", -1);
-
-        yield return StartCoroutine(fadeScript.FadeToClear());
-
-        inTent = false;
-        inputEnabled = true;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("FadeObstacle") && other.isTrigger &&
-            activistsManager.IsCurrentActivist(player))
-        {
-            onTrigger = true;
-        }
-    }
-
-    private void OnTriggerExit2D()
-    {
-        onTrigger = false;
-    }
-
     private IEnumerator AttackCo()
     {
         attackWaitTime = 0;
@@ -244,17 +213,29 @@ public class PlayerMovement : EntityMovement
         animator.SetBool("attacking",true);
         if (!inputEnabled)
             agent.isStopped = true;
-        ChangeState(PlayerState.attack);
+        currentState = PlayerState.attack;
         yield return null;
         animator.SetBool("attacking",false);
         yield return new WaitForSeconds(.33f);
-        if (inputEnabled)
-            ChangeState(PlayerState.walk);
-        else
-            ChangeState(PlayerState.combat);
+        currentState = inputEnabled ? PlayerState.walk : PlayerState.combat;
         attackedRecently = false;
     }
 
+    private void MoveCharacter(Vector3 difference)
+    {
+        animator.SetBool("moving", true);
+
+        Vector3 offset = difference.normalized * Time.deltaTime * speed;
+        if (kCollider.CanMove(offset))
+            transform.position += offset;
+
+    }
+
+    public override bool CanBeTargeted()
+    {
+        return !(currentState is PlayerState.disabled || 
+                 currentState is PlayerState.dead);
+    }
     public void TeleportPlayer(Vector3 newPosition)
     {
         agent.Warp(newPosition);
@@ -288,20 +269,13 @@ public class PlayerMovement : EntityMovement
     {
         if (currentState != PlayerState.dead)
         {
-            ChangeState(PlayerState.walk);
+            currentState = PlayerState.walk;
         }
     }
     public override void Die()
     {
-        ChangeState(PlayerState.dead);
+        currentState = PlayerState.dead;
         inputEnabled = false;
     }
 
-    private void ChangeState(PlayerState newState)
-    {
-        if (currentState != newState)
-        {
-            currentState = newState;
-        }
-    }
 }

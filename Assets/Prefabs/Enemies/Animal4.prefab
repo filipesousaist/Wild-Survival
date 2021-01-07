@@ -309,7 +309,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 8919456224107634339, guid: d3b04b968b4852348807fed1500c4161,
+  m_Sprite: {fileID: 3691526897687444597, guid: 299c05a635def3e47926c11cdd38a609,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -359,7 +359,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8333334, y: 3.3333333}
+    oldSize: {x: 4, y: 4}
     newSize: {x: 2, y: 3.250992}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -378,7 +378,7 @@ Animator:
   m_GameObject: {fileID: 4650076711004704166}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0796b93fdf46834409ebe2f0da9c46aa, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   attackedRecently: 0
-  speed: 2
+  speed: 3
   maxAttackWaitTime: 2
   chaseRadius: 10
   attackRadius: 1
@@ -425,7 +425,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8333334, y: 3.3333333}
+    oldSize: {x: 4, y: 4}
     newSize: {x: 2, y: 3.250992}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -447,8 +447,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: 
-  maxHealth: {fileID: 11400000, guid: b3e1510041ded54419231151e3bd892b, type: 2}
-  baseAttack: 2
+  maxHealth: 5
+  baseAttack: 1
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}

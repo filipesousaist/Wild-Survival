@@ -51,7 +51,6 @@ public class Player : Character
         baseAttack += 1;
     }
 
-
     override protected void OnDeath()
     {
         if (((PlayerMovement)movement).currentState != PlayerState.dead)
