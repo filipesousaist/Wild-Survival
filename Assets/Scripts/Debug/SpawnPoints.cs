@@ -16,7 +16,6 @@ public class SpawnPoints : MonoBehaviour
     {
         Camera.main.transform.position = new Vector3(0, 0, -10);
 
-        Debug.Log("Start is being called");
         foreach (Vector2 point in FindObjectOfType<GrindSpawnManager>().spawnPoints)
         {
             Instantiate(prefab);

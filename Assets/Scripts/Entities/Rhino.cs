@@ -6,8 +6,11 @@ using UnityEngine;
 public class Rhino : Character
 {
     private static readonly int XP_MULT = 15;
+    private static readonly int RADIATION_REQUIREMENT = 10;
     public Player owner;
     private PlayerMovement ownerMovement;
+
+    [ReadOnly] public int radiation;
 
     public List<GameObject> abilities;
 
@@ -45,6 +48,7 @@ public class Rhino : Character
     override protected void OnAwake() 
     {
         base.OnAwake();
+        radiation = 0;
         requiredXp = level * XP_MULT;
         ownerMovement = owner.GetComponent<PlayerMovement>();
         for (int i = 0; i < abilities.Count; i++)
@@ -56,7 +60,7 @@ public class Rhino : Character
         //abilities = new List<Ability>();
     }
 
-    protected override void TakeDamage(float damage)
+    public override void TakeDamage(float damage)
     {
         var shield = abilities.OfType<Shield>();
         if (shield.Count() > 0 && shield.First().active)
@@ -82,6 +86,16 @@ public class Rhino : Character
             healthSignal.Raise();
         }
     }
+    public void ReceiveRadiation(int radiationReceived)
+    {
+        radiation += radiationReceived;
+        if (radiation >= RADIATION_REQUIREMENT)
+        {
+            radiation = 0;
+            GetMutation();
+        }
+
+    }
 
     override public void ReceiveXp(int xpReward)
     {
@@ -93,6 +107,11 @@ public class Rhino : Character
             barXp.value = xp;
             XpSignal.Raise();
         }
+    }
+
+    private void GetMutation()
+    {
+
     }
 
     protected override void UpdateRequiredXp()

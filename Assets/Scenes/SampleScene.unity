@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1595,7 +1595,6 @@ GameObject:
   - component: {fileID: 193562944}
   - component: {fileID: 193562943}
   - component: {fileID: 193562942}
-  - component: {fileID: 193562945}
   - component: {fileID: 193562946}
   m_Layer: 10
   m_Name: Tent 2
@@ -1614,7 +1613,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.5, y: 5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1233272136}
   m_Father: {fileID: 207539920}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1706,38 +1706,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0954225f399bfe843b31d3ebebea2af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityName: 
+  entityName: Tent
   maxHealth: 100
   baseAttack: 0
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
---- !u!61 &193562945
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193562940}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.5}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
-    newSize: {x: 5, y: 5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.6}
-  m_EdgeRadius: 0
 --- !u!114 &193562946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1754,6 +1728,151 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &197927110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197927111}
+  - component: {fileID: 197927116}
+  - component: {fileID: 197927114}
+  - component: {fileID: 197927112}
+  - component: {fileID: 197927113}
+  m_Layer: 10
+  m_Name: Upgrade Table 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &197927111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197927110}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.55, y: 6.95, z: 0}
+  m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 1}
+  m_Children:
+  - {fileID: 466600009}
+  m_Father: {fileID: 207539920}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197927112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197927110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a70f7942e3d876642819b968a65ef125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityName: Upgrade Table
+  maxHealth: 25
+  baseAttack: 0
+  health: 0
+  healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
+    type: 3}
+--- !u!114 &197927113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197927110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!61 &197927114
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197927110}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1, y: 0.08357227}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.640625, y: 3.65625}
+    newSize: {x: 2.640625, y: 3.65625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 3.2}
+  m_EdgeRadius: 0
+--- !u!212 &197927116
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197927110}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: ca9d0d650aeb03a40b0034095f11093a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.640625, y: 3.65625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &198990763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +1940,7 @@ Transform:
   m_Children:
   - {fileID: 193562941}
   - {fileID: 1494719160}
+  - {fileID: 197927111}
   m_Father: {fileID: 1228978682}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1990,6 +2110,7 @@ GameObject:
   - component: {fileID: 242813888}
   - component: {fileID: 242813890}
   - component: {fileID: 242813889}
+  - component: {fileID: 242813891}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2170,6 +2291,18 @@ MonoBehaviour:
   slots: []
   activistsManager: {fileID: 617111319}
   upgrade: {fileID: 419091190}
+--- !u!114 &242813891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242813881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!213 &245151741
 Sprite:
   m_ObjectHideFlags: 0
@@ -5014,6 +5147,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466132536}
   m_CullTransparentMesh: 0
+--- !u!1 &466600008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 466600009}
+  - component: {fileID: 466600011}
+  - component: {fileID: 466600010}
+  m_Layer: 0
+  m_Name: Open Upgrade Table
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &466600009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466600008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 197927111}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &466600010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466600008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d0fb479d4eec643b0be86dc5ac9fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeUI: {fileID: 1219782516}
+--- !u!58 &466600011
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466600008}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
 --- !u!1 &466685565
 GameObject:
   m_ObjectHideFlags: 0
@@ -6403,6 +6597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 557772671}
   - component: {fileID: 557772672}
+  - component: {fileID: 557772673}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -6440,6 +6635,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557772670}
   m_CullTransparentMesh: 0
+--- !u!114 &557772673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557772670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2546386f0300e86469c6abdb470fd9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &568282020
 GameObject:
   m_ObjectHideFlags: 0
@@ -23091,6 +23298,14 @@ CompositeCollider2D:
         Y: 70000000
       - X: 780000000
         Y: 70000000
+    - - X: -420000000
+        Y: 70000000
+      - X: -440000000
+        Y: 70000000
+      - X: -440000000
+        Y: 60000000
+      - X: -420000000
+        Y: 60000000
     - - X: -230000000
         Y: 30000000
       - X: -230000000
@@ -23099,6 +23314,14 @@ CompositeCollider2D:
         Y: 70000000
       - X: -110000000
         Y: 30000000
+    - - X: 790000000
+        Y: 70000000
+      - X: 780000000
+        Y: 70000000
+      - X: 780000000
+        Y: 60000000
+      - X: 790000000
+        Y: 60000000
     - - X: 590000000
         Y: 70000000
       - X: 570000000
@@ -23106,14 +23329,6 @@ CompositeCollider2D:
       - X: 570000000
         Y: 60000000
       - X: 590000000
-        Y: 60000000
-    - - X: -420000000
-        Y: 70000000
-      - X: -440000000
-        Y: 70000000
-      - X: -440000000
-        Y: 60000000
-      - X: -420000000
         Y: 60000000
     - - X: 370000000
         Y: 60000000
@@ -23131,14 +23346,6 @@ CompositeCollider2D:
         Y: 50000000
       - X: 370000000
         Y: 50000000
-    - - X: 790000000
-        Y: 70000000
-      - X: 780000000
-        Y: 70000000
-      - X: 780000000
-        Y: 60000000
-      - X: 790000000
-        Y: 60000000
     - - X: 780000000
         Y: 60000000
       - X: 770000000
@@ -23291,14 +23498,6 @@ CompositeCollider2D:
         Y: 0
       - X: 100000000
         Y: 0
-    - - X: 800000000
-        Y: 0
-      - X: 790000000
-        Y: 0
-      - X: 790000000
-        Y: -10000000
-      - X: 800000000
-        Y: -10000000
     - - X: 780000000
         Y: 0
       - X: 770000000
@@ -23306,6 +23505,14 @@ CompositeCollider2D:
       - X: 770000000
         Y: -10000000
       - X: 780000000
+        Y: -10000000
+    - - X: 800000000
+        Y: 0
+      - X: 790000000
+        Y: 0
+      - X: 790000000
+        Y: -10000000
+      - X: 800000000
         Y: -10000000
     - - X: 790000000
         Y: -10000000
@@ -23331,14 +23538,6 @@ CompositeCollider2D:
         Y: -30000000
       - X: -450000000
         Y: -30000000
-    - - X: 800000000
-        Y: -20000000
-      - X: 790000000
-        Y: -20000000
-      - X: 790000000
-        Y: -30000000
-      - X: 800000000
-        Y: -30000000
     - - X: 780000000
         Y: -20000000
       - X: 770000000
@@ -23346,6 +23545,14 @@ CompositeCollider2D:
       - X: 770000000
         Y: -30000000
       - X: 780000000
+        Y: -30000000
+    - - X: 800000000
+        Y: -20000000
+      - X: 790000000
+        Y: -20000000
+      - X: 790000000
+        Y: -30000000
+      - X: 800000000
         Y: -30000000
     - - X: 240000000
         Y: -30000000
@@ -23395,14 +23602,6 @@ CompositeCollider2D:
         Y: -60000000
       - X: 790000000
         Y: -60000000
-    - - X: -280000000
-        Y: -60000000
-      - X: -310000000
-        Y: -60000000
-      - X: -310000000
-        Y: -80000000
-      - X: -280000000
-        Y: -80000000
     - - X: 800000000
         Y: -60000000
       - X: 790000000
@@ -23411,6 +23610,14 @@ CompositeCollider2D:
         Y: -70000000
       - X: 800000000
         Y: -70000000
+    - - X: -280000000
+        Y: -60000000
+      - X: -310000000
+        Y: -60000000
+      - X: -310000000
+        Y: -80000000
+      - X: -280000000
+        Y: -80000000
     - - X: 780000000
         Y: -60000000
       - X: 770000000
@@ -23475,14 +23682,6 @@ CompositeCollider2D:
         Y: -100000000
       - X: 790000000
         Y: -100000000
-    - - X: 800000000
-        Y: -100000000
-      - X: 790000000
-        Y: -100000000
-      - X: 790000000
-        Y: -110000000
-      - X: 800000000
-        Y: -110000000
     - - X: 780000000
         Y: -100000000
       - X: 770000000
@@ -23490,6 +23689,14 @@ CompositeCollider2D:
       - X: 770000000
         Y: -110000000
       - X: 780000000
+        Y: -110000000
+    - - X: 800000000
+        Y: -100000000
+      - X: 790000000
+        Y: -100000000
+      - X: 790000000
+        Y: -110000000
+      - X: 800000000
         Y: -110000000
     - - X: -360000000
         Y: -110000000
@@ -23507,38 +23714,6 @@ CompositeCollider2D:
         Y: -120000000
       - X: 790000000
         Y: -120000000
-    - - X: -10000000
-        Y: -130000000
-      - X: 0
-        Y: -130000000
-      - X: 0
-        Y: -120000000
-      - X: -20000000
-        Y: -120000000
-      - X: -20000000
-        Y: -130000000
-      - X: -30000000
-        Y: -130000000
-      - X: -30000000
-        Y: -140000000
-      - X: -10000000
-        Y: -140000000
-    - - X: 780000000
-        Y: -120000000
-      - X: 770000000
-        Y: -120000000
-      - X: 770000000
-        Y: -130000000
-      - X: 780000000
-        Y: -130000000
-    - - X: 800000000
-        Y: -120000000
-      - X: 790000000
-        Y: -120000000
-      - X: 790000000
-        Y: -130000000
-      - X: 800000000
-        Y: -130000000
     - - X: 520000000
         Y: -130000000
       - X: 530000000
@@ -23563,6 +23738,38 @@ CompositeCollider2D:
         Y: -140000000
       - X: -140000000
         Y: -140000000
+    - - X: 800000000
+        Y: -120000000
+      - X: 790000000
+        Y: -120000000
+      - X: 790000000
+        Y: -130000000
+      - X: 800000000
+        Y: -130000000
+    - - X: -10000000
+        Y: -130000000
+      - X: 0
+        Y: -130000000
+      - X: 0
+        Y: -120000000
+      - X: -20000000
+        Y: -120000000
+      - X: -20000000
+        Y: -130000000
+      - X: -30000000
+        Y: -130000000
+      - X: -30000000
+        Y: -140000000
+      - X: -10000000
+        Y: -140000000
+    - - X: 780000000
+        Y: -120000000
+      - X: 770000000
+        Y: -120000000
+      - X: 770000000
+        Y: -130000000
+      - X: 780000000
+        Y: -130000000
     - - X: 180000000
         Y: -130000000
       - X: 160000000
@@ -23747,14 +23954,6 @@ CompositeCollider2D:
         Y: -230000000
       - X: 800000000
         Y: -230000000
-    - - X: 330000000
-        Y: -230000000
-      - X: 310000000
-        Y: -230000000
-      - X: 310000000
-        Y: -240000000
-      - X: 330000000
-        Y: -240000000
     - - X: 790000000
         Y: -230000000
       - X: 780000000
@@ -23762,6 +23961,14 @@ CompositeCollider2D:
       - X: 780000000
         Y: -240000000
       - X: 790000000
+        Y: -240000000
+    - - X: 330000000
+        Y: -230000000
+      - X: 310000000
+        Y: -230000000
+      - X: 310000000
+        Y: -240000000
+      - X: 330000000
         Y: -240000000
     - - X: 780000000
         Y: -240000000
@@ -23935,22 +24142,6 @@ CompositeCollider2D:
         Y: -340000000
       - X: -420000000
         Y: -340000000
-    - - X: 240000000
-        Y: -340000000
-      - X: 220000000
-        Y: -340000000
-      - X: 220000000
-        Y: -350000000
-      - X: 240000000
-        Y: -350000000
-    - - X: 170000000
-        Y: -340000000
-      - X: 150000000
-        Y: -340000000
-      - X: 150000000
-        Y: -350000000
-      - X: 170000000
-        Y: -350000000
     - - X: 280000000
         Y: -340000000
       - X: 260000000
@@ -23990,6 +24181,22 @@ CompositeCollider2D:
       - X: 330000000
         Y: -350000000
       - X: 350000000
+        Y: -350000000
+    - - X: 240000000
+        Y: -340000000
+      - X: 220000000
+        Y: -340000000
+      - X: 220000000
+        Y: -350000000
+      - X: 240000000
+        Y: -350000000
+    - - X: 170000000
+        Y: -340000000
+      - X: 150000000
+        Y: -340000000
+      - X: 150000000
+        Y: -350000000
+      - X: 170000000
         Y: -350000000
     - - X: -40000000
         Y: -350000000
@@ -24107,22 +24314,6 @@ CompositeCollider2D:
         Y: -380000000
       - X: 30000000
         Y: -380000000
-    - - X: 280000000
-        Y: -370000000
-      - X: 260000000
-        Y: -370000000
-      - X: 260000000
-        Y: -380000000
-      - X: 280000000
-        Y: -380000000
-    - - X: 210000000
-        Y: -370000000
-      - X: 170000000
-        Y: -370000000
-      - X: 170000000
-        Y: -380000000
-      - X: 210000000
-        Y: -380000000
     - - X: -470000000
         Y: -370000000
       - X: -480000000
@@ -24162,6 +24353,22 @@ CompositeCollider2D:
       - X: 350000000
         Y: -380000000
       - X: 390000000
+        Y: -380000000
+    - - X: 280000000
+        Y: -370000000
+      - X: 260000000
+        Y: -370000000
+      - X: 260000000
+        Y: -380000000
+      - X: 280000000
+        Y: -380000000
+    - - X: 210000000
+        Y: -370000000
+      - X: 170000000
+        Y: -370000000
+      - X: 170000000
+        Y: -380000000
+      - X: 210000000
         Y: -380000000
     - - X: 10000000
         Y: -380000000
@@ -27273,6 +27480,7 @@ GameObject:
   - component: {fileID: 854146769}
   - component: {fileID: 854146768}
   - component: {fileID: 854146767}
+  - component: {fileID: 854146772}
   m_Layer: 5
   m_Name: SelectParty
   m_TagString: Untagged
@@ -27381,6 +27589,18 @@ RectTransform:
   m_AnchoredPosition: {x: -23, y: -3.5}
   m_SizeDelta: {x: 846.07935, y: 309}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &854146772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854146766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121166d7ed8b2e749be0de084ff88032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &883074295
 GameObject:
   m_ObjectHideFlags: 0
@@ -39625,6 +39845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1219782517}
+  - component: {fileID: 1219782518}
   m_Layer: 5
   m_Name: ItemsUpgradeMenu
   m_TagString: Untagged
@@ -39652,6 +39873,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1219782518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219782516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2546386f0300e86469c6abdb470fd9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1228978681
 GameObject:
   m_ObjectHideFlags: 0
@@ -39844,6 +40077,76 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1229872902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1233272135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1233272136}
+  - component: {fileID: 1233272138}
+  - component: {fileID: 1233272137}
+  m_Layer: 10
+  m_Name: Rest In Tent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1233272136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233272135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 193562941}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1233272137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233272135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88972bae5657d8e4d8afdc67a6f3072a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1233272138
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233272135}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.6}
+  m_EdgeRadius: 0
 --- !u!1 &1264358280
 GameObject:
   m_ObjectHideFlags: 0
@@ -40770,7 +41073,6 @@ GameObject:
   - component: {fileID: 1379315488}
   - component: {fileID: 1379315487}
   - component: {fileID: 1379315486}
-  - component: {fileID: 1379315485}
   - component: {fileID: 1379315484}
   m_Layer: 10
   m_Name: Tent 1
@@ -40789,7 +41091,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 65.5, y: -29.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2081549847}
   m_Father: {fileID: 1296701548}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -40809,32 +41112,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!61 &1379315485
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379315482}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.5}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
-    newSize: {x: 5, y: 5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.6}
-  m_EdgeRadius: 0
 --- !u!212 &1379315486
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40923,7 +41200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0954225f399bfe843b31d3ebebea2af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityName: 
+  entityName: Tent
   maxHealth: 100
   baseAttack: 0
   health: 0
@@ -41491,9 +41768,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1403543292}
   - component: {fileID: 1403543291}
-  - component: {fileID: 1403543290}
   - component: {fileID: 1403543289}
-  - component: {fileID: 1403543293}
+  - component: {fileID: 1403543294}
+  - component: {fileID: 1403543290}
   m_Layer: 10
   m_Name: Upgrade Table 1
   m_TagString: Untagged
@@ -41527,22 +41804,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 3.2}
   m_EdgeRadius: 0
---- !u!58 &1403543290
-CircleCollider2D:
+--- !u!114 &1403543290
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403543288}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!212 &1403543291
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41608,19 +41885,24 @@ Transform:
   m_Father: {fileID: 1296701548}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1403543293
+--- !u!114 &1403543294
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403543288}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d0fb479d4eec643b0be86dc5ac9fcd, type: 3}
+  m_Script: {fileID: 11500000, guid: a70f7942e3d876642819b968a65ef125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeUI: {fileID: 1219782516}
+  entityName: Upgrade Table
+  maxHealth: 25
+  baseAttack: 0
+  health: 0
+  healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
+    type: 3}
 --- !u!1 &1430040752
 GameObject:
   m_ObjectHideFlags: 0
@@ -41717,7 +41999,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4, y: 3.2}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1430040756
 MonoBehaviour:
@@ -42595,31 +42877,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 180
   obj: {fileID: 8927197123687246571, guid: 2a27e32597bb55f4fa877feca18d7892, type: 3}
---- !u!1 &1472285497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1472285498}
-  - component: {fileID: 1472285500}
-  - component: {fileID: 1472285499}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &1472285498
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472285497}
+  m_GameObject: {fileID: 1947142116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -42627,35 +42891,6 @@ Transform:
   m_Father: {fileID: 1403543292}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1472285499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472285497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d0fb479d4eec643b0be86dc5ac9fcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upgradeUI: {fileID: 1219782516}
---- !u!58 &1472285500
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472285497}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2
 --- !u!1 &1490749906
 GameObject:
   m_ObjectHideFlags: 0
@@ -47556,6 +47791,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932979031}
   m_CullTransparentMesh: 0
+--- !u!1 &1947142116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472285498}
+  m_Layer: 0
+  m_Name: Recovery GameObject (1472285498)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1948356473
 GameObject:
   m_ObjectHideFlags: 0
@@ -139297,6 +139548,76 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &2081549846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2081549847}
+  - component: {fileID: 2081549848}
+  - component: {fileID: 2081549849}
+  m_Layer: 10
+  m_Name: Rest In Tent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2081549847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081549846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1379315483}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2081549848
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081549846}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.6}
+  m_EdgeRadius: 0
+--- !u!114 &2081549849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081549846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88972bae5657d8e4d8afdc67a6f3072a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!213 &2082411561
 Sprite:
   m_ObjectHideFlags: 0

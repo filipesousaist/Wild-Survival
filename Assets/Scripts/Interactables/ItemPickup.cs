@@ -1,11 +1,18 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class ItemPickup : Interactable
 {
     public Item item;
-    public override void Interact()
+
+    private void Start()
     {
-        base.Interact();
+        once = true;
+    }
+
+    protected override IEnumerator OnInteract()
+    {
+        yield return base.OnInteract();
 
         PickUp();
     }

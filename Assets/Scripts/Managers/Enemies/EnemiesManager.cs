@@ -23,9 +23,6 @@ public class EnemiesManager : MonoBehaviour
     public GameObject[] prefabs;
 
     public GameObject helpArrow;
-    private static readonly Vector3 E_Y = new Vector3(0, 1, 0);
-    private static readonly Vector3 E_Z = new Vector3(0, 0, 1);
-    private static readonly float QUARTER_H = Screen.height / 4;
 
     private void Awake()
     {
@@ -38,10 +35,10 @@ public class EnemiesManager : MonoBehaviour
     }
     private void Start()
     {
-        
         foreach (SpawnManager manager in spawnManagers.Values)
             manager.Init(this);
 
+        spawnManagers[EnemiesMode.waves].enabled = false;
         mode = EnemiesMode.grind;
         spawnManagers[mode].OnEnterMode();
         StartCoroutine(spawnManagers[mode].UpdateAll());
@@ -61,11 +58,13 @@ public class EnemiesManager : MonoBehaviour
             UpdateHelpArrow();
     }
 
-    private void ChangeMode()
+    public void ChangeMode()
     {
+        spawnManagers[mode].enabled = false;
         spawnManagers[mode].OnExitMode();
         mode = (mode == EnemiesMode.grind) ? EnemiesMode.waves : EnemiesMode.grind;
         spawnManagers[mode].OnEnterMode();
+        spawnManagers[mode].enabled = true;
     }
 
     public Enemy[] GetAllEnemies()
@@ -89,16 +88,17 @@ public class EnemiesManager : MonoBehaviour
         List<EnemyMovement> invisibleEnemyMovs = GetInisibleEnemyMovements();
 
         int numInvisble = invisibleEnemyMovs.Count;
-        if (numInvisble > 0)
+        int numVisible = GetAllEnemies().Length - numInvisble;
+        if (numVisible == 0 && numInvisble > 0)
         {
             Vector2 difference = GetNearestToCamera(invisibleEnemyMovs).position - Camera.main.transform.position;
 
-            float angle = Vector3.SignedAngle(E_Y, difference.normalized, E_Z);
+            float angle = Vector3.SignedAngle(Vectors.E_Y, difference.normalized, Vectors.E_Z);
             helpArrow.transform.eulerAngles = 
                 new Vector3(0, 0, angle);
             helpArrow.transform.localPosition = new Vector3(
-                -QUARTER_H * Mathf.Sin(angle * Mathf.Deg2Rad),
-                QUARTER_H * Mathf.Cos(angle * Mathf.Deg2Rad), 
+                -Window.QUARTER_H * Mathf.Sin(angle * Mathf.Deg2Rad),
+                Window.QUARTER_H * Mathf.Cos(angle * Mathf.Deg2Rad), 
                 0);
             helpArrow.SetActive(true);
         }

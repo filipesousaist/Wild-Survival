@@ -1,18 +1,17 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class OpenEquipmentUpgrade : Interactable
 {
     public GameObject upgradeUI;
 
-    public override void Interact()
+    protected override IEnumerator OnInteract()
     {
-        base.Interact();
-        OpenUI();
+        yield return base.OnInteract();
+        ToggleUI();
     }
 
-    void OpenUI() {
+    private void ToggleUI() {
         upgradeUI.SetActive(!upgradeUI.activeSelf);
     }
 
@@ -20,7 +19,7 @@ public class OpenEquipmentUpgrade : Interactable
     {
         base.OnTriggerExit2D(other);
         if (upgradeUI.activeSelf) {
-            OpenUI();
+            ToggleUI();
         }
     }
 }

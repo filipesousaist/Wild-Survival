@@ -27,18 +27,22 @@ public class PlayerMovement : EntityMovement
 
     private float walkOffset;
 
-    // Start is called before the first frame update
+    override protected void OnAwake()
+    {
+        player = GetComponent<Player>();
+        players = transform.parent.GetComponentsInChildren<PlayerMovement>();
+        kCollider = GetComponent<KinematicBoxCollider2D>();
+        agent = GetComponent<NavMeshAgent>();
+        activistsManager = FindObjectOfType<ActivistsManager>();
+    }
+
     override protected void OnStart()
     {
         if (currentState != PlayerState.disabled)
         {
             currentState = PlayerState.walk;
         }
-        player = GetComponent<Player>();
-        players = transform.parent.GetComponentsInChildren<PlayerMovement>();
-        kCollider = GetComponent<KinematicBoxCollider2D>();
-        agent = GetComponent<NavMeshAgent>();
-        activistsManager = FindObjectOfType<ActivistsManager>();
+        
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     }
