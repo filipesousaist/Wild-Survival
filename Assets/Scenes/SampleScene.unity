@@ -2303,7 +2303,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIs: []
 --- !u!213 &245151741
 Sprite:
   m_ObjectHideFlags: 0
@@ -4702,8 +4701,6 @@ MonoBehaviour:
   barHealth: {fileID: 11400000, guid: 0ac4c84fbce88274dafabecb6412d4bb, type: 2}
   XpSignal: {fileID: 11400000, guid: a850aa907f325274ca825f7684463fc5, type: 2}
   barXp: {fileID: 11400000, guid: f6a375156f47cb34ba3d4eb8fcfcdb5d, type: 2}
-  MutationSignal: {fileID: 0}
-  barMutation: {fileID: 0}
   xp: 0
   requiredXp: 0
   level: 0
@@ -5693,8 +5690,6 @@ MonoBehaviour:
   barHealth: {fileID: 11400000, guid: 5d807b581cca9df4dbf605a033f03772, type: 2}
   XpSignal: {fileID: 11400000, guid: e79f789b089b7b14b8e0dce2477fe412, type: 2}
   barXp: {fileID: 11400000, guid: 5dc3840107c1d0c41b9862d917a0453d, type: 2}
-  MutationSignal: {fileID: 0}
-  barMutation: {fileID: 0}
   xp: 0
   requiredXp: 0
   level: 0
@@ -5875,8 +5870,6 @@ MonoBehaviour:
   barHealth: {fileID: 11400000, guid: 0ac4c84fbce88274dafabecb6412d4bb, type: 2}
   XpSignal: {fileID: 11400000, guid: a850aa907f325274ca825f7684463fc5, type: 2}
   barXp: {fileID: 11400000, guid: f6a375156f47cb34ba3d4eb8fcfcdb5d, type: 2}
-  MutationSignal: {fileID: 0}
-  barMutation: {fileID: 0}
   xp: 0
   requiredXp: 0
   level: 0
@@ -6157,7 +6150,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -23305,21 +23298,13 @@ CompositeCollider2D:
         Y: 70000000
       - X: 780000000
         Y: 70000000
-    - - X: 790000000
+    - - X: 590000000
         Y: 70000000
-      - X: 780000000
+      - X: 570000000
         Y: 70000000
-      - X: 780000000
+      - X: 570000000
         Y: 60000000
-      - X: 790000000
-        Y: 60000000
-    - - X: -420000000
-        Y: 70000000
-      - X: -440000000
-        Y: 70000000
-      - X: -440000000
-        Y: 60000000
-      - X: -420000000
+      - X: 590000000
         Y: 60000000
     - - X: 370000000
         Y: 60000000
@@ -23345,13 +23330,21 @@ CompositeCollider2D:
         Y: 70000000
       - X: -110000000
         Y: 30000000
-    - - X: 590000000
+    - - X: 790000000
         Y: 70000000
-      - X: 570000000
+      - X: 780000000
         Y: 70000000
-      - X: 570000000
+      - X: 780000000
         Y: 60000000
-      - X: 590000000
+      - X: 790000000
+        Y: 60000000
+    - - X: -420000000
+        Y: 70000000
+      - X: -440000000
+        Y: 70000000
+      - X: -440000000
+        Y: 60000000
+      - X: -420000000
         Y: 60000000
     - - X: 780000000
         Y: 60000000
@@ -24149,14 +24142,6 @@ CompositeCollider2D:
         Y: -340000000
       - X: -420000000
         Y: -340000000
-    - - X: 280000000
-        Y: -340000000
-      - X: 260000000
-        Y: -340000000
-      - X: 260000000
-        Y: -350000000
-      - X: 280000000
-        Y: -350000000
     - - X: 50000000
         Y: -340000000
       - X: 30000000
@@ -24204,6 +24189,14 @@ CompositeCollider2D:
       - X: 150000000
         Y: -350000000
       - X: 170000000
+        Y: -350000000
+    - - X: 280000000
+        Y: -340000000
+      - X: 260000000
+        Y: -340000000
+      - X: 260000000
+        Y: -350000000
+      - X: 280000000
         Y: -350000000
     - - X: -40000000
         Y: -350000000
@@ -24321,14 +24314,6 @@ CompositeCollider2D:
         Y: -380000000
       - X: 30000000
         Y: -380000000
-    - - X: -470000000
-        Y: -370000000
-      - X: -480000000
-        Y: -370000000
-      - X: -480000000
-        Y: -380000000
-      - X: -470000000
-        Y: -380000000
     - - X: 760000000
         Y: -370000000
       - X: 740000000
@@ -24376,6 +24361,14 @@ CompositeCollider2D:
       - X: 170000000
         Y: -380000000
       - X: 210000000
+        Y: -380000000
+    - - X: -470000000
+        Y: -370000000
+      - X: -480000000
+        Y: -370000000
+      - X: -480000000
+        Y: -380000000
+      - X: -470000000
         Y: -380000000
     - - X: 10000000
         Y: -380000000
@@ -29518,8 +29511,6 @@ MonoBehaviour:
   barHealth: {fileID: 11400000, guid: 0ac4c84fbce88274dafabecb6412d4bb, type: 2}
   XpSignal: {fileID: 11400000, guid: a850aa907f325274ca825f7684463fc5, type: 2}
   barXp: {fileID: 11400000, guid: f6a375156f47cb34ba3d4eb8fcfcdb5d, type: 2}
-  MutationSignal: {fileID: 0}
-  barMutation: {fileID: 0}
   xp: 0
   requiredXp: 0
   level: 0
@@ -40949,7 +40940,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1336292481
 MonoBehaviour:
@@ -40985,7 +40976,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 169400213}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -41001,7 +40992,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 169400213}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349759922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -42012,6 +42003,7 @@ MonoBehaviour:
   requiredXp: 0
   level: 0
   owner: {fileID: 1448629062}
+  radiation: 0
 --- !u!61 &1430040755
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42036,7 +42028,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4, y: 3.2}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1430040756
 MonoBehaviour:
@@ -47018,7 +47010,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1431177147
 CircleCollider2D:
@@ -47747,49 +47739,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f363edfa11b7ed24bbaa73fcd900dc8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityName: Rinito
-  maxHealth: {fileID: 11400000, guid: a77e3433c10bc274081d74a4fc938deb, type: 2}
-  baseAttack: 2
-  health: 0
-  healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
-    type: 3}
-  portrait: {fileID: 21300000, guid: b8fb1996db6a1bc4898ba0715da78f93, type: 3}
-  healthSignal: {fileID: 11400000, guid: db47367c39019c448b28ab8c4d221533, type: 2}
-  barHealth: {fileID: 11400000, guid: 5d807b581cca9df4dbf605a033f03772, type: 2}
-  XpSignal: {fileID: 11400000, guid: e79f789b089b7b14b8e0dce2477fe412, type: 2}
-  barXp: {fileID: 11400000, guid: 5dc3840107c1d0c41b9862d917a0453d, type: 2}
-  MutationSignal: {fileID: 0}
-  barMutation: {fileID: 0}
-  xp: 0
-  requiredXp: 0
-  level: 0
-  owner: {fileID: 1448629062}
-  radiation: 0
---- !u!61 &1430040755
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1472285498}
-  - component: {fileID: 1472285500}
-  - component: {fileID: 1472285499}
-  m_Layer: 0
-  m_Name: Open Upgrade Table
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  delay: 180
+  obj: {fileID: 8927197123687246571, guid: 2a27e32597bb55f4fa877feca18d7892, type: 3}
 --- !u!4 &1472285498
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472285497}
+  m_GameObject: {fileID: 1947142116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -47797,26 +47755,13 @@ Transform:
   m_Father: {fileID: 1403543292}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1472285499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472285497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d0fb479d4eec643b0be86dc5ac9fcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upgradeUI: {fileID: 1219782516}
 --- !u!58 &1472285500
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472285497}
+  m_GameObject: {fileID: 1804518571}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -56151,7 +56096,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1732711567
 CircleCollider2D:
@@ -56922,6 +56867,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802336866}
   m_CullTransparentMesh: 0
+--- !u!1 &1804518571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804518572}
+  - component: {fileID: 1472285500}
+  m_Layer: 0
+  m_Name: Recovery GameObject (1472285500)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1804518572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804518571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1841536037
 GameObject:
   m_ObjectHideFlags: 0
@@ -57561,6 +57537,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932979031}
   m_CullTransparentMesh: 0
+--- !u!1 &1947142116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472285498}
+  m_Layer: 0
+  m_Name: Recovery GameObject (1472285498)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1948356473
 GameObject:
   m_ObjectHideFlags: 0
@@ -150335,7 +150327,7 @@ PrefabInstance:
     - target: {fileID: 3160382989060148927, guid: adf1760762f47ff498aea6cda0244a90,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3160382989060148927, guid: adf1760762f47ff498aea6cda0244a90,
         type: 3}
