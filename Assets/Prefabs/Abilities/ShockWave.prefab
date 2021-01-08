@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13f28850a6f0a644eae5ed2c67d8da9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: fa9ecc2f00ddfb64f9e569d0a1fcf893, type: 3}
+  icon: {fileID: 21300000, guid: c3190172616c13c44bcd365a1bf00c29, type: 3}
   cooldown: 5
   cooldownTimer: 0
   active: 0
@@ -61,7 +61,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030538975403208952}
   serializedVersion: 6
-  lengthInSec: 1.5
+  lengthInSec: 1.2
   simulationSpeed: 10
   stopAction: 0
   cullingMode: 0
