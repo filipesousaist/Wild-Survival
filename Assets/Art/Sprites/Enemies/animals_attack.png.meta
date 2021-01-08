@@ -1,0 +1,1256 @@
+fileFormatVersion: 2
+guid: 62fd733b9d7f8ba4098062d69f8bc219
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2364471348411991214
+    second: animals_attack_0
+  - first:
+      213: 7957010085585820120
+    second: animals_attack_1
+  - first:
+      213: 4782572679156221470
+    second: animals_attack_2
+  - first:
+      213: -5112278797145182091
+    second: animals_attack_3
+  - first:
+      213: -4201523890560460112
+    second: animals_attack_4
+  - first:
+      213: -4665492932960962121
+    second: animals_attack_5
+  - first:
+      213: -4730977522943589198
+    second: animals_attack_6
+  - first:
+      213: -3204876968451620999
+    second: animals_attack_7
+  - first:
+      213: 2829607803360319009
+    second: animals_attack_8
+  - first:
+      213: 6169590220578761892
+    second: animals_attack_9
+  - first:
+      213: 5379135046661054349
+    second: animals_attack_10
+  - first:
+      213: -486789893801128117
+    second: animals_attack_11
+  - first:
+      213: -9069691483474559878
+    second: animals_attack_12
+  - first:
+      213: -6162612066585300403
+    second: animals_attack_13
+  - first:
+      213: 3786996215096478892
+    second: animals_attack_14
+  - first:
+      213: -7161590738990389023
+    second: animals_attack_15
+  - first:
+      213: -6870016790790905786
+    second: animals_attack_16
+  - first:
+      213: 7711100908657223438
+    second: animals_attack_17
+  - first:
+      213: -4710636492415949376
+    second: animals_attack_18
+  - first:
+      213: 3241726781124227720
+    second: animals_attack_19
+  - first:
+      213: -2755486003533695594
+    second: animals_attack_20
+  - first:
+      213: 8451122859810309951
+    second: animals_attack_21
+  - first:
+      213: -7065168709980620826
+    second: animals_attack_22
+  - first:
+      213: -9034175995273100136
+    second: animals_attack_23
+  - first:
+      213: -531859384641414888
+    second: animals_attack_24
+  - first:
+      213: 1023910190434256580
+    second: animals_attack_25
+  - first:
+      213: 639332018698463738
+    second: animals_attack_26
+  - first:
+      213: 94918938160534279
+    second: animals_attack_27
+  - first:
+      213: 7645759479871192475
+    second: animals_attack_28
+  - first:
+      213: 8871488068451539500
+    second: animals_attack_29
+  - first:
+      213: -3890869991732096458
+    second: animals_attack_30
+  - first:
+      213: -3307489498424664289
+    second: animals_attack_31
+  - first:
+      213: 3327768374950212981
+    second: animals_attack_32
+  - first:
+      213: -2728753573220198853
+    second: animals_attack_33
+  - first:
+      213: 8594858721738558230
+    second: animals_attack_34
+  - first:
+      213: -5336837831121259928
+    second: animals_attack_35
+  - first:
+      213: 1612382237296011526
+    second: animals_attack_36
+  - first:
+      213: -7071352351456084611
+    second: animals_attack_37
+  - first:
+      213: -2956894085777107444
+    second: animals_attack_38
+  - first:
+      213: 1922974676341220011
+    second: animals_attack_39
+  - first:
+      213: -9026318345016606423
+    second: animals_attack_40
+  - first:
+      213: -8073058051470372400
+    second: animals_attack_41
+  - first:
+      213: -7995262376776806724
+    second: animals_attack_42
+  - first:
+      213: -2916408071948720265
+    second: animals_attack_43
+  - first:
+      213: -710622100728054056
+    second: animals_attack_44
+  - first:
+      213: -6495439238016885075
+    second: animals_attack_45
+  - first:
+      213: 6535115230428282058
+    second: animals_attack_46
+  - first:
+      213: 5138856421269071244
+    second: animals_attack_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animals_attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b705c06d5bf2fd0800000000000000
+      internalID: -2364471348411991214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 140
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d91b89c38afc6e60800000000000000
+      internalID: 7957010085585820120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 138
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e164895338c1f5240800000000000000
+      internalID: 4782572679156221470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 138
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570766f15898d09b0800000000000000
+      internalID: -5112278797145182091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 139
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba93db384031b5c0800000000000000
+      internalID: -4201523890560460112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 139
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b934c475e6d04fb0800000000000000
+      internalID: -4665492932960962121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_6
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 139
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b407983201385eb0800000000000000
+      internalID: -4730977522943589198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 140
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f3c9a906df583d0800000000000000
+      internalID: -3204876968451620999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 141
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12617f42e49c44720800000000000000
+      internalID: 2829607803360319009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 48
+        height: 47
+      alignment: 9
+      pivot: {x: 0.49999937, y: 0.48569635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac22532e99ce9550800000000000000
+      internalID: 6169590220578761892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 145
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f161733d686aa40800000000000000
+      internalID: 5379135046661054349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 144
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fcbb3bb239e39f0800000000000000
+      internalID: -486789893801128117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.33893552, y: 0.6050417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cfc1926abf12280800000000000000
+      internalID: -9069691483474559878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.3529412, y: 0.50700265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42b5a2f9f00a7aa0800000000000000
+      internalID: -6162612066585300403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.37394953, y: 0.4859942}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac03964efc1e8430800000000000000
+      internalID: 3786996215096478892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.32492986, y: 0.633053}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e820c7aa2bec9c90800000000000000
+      internalID: -7161590738990389023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.33893552, y: 0.6260502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64060ffa02cc8a0a0800000000000000
+      internalID: -6870016790790905786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.35994402, y: 0.61904716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07a4b7db65530b60800000000000000
+      internalID: 7711100908657223438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.38095284, y: 0.6750698}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c52e83711570aeb0800000000000000
+      internalID: -4710636492415949376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.31792703, y: 0.633053}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882b7cff45decfc20800000000000000
+      internalID: 3241726781124227720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.3529415, y: 0.6050418}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69530d7341c82c9d0800000000000000
+      internalID: -2755486003533695594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.2619044, y: 0.7450978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f374d2c077b684570800000000000000
+      internalID: 8451122859810309951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.31792703, y: 0.7801116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7766bbd7a73fd90800000000000000
+      internalID: -7065168709980620826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_23
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 97
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.33893457, y: 0.738095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894c2632cc820a280800000000000000
+      internalID: -9034175995273100136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7731092, y: 0.68907547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8199df325b47e98f0800000000000000
+      internalID: -531859384641414888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.75210077, y: 0.64705867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c68cbea4e8a53e00800000000000000
+      internalID: 1023910190434256580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6960783, y: 0.6330531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af92e0c651d5fd800800000000000000
+      internalID: 639332018698463738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7240896, y: 0.64005584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70314877548315100800000000000000
+      internalID: 94918938160534279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6750698, y: 0.64005584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d3ccbecb13b1a60800000000000000
+      internalID: 7645759479871192475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6540616, y: 0.6260503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a9b25256bdd1b70800000000000000
+      internalID: 8871488068451539500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6680673, y: 0.64705867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632d4937b5ad00ac0800000000000000
+      internalID: -3890869991732096458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_31
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7240893, y: 0.68907547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f101433df6912d0800000000000000
+      internalID: -3307489498424664289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.71008426, y: 0.68907547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575bfaba4bb9e2e20800000000000000
+      internalID: 3327768374950212981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_33
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.68207234, y: 0.6610643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36d1ac2515812ad0800000000000000
+      internalID: -2728753573220198853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_34
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6820717, y: 0.71008396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b05eb4872174770800000000000000
+      internalID: 8594858721738558230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_35
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 49
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.67506915, y: 0.70308113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862b624b44ebfe5b0800000000000000
+      internalID: -5336837831121259928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.49299714, y: 0.7170868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609ad202a15506610800000000000000
+      internalID: 1612382237296011526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.49299717, y: 0.6890755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d36d180828ddd90800000000000000
+      internalID: -7071352351456084611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.74509794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c065dcace7007f6d0800000000000000
+      internalID: -2956894085777107444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71008396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2e36f9747cfaa10800000000000000
+      internalID: 1922974676341220011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.51400536, y: 0.74509794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92181b7e9431cb280800000000000000
+      internalID: -9026318345016606423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_41
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.47198868, y: 0.7170868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1500f997cb6ff80800000000000000
+      internalID: -8073058051470372400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_42
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.78011197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe4c22aa3f1b0190800000000000000
+      internalID: -7995262376776806724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_43
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.53501385, y: 0.7170868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7772a637f46d687d0800000000000000
+      internalID: -2916408071948720265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.47198868, y: 0.67507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8deff84e6fc5326f0800000000000000
+      internalID: -710622100728054056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_45
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.4859937, y: 0.6610643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae9ed56d609bd5a0800000000000000
+      internalID: -6495439238016885075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_46
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.47198868, y: 0.6820727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc3ce37da461ba50800000000000000
+      internalID: 6535115230428282058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals_attack_47
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.64005595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c856a7530b2e05740800000000000000
+      internalID: 5138856421269071244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
