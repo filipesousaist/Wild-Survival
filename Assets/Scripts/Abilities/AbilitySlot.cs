@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+//https://www.youtube.com/watch?v=1fBKVWie8ew
 public class AbilitySlot : MonoBehaviour
 {
     Ability ability;
