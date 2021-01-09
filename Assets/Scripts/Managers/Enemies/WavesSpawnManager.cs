@@ -7,6 +7,11 @@ public class WavesSpawnManager : SpawnManager
     public int[] waves;
     public Vector2[] spawnPoints;
 
+    private void Awake()
+    {
+        targetAI = new WavesTargetAI();
+    }
+
     override public void OnEnterMode()
     {
         currentWave = -1;
@@ -88,5 +93,11 @@ public class WavesSpawnManager : SpawnManager
         
 
         textObj.GetComponent<Text>().text = newText;
+    }
+
+    protected override EnemyTargetCriteria GetTargetCriteria()
+    {
+        return Random.Range(0, 2) == 0 ? EnemyTargetCriteria.building :
+              (Random.Range(0, 2) == 0 ? EnemyTargetCriteria.health : EnemyTargetCriteria.distance);
     }
 }

@@ -8,36 +8,25 @@ public class Knockback : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // "this" is a hitbox, and "other" must be a hurtbox
         EntityMovement movement = GetComponentInParent<EntityMovement>();
-        
-        if (other.isTrigger &&
-            (AreOpponents(GetComponent<Collider2D>(), other) || other.CompareTag("dummy")) && 
-            ! movement.attackedRecently)
+        Entity entity = GetComponentInParent<Entity>();
+        Entity otherEntity = other.GetComponent<Entity>();
+
+        if (other.isTrigger && !movement.attackedRecently)
         {
-            Rigidbody2D hit = other.attachedRigidbody;
-            if (hit != null)
-            {  
-                Vector2 difference = hit.transform.position - transform.position;
-                difference = difference.normalized * thrust;
+            if (otherEntity == null) // Can be a building
+                otherEntity = other.GetComponentInParent<Entity>();
+            if (otherEntity != null && Entity.AreOpponents(entity, otherEntity))
+            {
+                Vector2 difference = other.transform.position - transform.position;
 
-                if (!other.CompareTag("dummy")) { 
-                    hit.AddForce(difference, ForceMode2D.Impulse);
-                }
-
-                Entity entity = GetComponentInParent<Entity>();
-                Entity otherEntity = other.attachedRigidbody.GetComponent<Entity>();
-                otherEntity.Knock(hit, knockTime, baseDamage * entity.baseAttack);
+                EntityMovement otherMovement = otherEntity.GetComponent<EntityMovement>();
+                if (otherMovement != null)
+                    otherMovement.velocity = difference.normalized * thrust;
+                otherEntity.Knock(knockTime, baseDamage * entity.baseAttack);
                 movement.attackedRecently = true;
             }
         }
-    }
-
-
-    private bool AreOpponents(Collider2D col1, Collider2D col2)
-    {
-        bool is1Evil = col1.CompareTag("enemy");
-        bool is2Evil = col2.CompareTag("enemy");
-
-        return is1Evil ^ is2Evil;
     }
 }
