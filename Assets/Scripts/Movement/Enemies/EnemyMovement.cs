@@ -1,6 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -14,22 +12,29 @@ public class EnemyMovement : EntityMovement
 {
     [ReadOnly] public EnemyState currentState;
     [ReadOnly] public bool isVisible;
+    [ReadOnly] public IEnemyTarget target;
 
-    private Transform target;
     private NavMeshAgent agent;
     private Renderer myRenderer;
+    private EnemyTargetAI targetAI;
+    private EnemiesManager enemiesManager;
+
+    public static readonly float UPDATE_TARGET_PERIOD = 0.1f;
+    [ReadOnly] public float updateTargetTime;
 
     override protected void OnAwake()
     {
         agent = GetComponent<NavMeshAgent>();
         myRenderer = GetComponent<Renderer>();
-        target = GameObject.FindWithTag("player").transform;
+        enemiesManager = FindObjectOfType<EnemiesManager>();
     }
 
-    // Start is called before the first frame update
     override protected void OnStart()
-    {   
+    {
+        targetAI = FindObjectOfType<EnemiesManager>().GetTargetAI();
+
         attackWaitTime = maxAttackWaitTime;
+        updateTargetTime = UPDATE_TARGET_PERIOD;
 
         isVisible = false;
         currentState = EnemyState.walk;
@@ -40,14 +45,15 @@ public class EnemyMovement : EntityMovement
         agent.updateUpAxis = false;
     }
     
-    // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 difference = UpdateTarget();
+        Vector3 difference = targetAI.Update(this, Time.deltaTime);
 
         attackWaitTime = System.Math.Min(attackWaitTime + Time.deltaTime, maxAttackWaitTime);
 
-        if (currentState != EnemyState.stagger && difference.magnitude <= attackRadius)
+        if (target == null)
+            Stop();
+        else if (currentState != EnemyState.stagger && difference.magnitude <= attackRadius)
         {
             animator.SetBool("moving", false);
             if (attackWaitTime == maxAttackWaitTime)
@@ -56,10 +62,10 @@ public class EnemyMovement : EntityMovement
         }
         else if (currentState == EnemyState.walk)
         {  
-            if (difference.magnitude <= chaseRadius)
+            if (enemiesManager.IgnoreChaseRadius() || difference.magnitude <= chaseRadius)
             {
                 animator.SetBool("moving", true);
-                agent.destination = target.transform.position;
+                agent.destination = target.GetPosition();
                 difference = agent.velocity;
                 agent.isStopped = false;
                 currentState = EnemyState.walk;
@@ -67,9 +73,7 @@ public class EnemyMovement : EntityMovement
             else
             {
                 difference = Vector3.zero;
-                agent.velocity = Vector3.zero;
-                agent.isStopped = true;
-                animator.SetBool("moving", false);
+                Stop();
             }
         }
         UpdateAnimation(difference);
@@ -77,36 +81,11 @@ public class EnemyMovement : EntityMovement
         isVisible = myRenderer.isVisible;
     }
 
-    private Vector3 UpdateTarget()
+    private void Stop()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("player");
-        GameObject[] rhinos = GameObject.FindGameObjectsWithTag("rhino");
-        IEnumerable<GameObject> possibleTargets = players.Concat(rhinos);
-
-        Vector3 difference = Vector3.zero;
-        target = null;
-        foreach (GameObject possibleTarget in possibleTargets)
-        {
-            if (!possibleTarget.GetComponent<EntityMovement>().CanBeTargeted())
-                continue;
-            if (target != null)
-            {
-                Transform newTarget = possibleTarget.transform;
-                Vector3 newDifference = newTarget.position - transform.position;
-
-                if (newDifference.magnitude < difference.magnitude)
-                {
-                    target = newTarget;
-                    difference = newDifference;
-                }
-            }
-            else
-            {
-                target = possibleTarget.transform;
-                difference = target.position - transform.position;
-            }
-        }
-        return difference;    
+        agent.velocity = Vector3.zero;
+        agent.isStopped = true;
+        animator.SetBool("moving", false);
     }
 
     private IEnumerator AttackCo(Vector3 difference)
@@ -130,10 +109,10 @@ public class EnemyMovement : EntityMovement
         attackedRecently = false;
     }
 
-    override public IEnumerator KnockCo(Rigidbody2D myRigidBody, float knockTime)
+    override public IEnumerator KnockCo(float knockTime)
     {
         currentState = EnemyState.stagger;
-        yield return base.KnockCo(myRigidBody, knockTime);
+        yield return base.KnockCo(knockTime);
         currentState = EnemyState.walk;
     }
 }

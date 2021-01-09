@@ -1,10 +1,18 @@
 ﻿using UnityEngine;
 
+public enum EnemyTargetCriteria
+{
+    health, // Targets the entity with less health %
+    distance, // Targets the nearest entity
+    building // Targets the nearest building (if there's a building at a certain range)
+}
 public class Enemy : Entity
 {
     public Signal deathSignal;
     public GameObject deathEffect;
     public LootTable lootTable;
+
+    [ReadOnly] public EnemyTargetCriteria targetCriteria;
     [ReadOnly] public int wave;
     public int xpReward;
     private bool xpGiven = false;
@@ -45,7 +53,6 @@ public class Enemy : Entity
                 player.ReceiveXp(xpReceived);
                 if (player.rhino != null)
                     player.rhino.ReceiveXp(xpReceived);
-
             }
         }
     }

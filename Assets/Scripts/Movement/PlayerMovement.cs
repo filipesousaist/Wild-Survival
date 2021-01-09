@@ -16,8 +16,6 @@ public class PlayerMovement : EntityMovement
     public bool inputEnabled;
     public PlayerMovement[] players;
 
-    private KinematicBoxCollider2D kCollider;
-
     private Transform target;
     private PlayerMovement playerToFollow;
     private NavMeshAgent agent;
@@ -31,7 +29,7 @@ public class PlayerMovement : EntityMovement
     {
         player = GetComponent<Player>();
         players = transform.parent.GetComponentsInChildren<PlayerMovement>();
-        kCollider = GetComponent<KinematicBoxCollider2D>();
+        
         agent = GetComponent<NavMeshAgent>();
         activistsManager = FindObjectOfType<ActivistsManager>();
     }
@@ -84,9 +82,7 @@ public class PlayerMovement : EntityMovement
             else if (currentState == PlayerState.walk)
             {
                 if (difference.magnitude > 0)
-                {
-                    MoveCharacter(difference);
-                }
+                    MovePlayer(difference);
 
                 else
                     animator.SetBool("moving", false);
@@ -142,9 +138,7 @@ public class PlayerMovement : EntityMovement
                 InCombat();
             }
             else
-            {
                 currentState = PlayerState.walk;
-            }
         }
         else
         {
@@ -221,14 +215,11 @@ public class PlayerMovement : EntityMovement
         attackedRecently = false;
     }
 
-    private void MoveCharacter(Vector3 difference)
+    private void MovePlayer(Vector3 difference)
     {
         animator.SetBool("moving", true);
-
         Vector3 offset = difference.normalized * Time.deltaTime * speed;
-        if (kCollider.CanMove(offset))
-            transform.position += offset;
-
+        KinematicMove(offset);
     }
 
     public override bool CanBeTargeted()

@@ -93,7 +93,7 @@ public class EnemiesManager : MonoBehaviour
         {
             Vector2 difference = GetNearestToCamera(invisibleEnemyMovs).position - Camera.main.transform.position;
 
-            float angle = Vector3.SignedAngle(Vectors.E_Y, difference.normalized, Vectors.E_Z);
+            float angle = Vector3.SignedAngle(Vec3.E_Y, difference.normalized, Vec3.E_Z);
             helpArrow.transform.eulerAngles = 
                 new Vector3(0, 0, angle);
             helpArrow.transform.localPosition = new Vector3(
@@ -140,5 +140,15 @@ public class EnemiesManager : MonoBehaviour
     public void UpdateBar()
     {
         StartCoroutine(spawnManagers[mode].UpdateAll());
+    }
+
+    public EnemyTargetAI GetTargetAI()
+    {
+        return spawnManagers[mode].targetAI;
+    }
+
+    public bool IgnoreChaseRadius()
+    {
+        return mode == EnemiesMode.waves;
     }
 }

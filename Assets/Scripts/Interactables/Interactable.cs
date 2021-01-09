@@ -53,8 +53,7 @@ public abstract class Interactable : MonoBehaviour
             (other.IsTouching(trigger) == isNear))
         {
             Player player = other.GetComponent<Player>();
-            if (player != null && activistsManager.IsCurrentActivist(player))
-                return true;
+            return player != null && activistsManager.IsCurrentActivist(player);
         }
         return false;
     }

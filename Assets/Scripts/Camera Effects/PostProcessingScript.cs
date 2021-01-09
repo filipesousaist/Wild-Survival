@@ -83,7 +83,7 @@ public class PostProcessingScript : MonoBehaviour
                 if (damageWaitTime == maxDamageWaitTime)
                 {
                     GameObject player = players.GetChild(currentPlayer).gameObject;
-                    player.GetComponent<Player>().Knock(player.GetComponent<Rigidbody2D>(), 0, 1);
+                    player.GetComponent<Player>().Knock(0, 1);
                     damageWaitTime = 0;
                 }
            /* }

@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 365114816519112978}
   - component: {fileID: 365114816519112981}
   - component: {fileID: 4004825001421625536}
+  - component: {fileID: -6586710029624130639}
   m_Layer: 0
   m_Name: DebugZombie
   m_TagString: enemy
@@ -405,7 +406,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365114816519112973}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -425,7 +426,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365114816519112973}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -482,6 +483,7 @@ MonoBehaviour:
   chaseRadius: 10
   attackRadius: 1
   attackDuration: 0.68
+  velocity: {x: 0, y: 0, z: 0}
   currentState: 0
   isVisible: 0
 --- !u!61 &365114816519112978
@@ -532,6 +534,7 @@ MonoBehaviour:
   deathEffect: {fileID: 5802363849848596127, guid: 97088d85c306d1c478d66c509f87423b,
     type: 3}
   lootTable: {fileID: 0}
+  targetCriteria: 0
   wave: -1
   xpReward: 2
 --- !u!195 &4004825001421625536
@@ -556,3 +559,15 @@ NavMeshAgent:
   m_BaseOffset: 1.65
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
+--- !u!114 &-6586710029624130639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365114816519112973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9946f96e9c97ad0428dc80bcdd20f22c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -4,8 +4,6 @@ using UnityEngine;
 public class KinematicBoxCollider2D : MonoBehaviour
 {
     private static readonly Vector2 E_X = new Vector2(1, 0);
-    //public Vector2 position;
-    //public Vector2 size;
 
     private Vector2 position;
     private Vector2 bottomLeft;

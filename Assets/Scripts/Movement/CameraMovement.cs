@@ -18,6 +18,8 @@ public class CameraMovement : MonoBehaviour
         Camera cam = GetComponent<Camera>();
         cam.transparencySortMode = TransparencySortMode.CustomAxis;
         cam.transparencySortAxis = cam.transform.up;
+
+        //Camera.main.orthographicSize *= 5;
     }
 
     void SetCamLimits()

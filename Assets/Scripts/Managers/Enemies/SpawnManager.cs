@@ -1,17 +1,16 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public abstract class SpawnManager : MonoBehaviour
 {
     protected EnemiesManager enemiesManager;
+    [ReadOnly] public EnemyTargetAI targetAI;
     protected GameObject textObj;
     protected GameObject enemiesObj;
     protected GameObject[] prefabs;
     protected GameObject helpArrow;
 
-    // Start is called before the first frame update
     public void Init(EnemiesManager manager)
     {
         enemiesManager = manager;
@@ -42,6 +41,9 @@ public abstract class SpawnManager : MonoBehaviour
         GameObject newEnemy = Instantiate(prefabs[enemyIndex]);
         newEnemy.transform.parent = enemiesObj.transform;
         newEnemy.GetComponent<NavMeshAgent>().Warp(position);
+        newEnemy.GetComponent<Enemy>().targetCriteria = GetTargetCriteria();
         return newEnemy;
     }
+
+    protected abstract EnemyTargetCriteria GetTargetCriteria();
 }

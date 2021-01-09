@@ -79,9 +79,9 @@ public abstract class Entity : MonoBehaviour
     }
 
     protected abstract void OnDeath();
-    public virtual void Knock(Rigidbody2D myRigidBody, float knockTime, float damage)
+    public virtual void Knock(float knockTime, float damage)
     {
-        StartCoroutine(movement.KnockCo(myRigidBody, knockTime));
+        StartCoroutine(movement.KnockCo(knockTime));
         TakeDamage(damage);
     }
 
@@ -97,6 +97,24 @@ public abstract class Entity : MonoBehaviour
                 gameObject.CompareTag("rhino") ||
                 gameObject.CompareTag("enemy")) &&
                 !(gameObject == this.gameObject);
+    }
+
+    public static bool AreOpponents(Entity obj1, Entity obj2)
+    {
+        return GetTeam(obj1) != GetTeam(obj2);
+    }
+
+    private static int GetTeam(Entity entity)
+    {
+        switch (entity.tag)
+        {
+            case "enemy":
+                return 0; // Evil
+            case "dummy":
+                return 1; // Neutral
+            default:
+                return 2; // Good
+        }
     }
 
     // Get the collider which collides with the environment (tiles in the map)
