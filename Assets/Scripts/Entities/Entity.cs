@@ -90,6 +90,10 @@ public abstract class Entity : MonoBehaviour
         health = maxHealth;
     }
 
+    public virtual void Heal(float healValue) {
+        health = Mathf.Min(health + healValue, maxHealth);
+    }
+
     public bool IsOtherEntity(GameObject gameObject)
     {
         return (gameObject.CompareTag("player") ||
