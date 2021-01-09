@@ -17,6 +17,11 @@ public class GrindSpawnManager : SpawnManager
     public float spawnPeriod;
     private float spawnTime;
 
+    private void Awake()
+    {
+        targetAI = new EnemyTargetAI();
+    }
+
     private void FixedUpdate()
     {
         spawnTime += Time.deltaTime;
@@ -134,5 +139,10 @@ public class GrindSpawnManager : SpawnManager
         }
 
         textObj.GetComponent<Text>().text = newText;
+    }
+
+    protected override EnemyTargetCriteria GetTargetCriteria()
+    {
+        return Random.Range(0, 2) == 0 ? EnemyTargetCriteria.health : EnemyTargetCriteria.distance;
     }
 }

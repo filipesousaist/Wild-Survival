@@ -2,7 +2,7 @@
 
 public abstract class SimpleBuilding : Building
 {
-    private SpriteRenderer spriteRenderer;
+    protected SpriteRenderer spriteRenderer;
     
     protected override void OnAwake()
     {
@@ -18,5 +18,12 @@ public abstract class SimpleBuilding : Building
     protected override void OnShow()
     {
         spriteRenderer.color = Colors.OPAQUE;
+    }
+
+    protected void SetAlpha(float a)
+    {
+        Color temp = spriteRenderer.color;
+        temp.a = a;
+        spriteRenderer.color = temp;
     }
 }

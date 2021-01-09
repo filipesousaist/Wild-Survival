@@ -10,6 +10,7 @@ public abstract class EntityMovement : MonoBehaviour
     private Entity entity;
     protected float attackWaitTime;
 
+    protected KinematicBoxCollider2D kCollider;
 
     public bool attackedRecently;
     public float speed;
@@ -18,11 +19,14 @@ public abstract class EntityMovement : MonoBehaviour
     public float attackRadius;
     public float attackDuration;
 
+    [ReadOnly] public Vector3 velocity; // By external forces, like knockback, not move speed
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
         entity = GetComponent<Entity>();
+        kCollider = GetComponent<KinematicBoxCollider2D>();
 
         OnAwake();
     }
@@ -38,13 +42,24 @@ public abstract class EntityMovement : MonoBehaviour
 
     abstract protected void OnStart();
 
-    public virtual IEnumerator KnockCo(Rigidbody2D myRigidBody, float knockTime)
+    public virtual IEnumerator KnockCo(float knockTime)
     {
-        if (myRigidBody != null)
+        /*
+        yield return new WaitForSeconds(knockTime);
+        myRigidBody.velocity = Vector2.zero;
+        */
+        float start = Time.time;
+        while (Time.time - start < knockTime)
         {
-            yield return new WaitForSeconds(knockTime);
-            myRigidBody.velocity = Vector2.zero;
-        }
+            KinematicMove(velocity * Time.deltaTime);
+            yield return null;
+        } 
+    }
+
+    protected void KinematicMove(Vector3 offset)
+    {
+        if (kCollider.CanMove(offset))
+            transform.position += offset;
     }
 
 

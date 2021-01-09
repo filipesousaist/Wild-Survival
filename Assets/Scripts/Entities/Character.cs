@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public abstract class Character : Entity
+public abstract class Character : Entity, IEnemyTarget
 {
     public Sprite portrait;
 
@@ -60,4 +58,13 @@ public abstract class Character : Entity
 
     public abstract void UpdateBarHealth();
 
+    public Vector3 GetPosition()
+    {
+        return transform.position;
+    }
+
+    public float GetHealthFraction()
+    {
+        return health / maxHealth;
+    }
 }

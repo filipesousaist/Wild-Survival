@@ -14,6 +14,7 @@ TagManager:
   - dummy
   - deadDummy
   - menu
+  - camp
   layers:
   - Default
   - TransparentFX

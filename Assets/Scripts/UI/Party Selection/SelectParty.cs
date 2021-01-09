@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,9 @@ public class SelectParty : MonoBehaviour
 {
     private ActivistsManager manager;
     private PlayerMovement[] players;
+
+    private int[] lastParty;
+    private int[] newParty;
 
     CharacterSlot[] slots;
     public GameObject listOfActivists;
@@ -23,6 +27,8 @@ public class SelectParty : MonoBehaviour
         manager = FindObjectOfType<ActivistsManager>();
         players = manager.GetComponentsInChildren<PlayerMovement>();
         slots = listOfActivists.GetComponentsInChildren<CharacterSlot>();
+        lastParty = new int[players.Length];
+        newParty = new int[players.Length];
         InitChoices();
     }
 
@@ -47,6 +53,10 @@ public class SelectParty : MonoBehaviour
         {
             if (slots[i].GetComponent<Toggle>().isOn)
             {
+                players[i].transform.gameObject.SetActive(true);
+                players[i].EnableRhino();
+                newParty[i] = 1;
+
                 if (players[i].IsDead())
                 {
                     players[i].currentState = PlayerState.dead;
@@ -58,9 +68,17 @@ public class SelectParty : MonoBehaviour
             }
             else
             {
+                newParty[i] = 0;
                 players[i].currentState = PlayerState.disabled;
+                players[i].DisableRhino();
+                players[i].transform.gameObject.SetActive(false);
             }
         }
+    }
+
+    bool PartyChanged()
+    {
+        return !newParty.SequenceEqual(lastParty);
     }
 
     private void InitChoices()
@@ -72,11 +90,15 @@ public class SelectParty : MonoBehaviour
             if (players[i].currentState != PlayerState.disabled && partySize < 3)
             {
                 slots[i].GetComponent<Toggle>().isOn = true;
+                lastParty[i] = 1;
             }
             else
             {
                 slots[i].GetComponent<Toggle>().isOn = false;
                 players[i].currentState = PlayerState.disabled;
+                lastParty[i] = 0;
+                players[i].DisableRhino();
+                players[i].transform.gameObject.SetActive(false);
             }
         }
 
@@ -86,7 +108,11 @@ public class SelectParty : MonoBehaviour
     public void UpdateAll()
     {
         UpdateParty();
-        manager.UpdateCamera();
-        manager.UpdatePartyPosition();
+        if (PartyChanged())
+        {
+            lastParty = newParty.ToArray();
+            manager.UpdateCamera();
+            manager.UpdatePartyPosition();
+        }
     }
 }
