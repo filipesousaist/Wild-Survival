@@ -92,12 +92,15 @@ public class ActivistsManager : MonoBehaviour
 
     public void HealAll()
     {
+        int j = 0;
         for (int i = 0; i < playerMovs.Length; i ++)
         {
             Player player = playerMovs[i].GetComponent<Player>();
             player.FullRestore();
-            playerMovs[i].Revive();
-            if (i == currentPlayer)
+            if (i != currentPlayer && playerMovs[i].currentState != PlayerState.disabled)
+                playerMovs[i].Revive(playerMovs[currentPlayer].transform.position + warpOffset[j++]);
+            
+            else if (i == currentPlayer)
             {
                 player.UpdateBarHealth();
                 playerMovs[i].inputEnabled = true;
@@ -135,6 +138,7 @@ public class ActivistsManager : MonoBehaviour
         {
             if (player != playerMovs[currentPlayer] && player.currentState != PlayerState.disabled)
             {
+                
                 player.SetWalkOffset(walkOffset[i]);
                 player.TeleportPlayer(currentPlayerPos + warpOffset[i++]);
                 player.TeleportRhino();

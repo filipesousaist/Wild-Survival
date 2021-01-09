@@ -226,8 +226,7 @@ MonoBehaviour:
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
   deathSignal: {fileID: 11400000, guid: d46e0b22038395a44a69ca3923974060, type: 2}
-  deathEffect: {fileID: 5617090473645048675, guid: 4cd690084430be7499dd659a5b8a5e6d,
-    type: 3}
+  deathEffect: {fileID: 0}
   lootTable: {fileID: 11400000, guid: 9ad72f61603c96c4ab296d5df28a8f4d, type: 2}
   targetCriteria: 0
   wave: -1

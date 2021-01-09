@@ -27,7 +27,7 @@ public abstract class CharacterInfoManager : MonoBehaviour
 
     protected ActivistsManager activistsManager;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         InitHealth();
         InitXp();

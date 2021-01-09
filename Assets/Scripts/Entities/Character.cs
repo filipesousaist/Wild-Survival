@@ -9,6 +9,7 @@ public abstract class Character : Entity, IEnemyTarget
 
     public Signal XpSignal;
     public IntValue barXp;
+
     [ReadOnly] public int xp;
     [ReadOnly] public int requiredXp;
     [ReadOnly] public int level;
@@ -22,7 +23,7 @@ public abstract class Character : Entity, IEnemyTarget
         UpdateRequiredXp();
     }
 
-    override protected void TakeDamage(float damage)
+    override public void TakeDamage(float damage)
     {
         base.TakeDamage(damage);
 

@@ -107,15 +107,15 @@ public class PlayerMovement : EntityMovement
         {
             playerToFollow = activistsManager.GetCurrentPlayerMovement();
 
-            bool isNearTarget = (playerToFollow.transform.position - transform.position).magnitude < 3;
-            agent.isStopped = isNearTarget;
-            animator.SetBool("moving", !isNearTarget);
 
             Vector3 orientation = activistsManager.GetCurrentPlayerOrientation();
             Vector2 offset = KinematicBoxCollider2D.Rotate(orientation, walkOffset);
             Vector3 destination = playerToFollow.transform.position + new Vector3(offset.x, offset.y).normalized * 2;
             Vector3 direction = destination - transform.position;
 
+            bool isNearTarget = (playerToFollow.transform.position - transform.position).magnitude < 2;
+            agent.isStopped = isNearTarget;
+            animator.SetBool("moving", !isNearTarget);
             RaycastHit2D hit = Physics2D.Raycast(transform.position, direction.normalized, 4f, LayerMask.GetMask("unwalkable"));
             if (hit.collider != null)
             {
@@ -240,6 +240,18 @@ public class PlayerMovement : EntityMovement
         }
     }
 
+    public void EnableRhino()
+    {
+        if (player.rhino != null)
+            player.rhino.transform.gameObject.SetActive(true);
+    }
+
+    public void DisableRhino()
+    {
+        if (player.rhino != null)
+            player.rhino.transform.gameObject.SetActive(false);
+    }
+
     public bool IsDead()
     {
         return player.health <= 0;
@@ -256,11 +268,13 @@ public class PlayerMovement : EntityMovement
         walkOffset = Mathf.Deg2Rad * offset;
     }
 
-    public void Revive()
+    public void Revive(Vector3 newPosition)
     {
-        if (currentState != PlayerState.dead)
+        if (currentState == PlayerState.dead)
         {
             currentState = PlayerState.walk;
+            TeleportPlayer(newPosition);
+            TeleportRhino();
         }
     }
     public override void Die()

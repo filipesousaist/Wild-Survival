@@ -67,7 +67,7 @@ public abstract class Entity : MonoBehaviour
     }
     
 
-    protected virtual void TakeDamage(float damage)
+    public virtual void TakeDamage(float damage)
     {
         // caso um ativista morto seja atacado evita que onDeath seja chamado novamente
         if (health > 0)
