@@ -5,7 +5,7 @@ public class ItemPickup : Interactable
 {
     public Item item;
 
-    private void Start()
+    override protected void OnStart()
     {
         once = true;
     }
