@@ -42,7 +42,7 @@ public class FoodManager : MonoBehaviour
 
         float food = Mathf.Max(currentFood.value, 0);
         float percentage = food / maxFood;
-        float newPosition = - foodMidRect.localScale.x / 2;
+        float newPosition = - foodMidRect.localScale.x / 2 + (float) 0.4 ;
         float newWidth = foodMidRect.localScale.x * percentage;
         foodFrontRect.localScale = new Vector3(newWidth, foodMidRect.localScale.y);
         foodFrontRect.localPosition = new Vector3(newPosition, foodMidRect.localPosition.y);
@@ -52,7 +52,7 @@ public class FoodManager : MonoBehaviour
 
     private void FixedUpdate(){
         time+=Time.deltaTime;
-        if(time>10){
+        if(time>30){
             time=0;
             currentFood.value--;
             UpdateFoodBar();
