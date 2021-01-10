@@ -14,7 +14,7 @@ public class RottenFlesh : Interactable
         spriteRenderer = GetComponent<SpriteRenderer>();
         psMain = GetComponent<ParticleSystem>().main;
     }
-    private void Start()
+    override protected void OnStart()
     {
         once = true;
     }
@@ -32,5 +32,10 @@ public class RottenFlesh : Interactable
         yield return new WaitForSeconds(120);
 
         Destroy(gameObject);
+    }
+
+    public override string GetInteractText()
+    {
+        return "Inspect";
     }
 }

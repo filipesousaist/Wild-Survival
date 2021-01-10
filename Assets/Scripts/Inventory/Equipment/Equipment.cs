@@ -15,6 +15,12 @@ public class Equipment : Item, ISerializationCallbackReceiver
 {
     //7->https://www.youtube.com/watch?v=d9oLS5hy0zU
 
+    public float armorModifier;
+    public float damageModifier;
+
+    public float armorToUpgrade;
+    public float damageToUpgrade;
+
     public int initialLevel;
 
     [ReadOnly] public int level;
@@ -30,5 +36,12 @@ public class Equipment : Item, ISerializationCallbackReceiver
 
     public void Upgrade() {
         level += 1;
+        UpgradeModifiers();
+    }
+
+    private void UpgradeModifiers()
+    {
+        armorModifier += armorToUpgrade;
+        damageToUpgrade += damageToUpgrade;
     }
 }

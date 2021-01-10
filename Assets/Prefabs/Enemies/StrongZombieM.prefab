@@ -75,7 +75,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1
 --- !u!1 &5080037667731782818
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +150,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1
 --- !u!1 &5198368402748673989
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +225,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1
 --- !u!1 &5695559983803194665
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +243,7 @@ GameObject:
   - component: {fileID: 5695559983803194673}
   - component: {fileID: 9045597789463547108}
   - component: {fileID: -604051010518278983}
+  - component: {fileID: 8081326622960424538}
   m_Layer: 0
   m_Name: StrongZombieM
   m_TagString: enemy
@@ -410,6 +408,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   currentState: 0
   isVisible: 0
+  updateTargetTime: 0
 --- !u!61 &5695559983803194678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -450,7 +449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityName: 
   maxHealth: 10
-  baseAttack: 4
+  stats: {fileID: 0}
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
@@ -495,6 +494,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9946f96e9c97ad0428dc80bcdd20f22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8081326622960424538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695559983803194665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6187257c1f93ebf4098c648d086296f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage:
+    baseValue: 4
+  armor:
+    baseValue: 0
 --- !u!1 &7727302019920642851
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,4 +585,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1

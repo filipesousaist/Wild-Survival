@@ -75,7 +75,7 @@ public class ActivistsManager : MonoBehaviour
         UpdateOffset();
     }
 
-    private void UpdateCharactersInfo()
+    public void UpdateCharactersInfo()
     {
         changePlayerSignal.Raise();
 

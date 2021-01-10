@@ -15,6 +15,10 @@ MonoBehaviour:
   name: Spear
   icon: {fileID: 21300000, guid: 91c907afd22bfe841a4c2876eede2d3d, type: 3}
   isDefaultItem: 0
+  armorModifier: 0
+  damageModifier: 1
+  armorToUpgrade: 0
+  damageToUpgrade: 1
   initialLevel: 1
   level: 1
   materials:

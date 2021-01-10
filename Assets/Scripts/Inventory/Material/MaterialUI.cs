@@ -46,6 +46,7 @@ public class MaterialUI : MonoBehaviour
         }
         slots.Clear();
         matsCount.Clear();
+        currentPlayer.GetComponent<PlayerStats>().UpdateEquipments();
     }
 
     public void UpdateUI(Equipment equipment) {

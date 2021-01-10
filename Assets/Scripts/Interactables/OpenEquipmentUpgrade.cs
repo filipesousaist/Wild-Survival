@@ -28,4 +28,9 @@ public class OpenEquipmentUpgrade : Interactable
             ToggleUI();
         }
     }
+
+    public override string GetInteractText()
+    {
+        return upgradeUI.activeSelf ? "Close" : "Use";
+    }
 }
