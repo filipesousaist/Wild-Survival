@@ -23,6 +23,8 @@ public class Player : Character
 
     public void SetRhino(Rhino rhino) {
         this.rhino = rhino;
+        ActivistsManager manager = FindObjectOfType<ActivistsManager>();
+        manager.UpdateCharactersInfo();
     }
     public override void FullRestore()
     {
