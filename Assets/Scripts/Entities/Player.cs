@@ -67,9 +67,18 @@ public class Player : Character
         base.TakeDamage(damage);
     }
 
+    public void TakeRadiationDamage(float damage)
+    {
+        base.TakeDamage(damage);
+    }
+
     override protected void IncreaseAttributes()
     {
-        stats.UpgradeDamage(1);
+        maxHealth += 2;
+        if (health > 0)
+        {
+            health += 2;
+        }
     }
 
     override protected void OnDeath()
