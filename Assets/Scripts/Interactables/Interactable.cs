@@ -35,17 +35,27 @@ public abstract class Interactable : MonoBehaviour
             StartCoroutine(InteractCo());
     }
 
-    protected void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (IsPlayerNear(other, true))
+        {
             isInteractable = true;
+            OnPlayerApproach();
+        }
     }
+
+    protected virtual void OnPlayerApproach() { }
 
     protected virtual void OnTriggerExit2D(Collider2D other)
     {
         if (IsPlayerNear(other, false))
+        {
             isInteractable = false;
+            OnPlayerMoveAway();
+        }
     }
+
+    protected virtual void OnPlayerMoveAway() { }
 
     private bool IsPlayerNear(Collider2D other, bool isNear)
     {
@@ -68,6 +78,7 @@ public abstract class Interactable : MonoBehaviour
         interacting = hasInteracted = true;
         yield return OnInteract();
         interacting = false;
+        AfterInteract();
     }
 
     protected virtual IEnumerator OnInteract()
@@ -75,4 +86,6 @@ public abstract class Interactable : MonoBehaviour
         Debug.Log("Interacting with " + transform.name);
         yield return null;
     }
+
+    protected virtual void AfterInteract() {}
 }

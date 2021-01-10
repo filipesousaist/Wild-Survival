@@ -97,7 +97,7 @@ public class RhinoMovement : EntityMovement
     void CombatUpdate()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-        GameObject dummy = GameObject.FindGameObjectWithTag("dummy");
+        GameObject[] dummies = GameObject.FindGameObjectsWithTag("dummy");
         if (enemies != null)
         {
             float closestEnemyDistance = 0f;
@@ -111,15 +111,25 @@ public class RhinoMovement : EntityMovement
                     closestEnemyDistance = distanceFromEnemy;
                 }
             }
-            if (closestEnemyDistance == 0 && dummy != null && playerMov.inputEnabled)
+            if (closestEnemyDistance == 0 && dummies != null && playerMov.inputEnabled)
             {
-                Vector3 enemyPosition = dummy.transform.position;
+                foreach (GameObject dummy in dummies)
+                {
+                    Vector3 dummyPosition = dummy.transform.position;
+                    float distanceFromDummy = (dummyPosition - transform.position).magnitude;
+                    if (distanceFromDummy < chaseRadius && closestEnemyDistance < distanceFromDummy)
+                    {
+                        target = dummy.transform;
+                        closestEnemyDistance = distanceFromDummy;
+                    }
+                }
+                /*Vector3 enemyPosition = dummy.transform.position;
                 float distanceFromEnemy = (enemyPosition - transform.position).magnitude;
                 if (distanceFromEnemy < chaseRadius)
                 {
                     target = dummy.transform;
                     closestEnemyDistance = 1;
-                }
+                }*/
             }
             if (closestEnemyDistance == 0)
                 currentState = RhinoState.walk;
@@ -164,7 +174,7 @@ public class RhinoMovement : EntityMovement
             animator.SetBool("moving", true);
             currentState = RhinoState.walk;
             DebugDrawPath(agent.path.corners);
-            Debug.Log(agent.velocity);
+            //Debug.Log(agent.velocity);
         }
         else
         {
