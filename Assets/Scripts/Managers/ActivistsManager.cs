@@ -19,6 +19,7 @@ public class ActivistsManager : MonoBehaviour
 
     public float[] walkOffset;
     public Vector3[] warpOffset;
+
     // Awake is called before every Start method
     private void Awake()
     {
@@ -70,6 +71,8 @@ public class ActivistsManager : MonoBehaviour
         playerMov.inputEnabled = true;
         cam.target = playerMov.transform;
         dangerAnimation.currentPlayer = currentPlayer;
+
+        UpdateInteractables();
 
         UpdateCharactersInfo();
         UpdateOffset();
@@ -143,6 +146,17 @@ public class ActivistsManager : MonoBehaviour
                 player.TeleportPlayer(currentPlayerPos + warpOffset[i++]);
                 player.TeleportRhino();
             }
+        }
+    }
+
+    private void UpdateInteractables()
+    {
+        BoxCollider2D collider = GetCurrentPlayerMovement().GetComponent<BoxCollider2D>();
+
+        foreach (Interactable interactable in FindObjectsOfType<Interactable>())
+        {
+            interactable.TestPlayerNear(collider);
+            interactable.TestPlayerFar(collider);
         }
     }
 

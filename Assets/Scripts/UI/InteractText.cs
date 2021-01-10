@@ -9,7 +9,6 @@ public class InteractText : MonoBehaviour
     private GameObject keyGameObject;
     private GameObject textGameObject;
     private Text text;
-    private List<Interactable> interactables;
 
     private Interactable currentInteractable;
 
@@ -18,7 +17,6 @@ public class InteractText : MonoBehaviour
         keyGameObject = transform.Find("E").gameObject;
         textGameObject = transform.Find("Text").gameObject;
         text = textGameObject.GetComponentInChildren<Text>();
-        interactables = new List<Interactable>();
 
         currentInteractable = null;
     }
@@ -51,23 +49,9 @@ public class InteractText : MonoBehaviour
         SetActive(hasText);
     }
 
-    public void AddInteractable(Interactable interactable)
+    public void SetInteractable(Interactable interactable)
     {
         currentInteractable = interactable;
-        string newText = interactable.GetInteractText();
-        if (newText != null)
-        {
-            text.text = newText;
-            SetActive(true);
-        }
-        else
-            SetActive(false);
-
-        //interactables.Add(interactable);
-    }
-
-    public void RemoveInteractable(Interactable interactable)
-    {
-        //interactables.Add(interactable);
+        UpdateText();
     }
 }
