@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class OpenEquipmentUpgrade : Interactable
 {
-    public GameObject upgradeUI;
+    private GameObject upgradeUI;
 
     protected override void OnAwake()
     {

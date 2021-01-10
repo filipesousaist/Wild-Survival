@@ -91,6 +91,10 @@ public abstract class Entity : MonoBehaviour
         health = maxHealth;
     }
 
+    public virtual void Heal(float healValue) {
+        health = Mathf.Min(health + healValue, maxHealth);
+    }
+
     public virtual float GetAttack()
     {
         return stats.damage.GetValue();
