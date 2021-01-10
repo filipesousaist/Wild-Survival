@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage:
-    baseValue: 4
+    baseValue: 6
   armor:
     baseValue: 0
 --- !u!1 &5706724682727543571

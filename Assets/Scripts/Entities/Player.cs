@@ -6,7 +6,6 @@ public class Player : Character
 {
     public Sprite selectPartySprite;
     public Rhino rhino;
-
     //Equipment list 0-upperBody 1-bottomBody 2-Weapon
     public List<Equipment> equipments;
 
@@ -69,9 +68,18 @@ public class Player : Character
         base.TakeDamage(damage);
     }
 
+    public void TakeRadiationDamage(float damage)
+    {
+        base.TakeDamage(damage);
+    }
+
     override protected void IncreaseAttributes()
     {
-        stats.UpgradeDamage(1);
+        maxHealth += 2;
+        if (health > 0)
+        {
+            health += 2;
+        }
     }
 
     override protected void OnDeath()
@@ -95,4 +103,11 @@ public class Player : Character
         yield return null;
         animator.SetBool("firstTimeDying", false);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision){
+        if(collision.CompareTag("Collectable")){
+            Destroy(collision.gameObject);
+        }
+    }
+
 }

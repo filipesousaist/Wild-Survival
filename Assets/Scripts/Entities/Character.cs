@@ -45,6 +45,7 @@ public abstract class Character : Entity, IEnemyTarget
 
         UpdateRequiredXp();
         IncreaseAttributes();
+        UpdateBarHealth();
     }
 
     public override void Heal(float healValue)
