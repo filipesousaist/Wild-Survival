@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aea2591dc18495498e44dd0f1312f2d, type: 3}
+  m_Name: Food1
+  m_EditorClassIdentifier: 
+  name: New item
+  icon: {fileID: 6919148212026094808, guid: 25e74d3decfa67149a14b6a82669390e, type: 3}
+  isDefaultItem: 0
+  currentFood: {fileID: 11400000, guid: b0366bf191549cb40b9da3a395f669fe, type: 2}
+  foodSignal: {fileID: 11400000, guid: 9863cd4902e319f4d93385a8af88b4ee, type: 2}

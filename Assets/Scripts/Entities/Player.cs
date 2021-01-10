@@ -74,8 +74,6 @@ public class Player : Character
 
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.CompareTag("Collectable")){
-            barFood.value = Mathf.Max(food, 0);
-            foodSignal.Raise();
             Destroy(collision.gameObject);
         }
     }
