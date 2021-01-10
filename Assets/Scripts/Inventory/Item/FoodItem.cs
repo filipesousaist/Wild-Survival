@@ -13,5 +13,6 @@ public class FoodItem : Item
         if(currentFood.value>5)
             currentFood.value=5;
         foodSignal.Raise();
+        RemoveFromInventory();
     }
 }

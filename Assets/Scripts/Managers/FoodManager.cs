@@ -56,6 +56,10 @@ public class FoodManager : MonoBehaviour
             time=0;
             currentFood.value--;
             UpdateFoodBar();
+            if(currentFood.value==0){
+                foreach(var player in activistsManager.players)
+                    player.TakeDamage(100);
+            }
         }
     }
 
