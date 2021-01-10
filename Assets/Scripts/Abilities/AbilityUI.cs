@@ -73,7 +73,7 @@ public class AbilityUI : MonoBehaviour
         }
         if (abilities.Count > abs.Count)
         {
-            for (int i = abs.Count; i < abilities.Count; i++)
+            for (int i = abilities.Count -1; i >= abs.Count; i--)
             {
                 var slot = abilities[i];
                 abilities.RemoveAt(i);

@@ -10,6 +10,14 @@ public class Player : Character
     //Equipment list 0-upperBody 1-bottomBody 2-Weapon
     public List<Equipment> equipments;
 
+
+    public bool HasRhino() {
+        return rhino != null;
+    }
+
+    public void SetRhino(Rhino rhino) {
+        this.rhino = rhino;
+    }
     public override void FullRestore()
     {
         base.FullRestore();

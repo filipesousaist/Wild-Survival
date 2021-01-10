@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rhino 2
+  m_Name: Ritito
   m_Shader: {fileID: -6465566751694194690, guid: a4829b13ee7056f4fa8c2215c19b9c0a,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA

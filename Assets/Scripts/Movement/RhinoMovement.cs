@@ -30,7 +30,10 @@ public class RhinoMovement : EntityMovement
     override protected void OnAwake()
     {
         player = GetComponent<Rhino>().owner;
-        playerMov = player.GetComponent<PlayerMovement>();
+        if (player != null)
+        {
+            playerMov = player.GetComponent<PlayerMovement>();
+        }
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -49,34 +52,45 @@ public class RhinoMovement : EntityMovement
     // FixedUpdate is called periodically, with a fixed period
     void Update()
     {
-        if (playerMov.inputEnabled) {
-            if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
-                Input.GetMouseButtonDown(1))
-            {
-                //evita controlar o rino quando se esta a mexer no inventario
-                if (!EventSystem.current.IsPointerOverGameObject()) { 
-                    currentState = RhinoState.command;
-                    Clicked();
+        if (player != null)
+        {
+
+            if (playerMov.inputEnabled) {
+                if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
+                    Input.GetMouseButtonDown(1))
+                {
+                    //evita controlar o rino quando se esta a mexer no inventario
+                    if (!EventSystem.current.IsPointerOverGameObject()) { 
+                        currentState = RhinoState.command;
+                        Clicked();
+                    }
                 }
             }
+            switch (currentState)
+            {
+                case RhinoState.command:
+                    CommandUpdate(); break;
+                case RhinoState.combat:
+                    CombatUpdate(); break;
+                case RhinoState.walk:
+                    WalkUpdate();
+                    if (!playerMov.inputEnabled)
+                        CombatUpdate();
+                    break;
+                case RhinoState.flee:
+                    FleeUpdate(); break;
+                case RhinoState.disabled:
+                    DisabledUpdate(); break;
+            }
         }
+        
 
-        switch (currentState)
-        {
-            case RhinoState.command:
-                CommandUpdate(); break;
-            case RhinoState.combat:
-                CombatUpdate(); break;
-            case RhinoState.walk:
-                WalkUpdate();
-                if (!playerMov.inputEnabled)
-                    CombatUpdate();
-                break;
-            case RhinoState.flee:
-                FleeUpdate(); break;
-            case RhinoState.disabled:
-                DisabledUpdate(); break;
-        }
+    }
+
+    public void SetPlayer(Player player, PlayerMovement playerMovement)
+    {
+        this.playerMov = playerMovement;
+        this.player = player;
     }
 
     void CommandUpdate()

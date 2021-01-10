@@ -8,6 +8,7 @@ public class Rhino : Character
     private static readonly int XP_MULT = 15;
     private static readonly int RADIATION_REQUIREMENT = 10;
     public Player owner;
+    public GameObject captureRadius;
     private PlayerMovement ownerMovement;
 
     [ReadOnly] public int radiation;
@@ -19,29 +20,31 @@ public class Rhino : Character
 
     private void Update()
     {
-        if(ownerMovement.inputEnabled) {
-            //Maximo 3 habilidades por rino
-            switch (Input.inputString)
-            {
-                case "1":
-                    if (abilities.Count > 0) {
-                        abilities[0].GetComponent<Ability>().Activate();
-                    }
-                    break;
-                case "2":
-                    if (abilities.Count > 1)
-                    {
-                        abilities[1].GetComponent<Ability>().Activate();
-                    }
-                    break;
-                case "3":
-                    if (abilities.Count > 2)
-                    {
-                        abilities[2].GetComponent<Ability>().Activate();
-                    }
-                    break;
-                default:
-                    break;
+        if (ownerMovement != null) { 
+            if(ownerMovement.inputEnabled) {
+                //Maximo 3 habilidades por rino
+                switch (Input.inputString)
+                {
+                    case "1":
+                        if (abilities.Count > 0) {
+                            abilities[0].GetComponent<Ability>().Activate();
+                        }
+                        break;
+                    case "2":
+                        if (abilities.Count > 1)
+                        {
+                            abilities[1].GetComponent<Ability>().Activate();
+                        }
+                        break;
+                    case "3":
+                        if (abilities.Count > 2)
+                        {
+                            abilities[2].GetComponent<Ability>().Activate();
+                        }
+                        break;
+                    default:
+                        break;
+                }
             }
         }
     }
@@ -50,7 +53,10 @@ public class Rhino : Character
         base.OnAwake();
         radiation = 0;
         requiredXp = level * XP_MULT;
-        ownerMovement = owner.GetComponent<PlayerMovement>();
+        if (owner != null) { 
+            ownerMovement = owner.GetComponent<PlayerMovement>();
+            Destroy(captureRadius);
+        }
         for (int i = 0; i < abilities.Count; i++)
         {
             abilities[i] = Instantiate(abilities[i], this.transform.position, Quaternion.identity);
@@ -60,6 +66,17 @@ public class Rhino : Character
         //abilities = new List<Ability>();
     }
 
+    public bool HasOwner() {
+        return owner != null;
+    }
+
+    public void SetOwner(Player player) {
+        owner = player;
+        ownerMovement = player.GetComponent<PlayerMovement>();
+        var mov = gameObject.GetComponent<RhinoMovement>();
+        mov.SetPlayer(owner, ownerMovement);
+        Destroy(captureRadius);
+    }
     public override void TakeDamage(float damage)
     {
         var shield = abilities.OfType<Shield>();
@@ -130,18 +147,13 @@ public class Rhino : Character
         movement.Flee();
     }
 
-    public List<Ability> GetAbilities() {
-        if (abilities.Count == 0)
+    public List<Ability> GetAbilities() 
+    {
+        List<Ability> abs = new List<Ability>();
+        foreach (var item in abilities)
         {
-            return null;
+            abs.Add(item.GetComponent<Ability>());
         }
-        else {
-            List<Ability> abs = new List<Ability>();
-            foreach (var item in abilities)
-            {
-                abs.Add(item.GetComponent<Ability>());
-            }
-            return abs;
-        }
+        return abs;
     }
 }
