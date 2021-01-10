@@ -122,7 +122,7 @@ public class Rhino : Character
 
     override protected void IncreaseAttributes()
     {
-        baseAttack += 1.5f;
+        stats.UpgradeDamage(1.5f);
     }
 
     override protected void OnDeath()

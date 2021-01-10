@@ -10,7 +10,7 @@ public abstract class Entity : MonoBehaviour
     public string entityName;
 
     public float maxHealth;
-    public float baseAttack;
+    public CharacterStats stats;
     [ReadOnly] public float health;
 
     public GameObject healthBarPrefab;
@@ -20,6 +20,7 @@ public abstract class Entity : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         movement = GetComponent<EntityMovement>();
+        stats = GetComponent<CharacterStats>();
         CreateHealthBar();
         OnAwake();
     }
@@ -88,6 +89,11 @@ public abstract class Entity : MonoBehaviour
     public virtual void FullRestore()
     {
         health = maxHealth;
+    }
+
+    public virtual float GetAttack()
+    {
+        return stats.damage.GetValue();
     }
 
     public bool IsOtherEntity(GameObject gameObject)

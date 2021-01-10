@@ -75,7 +75,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1
 --- !u!1 &1406477682469019578
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +150,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1
 --- !u!1 &4650076711004704166
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +168,7 @@ GameObject:
   - component: {fileID: 4650076711004704190}
   - component: {fileID: 8217590214152739947}
   - component: {fileID: 5366635891017463891}
+  - component: {fileID: 8010952700228910723}
   m_Layer: 0
   m_Name: Animal4
   m_TagString: enemy
@@ -334,6 +333,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   currentState: 0
   isVisible: 0
+  updateTargetTime: 0
 --- !u!61 &4650076711004704185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityName: 
   maxHealth: 5
-  baseAttack: 1
+  stats: {fileID: 0}
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
@@ -418,6 +418,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9946f96e9c97ad0428dc80bcdd20f22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8010952700228910723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650076711004704166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6187257c1f93ebf4098c648d086296f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage:
+    baseValue: 1
+  armor:
+    baseValue: 0
 --- !u!1 &5214354127892166440
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +509,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1
 --- !u!1 &6751200503162755437
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,4 +584,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1
