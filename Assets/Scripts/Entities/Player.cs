@@ -72,4 +72,12 @@ public class Player : Character
         yield return null;
         animator.SetBool("firstTimeDying", false);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision){
+        if(collision.CompareTag("Collectable")){
+            print("Olá2\n");
+            Destroy(collision.gameObject);
+        }
+    }
+
 }
