@@ -34,7 +34,6 @@ public abstract class Interactable : MonoBehaviour
 
     private void Start()
     {
-        //FindObjectOfType<InteractText>().AddInteractable(this);
         OnStart();
     }
 
@@ -48,22 +47,31 @@ public abstract class Interactable : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        if (IsPlayerNear(other, true))
+        TestPlayerNear(other);
+    }
+
+    protected virtual void OnTriggerExit2D(Collider2D other)
+    {
+        TestPlayerFar(other);
+    }
+
+    public void TestPlayerNear(Collider2D collider)
+    {
+        if (IsPlayerNear(collider, true))
         {
             isInteractable = true;
-            interactText.AddInteractable(this);
+            interactText.SetInteractable(this);
             OnPlayerApproach();
         }
     }
 
     protected virtual void OnPlayerApproach() { }
 
-    protected virtual void OnTriggerExit2D(Collider2D other)
+    public void TestPlayerFar(Collider2D collider)
     {
-        if (IsPlayerNear(other, false))
+        if (IsPlayerNear(collider, false))
         {
             isInteractable = false;
-            //interactText.RemoveInteractable(this);
             OnPlayerMoveAway();
         }
     }
