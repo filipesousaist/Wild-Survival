@@ -3,7 +3,13 @@ using UnityEngine;
 
 public class OpenEquipmentUpgrade : Interactable
 {
-    public GameObject upgradeUI;
+    private GameObject upgradeUI;
+
+    protected override void OnAwake()
+    {
+        base.OnAwake();
+        upgradeUI = FindObjectOfType<Canvas>().transform.Find("ItemsUpgradeMenu").gameObject;
+    }
 
     protected override IEnumerator OnInteract()
     {

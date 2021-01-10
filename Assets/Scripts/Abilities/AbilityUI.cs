@@ -65,7 +65,7 @@ public class AbilityUI : MonoBehaviour
             for (int i = abilities.Count; i < abs.Count; i++)
             {
                 AbilitySlot slot = Instantiate(abilitySlotPrefab);
-                slot.transform.parent = parent;
+                slot.transform.SetParent(parent);
                 slot.transform.localScale = new Vector3(1, 1, 1);
                 slot.AddAbility(abs[i]);
                 abilities.Add(slot);

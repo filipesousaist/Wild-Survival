@@ -164,7 +164,7 @@ public class RhinoMovement : EntityMovement
             animator.SetBool("moving", true);
             currentState = RhinoState.walk;
             DebugDrawPath(agent.path.corners);
-            Debug.Log(agent.velocity);
+            //Debug.Log(agent.velocity);
         }
         else
         {
