@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Dummy : SimpleBuilding
 {
@@ -26,7 +24,7 @@ public class Dummy : SimpleBuilding
     {
         animator.SetBool("Dead", true);
         collider2D.enabled = false;
-        healthBar.transform.localScale = Vector3.zero;
+        ShowHealthBar(false);
 
         gameObject.tag = "deadDummy";
         deadTime = Time.time;
@@ -68,11 +66,6 @@ public class Dummy : SimpleBuilding
         }
     }
 
-    protected override void ShowHealthBar(bool show)
-    {
-        healthBar.transform.localScale = show ? Vec3.HALF : Vector3.zero;
-    }
-
     private void Disable()
     {
         active = false;
@@ -88,7 +81,7 @@ public class Dummy : SimpleBuilding
         SetAlpha(1);
         gameObject.tag = "dummy";
         health = maxHealth;
-        healthBar.transform.localScale = Vector3.one;
+        ShowHealthBar(true);
     }
 
     public float GetHealthFraction()

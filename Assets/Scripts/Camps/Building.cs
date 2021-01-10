@@ -8,14 +8,25 @@ public abstract class Building : Entity
 
     protected NavMeshSurface2d navMesh;
     protected Interactable interactable;
+
+    private GameObject signGameObject;
+
+    private Vector3 healthBarScale;
     
     protected override void OnAwake()
     {
         navMesh = FindObjectOfType<NavMeshSurface2d>();
-        interactable = GetComponentInChildren<Interactable>();
-        PolygonCollider2D targetsPolygon = GetComponent<PolygonCollider2D>();
-        if (targetsPolygon != null && !targetsPolygon.isActiveAndEnabled)
-            AddTargets(targetsPolygon);
+        interactable = GetInteractable();
+        AddTargets(GetComponent<PolygonCollider2D>());
+        signGameObject = GetComponentInChildren<Sign>().gameObject;
+    }
+
+    private Interactable GetInteractable()
+    {
+        foreach (Interactable possibleInteractible in GetComponentsInChildren<Interactable>())
+            if (possibleInteractible.GetType() != typeof(Sign))
+                return possibleInteractible;
+        return null;
     }
 
     private void AddTargets(PolygonCollider2D targetsPolygon)
@@ -30,14 +41,14 @@ public abstract class Building : Entity
     protected override void OnStart()
     {
         level = 0;
+        Vector3 localScale = transform.localScale;
+        healthBarScale = new Vector3(1 / localScale.x, 1 / localScale.y, 1);
         Hide();
-        //healthBar.transform.localScale = Vector3.zero;
     }
 
     protected override void OnDeath()
     {
-        if (level > 0 && (-- level) == 0)
-            Hide();
+        Hide();
     }
 
     private void Update()
@@ -61,9 +72,19 @@ public abstract class Building : Entity
     }
     protected virtual void OnUpgrade() { }
 
+    public void Repair()
+    {
+        Show();
+        OnRepair();
+        health = maxHealth;
+    }
+
+    protected virtual void OnRepair() { }
+
     private void Hide()
     {
         gameObject.layer = Layers.DEFAULT;
+        signGameObject.SetActive(true);
         SilentBuildNavMesh();
         SetInteractibleActive(false);
         ShowHealthBar(false);
@@ -74,6 +95,7 @@ public abstract class Building : Entity
     private void Show()
     {
         gameObject.layer = Layers.UNWALKABLE;
+        signGameObject.SetActive(false);
         SilentBuildNavMesh();
         SetInteractibleActive(true);
         ShowHealthBar(true);
@@ -94,7 +116,7 @@ public abstract class Building : Entity
 
     protected virtual void ShowHealthBar(bool show)
     {
-        healthBar.transform.localScale = show ? Vector3.one : Vector3.zero;
+        healthBar.transform.localScale = show ? healthBarScale : Vector3.zero;
     }
 
     private void SilentBuildNavMesh()
