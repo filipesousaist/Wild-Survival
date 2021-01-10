@@ -10273,6 +10273,7 @@ MonoBehaviour:
   radiation: 0
   abilities:
   - {fileID: 1030538975403208952, guid: 44e1d5c0c17ed2849922839a21bb99e2, type: 3}
+  - {fileID: 4016509894736204922, guid: 94861b1ce2523d64ba30f3f1b0fd5c1d, type: 3}
 --- !u!61 &499042343
 BoxCollider2D:
   m_ObjectHideFlags: 0
