@@ -51,7 +51,7 @@ public abstract class FoodManager : MonoBehaviour
         foodFrontRect.localScale = new Vector3(newWidth, foodMidRect.localScale.y);
         foodFrontRect.localPosition = new Vector3(newPosition, foodMidRect.localPosition.y);
 
-        foodFrontRect.GetComponent<Image>().color = ChooseBarColor(percentage);
+        // foodFrontRect.GetComponent<Image>().color = ChooseBarColor(percentage);
 
         foodText.text = food + "/" + maxFood;
     }
