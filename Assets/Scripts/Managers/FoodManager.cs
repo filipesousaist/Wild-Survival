@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-public abstract class CharacterInfoManager : MonoBehaviour
+public abstract class FoodManager : MonoBehaviour
 {
     public Image portrait;
 
@@ -16,6 +16,7 @@ public abstract class CharacterInfoManager : MonoBehaviour
     private Text foodText;
 
     public FloatValue currentFood;
+    public float maxFood;
 
     protected ActivistsManager activistsManager;
 
@@ -42,33 +43,32 @@ public abstract class CharacterInfoManager : MonoBehaviour
 
     public void UpdateFoodBar()
     {
-        Character character = GetCurrentCharacter();
 
         float food = Mathf.Max(currentFood.value, 0);
-        float percentage = food / character.maxFood;
+        float percentage = food / maxFood;
         float newPosition = - foodMidRect.localScale.x / 2;
         float newWidth = foodMidRect.localScale.x * percentage;
         foodFrontRect.localScale = new Vector3(newWidth, foodMidRect.localScale.y);
         foodFrontRect.localPosition = new Vector3(newPosition, foodMidRect.localPosition.y);
 
-        foodFrontRect.GetComponent<Image>().color = character.ChooseBarColor(percentage);
+        foodFrontRect.GetComponent<Image>().color = ChooseBarColor(percentage);
 
-        foodText.text = food + "/" + character.maxFood;
+        foodText.text = food + "/" + maxFood;
     }
 
 
-    public void UpdatePortrait()
-    {
-        // Can remove when all activists have a rhino
-        FindObjectOfType<RhinosManager>().ToggleRhinoInfo();
+    // public void UpdatePortrait()
+    // {
+    //     // Can remove when all activists have a rhino
+    //     FindObjectOfType<RhinosManager>().ToggleRhinoInfo();
 
-        Character character = GetCurrentCharacter();
-        if (character != null)
-        {
-            portrait.sprite = character.portrait;
-            nameText.text = character.entityName;
-        }
-    }
+    //     Character character = GetCurrentCharacter();
+    //     if (character != null)
+    //     {
+    //         portrait.sprite = character.portrait;
+    //         nameText.text = character.entityName;
+    //     }
+    // }
 
     protected abstract Character GetCurrentCharacter();
 }
