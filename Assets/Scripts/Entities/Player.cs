@@ -6,7 +6,6 @@ public class Player : Character
 {
     public Sprite selectPartySprite;
     public Rhino rhino;
-
     //Equipment list 0-upperBody 1-bottomBody 2-Weapon
     public List<Equipment> equipments;
 
@@ -23,6 +22,8 @@ public class Player : Character
 
     public void SetRhino(Rhino rhino) {
         this.rhino = rhino;
+        ActivistsManager manager = FindObjectOfType<ActivistsManager>();
+        manager.UpdateCharactersInfo();
     }
     public override void FullRestore()
     {
@@ -102,4 +103,11 @@ public class Player : Character
         yield return null;
         animator.SetBool("firstTimeDying", false);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision){
+        if(collision.CompareTag("Collectable")){
+            Destroy(collision.gameObject);
+        }
+    }
+
 }

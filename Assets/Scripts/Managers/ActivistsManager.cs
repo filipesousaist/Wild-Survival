@@ -5,7 +5,7 @@ public class ActivistsManager : MonoBehaviour
 {
     public delegate void OnPlayerChanged();
     public OnPlayerChanged onPlayerChangedCallback;
-
+    public Player[] players;
     public PlayerMovement[] playerMovs;
     [ReadOnly] public int currentPlayer = 0;
     public Signal changePlayerSignal;
@@ -23,6 +23,7 @@ public class ActivistsManager : MonoBehaviour
     private void Awake()
     {
         playerMovs = GetComponentsInChildren<PlayerMovement>();
+        players = GetComponentsInChildren<Player>();
         cam = Camera.main.GetComponent<CameraMovement>();
         dangerAnimation = postVolume.GetComponent<PostProcessingScript>();
         dangerAnimation.players = transform;
@@ -75,7 +76,7 @@ public class ActivistsManager : MonoBehaviour
         UpdateOffset();
     }
 
-    private void UpdateCharactersInfo()
+    public void UpdateCharactersInfo()
     {
         changePlayerSignal.Raise();
 
