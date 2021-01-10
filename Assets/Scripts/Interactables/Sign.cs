@@ -27,7 +27,7 @@ public class Sign : Interactable
     }
 
     // Start is called before the first frame update
-    void Start()
+    override protected void OnStart()
     {
         text.text = "Build " + building.entityName;
     }
@@ -74,5 +74,10 @@ public class Sign : Interactable
             building.Upgrade();
         else
             building.Repair();
+    }
+
+    public override string GetInteractText()
+    {
+        return building.level == 0 ? "Build" : "Repair";
     }
 }

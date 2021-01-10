@@ -10,6 +10,12 @@ public class Player : Character
     //Equipment list 0-upperBody 1-bottomBody 2-Weapon
     public List<Equipment> equipments;
 
+    protected override void OnAwake()
+    {
+        stats = GetComponent<PlayerStats>();
+        ((PlayerStats)stats).UpdateEquipments();
+    }
+
 
     public bool HasRhino() {
         return rhino != null;
@@ -54,9 +60,16 @@ public class Player : Character
         requiredXp = level * 10;
     }
 
+    public override void TakeDamage(float damage)
+    {
+        damage -= stats.armor.GetValue();
+        damage = Mathf.Clamp(damage, 0, float.MaxValue);
+        base.TakeDamage(damage);
+    }
+
     override protected void IncreaseAttributes()
     {
-        baseAttack += 1;
+        stats.UpgradeDamage(1);
     }
 
     override protected void OnDeath()

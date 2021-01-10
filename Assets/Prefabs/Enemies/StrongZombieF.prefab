@@ -75,7 +75,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1
 --- !u!1 &1414196330816452507
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +150,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1
 --- !u!1 &3596010507049557627
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +168,7 @@ GameObject:
   - component: {fileID: 3596010507049557603}
   - component: {fileID: 244674749891776438}
   - component: {fileID: 2401931852875655443}
+  - component: {fileID: 7691262920378355919}
   m_Layer: 0
   m_Name: StrongZombieF
   m_TagString: enemy
@@ -334,6 +333,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   currentState: 0
   isVisible: 0
+  updateTargetTime: 0
 --- !u!61 &3596010507049557604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityName: 
   maxHealth: 10
-  baseAttack: 4
+  stats: {fileID: 0}
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
@@ -419,6 +419,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9946f96e9c97ad0428dc80bcdd20f22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7691262920378355919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3596010507049557627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6187257c1f93ebf4098c648d086296f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage:
+    baseValue: 4
+  armor:
+    baseValue: 0
 --- !u!1 &5706724682727543571
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +510,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1
 --- !u!1 &7806929385284577415
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,4 +585,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 0.5
   knockTime: 0.2
-  baseDamage: 1

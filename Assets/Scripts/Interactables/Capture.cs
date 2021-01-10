@@ -38,8 +38,10 @@ public class Capture : Interactable
     protected override IEnumerator OnInteract()
     {
         yield return base.OnInteract();
-
-        CaptureRhino();
+        if (!player.HasRhino())
+        {
+            CaptureRhino();
+        }
     }
 
     void CaptureRhino() {

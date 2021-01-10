@@ -15,6 +15,10 @@ MonoBehaviour:
   name: Pants
   icon: {fileID: 21300000, guid: fa9ecc2f00ddfb64f9e569d0a1fcf893, type: 3}
   isDefaultItem: 0
+  armorModifier: 1
+  damageModifier: 0
+  armorToUpgrade: 1
+  damageToUpgrade: 0
   initialLevel: 1
   level: 1
   materials:

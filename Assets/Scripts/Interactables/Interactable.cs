@@ -6,16 +6,19 @@ public abstract class Interactable : MonoBehaviour
     protected bool once = false; // Set to true in subclass if necessary
     private bool hasInteracted = false;
 
-    protected bool isInteractable = false;
+    public bool isInteractable = false;
     protected bool interacting = false;
 
     protected ActivistsManager activistsManager;
     private Collider2D trigger;
 
+    private InteractText interactText;
+
     private void Awake()
     {
         trigger = InitTrigger();
         activistsManager = FindObjectOfType<ActivistsManager>();
+        interactText = FindObjectOfType<InteractText>();
         OnAwake();
     }
 
@@ -29,6 +32,14 @@ public abstract class Interactable : MonoBehaviour
         return null;
     }
 
+    private void Start()
+    {
+        //FindObjectOfType<InteractText>().AddInteractable(this);
+        OnStart();
+    }
+
+    protected virtual void OnStart() { }
+
     void Update()
     {
         if (IsPlayerTryingToInteract() && !(once && hasInteracted))
@@ -40,6 +51,7 @@ public abstract class Interactable : MonoBehaviour
         if (IsPlayerNear(other, true))
         {
             isInteractable = true;
+            interactText.AddInteractable(this);
             OnPlayerApproach();
         }
     }
@@ -51,13 +63,14 @@ public abstract class Interactable : MonoBehaviour
         if (IsPlayerNear(other, false))
         {
             isInteractable = false;
+            //interactText.RemoveInteractable(this);
             OnPlayerMoveAway();
         }
     }
 
     protected virtual void OnPlayerMoveAway() { }
 
-    private bool IsPlayerNear(Collider2D other, bool isNear)
+    public bool IsPlayerNear(Collider2D other, bool isNear)
     {
         if (other.CompareTag("player") && other.isTrigger &&
             (other.IsTouching(trigger) == isNear))
@@ -88,4 +101,9 @@ public abstract class Interactable : MonoBehaviour
     }
 
     protected virtual void AfterInteract() {}
+
+    public virtual string GetInteractText()
+    {
+        return null;
+    }
 }
