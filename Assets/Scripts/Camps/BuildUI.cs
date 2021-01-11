@@ -122,7 +122,10 @@ public class BuildUI : MonoBehaviour
             }
         }
 
-        currentBuilding.Upgrade();
+        if (currentBuilding.level == 0)
+            currentBuilding.Upgrade();
+        else
+            currentBuilding.Repair();
 
         buildUIObject.SetActive(false);
     }
