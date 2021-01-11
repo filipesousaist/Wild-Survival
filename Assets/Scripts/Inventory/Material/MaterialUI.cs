@@ -99,7 +99,8 @@ public class MaterialUI : MonoBehaviour
         }
         foreach (var item in slots)
         {
-            if (!item.requiredNumber.text.Equals(tempMatsCount[item.GetName()].ToString()))
+            int requiredNumber = int.Parse(item.requiredNumber.text);
+            if (requiredNumber > tempMatsCount[item.GetName()])
             {
                 Debug.Log("Not enough materials");
                 return;
