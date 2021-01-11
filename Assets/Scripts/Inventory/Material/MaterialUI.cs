@@ -91,31 +91,39 @@ public class MaterialUI : MonoBehaviour
     public void OnUpgradeButton()
     {
         Dictionary<string, int> tempMatsCount = new Dictionary<string, int>(matsCount);
-        foreach (var item in inventory.items)
+        foreach (Item item in inventory.items)
         {
-            if (tempMatsCount.ContainsKey(item.name)) {
-                tempMatsCount[item.name] += 1; 
+            if (tempMatsCount.ContainsKey(item.name))
+            {
+                tempMatsCount[item.name]++;
             }
+            else
+                tempMatsCount[item.name] = 0;
         }
-        foreach (var item in slots)
+        foreach (MaterialSlot mat in slots)
         {
-            if (!item.requiredNumber.text.Equals(tempMatsCount[item.GetName()].ToString()))
+            string name = mat.GetName();
+            int requiredNumber = int.Parse(mat.requiredNumber.text);
+            if (requiredNumber > tempMatsCount[name])
             {
                 Debug.Log("Not enough materials");
                 return;
             }
+            tempMatsCount[name] = requiredNumber;
         }
 
         currentEquipment.Upgrade();
-        foreach (var item in slots)
+
+        foreach (MaterialSlot mat in slots)
         {
-            var name = item.GetName();
-            while (tempMatsCount[name] > 0) {
-                inventory.Remove(inventory.items.IndexOf(item.GetItem()));
-                tempMatsCount[name] -= 1;
+            string name = mat.GetName();
+            while (tempMatsCount[name] > 0)
+            {
+                inventory.Remove(inventory.items.IndexOf(mat.GetItem()));
+                tempMatsCount[name]--;
             }
         }
-       
+
         //UpdatePlayerEquipment();
         UpdateUI(currentEquipment);
     }

@@ -64,10 +64,8 @@ public abstract class CharacterInfoManager : MonoBehaviour
 
         float health = Mathf.Max(currentHealth.value, 0);
         float percentage = health / character.maxHealth;
-        float newPosition = - healthMidRect.localScale.x / 2;
         float newWidth = healthMidRect.localScale.x * percentage;
         healthFrontRect.localScale = new Vector3(newWidth, healthMidRect.localScale.y);
-        healthFrontRect.localPosition = new Vector3(newPosition, healthMidRect.localPosition.y);
 
         healthFrontRect.GetComponent<Image>().color = character.ChooseBarColor(percentage);
 
@@ -79,10 +77,8 @@ public abstract class CharacterInfoManager : MonoBehaviour
         Character character = GetCurrentCharacter();
 
         float percentage = ((float) currentXp.value) / character.requiredXp;
-        float newPosition = -xpMidRect.localScale.x / 2;
         float newWidth = xpMidRect.localScale.x * percentage;
         xpFrontRect.localScale = new Vector3(newWidth, xpMidRect.localScale.y);
-        xpFrontRect.localPosition = new Vector3(newPosition, xpMidRect.localPosition.y);
 
         xpText.text = currentXp.value + "/" + character.requiredXp;
 

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,7 +12,9 @@ public abstract class Building : Entity
     private GameObject signGameObject;
 
     private Vector3 healthBarScale;
-    
+
+    public List<MatDict> materials;
+
     protected override void OnAwake()
     {
         navMesh = FindObjectOfType<NavMeshSurface2d>();
