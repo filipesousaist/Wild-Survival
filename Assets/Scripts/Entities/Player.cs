@@ -11,6 +11,7 @@ public class Player : Character
 
     protected override void OnAwake()
     {
+        base.OnAwake();
         stats = GetComponent<PlayerStats>();
         ((PlayerStats)stats).UpdateEquipments();
     }
