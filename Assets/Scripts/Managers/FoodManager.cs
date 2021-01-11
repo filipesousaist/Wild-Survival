@@ -9,7 +9,6 @@ public class FoodManager : MonoBehaviour
     private Text foodText;
 
     public FloatValue currentFood;
-    public float maxFood;
 
     protected ActivistsManager activistsManager;
 
@@ -30,35 +29,44 @@ public class FoodManager : MonoBehaviour
     public void InitFood()
     {
         foodBar.SetActive(true);
-        currentFood.value=5;
+        currentFood.value = Food.MAX;
+    }
+
+    public void Start()
+    {
+        UpdateFoodBar();
     }
 
     public void UpdateFoodBar()
     {
         float food = Mathf.Max(currentFood.value, 0);
-        float percentage = food / maxFood;
+        float percentage = food / Food.MAX;
         float newWidth = foodMidRect.localScale.x * percentage;
         foodFrontRect.localScale = new Vector3(newWidth, foodMidRect.localScale.y);
 
-        foodText.text = food + "/" + maxFood;
+        foodText.text = food + "/" + Food.MAX;
     }
 
     private void FixedUpdate() {
         time += Time.deltaTime;
         if (time > 30) {
             time = 0;
-            currentFood.value--;
+            currentFood.value --;
             UpdateFoodBar();
-            if (currentFood.value == 0) {
-                foreach (Player player in activistsManager.players)
-                {
-                    if (player.HasRhino())
-                        player.rhino.TakeDamage(player.rhino.maxHealth);
-                    player.TakeRadiationDamage(player.maxHealth);
-                    player.UpdateBarHealth();
-                    player.rhino.UpdateBarHealth();
-                } 
-            }
+            if (currentFood.value == 0)
+                DieFromHunger();
+        }
+    }
+
+    private void DieFromHunger()
+    {
+        foreach (Player player in activistsManager.players)
+        {
+            if (player.HasRhino())
+                player.rhino.TakeDamage(player.rhino.maxHealth);
+            player.TakeRadiationDamage(player.maxHealth);
+            player.UpdateBarHealth();
+            player.rhino.UpdateBarHealth();
         }
     }
 }

@@ -9,9 +9,7 @@ public class FoodItem : Item
     public Signal foodSignal; 
     public override void Use() {
 
-        currentFood.value++;
-        if(currentFood.value>5)
-            currentFood.value=5;
+        currentFood.value = Mathf.Min(currentFood.value + 1, Food.MAX);
         foodSignal.Raise();
         RemoveFromInventory();
     }
