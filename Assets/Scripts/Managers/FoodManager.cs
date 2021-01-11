@@ -2,8 +2,6 @@
 using UnityEngine.UI;
 public class FoodManager : MonoBehaviour
 {
-
-
     // Food
     public GameObject foodBar;
     private Transform foodMidRect;
@@ -21,7 +19,6 @@ public class FoodManager : MonoBehaviour
     {
         InitFood();
 
-
         Transform foodTransform = foodBar.transform.Find("Bar");
         foodMidRect = foodTransform.Find("Middle Rect");
         foodFrontRect = foodTransform.Find("Front Rect");
@@ -36,31 +33,32 @@ public class FoodManager : MonoBehaviour
         currentFood.value=5;
     }
 
-
     public void UpdateFoodBar()
     {
-
         float food = Mathf.Max(currentFood.value, 0);
         float percentage = food / maxFood;
-        float newPosition = - foodMidRect.localScale.x / 2 + (float) 0.4 ;
         float newWidth = foodMidRect.localScale.x * percentage;
         foodFrontRect.localScale = new Vector3(newWidth, foodMidRect.localScale.y);
-        foodFrontRect.localPosition = new Vector3(newPosition, foodMidRect.localPosition.y);
 
         foodText.text = food + "/" + maxFood;
     }
 
-    private void FixedUpdate(){
-        time+=Time.deltaTime;
-        if(time>30){
-            time=0;
+    private void FixedUpdate() {
+        time += Time.deltaTime;
+        if (time > 30) {
+            time = 0;
             currentFood.value--;
             UpdateFoodBar();
-            if(currentFood.value==0){
-                foreach(var player in activistsManager.players)
-                    player.TakeDamage(100);
+            if (currentFood.value == 0) {
+                foreach (Player player in activistsManager.players)
+                {
+                    if (player.HasRhino())
+                        player.rhino.TakeDamage(player.rhino.maxHealth);
+                    player.TakeRadiationDamage(player.maxHealth);
+                    player.UpdateBarHealth();
+                    player.rhino.UpdateBarHealth();
+                } 
             }
         }
     }
-
 }
