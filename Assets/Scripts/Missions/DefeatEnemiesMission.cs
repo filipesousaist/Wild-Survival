@@ -24,7 +24,7 @@ public class DefeatEnemiesMission : Mission
         return defeated == amount;
     }
 
-    public override string ToString()
+    public override string GetMessage()
     {
         return "Defeat zombies: " + defeated + "/" + amount;
     }

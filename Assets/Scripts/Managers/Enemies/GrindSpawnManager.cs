@@ -1,18 +1,11 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GrindSpawnManager : SpawnManager
 {
     public int maxEnemies;
     public Vector2[] spawnPoints;
     public float minSpawnDistance;
-
-    public string welcomeMessage;
-    public string[] miscMessages;
-
-    public float welcomeMessageDuration;
-    public float miscMessageDuration;
 
     public float spawnPeriod;
     private float spawnTime;
@@ -27,14 +20,14 @@ public class GrindSpawnManager : SpawnManager
         spawnTime += Time.deltaTime;
         if (spawnTime >= spawnPeriod)
         {
-            spawnTime = 0;
+            spawnTime -= spawnPeriod;
             UpdateEnemies();
         }
     }
 
     override public void OnEnterMode()
     {
-        StartCoroutine(UpdateAll());
+        StartCoroutine(UpdateEnemiesCo());
         spawnTime = 0;
     }
 
@@ -125,20 +118,6 @@ public class GrindSpawnManager : SpawnManager
     private bool IsFarFromAllEnemies(Vector3 point)
     {
         return IsFarFromAll(FindObjectsOfType<EnemyMovement>(), point);
-    }
-
-    override public void UpdateText()
-    {
-        string newText;
-        if (Time.time <= welcomeMessageDuration)
-            newText = welcomeMessage;
-        else
-        {
-            int messageIndex = Mathf.FloorToInt((Time.time - welcomeMessageDuration) / miscMessageDuration);
-            newText = miscMessages[messageIndex % miscMessages.Length];
-        }
-
-        textObj.GetComponent<Text>().text = newText;
     }
 
     protected override EnemyTargetCriteria GetTargetCriteria()

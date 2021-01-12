@@ -17,7 +17,6 @@ public abstract class SpawnManager : MonoBehaviour
         textObj = manager.textObj;
         enemiesObj = manager.enemiesObj;
         prefabs = manager.prefabs;
-        helpArrow = manager.helpArrow;
     }
 
     public abstract void OnEnterMode();

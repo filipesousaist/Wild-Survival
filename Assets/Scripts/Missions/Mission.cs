@@ -10,6 +10,23 @@ public abstract class Mission : MonoBehaviour
         return "";
     }
 
-    public virtual void OnBegin() { }
-    public virtual void OnFinish() { }
+    public IEnumerator Begin()
+    {
+        yield return null;
+        gameObject.SetActive(true);
+        OnBegin();
+    }
+
+    public IEnumerator Finish()
+    {
+        OnFinish();
+        gameObject.SetActive(false);
+        yield return null;
+    }
+
+
+    protected virtual void OnBegin() { }
+    protected virtual void OnFinish() { }
+
+    public virtual void UpdateHelpArrow(GameObject arrow) { }
 }

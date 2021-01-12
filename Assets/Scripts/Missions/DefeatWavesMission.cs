@@ -13,7 +13,12 @@ public class DefeatWavesMission : Mission
         wavesSpawnManager = FindObjectOfType<WavesSpawnManager>();
     }
 
-    public override void OnBegin()
+    protected override void OnBegin()
+    {
+        enemiesManager.ChangeMode();
+    }
+
+    protected override void OnFinish()
     {
         enemiesManager.ChangeMode();
     }
@@ -41,5 +46,28 @@ public class DefeatWavesMission : Mission
                 " zombies defeated";
         }
         return "";
+    }
+
+    public override void UpdateHelpArrow(GameObject helpArrow)
+    {
+        List<EnemyMovement> invisibleEnemyMovs = enemiesManager.GetInisibleEnemyMovements();
+
+        int numInvisble = invisibleEnemyMovs.Count;
+        int numVisible = enemiesManager.GetAllEnemies().Length - numInvisble;
+        if (numVisible == 0 && numInvisble > 0)
+        {
+            Vector2 difference = enemiesManager.GetNearestToCamera(invisibleEnemyMovs).position - Camera.main.transform.position;
+
+            float angle = Vector3.SignedAngle(Vec3.E_Y, difference.normalized, Vec3.E_Z);
+            helpArrow.transform.eulerAngles =
+                new Vector3(0, 0, angle);
+            helpArrow.transform.localPosition = new Vector3(
+                -Window.QUARTER_H * Mathf.Sin(angle * Mathf.Deg2Rad),
+                Window.QUARTER_H * Mathf.Cos(angle * Mathf.Deg2Rad),
+                0);
+            helpArrow.SetActive(true);
+        }
+        else
+            helpArrow.SetActive(false);
     }
 }

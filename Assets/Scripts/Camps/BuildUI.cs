@@ -90,36 +90,20 @@ public class BuildUI : MonoBehaviour
 
     public void OnBuildButton()
     {
-        Dictionary<string, int> tempMatsCount = new Dictionary<string, int>(matsCount);
-        foreach (Item item in inventory.items)
-        {
-            if (tempMatsCount.ContainsKey(item.name))
-            {
-                tempMatsCount[item.name] ++;
-            }
-            else
-                tempMatsCount[item.name] = 0;
-        }
         foreach (MaterialSlot mat in slots)
         {
-            string name = mat.GetName();
             int requiredNumber = int.Parse(mat.requiredNumber.text);
-            if (requiredNumber > tempMatsCount[name])
+            if (requiredNumber > inventory.items[mat.GetItem()])
             {
                 Debug.Log("Not enough materials");
                 return;
             }
-            tempMatsCount[name] = requiredNumber;
         }
 
         foreach (MaterialSlot mat in slots)
         {
-            string name = mat.GetName();
-            while (tempMatsCount[name] > 0)
-            {
-                inventory.Remove(inventory.items.IndexOf(mat.GetItem()));
-                tempMatsCount[name] --;
-            }
+            var item = mat.GetItem();
+            inventory.Remove(item, int.Parse(mat.requiredNumber.text));
         }
 
         if (currentBuilding.level == 0)

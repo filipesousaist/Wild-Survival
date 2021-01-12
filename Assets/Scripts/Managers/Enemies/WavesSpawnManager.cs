@@ -15,7 +15,7 @@ public class WavesSpawnManager : SpawnManager
     override public void OnEnterMode()
     {
         currentWave = -1;
-        StartCoroutine(UpdateAll());
+        StartCoroutine(UpdateEnemiesCo());
     }
 
     override public void OnExitMode()
