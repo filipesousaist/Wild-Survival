@@ -137,9 +137,9 @@ public class EnemiesManager : MonoBehaviour
         return invisibleEnemyMovs;
     }
 
-    public void UpdateBar()
+    public void UpdateEnemies()
     {
-        StartCoroutine(spawnManagers[mode].UpdateAll());
+        StartCoroutine(spawnManagers[mode].UpdateEnemiesCo());
     }
 
     public EnemyTargetAI GetTargetAI()

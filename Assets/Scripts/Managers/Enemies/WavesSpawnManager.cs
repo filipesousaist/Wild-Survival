@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class WavesSpawnManager : SpawnManager
 {
-    private int currentWave;
+    [ReadOnly] public int currentWave;
     public int[] waves;
     public Vector2[] spawnPoints;
 
@@ -67,32 +67,6 @@ public class WavesSpawnManager : SpawnManager
                 coords[y * sideLength + x] = topLeft + new Vector3(x, y, 0);
 
         return coords;
-    }
-
-    override public void UpdateText()
-    {
-        string newText = "";
-
-        if (currentWave >= 0)
-        {
-            if (currentWave < waves.Length)
-            {
-                Enemy[] enemies = enemiesManager.GetAllEnemies();
-                int waveEnemiesAlive = 0;
-
-                foreach (Enemy en in enemies)
-                    if (en.wave == currentWave)
-                        waveEnemiesAlive++;
-
-                newText = "Wave " + (currentWave + 1) + " of " + waves.Length + ":";
-                newText += " " + waveEnemiesAlive + "/" + waves[currentWave] + " zombies left";
-            }
-            else
-                newText = "All zombies defeated! :)";
-        }
-        
-
-        textObj.GetComponent<Text>().text = newText;
     }
 
     protected override EnemyTargetCriteria GetTargetCriteria()
