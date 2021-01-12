@@ -22,8 +22,6 @@ public class EnemiesManager : MonoBehaviour
 
     public GameObject[] prefabs;
 
-    public GameObject helpArrow;
-
     private void Awake()
     {
         enemiesObj = GameObject.Find("Enemies");
@@ -41,21 +39,13 @@ public class EnemiesManager : MonoBehaviour
         spawnManagers[EnemiesMode.waves].enabled = false;
         mode = EnemiesMode.grind;
         spawnManagers[mode].OnEnterMode();
-        StartCoroutine(spawnManagers[mode].UpdateAll());
+        StartCoroutine(spawnManagers[mode].UpdateEnemiesCo());
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.X))
             ChangeMode();
-    }
-
-    private void FixedUpdate()
-    {
-        if (mode == EnemiesMode.grind)
-            spawnManagers[mode].UpdateText();
-        else // waves
-            UpdateHelpArrow();
     }
 
     public void ChangeMode()
@@ -83,31 +73,7 @@ public class EnemiesManager : MonoBehaviour
             Destroy(enemy.transform.gameObject);
     }
 
-    private void UpdateHelpArrow()
-    {
-        List<EnemyMovement> invisibleEnemyMovs = GetInisibleEnemyMovements();
-
-        int numInvisble = invisibleEnemyMovs.Count;
-        int numVisible = GetAllEnemies().Length - numInvisble;
-        if (numVisible == 0 && numInvisble > 0)
-        {
-            Vector2 difference = GetNearestToCamera(invisibleEnemyMovs).position - Camera.main.transform.position;
-
-            float angle = Vector3.SignedAngle(Vec3.E_Y, difference.normalized, Vec3.E_Z);
-            helpArrow.transform.eulerAngles = 
-                new Vector3(0, 0, angle);
-            helpArrow.transform.localPosition = new Vector3(
-                -Window.QUARTER_H * Mathf.Sin(angle * Mathf.Deg2Rad),
-                Window.QUARTER_H * Mathf.Cos(angle * Mathf.Deg2Rad), 
-                0);
-            helpArrow.SetActive(true);
-        }
-        else
-            helpArrow.SetActive(false);
-
-    }
-
-    private Transform GetNearestToCamera(List<EnemyMovement> enemyMovs)
+    public Transform GetNearestToCamera(List<EnemyMovement> enemyMovs)
     {
         Vector2 cameraPos = Camera.main.transform.position;
         Vector2 enemyPos = enemyMovs[0].transform.position;
@@ -127,7 +93,7 @@ public class EnemiesManager : MonoBehaviour
         return nearest;
     }
 
-    private List<EnemyMovement> GetInisibleEnemyMovements()
+    public List<EnemyMovement> GetInisibleEnemyMovements()
     {
         List<EnemyMovement> invisibleEnemyMovs = new List<EnemyMovement>();
 
@@ -137,9 +103,9 @@ public class EnemiesManager : MonoBehaviour
         return invisibleEnemyMovs;
     }
 
-    public void UpdateBar()
+    public void UpdateEnemies()
     {
-        StartCoroutine(spawnManagers[mode].UpdateAll());
+        StartCoroutine(spawnManagers[mode].UpdateEnemiesCo());
     }
 
     public EnemyTargetAI GetTargetAI()

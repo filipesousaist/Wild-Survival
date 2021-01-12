@@ -127,4 +127,9 @@ public abstract class Building : Entity
         navMesh.BuildNavMesh();
         Debug.unityLogger.logEnabled = true;
     }
+
+    public bool IsBuilt()
+    {
+        return gameObject.layer == Layers.UNWALKABLE;
+    }
 }

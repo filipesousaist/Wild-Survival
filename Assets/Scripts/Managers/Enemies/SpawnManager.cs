@@ -17,22 +17,19 @@ public abstract class SpawnManager : MonoBehaviour
         textObj = manager.textObj;
         enemiesObj = manager.enemiesObj;
         prefabs = manager.prefabs;
-        helpArrow = manager.helpArrow;
     }
 
     public abstract void OnEnterMode();
     public abstract void OnExitMode();
 
-    public IEnumerator UpdateAll()
+    public IEnumerator UpdateEnemiesCo()
     {
         // Wait until end of frame to make sure objects were properly destroyed
         yield return null; 
         UpdateEnemies();
-        UpdateText();
     }
 
     protected abstract void UpdateEnemies();
-    public abstract void UpdateText();
 
     protected GameObject SpawnEnemy(Vector2 position)
     {
