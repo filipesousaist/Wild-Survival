@@ -20,25 +20,39 @@ public class Inventory : MonoBehaviour
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
 
-    public List<Item> items = new List<Item>();
-
-    //public int space = 9;
+    public Dictionary<Item, int> items = new Dictionary<Item, int>();
 
     private int lastItemRemoved;
+
+    public InventoryUI invUI;
+
+    private void Start()
+    {
+        invUI = FindObjectOfType<InventoryUI>();
+    }
+
     public bool Add(Item item)
     {
         if (!item.isDefaultItem)
         {
-            items.Add(item);
-
-            if (onItemChangedCallback != null) { 
-                onItemChangedCallback.Invoke();
+            if (items.ContainsKey(item))
+            {
+                items[item] += 1;
+                invUI.UpdateSlot(item, items[item]);
             }
+            else { 
+                items.Add(item, 1);
+                /*if (onItemChangedCallback != null) { 
+                    onItemChangedCallback.Invoke();
+                }*/
+                invUI.AddSlot(item);
+            }
+
         }
         return true;
     }
 
-    public void Remove(int index)
+    /*public void Remove(int index)
     {
         items.RemoveAt(index);
         lastItemRemoved = index;
@@ -46,15 +60,41 @@ public class Inventory : MonoBehaviour
         {
             onItemChangedCallback.Invoke();
         }
-    }
+    }*/
 
     public void Remove(Item item)
     {
-        items.Remove(item);
-
-        if (onItemChangedCallback != null)
+        if (items[item] > 1)
         {
-            onItemChangedCallback.Invoke();
+            items[item] -= 1;
+            invUI.UpdateSlot(item, items[item]);
+        }
+        else { 
+            items.Remove(item);
+            invUI.RemoveSlot(item);
+            /*if (onItemChangedCallback != null)
+            {
+                onItemChangedCallback.Invoke();
+            }*/
+        }
+
+    }
+
+
+    public void Remove(Item item, int number) {
+        if (items[item] - number > 0)
+        {
+            items[item] -= number;
+            invUI.UpdateSlot(item, items[item]);
+        }
+        else
+        {
+            items.Remove(item);
+            invUI.RemoveSlot(item);
+            /*if (onItemChangedCallback != null)
+            {
+                onItemChangedCallback.Invoke();
+            }*/
         }
     }
 

@@ -35,13 +35,44 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
+    public void UpdateSlot(Item item, int number) {
+        foreach (var slot in slots)
+        {
+            if (slot.GetName().Equals(item.name))
+            {
+                slot.UpdateNumber(number);
+            }
+        }
+    }
+
+    public void RemoveSlot(Item item)
+    {
+        foreach (var slot in slots)
+        {
+            if (slot.GetName().Equals(item.name))
+            {
+                slots.Remove(slot);
+                Destroy(slot.gameObject);
+                break;
+            }   
+        }
+    }
+
+    public void AddSlot(Item item)
+    {
+        InventorySlot slot = Instantiate(itemSlotPrefab);
+        slot.transform.SetParent(itemsParent, false);
+        slot.AddItem(item);
+        slots.Add(slot);
+    }
+
     void UpdateUI() 
     {
         //https://www.youtube.com/watch?v=QPYGPGvg0PI
         if (inventory.items.Count > slots.Count) {
             InventorySlot slot = Instantiate(itemSlotPrefab);
             slot.transform.SetParent(itemsParent, false);
-            slot.AddItem(inventory.items[inventory.items.Count - 1]);
+            //slot.AddItem(inventory.items[inventory.items.Count - 1]);
             slots.Add(slot);
         }
         else if(inventory.items.Count < slots.Count) {

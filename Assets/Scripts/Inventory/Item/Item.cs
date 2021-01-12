@@ -7,10 +7,18 @@ public class Item : ScriptableObject
 
     public Sprite icon = null;
 
+    public bool usable;
+
     public bool isDefaultItem = false;
+
+    [SerializeField] int numberHeld;
 
     public virtual void Use() {
         Debug.Log("Using" + name);
+        if (usable)
+        {
+            RemoveFromInventory();
+        }
     }
 
     public void RemoveFromInventory()
