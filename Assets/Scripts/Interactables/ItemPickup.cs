@@ -25,4 +25,9 @@ public class ItemPickup : Interactable
             Destroy(gameObject);
         }
     }
+
+    public override string GetInteractText()
+    {
+        return "Pick Up";
+    }
 }

@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88972bae5657d8e4d8afdc67a6f3072a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInteractable: 0
 --- !u!1 &19617245502799480
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,11 +181,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityName: Tent
   maxHealth: 100
-  baseAttack: 0
+  stats: {fileID: 0}
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
   level: 0
+  materials:
+  - item: {fileID: 11400000, guid: c900bfd9067f56740acf4fd7b233f5c8, type: 2}
+    n: 4
+  - item: {fileID: 11400000, guid: 4a6df18311b507143b7dd0cd4f162ee8, type: 2}
+    n: 2
 --- !u!50 &19617245502799427
 Rigidbody2D:
   serializedVersion: 4

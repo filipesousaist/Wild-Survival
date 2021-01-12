@@ -21,6 +21,7 @@ public abstract class Entity : MonoBehaviour
         animator = GetComponent<Animator>();
         movement = GetComponent<EntityMovement>();
         stats = GetComponent<CharacterStats>();
+        health = maxHealth;
         CreateHealthBar();
         OnAwake();
     }

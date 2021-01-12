@@ -14,13 +14,15 @@ public abstract class Character : Entity, IEnemyTarget
     [ReadOnly] public int requiredXp;
     [ReadOnly] public int level;
 
-    override protected void OnAwake() { }
-
-    protected override void OnStart()
-    {
+    override protected void OnAwake() {
         xp = 0;
         level = 1;
         UpdateRequiredXp();
+    }
+
+    protected override void OnStart()
+    {
+        
     }
 
     override public void TakeDamage(float damage)
@@ -45,6 +47,7 @@ public abstract class Character : Entity, IEnemyTarget
 
         UpdateRequiredXp();
         IncreaseAttributes();
+        UpdateBarHealth();
     }
 
     public override void Heal(float healValue)

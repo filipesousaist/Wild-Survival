@@ -10,12 +10,17 @@ public class Sign : Interactable
 
     public GameObject textPrefab;
 
+    private GameObject buildUIObject;
+    private BuildUI buildUI;
+
     protected override void OnAwake()
     {
         base.OnAwake();
         building = GetComponentInParent<Building>();
         InitText();
         text = textGameObject.GetComponentInChildren<Text>();
+        buildUIObject = FindObjectOfType<Canvas>().transform.Find("BuildMenu").gameObject;
+        buildUI = FindObjectOfType<BuildUI>();
     }
 
     private void InitText()
@@ -46,6 +51,8 @@ public class Sign : Interactable
     protected override void OnPlayerMoveAway()
     {
         textGameObject.SetActive(false);
+        if (buildUIObject.activeSelf)
+            ToggleUI();
     }
 
     private void UpdateText()
@@ -65,9 +72,17 @@ public class Sign : Interactable
     protected override IEnumerator OnInteract()
     {
         yield return base.OnInteract();
-        textGameObject.SetActive(false);
+        ToggleUI();
+        textGameObject.SetActive(!buildUIObject.activeSelf);
+        if (buildUIObject.activeSelf)
+            buildUI.UpdateUI(building);
     }
 
+    private void ToggleUI()
+    {
+        buildUIObject.SetActive(!buildUIObject.activeSelf);
+    }
+    /*
     protected override void AfterInteract()
     {
         if (building.level == 0)
@@ -75,9 +90,10 @@ public class Sign : Interactable
         else
             building.Repair();
     }
-
+    */
     public override string GetInteractText()
     {
-        return building.level == 0 ? "Build" : "Repair";
+        return buildUIObject.activeSelf ? "Close" :
+               building.level == 0 ? "Build" : "Repair";
     }
 }

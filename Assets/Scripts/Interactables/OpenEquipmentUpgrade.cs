@@ -21,9 +21,8 @@ public class OpenEquipmentUpgrade : Interactable
         upgradeUI.SetActive(!upgradeUI.activeSelf);
     }
 
-    protected override void OnTriggerExit2D(Collider2D other)
+    protected override void OnPlayerMoveAway()
     {
-        base.OnTriggerExit2D(other);
         if (upgradeUI.activeSelf) {
             ToggleUI();
         }

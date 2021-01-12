@@ -15,6 +15,7 @@ TagManager:
   - deadDummy
   - menu
   - camp
+  - Collectable
   layers:
   - Default
   - TransparentFX

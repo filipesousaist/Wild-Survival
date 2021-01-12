@@ -169,11 +169,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityName: Dummy
   maxHealth: 1
-  baseAttack: 0
+  stats: {fileID: 0}
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
     type: 3}
   level: 0
+  materials:
+  - item: {fileID: 11400000, guid: c900bfd9067f56740acf4fd7b233f5c8, type: 2}
+    n: 1
+  - item: {fileID: 11400000, guid: 4a6df18311b507143b7dd0cd4f162ee8, type: 2}
+    n: 3
   collider2D: {fileID: 6795300005368703729}
 --- !u!60 &6795300005368703735
 PolygonCollider2D:

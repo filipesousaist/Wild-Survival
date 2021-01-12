@@ -139,7 +139,11 @@ public class Rhino : Character
 
     override protected void IncreaseAttributes()
     {
-        stats.UpgradeDamage(1.5f);
+        maxHealth += 4;
+        if (health > 0)
+        {
+            health += 4;
+        }
     }
 
     override protected void OnDeath()

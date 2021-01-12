@@ -5,7 +5,7 @@ public class ActivistsManager : MonoBehaviour
 {
     public delegate void OnPlayerChanged();
     public OnPlayerChanged onPlayerChangedCallback;
-
+    public Player[] players;
     public PlayerMovement[] playerMovs;
     [ReadOnly] public int currentPlayer = 0;
     public Signal changePlayerSignal;
@@ -19,10 +19,12 @@ public class ActivistsManager : MonoBehaviour
 
     public float[] walkOffset;
     public Vector3[] warpOffset;
+
     // Awake is called before every Start method
     private void Awake()
     {
         playerMovs = GetComponentsInChildren<PlayerMovement>();
+        players = GetComponentsInChildren<Player>();
         cam = Camera.main.GetComponent<CameraMovement>();
         dangerAnimation = postVolume.GetComponent<PostProcessingScript>();
         dangerAnimation.players = transform;
@@ -70,6 +72,8 @@ public class ActivistsManager : MonoBehaviour
         playerMov.inputEnabled = true;
         cam.target = playerMov.transform;
         dangerAnimation.currentPlayer = currentPlayer;
+
+        UpdateInteractables();
 
         UpdateCharactersInfo();
         UpdateOffset();
@@ -143,6 +147,17 @@ public class ActivistsManager : MonoBehaviour
                 player.TeleportPlayer(currentPlayerPos + warpOffset[i++]);
                 player.TeleportRhino();
             }
+        }
+    }
+
+    private void UpdateInteractables()
+    {
+        BoxCollider2D collider = GetCurrentPlayerMovement().GetComponent<BoxCollider2D>();
+
+        foreach (Interactable interactable in FindObjectsOfType<Interactable>())
+        {
+            interactable.TestPlayerNear(collider);
+            interactable.TestPlayerFar(collider);
         }
     }
 
