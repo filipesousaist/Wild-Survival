@@ -12,7 +12,7 @@ public class InventorySlot : MonoBehaviour
 
     public Image icon;
 
-    public Button removeButton;
+    //public Button removeButton;
 
     public int index;
 
@@ -30,7 +30,7 @@ public class InventorySlot : MonoBehaviour
 
         icon.sprite = item.icon;
         icon.enabled = true;
-        removeButton.interactable = true;
+        //removeButton.interactable = true;
         quantity += 1;
         numberHeld.text = quantity.ToString();
     }
@@ -41,7 +41,7 @@ public class InventorySlot : MonoBehaviour
 
         icon.sprite = null;
         icon.enabled = false;
-        removeButton.interactable = false;
+        //removeButton.interactable = false;
     }
 
     /*public void OnRemoveButton()
