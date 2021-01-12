@@ -15,8 +15,8 @@ public class PlayerStats : CharacterStats
         damage.ClearModifier();
         foreach(Equipment equipment in equipments)
         {
-            armor.AddModifier(equipment.armorModifier);
-            damage.AddModifier(equipment.damageModifier);
+            armor.AddModifier(equipment.currentArmor);
+            damage.AddModifier(equipment.currentDMG);
         }
     }
 }

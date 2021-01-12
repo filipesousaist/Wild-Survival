@@ -3,12 +3,14 @@ using UnityEngine;
 
 public class OpenEquipmentUpgrade : Interactable
 {
-    private GameObject upgradeUI;
+    private GameObject upgradeUIGameobject;
+    private MaterialUI materialUI;
 
     protected override void OnAwake()
     {
         base.OnAwake();
-        upgradeUI = FindObjectOfType<Canvas>().transform.Find("ItemsUpgradeMenu").gameObject;
+        upgradeUIGameobject = FindObjectOfType<Canvas>().transform.Find("ItemsUpgradeMenu").gameObject;
+        materialUI = FindObjectOfType<MaterialUI>();
     }
 
     protected override IEnumerator OnInteract()
@@ -18,18 +20,22 @@ public class OpenEquipmentUpgrade : Interactable
     }
 
     private void ToggleUI() {
-        upgradeUI.SetActive(!upgradeUI.activeSelf);
+        if (!upgradeUIGameobject.activeSelf)
+        {
+            materialUI.CheckMats();
+        }
+        upgradeUIGameobject.SetActive(!upgradeUIGameobject.activeSelf);
     }
 
     protected override void OnPlayerMoveAway()
     {
-        if (upgradeUI.activeSelf) {
+        if (upgradeUIGameobject.activeSelf) {
             ToggleUI();
         }
     }
 
     public override string GetInteractText()
     {
-        return upgradeUI.activeSelf ? "Close" : "Use";
+        return upgradeUIGameobject.activeSelf ? "Close" : "Use";
     }
 }

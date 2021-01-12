@@ -21,6 +21,10 @@ public class Equipment : Item, ISerializationCallbackReceiver
     public float armorToUpgrade;
     public float damageToUpgrade;
 
+    [ReadOnly] public float currentDMG;
+
+    [ReadOnly] public float currentArmor;
+
     public int initialLevel;
 
     [ReadOnly] public int level;
@@ -30,6 +34,9 @@ public class Equipment : Item, ISerializationCallbackReceiver
     public void OnAfterDeserialize()
     {
         level = initialLevel;
+
+        currentArmor = armorModifier;
+        currentDMG = damageModifier;
     }
 
     public void OnBeforeSerialize() { }
@@ -41,7 +48,7 @@ public class Equipment : Item, ISerializationCallbackReceiver
 
     private void UpgradeModifiers()
     {
-        armorModifier += armorToUpgrade;
-        damageToUpgrade += damageToUpgrade;
+        currentArmor += armorToUpgrade;
+        currentDMG+= damageToUpgrade;
     }
 }

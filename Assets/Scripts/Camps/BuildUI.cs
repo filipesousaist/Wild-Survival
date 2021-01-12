@@ -86,8 +86,51 @@ public class BuildUI : MonoBehaviour
         string action = building.level == 0 ? "Build" : "Repair";
         title.text = action + " " + building.entityName;
         buttonText.text = action;
+
+        CheckMats();
     }
 
+    public bool CheckMats() {
+        bool canUpgrade = true;
+        foreach (MaterialSlot mat in slots)
+        {
+            int requiredNumber = mat.requiredNumber;
+            var hasItem = inventory.items.ContainsKey(mat.GetItem());
+            if (!hasItem || requiredNumber > inventory.items[mat.GetItem()])
+            {
+                canUpgrade = false;
+                if (hasItem)
+                {
+                    mat.text.text = inventory.items[mat.GetItem()].ToString() + "/" + requiredNumber.ToString();
+                }
+                else
+                {
+                    mat.text.text = "0/" + requiredNumber.ToString();
+                }
+            }
+            else
+            {
+                mat.text.text = inventory.items[mat.GetItem()].ToString() + "/" + requiredNumber.ToString();
+            }
+        }
+
+        if (!canUpgrade)
+        {
+            Debug.Log("Not enough materials");
+            var temp = button.image.color;
+            temp.r = 0.7843137f;
+            temp.g = 0.7843137f;
+            temp.b = 0.7843137f;
+            button.image.color = temp;
+            return false;
+        }
+        var tmp = button.image.color;
+        tmp.r = 1;
+        tmp.g = 1;
+        tmp.b = 1;
+        button.image.color = tmp;
+        return true;
+    }
     public void OnBuildButton()
     {
         //Dictionary<string, int> tempMatsCount = new Dictionary<string, int>(matsCount);
@@ -100,22 +143,15 @@ public class BuildUI : MonoBehaviour
             else
                 tempMatsCount[item.name] = 0;
         }*/
-        foreach (MaterialSlot mat in slots)
+        if (!CheckMats())
         {
-            //string name = mat.GetName();
-            int requiredNumber = int.Parse(mat.requiredNumber.text);
-            if (requiredNumber > inventory.items[mat.GetItem()])
-            {
-                Debug.Log("Not enough materials");
-                return;
-            }
-            //tempMatsCount[name] = requiredNumber;
+            return;
         }
 
         foreach (MaterialSlot mat in slots)
         {
             var item = mat.GetItem();
-            inventory.Remove(item, int.Parse(mat.requiredNumber.text));
+            inventory.Remove(item, mat.requiredNumber);
         }
 
         if (currentBuilding.level == 0)
