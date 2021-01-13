@@ -91,7 +91,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 7125833886775397102}
   materialUI: {fileID: 0}
-  requiredNumber: {fileID: 6055791771026524913}
+  text: {fileID: 6055791771026524913}
+  requiredNumber: 0
 --- !u!1 &1808972479207478555
 GameObject:
   m_ObjectHideFlags: 0

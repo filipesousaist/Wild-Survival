@@ -1,4 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +24,10 @@ public class MaterialUI : MonoBehaviour
     public ActivistsManager activistsManager;
 
     public Button upgrade;
+
+    public TMP_Text stat;
+
+    public TMP_Text upgradeText;
     // Start is called before the first frame update
     void Start()
     {
@@ -84,29 +91,77 @@ public class MaterialUI : MonoBehaviour
                 Destroy(slot.gameObject);
             }
         }
+
+        CheckMats();
+
+        if (currentEquipment.armorToUpgrade > 0)
+        {
+            stat.text = "Armor";
+            upgradeText.text = currentEquipment.currentArmor.ToString() + "	---->	      " + (currentEquipment.currentArmor + 1).ToString();
+        }
+        else
+        {
+            stat.text = "Damage";
+            upgradeText.text = currentEquipment.currentDMG.ToString() + "	---->	      " + (currentEquipment.currentDMG + 1).ToString();
+        }
     }
 
     public void OnUpgradeButton()
     {
-        foreach (MaterialSlot mat in slots)
-        {
-            int requiredNumber = int.Parse(mat.requiredNumber.text);
-            if (requiredNumber > inventory.items[mat.GetItem()])
-            {
-                Debug.Log("Not enough materials");
-                return;
-            }
-        }
+        if (!CheckMats()) { return; }
 
         foreach (MaterialSlot mat in slots)
         {
             var item = mat.GetItem();
-            inventory.Remove(item, int.Parse(mat.requiredNumber.text));
+            inventory.Remove(item, mat.requiredNumber);
         }
 
         currentEquipment.Upgrade();
 
         //UpdatePlayerEquipment();
         UpdateUI(currentEquipment);
+    }
+
+    public bool CheckMats()
+    {
+        bool canUpgrade = true;
+        foreach (MaterialSlot mat in slots)
+        {
+            int requiredNumber = mat.requiredNumber;
+            var hasItem = inventory.items.ContainsKey(mat.GetItem());
+            if (!hasItem || requiredNumber > inventory.items[mat.GetItem()])
+            {
+                canUpgrade = false;
+                if (hasItem)
+                {
+                    mat.text.text = inventory.items[mat.GetItem()].ToString() + "/" + requiredNumber.ToString();
+                }
+                else
+                {
+                    mat.text.text = "0/" + requiredNumber.ToString();
+                }
+            }
+            else
+            {
+                mat.text.text = inventory.items[mat.GetItem()].ToString() + "/" + requiredNumber.ToString();
+            }
+        }
+
+        if (!canUpgrade)
+        {
+            Debug.Log("Not enough materials");
+            var temp = upgrade.image.color;
+            temp.r = 0.7843137f;
+            temp.g = 0.7843137f;
+            temp.b = 0.7843137f;
+            upgrade.image.color = temp;
+            return false;
+        }
+        var tmp = upgrade.image.color;
+        tmp.r = 1;
+        tmp.g = 1;
+        tmp.b = 1;
+        upgrade.image.color = tmp;
+        return true;
     }
 }

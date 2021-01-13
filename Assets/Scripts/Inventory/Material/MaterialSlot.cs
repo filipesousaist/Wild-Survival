@@ -9,16 +9,17 @@ public class MaterialSlot : MonoBehaviour
 
     public MaterialUI materialUI;
 
-    public Text requiredNumber;
+    public Text text;
 
+    public int requiredNumber;
     public void AddItem(Item newItem, int n)
     {
         item = newItem;
 
         icon.sprite = item.icon;
         icon.enabled = true;
-
-        requiredNumber.text = n.ToString();
+        requiredNumber = n;        
+        text.text = n.ToString();
     }
 
     public string GetName() {
