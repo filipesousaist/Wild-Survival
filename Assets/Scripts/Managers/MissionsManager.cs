@@ -10,6 +10,7 @@ public class MissionsManager : MonoBehaviour
     private int numMissions;
 
     private float timeForNextMission;
+    private static readonly float MSG_SHAKE_SPEED = 10;
 
     public GameObject missionsObject;
     public GameObject missionTextObject;
@@ -35,10 +36,9 @@ public class MissionsManager : MonoBehaviour
 
     private void Update()
     {
-        missions[current].UpdateHelpArrow();
         if (timeForNextMission > 0)
         {
-            UpdateFinishMessage();
+            UpdateFinishMessage(Time.time);
             timeForNextMission -= Time.deltaTime;
             if (timeForNextMission <= 0)
                 BeginMission();
@@ -49,6 +49,8 @@ public class MissionsManager : MonoBehaviour
             if (missions[current].IsCompleted())
                 FinishMission();
         }
+
+        missions[current].UpdateHelpArrow();
     }
 
     private void BeginMission()
@@ -60,20 +62,21 @@ public class MissionsManager : MonoBehaviour
     private void FinishMission()
     {
         StartCoroutine(missions[current].Finish());
-        timeForNextMission = 3;
+        timeForNextMission = 5;
     }
 
     private void UpdateMessage()
     {
+        missionText.transform.localPosition = Vector3.zero;
         missionText.text = current < numMissions ? missions[current].GetMessage()
                                          : "All missions completed! :)";
     }
 
-    private void UpdateFinishMessage()
+    private void UpdateFinishMessage(float time)
     {
         string finishMessage = missions[current].GetFinishMessage();
-        missionText.text = finishMessage == null ? "Task completed!"
-                                                 : finishMessage;
+        missionText.text = finishMessage ?? "Task completed!";
+        missionText.transform.localPosition = MSG_SHAKE_SPEED * (Mathf.PingPong(time, 1) * 2 - 1) * Vector3.right;
     }
 
     public Mission GetCurrentMission()

@@ -1,18 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
-public class CaptureRhinoMission : MonoBehaviour
+public class CaptureRhinoMission : HelpArrowMission
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject rhinoObj;
+    public Player player;
+    protected override void OnBegin()
     {
-        
+        base.OnBegin();
+        rhinoObj.SetActive(true);
+        helpArrow.GetComponent<Image>().color = Colors.BLUE;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override bool IsCompleted()
     {
-        
+        return player.HasRhino();
+    }
+
+    public override void UpdateHelpArrow()
+    {
+        if (!IsCompleted())
+        {
+            SetArrowPosition(rhinoObj.transform.position - Camera.main.transform.position);
+            helpArrow.SetActive(true);
+        }
+        else
+            helpArrow.SetActive(false);
+    }
+    public override string GetMessage()
+    {
+        int num = IsCompleted() ? 1 : 0;
+        return "Find a rhino for " + player.entityName + ": " + num + "/1";
     }
 }
