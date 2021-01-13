@@ -25,9 +25,16 @@ public class Dummy : SimpleBuilding
         animator.SetBool("Dead", true);
         collider2D.enabled = false;
         ShowHealthBar(false);
+        GiveTrainingXp(1);
 
         gameObject.tag = "deadDummy";
         deadTime = Time.time;
+    }
+
+    private void GiveTrainingXp(int trainingXp)
+    {
+        ActivistsManager manager = GameObject.Find("Ativistas").GetComponent<ActivistsManager>();
+        manager.GetCurrentPlayer().rhino.ReceiveTrainingXp(trainingXp);
     }
 
     protected override void OnHide()
