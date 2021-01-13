@@ -75,8 +75,7 @@ public class MissionsManager : MonoBehaviour
     private void UpdateFinishMessage(float time)
     {
         string finishMessage = missions[current].GetFinishMessage();
-        missionText.text = finishMessage == null ? "Task completed!"
-                                                 : finishMessage;
+        missionText.text = finishMessage ?? "Task completed!";
         missionText.transform.localPosition = MSG_SHAKE_SPEED * (Mathf.PingPong(time, 1) * 2 - 1) * Vector3.right;
     }
 
