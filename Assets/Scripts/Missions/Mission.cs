@@ -10,6 +10,11 @@ public abstract class Mission : MonoBehaviour
         return "";
     }
 
+    public virtual string GetFinishMessage()
+    {
+        return null;
+    }
+
     public IEnumerator Begin()
     {
         yield return null;
@@ -28,5 +33,5 @@ public abstract class Mission : MonoBehaviour
     protected virtual void OnBegin() { }
     protected virtual void OnFinish() { }
 
-    public virtual void UpdateHelpArrow(GameObject arrow) { }
+    public virtual void UpdateHelpArrow() { }
 }

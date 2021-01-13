@@ -9,7 +9,6 @@ public abstract class SpawnManager : MonoBehaviour
     protected GameObject textObj;
     protected GameObject enemiesObj;
     protected GameObject[] prefabs;
-    protected GameObject helpArrow;
 
     public void Init(EnemiesManager manager)
     {

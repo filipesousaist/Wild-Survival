@@ -1,18 +1,25 @@
 ﻿using UnityEngine;
+using System.Linq;
 
-public class CollectMaterialsMission : MonoBehaviour
+public class CollectMaterialsMission : Mission
 {
-    MatDict[] materials;
+    public MatDict[] materials;
 
-    // Start is called before the first frame update
-    void Start()
+    public override bool IsCompleted()
     {
-        
+        return materials.All(mat => Inventory.instance.Count(mat.item) >= mat.n);
     }
 
-    // Update is called once per frame
-    void Update()
+    public string GetMatCountStr(MatDict mat)
     {
-        
+        return mat.item.name + ": " + Inventory.instance.Count(mat.item) + "/" + mat.n;
+    }
+
+    public override string GetMessage()
+    {
+        string message = "Collect materials. " + GetMatCountStr(materials[0]);
+        foreach (MatDict mat in materials.Skip(1))
+            message += ", " + GetMatCountStr(mat);
+        return message;
     }
 }

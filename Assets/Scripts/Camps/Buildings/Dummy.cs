@@ -6,14 +6,22 @@ public class Dummy : SimpleBuilding
 
     private float deadTime;
 
-    private readonly float disableTime = 5;
+    private readonly float disableTime = 3;
 
     private float waitTime;
 
-    private readonly float respawnTime = 5;
+    private readonly float respawnTime = 3;
 
     private bool active = true;
     private bool shouldUpdate = true;
+
+    private ActivistsManager activistsManager;
+
+    protected override void OnAwake()
+    {
+        base.OnAwake();
+        activistsManager = FindObjectOfType<ActivistsManager>();
+    }
 
     override protected void OnStart() {
         base.OnStart();
@@ -25,9 +33,15 @@ public class Dummy : SimpleBuilding
         animator.SetBool("Dead", true);
         collider2D.enabled = false;
         ShowHealthBar(false);
+        GiveTrainingXp(1);
 
         gameObject.tag = "deadDummy";
         deadTime = Time.time;
+    }
+
+    private void GiveTrainingXp(int trainingXp)
+    {
+        activistsManager.GetCurrentPlayer().rhino.ReceiveTrainingXp(trainingXp);
     }
 
     protected override void OnHide()

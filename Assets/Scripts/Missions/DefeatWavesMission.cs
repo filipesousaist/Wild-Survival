@@ -1,54 +1,56 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Linq;
 
-public class DefeatWavesMission : Mission
+[System.Serializable]
+public struct Wave
 {
-    private EnemiesManager enemiesManager;
-    private WavesSpawnManager wavesSpawnManager;
+    public int amount;
+    public Vector2 spawnPoint;
+}
 
-    private void Awake()
-    {
-        enemiesManager = FindObjectOfType<EnemiesManager>();
-        wavesSpawnManager = FindObjectOfType<WavesSpawnManager>();
-    }
+public class DefeatWavesMission : HelpArrowMission
+{
+    public Wave[] waves;
+
+    public EnemiesManager enemiesManager;
+    public WavesSpawnManager wavesSpawnManager;
 
     protected override void OnBegin()
     {
         enemiesManager.ChangeMode();
+        helpArrow.GetComponent<Image>().color = Color.red;
     }
 
     protected override void OnFinish()
     {
+        helpArrow.SetActive(false);
         enemiesManager.ChangeMode();
     }
 
     public override bool IsCompleted()
     {
-        return wavesSpawnManager.currentWave == wavesSpawnManager.waves.Length;
+        return wavesSpawnManager.currentWave == waves.Length;
     }
     public override string GetMessage()
     {
-        int[] waves = wavesSpawnManager.waves;
         int currentWave = wavesSpawnManager.currentWave;
 
-        if (currentWave >= 0 && currentWave < wavesSpawnManager.waves.Length)
+        if (currentWave >= 0 && currentWave < waves.Length)
         {
             Enemy[] enemies = enemiesManager.GetAllEnemies();
-            int waveEnemiesAlive = 0;
-
-            foreach (Enemy en in enemies)
-                if (en.wave == currentWave)
-                    waveEnemiesAlive++;
+            int enemiesAlive = enemies.Count((en) => en.wave == currentWave);
+            int totalEnemies = waves[currentWave].amount;
 
             return "Wave " + (currentWave + 1) + " of " + waves.Length + ": " +
-                (waves[currentWave] - waveEnemiesAlive) + "/" + waves[currentWave] +
+                (totalEnemies - enemiesAlive) + "/" + waves[currentWave].amount +
                 " zombies defeated";
         }
         return "";
     }
 
-    public override void UpdateHelpArrow(GameObject helpArrow)
+    public override void UpdateHelpArrow()
     {
         List<EnemyMovement> invisibleEnemyMovs = enemiesManager.GetInisibleEnemyMovements();
 
@@ -57,14 +59,7 @@ public class DefeatWavesMission : Mission
         if (numVisible == 0 && numInvisble > 0)
         {
             Vector2 difference = enemiesManager.GetNearestToCamera(invisibleEnemyMovs).position - Camera.main.transform.position;
-
-            float angle = Vector3.SignedAngle(Vec3.E_Y, difference.normalized, Vec3.E_Z);
-            helpArrow.transform.eulerAngles =
-                new Vector3(0, 0, angle);
-            helpArrow.transform.localPosition = new Vector3(
-                -Window.QUARTER_H * Mathf.Sin(angle * Mathf.Deg2Rad),
-                Window.QUARTER_H * Mathf.Cos(angle * Mathf.Deg2Rad),
-                0);
+            SetArrowPosition(difference);
             helpArrow.SetActive(true);
         }
         else

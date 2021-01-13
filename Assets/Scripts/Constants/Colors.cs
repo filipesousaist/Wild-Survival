@@ -11,5 +11,7 @@ public static class Colors
     public static readonly Color ORANGE = new Color(1, 0.7f, 0);
     public static readonly Color RED = new Color(1, 0, 0);
 
+    public static readonly Color BLUE = new Color(0, 0.375f, 1);
+
     public static readonly Color[] HP = { RED, ORANGE, YELLOW, GREENYELLOW, GREEN };
 }

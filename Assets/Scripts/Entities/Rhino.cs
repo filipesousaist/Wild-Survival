@@ -10,60 +10,52 @@ public class Rhino : Character
     public Player owner;
     public GameObject captureRadius;
     private PlayerMovement ownerMovement;
+    private AbilityUI abilityUI;
 
     [ReadOnly] public int radiation;
+    [ReadOnly] public int trainingXp;
 
-    public List<GameObject> abilities;
-
-    //public GameObject shield;
-    //public AbilityScript ability;
+    public List<GameObject> abilitiesToLearn;
+    private List<GameObject> abilitiesLearnt;
 
     private void Update()
     {
-        if (ownerMovement != null) { 
-            if(ownerMovement.inputEnabled) {
-                //Maximo 3 habilidades por rino
-                switch (Input.inputString)
-                {
-                    case "1":
-                        if (abilities.Count > 0) {
-                            abilities[0].GetComponent<Ability>().Activate();
-                        }
-                        break;
-                    case "2":
-                        if (abilities.Count > 1)
-                        {
-                            abilities[1].GetComponent<Ability>().Activate();
-                        }
-                        break;
-                    case "3":
-                        if (abilities.Count > 2)
-                        {
-                            abilities[2].GetComponent<Ability>().Activate();
-                        }
-                        break;
-                    default:
-                        break;
-                }
+        if (ownerMovement != null && ownerMovement.inputEnabled) {
+            //Maximo 3 habilidades por rino
+            switch (Input.inputString)
+            {
+                case "1":
+                    if (abilitiesLearnt.Count > 0)
+                        abilitiesLearnt[0].GetComponent<Ability>().Activate();
+                    break;
+                case "2":
+                    if (abilitiesLearnt.Count > 1)
+                        abilitiesLearnt[1].GetComponent<Ability>().Activate();
+                    break;
+                case "3":
+                    if (abilitiesLearnt.Count > 2)
+                        abilitiesLearnt[2].GetComponent<Ability>().Activate();
+                    break;
             }
         }
     }
     override protected void OnAwake() 
     {
         base.OnAwake();
+        abilitiesLearnt = new List<GameObject>();
+        abilityUI = FindObjectOfType<AbilityUI>();
         radiation = 0;
-        requiredXp = level * XP_MULT;
+        trainingXp = 0;
         if (owner != null) { 
             ownerMovement = owner.GetComponent<PlayerMovement>();
             Destroy(captureRadius);
         }
-        for (int i = 0; i < abilities.Count; i++)
+        for (int i = 0; i < abilitiesToLearn.Count; i++)
         {
-            abilities[i] = Instantiate(abilities[i], this.transform.position, Quaternion.identity);
-            abilities[i].transform.parent= gameObject.transform;
-            abilities[i].transform.localScale = new Vector3(0.5f, 0.5f, 1);
+            abilitiesToLearn[i] = Instantiate(abilitiesToLearn[i], transform.position, Quaternion.identity);
+            abilitiesToLearn[i].transform.parent= gameObject.transform;
+            abilitiesToLearn[i].transform.localScale = new Vector3(0.5f, 0.5f, 1);
         }
-        //abilities = new List<Ability>();
     }
 
     public bool HasOwner() {
@@ -79,7 +71,7 @@ public class Rhino : Character
     }
     public override void TakeDamage(float damage)
     {
-        var shield = abilities.OfType<Shield>();
+        var shield = abilitiesLearnt.OfType<Shield>();
         if (shield.Count() > 0 && shield.First().active)
         {
             return;
@@ -126,6 +118,19 @@ public class Rhino : Character
         }
     }
 
+    public void ReceiveTrainingXp(int xpReward)
+    {
+        if (abilitiesToLearn.Count > abilitiesLearnt.Count)
+        {
+            trainingXp += xpReward;
+            if (trainingXp == /*5 */ (abilitiesLearnt.Count + 1))
+            {
+                abilitiesLearnt.Add(abilitiesToLearn[abilitiesLearnt.Count]);
+                abilityUI.UpdateUI();
+            }
+        }
+    }
+
     private void GetMutation()
     {
 
@@ -134,7 +139,7 @@ public class Rhino : Character
     protected override void UpdateRequiredXp()
     {
         //for now a simple xp curve, can make more complex later
-        requiredXp = level * 15;
+        requiredXp = level * XP_MULT;
     }
 
     override protected void IncreaseAttributes()
@@ -154,7 +159,7 @@ public class Rhino : Character
     public List<Ability> GetAbilities() 
     {
         List<Ability> abs = new List<Ability>();
-        foreach (var item in abilities)
+        foreach (var item in abilitiesLearnt)
         {
             abs.Add(item.GetComponent<Ability>());
         }

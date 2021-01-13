@@ -28,5 +28,5 @@ MonoBehaviour:
   materials:
   - item: {fileID: 11400000, guid: c900bfd9067f56740acf4fd7b233f5c8, type: 2}
     n: 10
-  - item: {fileID: 11400000, guid: ed4ca684126607f4f9dff724ed0239c4, type: 2}
+  - item: {fileID: 11400000, guid: 4a6df18311b507143b7dd0cd4f162ee8, type: 2}
     n: 10
