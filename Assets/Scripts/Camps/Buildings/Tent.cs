@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Tent : SimpleBuilding
+﻿public class Tent : SimpleBuilding
 {
     protected override void OnStart()
     {

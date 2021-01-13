@@ -3,17 +3,20 @@ using UnityEngine;
 
 public class RestInTent : Interactable
 {
+    private EnemiesManager enemiesManager;
     private RhinosManager rhinosManager;
     private Fade fade;
     protected override void OnAwake()
     {
+        enemiesManager = FindObjectOfType<EnemiesManager>();
         rhinosManager = FindObjectOfType<RhinosManager>();
         fade = FindObjectOfType<Fade>();
     }
 
     protected override bool IsPlayerTryingToInteract()
     {
-        return isInteractable && Input.GetAxisRaw("Vertical") > 0 && !interacting;
+        return isInteractable && Input.GetAxisRaw("Vertical") > 0 && 
+            enemiesManager.CanUseTent() && !interacting;
     }
 
     protected override IEnumerator OnInteract()

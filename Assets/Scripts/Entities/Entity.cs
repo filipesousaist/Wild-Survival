@@ -80,11 +80,32 @@ public abstract class Entity : MonoBehaviour
         }
     }
 
-    protected abstract void OnDeath();
+    public virtual void TakeDamage(float damage, Entity attacker)
+    {
+        if (health > 0)
+        {
+            health -= damage;
+            if (health <= 0)
+                OnDeath(attacker);
+        }
+    }
+
+    protected virtual void OnDeath() { }
+
+    protected virtual void OnDeath(Entity killer)
+    {
+        OnDeath();
+    }
+
     public virtual void Knock(float knockTime, float damage)
     {
         StartCoroutine(movement.KnockCo(knockTime));
         TakeDamage(damage);
+    }
+
+    public virtual void Knock(float knockTime, float damage, Entity attacker)
+    {
+        Knock(knockTime, damage);
     }
 
     public virtual void FullRestore()
