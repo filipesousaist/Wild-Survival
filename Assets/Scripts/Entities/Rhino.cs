@@ -16,45 +16,34 @@ public class Rhino : Character
     [ReadOnly] public int trainingXp;
 
     public List<GameObject> abilitiesToLearn;
-    List<GameObject> abilitiesLearnt = new List<GameObject>();
-
-    //public GameObject shield;
-    //public AbilityScript ability;
+    private List<GameObject> abilitiesLearnt;
 
     private void Update()
     {
-        if (ownerMovement != null) { 
-            if(ownerMovement.inputEnabled) {
-                //Maximo 3 habilidades por rino
-                switch (Input.inputString)
-                {
-                    case "1":
-                        if (abilitiesLearnt.Count > 0) {
-                            abilitiesLearnt[0].GetComponent<Ability>().Activate();
-                        }
-                        break;
-                    case "2":
-                        if (abilitiesLearnt.Count > 1)
-                        {
-                            abilitiesLearnt[1].GetComponent<Ability>().Activate();
-                        }
-                        break;
-                    case "3":
-                        if (abilitiesLearnt.Count > 2)
-                        {
-                            abilitiesLearnt[2].GetComponent<Ability>().Activate();
-                        }
-                        break;
-                    default:
-                        break;
-                }
+        if (ownerMovement != null && ownerMovement.inputEnabled) {
+            //Maximo 3 habilidades por rino
+            switch (Input.inputString)
+            {
+                case "1":
+                    if (abilitiesLearnt.Count > 0)
+                        abilitiesLearnt[0].GetComponent<Ability>().Activate();
+                    break;
+                case "2":
+                    if (abilitiesLearnt.Count > 1)
+                        abilitiesLearnt[1].GetComponent<Ability>().Activate();
+                    break;
+                case "3":
+                    if (abilitiesLearnt.Count > 2)
+                        abilitiesLearnt[2].GetComponent<Ability>().Activate();
+                    break;
             }
         }
     }
     override protected void OnAwake() 
     {
         base.OnAwake();
-        abilityUI = FindObjectOfType<AbilityUI>();//GameObject.Find("Canvas").GetComponent<AbilityUI>();
+        abilitiesLearnt = new List<GameObject>();
+        abilityUI = FindObjectOfType<AbilityUI>();
         radiation = 0;
         trainingXp = 0;
         if (owner != null) { 
@@ -67,7 +56,6 @@ public class Rhino : Character
             abilitiesToLearn[i].transform.parent= gameObject.transform;
             abilitiesToLearn[i].transform.localScale = new Vector3(0.5f, 0.5f, 1);
         }
-        //abilities = new List<Ability>();
     }
 
     public bool HasOwner() {
@@ -135,7 +123,7 @@ public class Rhino : Character
         if (abilitiesToLearn.Count > abilitiesLearnt.Count)
         {
             trainingXp += xpReward;
-            if (trainingXp == 5 * (abilitiesLearnt.Count + 1))
+            if (trainingXp == /*5 */ (abilitiesLearnt.Count + 1))
             {
                 abilitiesLearnt.Add(abilitiesToLearn[abilitiesLearnt.Count]);
                 abilityUI.UpdateUI();

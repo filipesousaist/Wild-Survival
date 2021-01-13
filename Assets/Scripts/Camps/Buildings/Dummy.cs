@@ -6,11 +6,11 @@ public class Dummy : SimpleBuilding
 
     private float deadTime;
 
-    private readonly float disableTime = 5;
+    private readonly float disableTime = 3;
 
     private float waitTime;
 
-    private readonly float respawnTime = 5;
+    private readonly float respawnTime = 3;
 
     private bool active = true;
     private bool shouldUpdate = true;
