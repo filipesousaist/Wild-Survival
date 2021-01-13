@@ -12,11 +12,15 @@ public class WavesTargetAI : EnemyTargetAI
 
     protected override Vector3 Target(EnemyMovement enemyMov)
     {
+        Vector3 diffToNearestChar = TargetByDistance(enemyMov, GetPossibleTargets(enemyMov));
+        if (diffToNearestChar.magnitude <= ALWAYS_ATTACK_DIST)
+            return diffToNearestChar;
+
         if (enemyMov.GetComponent<Enemy>().targetCriteria == EnemyTargetCriteria.building)
         {
-            IEnumerable<IEnemyTarget> possibleTargets = GetPossibleBuildingTargets(enemyMov);
-            return possibleTargets.Any() ? TargetByDistance(enemyMov, possibleTargets) :
-                                           TargetByDistance(enemyMov, GetPossibleTargets(enemyMov));
+            IEnumerable<IEnemyTarget> buildingTargets = GetPossibleBuildingTargets(enemyMov);
+            return buildingTargets.Any() ? TargetByDistance(enemyMov, buildingTargets) :
+                                           diffToNearestChar;
         }
         return base.Target(enemyMov);
     }
