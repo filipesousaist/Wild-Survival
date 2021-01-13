@@ -1,40 +1,40 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class WavesSpawnManager : SpawnManager
 {
-    private int currentWave;
-    public int[] waves;
-    public Vector2[] spawnPoints;
-
+    private MissionsManager missionsManager;
+    private DefeatWavesMission currentMission;
+    [ReadOnly] public int currentWave;
+    
     private void Awake()
     {
         targetAI = new WavesTargetAI();
+        missionsManager = FindObjectOfType<MissionsManager>();
     }
 
     override public void OnEnterMode()
     {
+        currentMission = (DefeatWavesMission) missionsManager.GetCurrentMission();
         currentWave = -1;
-        StartCoroutine(UpdateAll());
+        StartCoroutine(UpdateEnemiesCo());
     }
 
     override public void OnExitMode()
     {
         enemiesManager.RemoveAllEnemies();
-        helpArrow.SetActive(false);
     }
 
     override protected void UpdateEnemies()
     {
         Enemy[] enemies = enemiesManager.GetAllEnemies();
 
-        if (enemies.Length == 0 && (++currentWave) < waves.Length)
+        if (enemies.Length == 0 && (++currentWave) < currentMission.waves.Length)
         {
-            Vector3 baseSpawn = new Vector3(this.spawnPoints[currentWave].x, this.spawnPoints[currentWave].y, 0);
-            Vector3[] spawnPoints = GenerateSpawnPoints(baseSpawn, waves[currentWave]);
+            Wave wave = currentMission.waves[currentWave];
+            Vector3[] spawnPoints = GenerateSpawnPoints(wave.spawnPoint, wave.amount);
 
-            for (int i = 0; i < waves[currentWave]; i++)
-                SpawnEnemy(spawnPoints[i])
+            foreach (Vector3 point in spawnPoints)
+                SpawnEnemy(point)
                     .GetComponent<Enemy>().wave = currentWave;
         }
     }
@@ -67,32 +67,6 @@ public class WavesSpawnManager : SpawnManager
                 coords[y * sideLength + x] = topLeft + new Vector3(x, y, 0);
 
         return coords;
-    }
-
-    override public void UpdateText()
-    {
-        string newText = "";
-
-        if (currentWave >= 0)
-        {
-            if (currentWave < waves.Length)
-            {
-                Enemy[] enemies = enemiesManager.GetAllEnemies();
-                int waveEnemiesAlive = 0;
-
-                foreach (Enemy en in enemies)
-                    if (en.wave == currentWave)
-                        waveEnemiesAlive++;
-
-                newText = "Wave " + (currentWave + 1) + " of " + waves.Length + ":";
-                newText += " " + waveEnemiesAlive + "/" + waves[currentWave] + " zombies left";
-            }
-            else
-                newText = "All zombies defeated! :)";
-        }
-        
-
-        textObj.GetComponent<Text>().text = newText;
     }
 
     protected override EnemyTargetCriteria GetTargetCriteria()

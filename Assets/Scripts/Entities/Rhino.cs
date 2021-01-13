@@ -10,12 +10,13 @@ public class Rhino : Character
     public Player owner;
     public GameObject captureRadius;
     private PlayerMovement ownerMovement;
+    private AbilityUI abilityUI;
 
     [ReadOnly] public int radiation;
     [ReadOnly] public int trainingXp;
 
     public List<GameObject> abilitiesToLearn;
-    List<GameObject> abilitiesLearnt;
+    List<GameObject> abilitiesLearnt = new List<GameObject>();
 
     //public GameObject shield;
     //public AbilityScript ability;
@@ -53,6 +54,7 @@ public class Rhino : Character
     override protected void OnAwake() 
     {
         base.OnAwake();
+        abilityUI = GameObject.Find("Canvas").GetComponent<AbilityUI>();
         radiation = 0;
         requiredXp = level * XP_MULT;
         trainingXp = 0;
@@ -134,9 +136,10 @@ public class Rhino : Character
         if (abilitiesToLearn.Count > abilitiesLearnt.Count)
         {
             trainingXp += xpReward;
-            if (trainingXp > 5 * (abilitiesLearnt.Count + 1))
+            if (trainingXp == 5 * (abilitiesLearnt.Count + 1))
             {
-                abilitiesToLearn.Add(abilitiesToLearn[abilitiesLearnt.Count]);
+                abilitiesLearnt.Add(abilitiesToLearn[abilitiesLearnt.Count]);
+                abilityUI.UpdateUI();
             }
         }
     }

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class InventorySlot : MonoBehaviour
 {
     //videos
@@ -12,17 +12,27 @@ public class InventorySlot : MonoBehaviour
 
     public Image icon;
 
-    public Button removeButton;
+    //public Button removeButton;
 
     public int index;
 
+    public TMP_Text numberHeld;
+
+    int quantity;
+
+    void Start()
+    {
+        quantity = 0;
+    }
     public void AddItem(Item newItem)
     {
         item = newItem;
 
         icon.sprite = item.icon;
         icon.enabled = true;
-        removeButton.interactable = true;
+        //removeButton.interactable = true;
+        quantity += 1;
+        numberHeld.text = quantity.ToString();
     }
 
     public void ClearSlot()
@@ -31,14 +41,22 @@ public class InventorySlot : MonoBehaviour
 
         icon.sprite = null;
         icon.enabled = false;
-        removeButton.interactable = false;
+        //removeButton.interactable = false;
     }
 
-    public void OnRemoveButton()
+    /*public void OnRemoveButton()
     {
         int index = transform.GetSiblingIndex();
         //Debug.Log("slot index=" + transform.GetSiblingIndex());
         Inventory.instance.Remove(index);
+    }*/
+
+    public void UpdateNumber(int number) {
+        numberHeld.text = number.ToString();
+    }
+
+    public string GetName() {
+        return item.name;
     }
     
     public void UseItem()
