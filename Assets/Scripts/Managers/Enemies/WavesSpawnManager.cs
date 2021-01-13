@@ -1,19 +1,20 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class WavesSpawnManager : SpawnManager
 {
+    private MissionsManager missionsManager;
+    private DefeatWavesMission currentMission;
     [ReadOnly] public int currentWave;
-    public int[] waves;
-    public Vector2[] spawnPoints;
-
+    
     private void Awake()
     {
         targetAI = new WavesTargetAI();
+        missionsManager = FindObjectOfType<MissionsManager>();
     }
 
     override public void OnEnterMode()
     {
+        currentMission = (DefeatWavesMission) missionsManager.GetCurrentMission();
         currentWave = -1;
         StartCoroutine(UpdateEnemiesCo());
     }
@@ -21,20 +22,19 @@ public class WavesSpawnManager : SpawnManager
     override public void OnExitMode()
     {
         enemiesManager.RemoveAllEnemies();
-        helpArrow.SetActive(false);
     }
 
     override protected void UpdateEnemies()
     {
         Enemy[] enemies = enemiesManager.GetAllEnemies();
 
-        if (enemies.Length == 0 && (++currentWave) < waves.Length)
+        if (enemies.Length == 0 && (++currentWave) < currentMission.waves.Length)
         {
-            Vector3 baseSpawn = new Vector3(this.spawnPoints[currentWave].x, this.spawnPoints[currentWave].y, 0);
-            Vector3[] spawnPoints = GenerateSpawnPoints(baseSpawn, waves[currentWave]);
+            Wave wave = currentMission.waves[currentWave];
+            Vector3[] spawnPoints = GenerateSpawnPoints(wave.spawnPoint, wave.amount);
 
-            for (int i = 0; i < waves[currentWave]; i++)
-                SpawnEnemy(spawnPoints[i])
+            foreach (Vector3 point in spawnPoints)
+                SpawnEnemy(point)
                     .GetComponent<Enemy>().wave = currentWave;
         }
     }

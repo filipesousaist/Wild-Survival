@@ -101,4 +101,9 @@ public class Inventory : MonoBehaviour
     public int GetLastRemovedIndex() {
         return lastItemRemoved;
     }
+
+    public int Count(Item item)
+    {
+        return items.ContainsKey(item) ? items[item] : 0;
+    }
 }

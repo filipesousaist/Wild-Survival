@@ -1,18 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class CollectFoodMission : MonoBehaviour
+﻿public class CollectFoodMission : Mission
 {
-    // Start is called before the first frame update
-    void Start()
+    public int amount;
+    public FoodItem[] foodItems;
+    private int CountFood()
     {
-        
+        int count = 0;
+        foreach (FoodItem item in foodItems)
+            count += Inventory.instance.Count(item);
+        return count;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override bool IsCompleted()
     {
-        
+        return CountFood() >= amount;
     }
+
+    public override string GetMessage()
+    {
+        return "Collect food: " + CountFood() + "/" + amount;
+    }
+
+
 }
