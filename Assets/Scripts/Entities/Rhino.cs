@@ -54,9 +54,8 @@ public class Rhino : Character
     override protected void OnAwake() 
     {
         base.OnAwake();
-        abilityUI = GameObject.Find("Canvas").GetComponent<AbilityUI>();
+        abilityUI = FindObjectOfType<AbilityUI>();//GameObject.Find("Canvas").GetComponent<AbilityUI>();
         radiation = 0;
-        requiredXp = level * XP_MULT;
         trainingXp = 0;
         if (owner != null) { 
             ownerMovement = owner.GetComponent<PlayerMovement>();
@@ -64,7 +63,7 @@ public class Rhino : Character
         }
         for (int i = 0; i < abilitiesToLearn.Count; i++)
         {
-            abilitiesToLearn[i] = Instantiate(abilitiesToLearn[i], this.transform.position, Quaternion.identity);
+            abilitiesToLearn[i] = Instantiate(abilitiesToLearn[i], transform.position, Quaternion.identity);
             abilitiesToLearn[i].transform.parent= gameObject.transform;
             abilitiesToLearn[i].transform.localScale = new Vector3(0.5f, 0.5f, 1);
         }
@@ -152,7 +151,7 @@ public class Rhino : Character
     protected override void UpdateRequiredXp()
     {
         //for now a simple xp curve, can make more complex later
-        requiredXp = level * 15;
+        requiredXp = level * XP_MULT;
     }
 
     override protected void IncreaseAttributes()

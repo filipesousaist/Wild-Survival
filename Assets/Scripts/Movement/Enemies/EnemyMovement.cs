@@ -31,7 +31,7 @@ public class EnemyMovement : EntityMovement
 
     override protected void OnStart()
     {
-        targetAI = FindObjectOfType<EnemiesManager>().GetTargetAI();
+        targetAI = enemiesManager.GetTargetAI();
 
         attackWaitTime = maxAttackWaitTime;
         updateTargetTime = UPDATE_TARGET_PERIOD;

@@ -15,6 +15,14 @@ public class Dummy : SimpleBuilding
     private bool active = true;
     private bool shouldUpdate = true;
 
+    private ActivistsManager activistsManager;
+
+    protected override void OnAwake()
+    {
+        base.OnAwake();
+        activistsManager = FindObjectOfType<ActivistsManager>();
+    }
+
     override protected void OnStart() {
         base.OnStart();
         healthBar.transform.localPosition += new Vector3(0, -1.3f);
@@ -33,8 +41,7 @@ public class Dummy : SimpleBuilding
 
     private void GiveTrainingXp(int trainingXp)
     {
-        ActivistsManager manager = GameObject.Find("Ativistas").GetComponent<ActivistsManager>();
-        manager.GetCurrentPlayer().rhino.ReceiveTrainingXp(trainingXp);
+        activistsManager.GetCurrentPlayer().rhino.ReceiveTrainingXp(trainingXp);
     }
 
     protected override void OnHide()
