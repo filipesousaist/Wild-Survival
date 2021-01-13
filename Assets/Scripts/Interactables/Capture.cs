@@ -1,25 +1,21 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Capture : Interactable
 {
     Rhino rhino;
 
-    RhinoMovement rhinoMovement;
-
     Player player;
 
-    private void Start()
+    protected override void OnAwake()
     {
         rhino = GetComponentInParent<Rhino>();
-        rhinoMovement = GetComponentInParent<RhinoMovement>();
     }
 
     protected override void OnTriggerEnter2D(Collider2D other)
     {
-        var entity = other.gameObject.GetComponent<Player>();
-        if (!entity.HasRhino()) { 
+        Player entity = other.gameObject.GetComponent<Player>();
+        if (entity != null && !entity.HasRhino()) { 
             base.OnTriggerEnter2D(other);
             player = entity;
         }
@@ -27,8 +23,8 @@ public class Capture : Interactable
 
     protected void OnTriggerStay2D(Collider2D other)
     {
-        var entity = other.gameObject.GetComponent<Player>();
-        if (!entity.HasRhino())
+        Player entity = other.gameObject.GetComponent<Player>();
+        if (entity != null && !entity.HasRhino())
         {
             base.OnTriggerEnter2D(other);
             player = entity;
@@ -47,5 +43,10 @@ public class Capture : Interactable
     void CaptureRhino() {
         player.SetRhino(rhino);
         rhino.SetOwner(player);
+    }
+
+    public override string GetInteractText()
+    {
+        return "Capture";
     }
 }

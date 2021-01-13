@@ -14,14 +14,8 @@ public class DefeatWavesMission : HelpArrowMission
 {
     public Wave[] waves;
 
-    private EnemiesManager enemiesManager;
-    private WavesSpawnManager wavesSpawnManager;
-
-    private void Awake()
-    {
-        enemiesManager = FindObjectOfType<EnemiesManager>();
-        wavesSpawnManager = FindObjectOfType<WavesSpawnManager>();
-    }
+    public EnemiesManager enemiesManager;
+    public WavesSpawnManager wavesSpawnManager;
 
     protected override void OnBegin()
     {
