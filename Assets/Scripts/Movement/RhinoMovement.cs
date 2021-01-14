@@ -54,7 +54,10 @@ public class RhinoMovement : EntityMovement
     {
         if (player != null)
         {
-
+            if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) && player.rhino.health <= 0)
+            {
+                Flee();
+            }
             if (playerMov.inputEnabled) {
                 if (!(currentState == RhinoState.flee || currentState == RhinoState.disabled) &&
                     Input.GetMouseButtonDown(1))
@@ -307,6 +310,7 @@ public class RhinoMovement : EntityMovement
 
     public override void Flee()
     {
+        StopCoroutine("AttackCo");
         currentState = RhinoState.flee;
         agent.destination = escapeCoordinates;
         animator.SetBool("moving", true);

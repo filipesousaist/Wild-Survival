@@ -23,6 +23,7 @@ public class OpenEquipmentUpgrade : Interactable
         if (!upgradeUIGameobject.activeSelf)
         {
             materialUI.CheckMats();
+            materialUI.ClearMats();
         }
         upgradeUIGameobject.SetActive(!upgradeUIGameobject.activeSelf);
     }

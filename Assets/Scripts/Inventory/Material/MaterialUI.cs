@@ -28,11 +28,14 @@ public class MaterialUI : MonoBehaviour
     public TMP_Text stat;
 
     public TMP_Text upgradeText;
+
+    public List<EquipmentSlot> equipSlots;
     // Start is called before the first frame update
     void Start()
     {
         inventory = Inventory.instance;
         slots = new List<MaterialSlot>();
+        equipSlots = new List<EquipmentSlot>();
         activistsManager.onPlayerChangedCallback += UpdatePlayerEquipment;
         matsCount = new Dictionary<string, int>();
         UpdatePlayerEquipment();
@@ -40,10 +43,14 @@ public class MaterialUI : MonoBehaviour
 
     void UpdatePlayerEquipment() {
         var currentPlayer = activistsManager.GetCurrentPlayer();
+        equipSlots.Clear();
         for (int i = 0; i < equipments.childCount; i++)
         {
             EquipmentSlot slot = equipments.transform.GetChild(i).GetComponent<EquipmentSlot>();
             slot.AddItem(currentPlayer.equipments[i]);
+            slot.DeHighlightButton();
+            equipSlots.Add(slot);
+
         }
         for (int i = 0; i < slots.Count; i++)
         {
@@ -52,6 +59,8 @@ public class MaterialUI : MonoBehaviour
         slots.Clear();
         matsCount.Clear();
         currentPlayer.GetComponent<PlayerStats>().UpdateEquipments();
+        stat.text = "";
+        upgradeText.text = "";
     }
 
     public void UpdateUI(Equipment equipment) {
@@ -163,5 +172,20 @@ public class MaterialUI : MonoBehaviour
         tmp.b = 1;
         upgrade.image.color = tmp;
         return true;
+    }
+
+    public void ClearMats() {
+        for (int i = 0; i < equipments.childCount; i++)
+        {
+            EquipmentSlot slot = equipments.transform.GetChild(i).GetComponent<EquipmentSlot>();
+            slot.DeHighlightButton();
+        }
+        for (int i = 0; i < slots.Count; i++)
+        {
+            Destroy(slots[i].gameObject);
+        }
+        slots.Clear();
+        stat.text = "";
+        upgradeText.text = "";
     }
 }
