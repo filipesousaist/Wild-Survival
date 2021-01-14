@@ -4,6 +4,9 @@ public class Dummy : SimpleBuilding
 {
     public new BoxCollider2D collider2D;
 
+    public Vector2[] extraSpawnPoints;
+    private Vector2 baseSpawnPoint;
+
     private float deadTime;
 
     private readonly float disableTime = 3;
@@ -15,16 +18,14 @@ public class Dummy : SimpleBuilding
     private bool active = true;
     private bool shouldUpdate = true;
 
-    private ActivistsManager activistsManager;
-
     protected override void OnAwake()
     {
         base.OnAwake();
-        activistsManager = FindObjectOfType<ActivistsManager>();
     }
 
     override protected void OnStart() {
         base.OnStart();
+        baseSpawnPoint = transform.localPosition;
         healthBar.transform.localPosition += new Vector3(0, -1.3f);
     }
 
@@ -60,6 +61,8 @@ public class Dummy : SimpleBuilding
     protected override void OnShow()
     {
         base.OnShow();
+        transform.localPosition = baseSpawnPoint;
+        gameObject.layer = Layers.DEFAULT;
         shouldUpdate = true;
     }
 
@@ -97,12 +100,21 @@ public class Dummy : SimpleBuilding
     private void Respawn()
     {
         active = true;
+        RandomSpawn();
         animator.SetBool("Dead", false);
         collider2D.enabled = true;
         SetAlpha(1);
         gameObject.tag = "dummy";
         health = maxHealth;
         ShowHealthBar(true);
+    }
+
+    private void RandomSpawn()
+    {
+        int r = Random.Range(0, extraSpawnPoints.Length + 1);
+        transform.localPosition =
+            r == 0 ? baseSpawnPoint : extraSpawnPoints[r - 1];
+                                            
     }
 
     public float GetHealthFraction()
