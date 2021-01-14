@@ -42,4 +42,13 @@ public class Stat
     {
         modifiers.Clear();
     }
+
+    public void SetBaseValue(float value) {
+        baseValue = value;
+    }
+
+    public float GetBaseValue()
+    {
+        return baseValue;
+    }
 }

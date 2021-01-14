@@ -9,6 +9,8 @@ public class EquipmentSlot   : MonoBehaviour
 
     public MaterialUI materialUI;
 
+    public Button button;
+
     public void AddItem(Equipment newItem)
     {
         item = newItem;
@@ -31,5 +33,18 @@ public class EquipmentSlot   : MonoBehaviour
         {
             materialUI.UpdateUI(item);
         }
+    }
+
+    public void HighlightButton() {
+        foreach (var slot in materialUI.equipSlots)
+        {
+            slot.DeHighlightButton();
+        }
+        button.image.color = button.colors.pressedColor;
+    }
+
+    public void DeHighlightButton()
+    {
+        button.image.color = Color.white;
     }
 }
