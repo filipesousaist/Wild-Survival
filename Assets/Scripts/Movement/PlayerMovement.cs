@@ -48,7 +48,7 @@ public class PlayerMovement : EntityMovement
     // Update is called once per frame
     private void Update()
     {
-        if (currentState != PlayerState.disabled)
+        if (currentState != PlayerState.disabled && currentState != PlayerState.dead && player.health > 0)
         {
             if (activistsManager.IsCurrentActivist(player))
                 InputControlUpdate();
@@ -57,6 +57,7 @@ public class PlayerMovement : EntityMovement
         }
         else
         {
+            Die();
             agent.velocity = Vector3.zero;
             animator.SetBool("moving", false);
             animator.SetBool("attacking", false);
@@ -279,6 +280,7 @@ public class PlayerMovement : EntityMovement
     }
     public override void Die()
     {
+        StopCoroutine("AttackCo");
         currentState = PlayerState.dead;
         inputEnabled = false;
     }

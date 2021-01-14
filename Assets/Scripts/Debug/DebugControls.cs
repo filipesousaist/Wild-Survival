@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FreeMaterials : MonoBehaviour
+public class DebugControls : MonoBehaviour
 {
     public Item wood;
     public Item leather;
@@ -21,6 +21,18 @@ public class FreeMaterials : MonoBehaviour
                 Inventory.instance.Add(rock);
             }
             Debug.Log("Added to inventory " + num + " of each material.");
-        }   
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            foreach (Building building in FindObjectsOfType<Building>())
+            {
+                if (building.level == 0) building.Upgrade();
+                else building.Repair();
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.K))
+            foreach (Building building in FindObjectsOfType<Building>())
+                building.TakeDamage(building.maxHealth);
     }
 }

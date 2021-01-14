@@ -3,7 +3,10 @@ guid: e4b38f7de8e063e4a90ab5fe674cb975
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - wood: {instanceID: 0}
+  - leather: {instanceID: 0}
+  - rock: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

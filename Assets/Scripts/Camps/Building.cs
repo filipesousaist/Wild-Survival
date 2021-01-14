@@ -15,6 +15,8 @@ public abstract class Building : Entity
 
     public List<MatDict> materials;
 
+    private int originalLayer;
+
     protected override void OnAwake()
     {
         navMesh = FindObjectOfType<NavMeshSurface2d>();
@@ -55,15 +57,6 @@ public abstract class Building : Entity
 
     private void Update()
     {
-        //DEBUG
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            if (level == 0) Upgrade(); 
-            else Repair();
-        }
-            
-        if (Input.GetKeyDown(KeyCode.K))
-            OnDeath();
         OnUpdate();
     }
 
