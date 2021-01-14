@@ -57,7 +57,11 @@ public abstract class Building : Entity
     {
         //DEBUG
         if (Input.GetKeyDown(KeyCode.L))
-            Upgrade();
+        {
+            if (level == 0) Upgrade(); 
+            else Repair();
+        }
+            
         if (Input.GetKeyDown(KeyCode.K))
             OnDeath();
         OnUpdate();

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyTargetAI
 {
+    protected static readonly float ALWAYS_ATTACK_DIST = 3;
     public Vector3 Update(EnemyMovement enemyMov, float deltaTime)
     {
         enemyMov.updateTargetTime += deltaTime;
@@ -17,10 +18,14 @@ public class EnemyTargetAI
 
     protected virtual Vector3 Target(EnemyMovement enemyMov)
     {
-        EnemyTargetCriteria criteria = enemyMov.GetComponent<Enemy>().targetCriteria;
         IEnumerable<IEnemyTarget> possibleTargets = GetPossibleTargets(enemyMov);
+        Vector3 diffToNearestChar = TargetByDistance(enemyMov, possibleTargets);
+        if (diffToNearestChar.magnitude <= ALWAYS_ATTACK_DIST)
+            return diffToNearestChar;
+
+        EnemyTargetCriteria criteria = enemyMov.GetComponent<Enemy>().targetCriteria;
         return criteria == EnemyTargetCriteria.health ? TargetByHealth(enemyMov, possibleTargets)
-                                                      : TargetByDistance(enemyMov, possibleTargets);
+                                                      : diffToNearestChar;
     }
 
     protected virtual IEnumerable<IEnemyTarget> GetPossibleTargets(EnemyMovement enemyMov)

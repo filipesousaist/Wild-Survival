@@ -42,12 +42,6 @@ public class EnemiesManager : MonoBehaviour
         StartCoroutine(spawnManagers[mode].UpdateEnemiesCo());
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.X))
-            ChangeMode();
-    }
-
     public void ChangeMode()
     {
         spawnManagers[mode].enabled = false;
@@ -116,5 +110,10 @@ public class EnemiesManager : MonoBehaviour
     public bool IgnoreChaseRadius()
     {
         return mode == EnemiesMode.waves;
+    }
+
+    public bool CanUseTent()
+    {
+        return mode == EnemiesMode.grind;
     }
 }

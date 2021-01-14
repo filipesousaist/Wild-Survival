@@ -28,20 +28,27 @@ public class Dummy : SimpleBuilding
         healthBar.transform.localPosition += new Vector3(0, -1.3f);
     }
 
-    override protected void OnDeath()
+    override protected void OnDeath(Entity killer)
     {
-        animator.SetBool("Dead", true);
-        collider2D.enabled = false;
-        ShowHealthBar(false);
-        GiveTrainingXp(1);
+        if (killer.CompareTag("enemy"))
+            base.OnDeath();
+        else
+        {
+            animator.SetBool("Dead", true);
+            collider2D.enabled = false;
+            ShowHealthBar(false);
+            if (killer.CompareTag("rhino"))
+                GiveTrainingXp((Rhino) killer, 1);
 
-        gameObject.tag = "deadDummy";
-        deadTime = Time.time;
+            gameObject.tag = "deadDummy";
+            deadTime = Time.time;
+        }
+        
     }
 
-    private void GiveTrainingXp(int trainingXp)
+    private void GiveTrainingXp(Rhino rhino, int trainingXp)
     {
-        activistsManager.GetCurrentPlayer().rhino.ReceiveTrainingXp(trainingXp);
+        rhino.ReceiveTrainingXp(trainingXp);
     }
 
     protected override void OnHide()
@@ -61,10 +68,10 @@ public class Dummy : SimpleBuilding
         //TODO
     }
 
-    public override void Knock(float knockTime, float damage)
+    public override void Knock(float knockTime, float damage, Entity attacker)
     {
         if (shouldUpdate)
-            TakeDamage(damage);
+            TakeDamage(damage, attacker);
     }
 
     // Update is called once per frame

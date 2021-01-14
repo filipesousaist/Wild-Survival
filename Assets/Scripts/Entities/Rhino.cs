@@ -123,7 +123,7 @@ public class Rhino : Character
         if (abilitiesToLearn.Count > abilitiesLearnt.Count)
         {
             trainingXp += xpReward;
-            if (trainingXp == /*5 */ (abilitiesLearnt.Count + 1))
+            if (trainingXp == 5 * (abilitiesLearnt.Count + 1))
             {
                 abilitiesLearnt.Add(abilitiesToLearn[abilitiesLearnt.Count]);
                 abilityUI.UpdateUI();
