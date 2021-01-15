@@ -50,11 +50,13 @@ public class KinematicBoxCollider2D : MonoBehaviour
             Vector2 direction = Rotate(E_X, angle);
             Vector2 otherCenter = new Vector2(Mathf.Floor(center.x + direction.x) + .5f, Mathf.Floor(center.y + direction.y) + .5f);
             Vector2 difference = otherCenter - center;
+            
 
-            RaycastHit2D hit = Physics2D.Raycast(center, difference.normalized, difference.magnitude, LayerMask.GetMask("unwalkable"));
+            RaycastHit2D hit = Physics2D.Raycast(center, difference.normalized, difference.magnitude, LayerMask.GetMask("unwalkable"));        
             if (hit.collider != null)
             {
                 /*
+                Debug.Log(hit.collider.name);
                 Debug.DrawLine(center + direction + topLeft, center + direction + topRight, Color.red);
                 Debug.DrawLine(center + direction + topRight, center + direction + bottomRight, Color.red);
                 Debug.DrawLine(center + direction + bottomRight, center + direction + bottomLeft, Color.red);

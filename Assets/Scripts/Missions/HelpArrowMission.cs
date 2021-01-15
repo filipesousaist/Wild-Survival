@@ -19,4 +19,15 @@ public abstract class HelpArrowMission : Mission
             Window.QUARTER_H * Mathf.Cos(angle * Mathf.Deg2Rad),
             0);
     }
+
+    protected void UpdateHelpArrow(Vector3 destination)
+    {
+        if (!IsCompleted() && !Cam.IsPointInView(destination))
+        {
+            SetArrowPosition(destination - Camera.main.transform.position);
+            helpArrow.SetActive(true);
+        }
+        else
+            helpArrow.SetActive(false);
+    }
 }

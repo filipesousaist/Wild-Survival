@@ -16,7 +16,7 @@ public class Rhino : Character
     [ReadOnly] public int trainingXp;
 
     public List<GameObject> abilitiesToLearn;
-    private List<GameObject> abilitiesLearnt;
+    public List<GameObject> abilitiesLearnt;
 
     private void Update()
     {

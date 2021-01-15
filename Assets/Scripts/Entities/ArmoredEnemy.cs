@@ -40,7 +40,7 @@ public class ArmoredEnemy : Enemy
         else
             damage /= 10;
 
-        base.Knock(knockTime, damage, attackerCol);
+        base.Knock(knockTime / 5, damage, attackerCol);
     }
 
     IEnumerator Bleed()

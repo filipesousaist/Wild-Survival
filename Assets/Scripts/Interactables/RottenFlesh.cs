@@ -30,6 +30,6 @@ public class RottenFlesh : Interactable
 
     public override string GetInteractText()
     {
-        return "Inspect";
+        return hasInteracted ? null : "Inspect";
     }
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Rendering.PostProcessing;
 
 public class ActivistsManager : MonoBehaviour
@@ -15,6 +16,7 @@ public class ActivistsManager : MonoBehaviour
     public PostProcessVolume postVolume;
     private PostProcessingScript dangerAnimation;
     [SerializeField] private GameObject gameOverUI;
+
     public int activistsDead = 0;
 
     public float[] walkOffset;
@@ -57,7 +59,6 @@ public class ActivistsManager : MonoBehaviour
             if (activistsDead == partyManager.partySize) {
                 Time.timeScale = 0;
                 gameOverUI.SetActive(true);
-                gameObject.SetActive(false);
                 return;
             }
             currentPlayer = (currentPlayer + 1) % playerMovs.Length;
