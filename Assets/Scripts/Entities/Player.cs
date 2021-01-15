@@ -77,10 +77,6 @@ public class Player : Character
     override protected void IncreaseAttributes()
     {
         maxHealth += 2;
-        if (health > 0)
-        {
-            health += 2;
-        }
     }
 
     override protected void OnDeath()
