@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class WavesTargetAI : EnemyTargetAI
 {
-    private readonly Camp[] camps;
+    private MissionsManager missionsManager;
     public WavesTargetAI()
     {
-        camps = Object.FindObjectsOfType<Camp>();
+        missionsManager = Object.FindObjectOfType<MissionsManager>();
     }
-
     protected override Vector3 Target(EnemyMovement enemyMov)
     {
         Vector3 diffToNearestChar = TargetByDistance(enemyMov, GetPossibleTargets(enemyMov));
@@ -33,6 +32,7 @@ public class WavesTargetAI : EnemyTargetAI
     private IEnumerable<BuildingTarget> GetPossibleBuildingTargets(EnemyMovement enemyMov)
     {
         Vector3 enemyPos = enemyMov.transform.position;
+        Camp[] camps = ((DefeatWavesMission) missionsManager.GetCurrentMission()).GetTargetCamps();
         IOrderedEnumerable<Camp> campsByDistance = camps.OrderBy(camp => camp.Distance(enemyPos));
 
         foreach (Camp camp in campsByDistance)

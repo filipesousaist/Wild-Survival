@@ -34,7 +34,12 @@ public abstract class SpawnManager : MonoBehaviour
     {
         int strongIncr = (Random.value > 0.05) ? 0 : 1;
         int enemyIndex = 2 * Random.Range(0, 6) + strongIncr;
-        GameObject newEnemy = Instantiate(prefabs[enemyIndex]);
+        return SpawnEnemy(position, prefabs[enemyIndex]);
+    }
+
+    protected GameObject SpawnEnemy(Vector2 position, GameObject prefab)
+    {
+        GameObject newEnemy = Instantiate(prefab);
         newEnemy.transform.parent = enemiesObj.transform;
         newEnemy.GetComponent<NavMeshAgent>().Warp(position);
         newEnemy.GetComponent<Enemy>().targetCriteria = GetTargetCriteria();

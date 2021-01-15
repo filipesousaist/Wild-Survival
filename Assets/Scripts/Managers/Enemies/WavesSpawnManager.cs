@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
+using System.Linq;
 
 public class WavesSpawnManager : SpawnManager
 {
     private MissionsManager missionsManager;
     private DefeatWavesMission currentMission;
     [ReadOnly] public int currentWave;
-    
+
+    private Vector2[] spawnPoints;
+    private Camp[] camps;
     private void Awake()
     {
         targetAI = new WavesTargetAI();
         missionsManager = FindObjectOfType<MissionsManager>();
+        spawnPoints = GetComponent<GrindSpawnManager>().spawnPoints;
+        camps = FindObjectsOfType<Camp>();
     }
 
     override public void OnEnterMode()
@@ -31,14 +37,29 @@ public class WavesSpawnManager : SpawnManager
         if (enemies.Length == 0 && (++currentWave) < currentMission.waves.Length)
         {
             Wave wave = currentMission.waves[currentWave];
-            Vector3[] spawnPoints = GenerateSpawnPoints(wave.spawnPoint, wave.amount);
+            IEnumerable<Vector2> spawnPoints = GenerateSpawnPoints(wave);
 
-            foreach (Vector3 point in spawnPoints)
-                SpawnEnemy(point)
-                    .GetComponent<Enemy>().wave = currentWave;
+            int i = 0;
+            foreach (EnemyAmount enemyAmount in wave.enemies)
+                for (int end = i + enemyAmount.n; i < end; i ++)
+                    SpawnEnemy(spawnPoints.ElementAt(i), enemyAmount.prefab)
+                        .GetComponent<Enemy>().wave = currentWave;
         }
     }
 
+    private IEnumerable<Vector2> GenerateSpawnPoints(Wave wave)
+    {
+        return spawnPoints
+            .OrderBy(point => DistanceToNearestCamp(wave.targetCamps, point))
+            .Take(currentMission.CountWaveEnemies(wave))
+            .OrderBy(point => Random.value);
+    }
+
+    private float DistanceToNearestCamp(Camp[] camps, Vector3 point)
+    {
+        return camps.OrderBy(camp => camp.Distance(point)).First().Distance(point);
+    }
+    /*
     protected Vector3[] GenerateSpawnPoints(Vector3 center, int n)
     {
         int sideLength = Mathf.CeilToInt(Mathf.Sqrt(n));
@@ -68,6 +89,7 @@ public class WavesSpawnManager : SpawnManager
 
         return coords;
     }
+    */
 
     protected override EnemyTargetCriteria GetTargetCriteria()
     {

@@ -46,7 +46,6 @@ public class ArmoredEnemy : Enemy
     IEnumerator Bleed()
     {
         ps.Play();
-        Debug.Log("From behind");
         yield return new WaitForSeconds(.4f);
         ps.Stop();
     }
