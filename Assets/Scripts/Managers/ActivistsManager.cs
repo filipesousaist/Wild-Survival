@@ -56,7 +56,7 @@ public class ActivistsManager : MonoBehaviour
         playerMov = playerMovs[currentPlayer];
         while (playerMov.currentState == PlayerState.disabled || 
             playerMov.GetComponent<Player>().health <= 0) {
-            if (activistsDead == partyManager.partySize) {
+            if (activistsDead >= partyManager.partySize) {
                 Time.timeScale = 0;
                 gameOverUI.SetActive(true);
                 return;
