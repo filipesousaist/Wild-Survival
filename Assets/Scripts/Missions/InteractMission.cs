@@ -13,12 +13,6 @@ public abstract class InteractMission : HelpArrowMission
 
     public override void UpdateHelpArrow()
     {
-        if (!IsCompleted())
-        {
-            SetArrowPosition(interactable.gameObject.transform.position - Camera.main.transform.position);
-            helpArrow.SetActive(true);
-        }
-        else
-            helpArrow.SetActive(false);
+        UpdateHelpArrow(interactable.transform.position);
     }
 }

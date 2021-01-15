@@ -18,6 +18,10 @@ public class MissionsManager : MonoBehaviour
 
     public GameObject helpArrow;
 
+    public GameObject gameOverUI;
+    public Text gameOverText;
+    public GameObject winTextObject;
+
     private void Awake()
     {
         missionText = missionTextObject.GetComponent<Text>();
@@ -62,7 +66,17 @@ public class MissionsManager : MonoBehaviour
     private void FinishMission()
     {
         StartCoroutine(missions[current].Finish());
+        if (current == missions.Length - 1)
+        {
+            Time.timeScale = 0;
+            gameOverUI.SetActive(true);
+            gameOverText.text = "You Win!";
+            gameOverText.color = Colors.GREEN;
+            winTextObject.SetActive(true);
+            return;
+        }
         timeForNextMission = 5;
+
     }
 
     private void UpdateMessage()

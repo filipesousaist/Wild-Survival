@@ -24,6 +24,8 @@ public class DefeatWavesMission : HelpArrowMission
     public EnemiesManager enemiesManager;
     public WavesSpawnManager wavesSpawnManager;
 
+    public GameObject roadblock;
+
     protected override void OnBegin()
     {
         enemiesManager.ChangeMode();
@@ -34,6 +36,7 @@ public class DefeatWavesMission : HelpArrowMission
     {
         helpArrow.SetActive(false);
         enemiesManager.ChangeMode();
+        roadblock.SetActive(false);
     }
 
     public override bool IsCompleted()
@@ -60,6 +63,11 @@ public class DefeatWavesMission : HelpArrowMission
                 (totalEnemies - enemiesAlive) + "/" + totalEnemies + " zombies defeated";
         }
         return "";
+    }
+
+    public override string GetFinishMessage()
+    {
+        return "The zombie ambush opened up a gap between the cliffs!";
     }
 
     public int CountWaveEnemies(Wave wave)

@@ -19,13 +19,7 @@ public class CaptureRhinoMission : HelpArrowMission
 
     public override void UpdateHelpArrow()
     {
-        if (!IsCompleted())
-        {
-            SetArrowPosition(rhinoObj.transform.position - Camera.main.transform.position);
-            helpArrow.SetActive(true);
-        }
-        else
-            helpArrow.SetActive(false);
+        UpdateHelpArrow(rhinoObj.transform.position);
     }
     public override string GetMessage()
     {
