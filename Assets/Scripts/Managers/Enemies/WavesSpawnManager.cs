@@ -35,17 +35,17 @@ public class WavesSpawnManager : SpawnManager
         if (enemies.Length == 0 && (++currentWave) < currentMission.waves.Length)
         {
             Wave wave = currentMission.waves[currentWave];
-            IEnumerable<Vector2> spawnPoints = GenerateSpawnPoints(wave);
+            Vector2[] points = GenerateSpawnPoints(wave).ToArray();
 
             int i = 0;
             foreach (EnemyAmount enemyAmount in wave.enemies)
-                for (int end = i + enemyAmount.n; i < end; i ++)
-                    SpawnEnemy(spawnPoints.ElementAt(i), enemyAmount.prefab)
+                for (int end = i + enemyAmount.n; i < end; i++)
+                    SpawnEnemy(points[i], enemyAmount.prefab)
                         .GetComponent<Enemy>().wave = currentWave;
         }
     }
 
-    private IEnumerable<Vector2> GenerateSpawnPoints(Wave wave)
+    private IOrderedEnumerable<Vector2> GenerateSpawnPoints(Wave wave)
     {
         return spawnPoints
             .OrderBy(point => DistanceToNearestCamp(wave.targetCamps, point))
