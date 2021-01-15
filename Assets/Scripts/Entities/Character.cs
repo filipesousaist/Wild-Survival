@@ -47,6 +47,7 @@ public abstract class Character : Entity, IEnemyTarget
 
         UpdateRequiredXp();
         IncreaseAttributes();
+        health = maxHealth;
         UpdateBarHealth();
     }
 
