@@ -18,7 +18,11 @@ public class Enemy : Entity
 
     public int xpReward;
     private bool xpGiven = false;
-    override protected void OnAwake() { }
+    override protected void OnAwake()
+    {
+        enemiesManager = FindObjectOfType<EnemiesManager>();
+    }
+
     override protected void OnStart() { }
     override protected void OnDeath()
     {
