@@ -116,4 +116,9 @@ public class EnemiesManager : MonoBehaviour
     {
         return mode == EnemiesMode.grind;
     }
+
+    public bool CanMakeLoot()
+    {
+        return mode == EnemiesMode.grind;
+    }
 }

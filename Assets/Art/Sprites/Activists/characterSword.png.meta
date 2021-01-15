@@ -4123,7 +4123,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1408
+        y: 1402
         width: 64
         height: 64
       alignment: 9
@@ -6739,6 +6739,27 @@ TextureImporter:
       bones: []
       spriteID: 8b3376b51d3998360800000000000000
       internalID: 7172426408955163576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterSword_191
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1408
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7447f12a62e3bd490800000000000000
+      internalID: -7720508800546933689
       vertices: []
       indices: 
       edges: []

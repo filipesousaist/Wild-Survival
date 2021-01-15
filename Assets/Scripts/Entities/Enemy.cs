@@ -14,6 +14,8 @@ public class Enemy : Entity
 
     [ReadOnly] public EnemyTargetCriteria targetCriteria;
     [ReadOnly] public int wave;
+    private EnemiesManager enemiesManager;
+
     public int xpReward;
     private bool xpGiven = false;
     override protected void OnAwake() { }
@@ -22,7 +24,8 @@ public class Enemy : Entity
     {
         DeathEffect();
         deathSignal.Raise();
-        MakeLoot();
+        if (enemiesManager.CanMakeLoot())
+            MakeLoot();
         Destroy(gameObject);
         if (!xpGiven)
         {
