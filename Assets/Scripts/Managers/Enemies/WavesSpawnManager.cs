@@ -9,13 +9,11 @@ public class WavesSpawnManager : SpawnManager
     [ReadOnly] public int currentWave;
 
     private Vector2[] spawnPoints;
-    private Camp[] camps;
     private void Awake()
     {
         targetAI = new WavesTargetAI();
         missionsManager = FindObjectOfType<MissionsManager>();
         spawnPoints = GetComponent<GrindSpawnManager>().spawnPoints;
-        camps = FindObjectsOfType<Camp>();
     }
 
     override public void OnEnterMode()
