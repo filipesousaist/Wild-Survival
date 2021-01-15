@@ -10,7 +10,7 @@ public abstract class Entity : MonoBehaviour
     public string entityName;
 
     public float maxHealth;
-    public CharacterStats stats;
+    [ReadOnly] public CharacterStats stats;
     [ReadOnly] public float health;
 
     public GameObject healthBarPrefab;
@@ -103,7 +103,7 @@ public abstract class Entity : MonoBehaviour
         TakeDamage(damage);
     }
 
-    public virtual void Knock(float knockTime, float damage, Entity attacker)
+    public virtual void Knock(float knockTime, float damage, Collider2D attackerCol)
     {
         Knock(knockTime, damage);
     }

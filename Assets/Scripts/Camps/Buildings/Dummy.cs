@@ -71,10 +71,10 @@ public class Dummy : SimpleBuilding
         //TODO
     }
 
-    public override void Knock(float knockTime, float damage, Entity attacker)
+    public override void Knock(float knockTime, float damage, Collider2D attackerCol)
     {
         if (shouldUpdate)
-            TakeDamage(damage, attacker);
+            TakeDamage(damage, attackerCol.GetComponentInParent<Entity>());
     }
 
     // Update is called once per frame

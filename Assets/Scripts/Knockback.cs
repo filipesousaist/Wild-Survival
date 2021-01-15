@@ -23,7 +23,7 @@ public class Knockback : MonoBehaviour
                 EntityMovement otherMovement = otherEntity.GetComponent<EntityMovement>();
                 if (otherMovement != null)
                     otherMovement.velocity = difference.normalized * thrust;
-                otherEntity.Knock(knockTime, entity.GetAttack(), entity);
+                otherEntity.Knock(knockTime, entity.GetAttack(), GetComponent<Collider2D>());
                 movement.attackedRecently = true;
             }
         }
