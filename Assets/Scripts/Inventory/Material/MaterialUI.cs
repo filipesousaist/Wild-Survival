@@ -126,6 +126,8 @@ public class MaterialUI : MonoBehaviour
         }
 
         currentEquipment.Upgrade();
+        var currentPlayer = activistsManager.GetCurrentPlayer();
+        currentPlayer.GetComponent<PlayerStats>().UpdateEquipments();
 
         //UpdatePlayerEquipment();
         UpdateUI(currentEquipment);
