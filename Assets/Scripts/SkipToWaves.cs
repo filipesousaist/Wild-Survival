@@ -9,6 +9,8 @@ public class SkipToWaves : MonoBehaviour
     public Player manuel;
     public Rhino lonely;
 
+    private bool manuelWasActive;
+
     private ActivistsManager activistsManager;
     private Building[] buildings;
     private MissionsManager missionsManager;
@@ -38,12 +40,15 @@ public class SkipToWaves : MonoBehaviour
         {
             manuel.GetComponent<PlayerMovement>().EnableRhino();
         }
+        manuelWasActive = manuel.gameObject.activeSelf;
+        FindObjectOfType<RhinosManager>().rhinos.Add(lonely.GetComponent<RhinoMovement>());
     }
 
     private void Skip()
     {
         CaptureLonely();
-
+        if (!manuelWasActive)
+            manuel.GetComponent<PlayerMovement>().EnableRhino();
         // Subir ativistas para lvl 5 e rinos para lvl 4 e aprender todas as habilidades dos rhinos
         foreach (Player player in activistsManager.players)
         {
@@ -57,6 +62,8 @@ public class SkipToWaves : MonoBehaviour
                     player.rhino.ReceiveTrainingXp(1);
             }
         }
+        if (!manuelWasActive)
+            manuel.GetComponent<PlayerMovement>().DisableRhino();
 
         // Construir tudo
         foreach (Building building in buildings)

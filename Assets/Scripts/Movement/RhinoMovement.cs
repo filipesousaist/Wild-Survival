@@ -86,8 +86,6 @@ public class RhinoMovement : EntityMovement
                     DisabledUpdate(); break;
             }
         }
-        
-
     }
 
     public void SetPlayer(Player player, PlayerMovement playerMovement)

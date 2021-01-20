@@ -7,6 +7,7 @@ public class RottenFleshMission : InteractMission
         base.OnBegin();
         interactable.gameObject.SetActive(true);
         helpArrow.GetComponent<Image>().color = Colors.BLUE;
+        FindObjectOfType<MissionsManager>().startedRottenFleshMission = true;
     }
 
     public override string GetMessage()

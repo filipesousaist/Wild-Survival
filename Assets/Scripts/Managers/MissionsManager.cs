@@ -22,6 +22,8 @@ public class MissionsManager : MonoBehaviour
     public Text gameOverText;
     public GameObject winTextObject;
 
+    public bool startedRottenFleshMission = false;
+
     private void Awake()
     {
         missionText = missionTextObject.GetComponent<Text>();
@@ -100,12 +102,15 @@ public class MissionsManager : MonoBehaviour
 
     public void SkipToRottenFlesh()
     {
-        if (missions[current].GetType() == typeof(RottenFleshMission))
-            return;
+        if (!startedRottenFleshMission)
+        {
+            if (missions[current].GetType() == typeof(RottenFleshMission))
+                return;
 
-        StartCoroutine(missions[current].Finish());
-        while (missions[++current].GetType() != typeof(RottenFleshMission))
-            ;
-        StartCoroutine(missions[current].Begin());
+            StartCoroutine(missions[current].Finish());
+            while (missions[++current].GetType() != typeof(RottenFleshMission))
+                ;
+            StartCoroutine(missions[current].Begin());
+        }
     }
 }

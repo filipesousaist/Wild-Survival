@@ -5,7 +5,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class RhinosManager : MonoBehaviour
 {
-    public RhinoMovement[] rhinos;
+    public List<RhinoMovement> rhinos;
     public Light2D[] light2Ds;
 
     private GameObject rhinoInfoHolder;
@@ -13,7 +13,7 @@ public class RhinosManager : MonoBehaviour
 
     void Awake()
     {
-        rhinos = GetComponentsInChildren<RhinoMovement>();
+        rhinos = new List<RhinoMovement>(GetComponentsInChildren<RhinoMovement>());
         light2Ds = GetComponentsInChildren<Light2D>();
 
         rhinoInfoHolder = GameObject.Find("RhinoInfoHolder");
@@ -30,7 +30,7 @@ public class RhinosManager : MonoBehaviour
 
     public void HealAll()
     {
-        for (int i = 0; i < rhinos.Length; i++)
+        for (int i = 0; i < rhinos.Count; i++)
         {
             Rhino rhino = rhinos[i].GetComponent<Rhino>();
             rhino.FullRestore();

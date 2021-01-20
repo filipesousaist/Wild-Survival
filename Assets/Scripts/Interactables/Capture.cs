@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using System.Linq;
 
 public class Capture : Interactable
 {
@@ -43,6 +44,7 @@ public class Capture : Interactable
     void CaptureRhino() {
         player.SetRhino(rhino);
         rhino.SetOwner(player);
+        FindObjectOfType<RhinosManager>().rhinos.Add(rhino.GetComponent<RhinoMovement>());
     }
 
     public override string GetInteractText()
