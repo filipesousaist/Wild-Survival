@@ -49,7 +49,7 @@ public class SkipToWaves : MonoBehaviour
         CaptureLonely();
         if (!manuelWasActive)
             manuel.GetComponent<PlayerMovement>().EnableRhino();
-        // Subir ativistas para lvl 5 e rinos para lvl 4 e aprender todas as habilidades dos rhinos
+        // Subir ativistas para lvl 5 e rinos para lvl 4, aprender todas as habilidades dos rhinos e dar upgrade aos equipamentos
         foreach (Player player in activistsManager.players)
         {
             for (int i = 1; i <= 5; i++)
@@ -61,6 +61,10 @@ public class SkipToWaves : MonoBehaviour
                 if (i > player.rhino.trainingXp)
                     player.rhino.ReceiveTrainingXp(1);
             }
+
+            foreach (Equipment equipment in player.equipments)
+                if (equipment.level == equipment.initialLevel)
+                    equipment.Upgrade();
         }
         if (!manuelWasActive)
             manuel.GetComponent<PlayerMovement>().DisableRhino();
