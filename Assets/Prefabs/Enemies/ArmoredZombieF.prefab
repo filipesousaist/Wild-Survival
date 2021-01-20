@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: 
-  maxHealth: 80
+  maxHealth: 60
   stats: {fileID: 0}
   health: 0
   healthBarPrefab: {fileID: 929440725348062691, guid: 95587864e54ec7c46ab763c971a50c5b,
@@ -236,7 +236,7 @@ MonoBehaviour:
   lootTable: {fileID: 11400000, guid: 9ad72f61603c96c4ab296d5df28a8f4d, type: 2}
   targetCriteria: 0
   wave: 0
-  xpReward: 8
+  xpReward: 10
 --- !u!195 &3098173223168313396
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage:
-    baseValue: 9
+    baseValue: 8
   armor:
     baseValue: 0
 --- !u!198 &1764345364130781686
