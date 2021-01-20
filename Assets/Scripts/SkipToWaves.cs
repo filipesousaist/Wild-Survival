@@ -33,11 +33,11 @@ public class SkipToWaves : MonoBehaviour
     {
         manuel.SetRhino(lonely);
         lonely.SetOwner(manuel);
+        manuel.GetComponent<PlayerMovement>().TeleportRhino();       
         if (manuel.gameObject.activeSelf)
         {
             manuel.GetComponent<PlayerMovement>().EnableRhino();
         }
-        manuel.GetComponent<PlayerMovement>().TeleportRhino();       
     }
 
     private void Skip()

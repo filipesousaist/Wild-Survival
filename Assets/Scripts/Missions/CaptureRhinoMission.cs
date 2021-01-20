@@ -8,7 +8,8 @@ public class CaptureRhinoMission : HelpArrowMission
     protected override void OnBegin()
     {
         base.OnBegin();
-        rhinoObj.SetActive(true);
+        if (!rhinoObj.activeSelf)
+            rhinoObj.SetActive(true);
         helpArrow.GetComponent<Image>().color = Colors.BLUE;
     }
 
