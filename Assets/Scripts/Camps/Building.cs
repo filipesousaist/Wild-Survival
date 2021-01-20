@@ -15,8 +15,6 @@ public abstract class Building : Entity
 
     public List<MatDict> materials;
 
-    private int originalLayer;
-
     protected override void OnAwake()
     {
         navMesh = FindObjectOfType<NavMeshSurface2d>();

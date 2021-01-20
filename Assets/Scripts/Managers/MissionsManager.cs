@@ -68,7 +68,7 @@ public class MissionsManager : MonoBehaviour
         StartCoroutine(missions[current].Finish());
         if (current == missions.Length - 1)
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             gameOverUI.SetActive(true);
             gameOverText.text = "You Win!";
             gameOverText.color = Colors.GREEN;
@@ -96,5 +96,16 @@ public class MissionsManager : MonoBehaviour
     public Mission GetCurrentMission()
     {
         return missions[current];
+    }
+
+    public void SkipToRottenFlesh()
+    {
+        if (missions[current].GetType() == typeof(RottenFleshMission))
+            return;
+
+        StartCoroutine(missions[current].Finish());
+        while (missions[++current].GetType() != typeof(RottenFleshMission))
+            ;
+        StartCoroutine(missions[current].Begin());
     }
 }

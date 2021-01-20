@@ -126,7 +126,8 @@ public class Rhino : Character
             if (trainingXp == 5 * (abilitiesLearnt.Count + 1))
             {
                 abilitiesLearnt.Add(abilitiesToLearn[abilitiesLearnt.Count]);
-                abilityUI.UpdateUI();
+                if (abilityUI != null)
+                    abilityUI.UpdateUI();
             }
         }
     }
